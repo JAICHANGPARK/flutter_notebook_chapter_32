@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_32/ep1601_marketplace_app/view/marketplace_bag_page.dart';
 
 void main() {
   runApp(const MarketplaceApp());
@@ -10,6 +11,8 @@ class MarketplaceApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp();
+    return const MaterialApp(
+      home: MarketplaceBagPage(),
+    );
   }
 }
