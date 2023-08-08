@@ -15,25 +15,28 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.arrow_back_ios_new,
+            Padding(
+              padding: const EdgeInsets.only(top: 16),
+              child: Row(
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.arrow_back_ios_new,
+                    ),
                   ),
-                ),
-                const Text(
-                  "My bag(3)",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                ),
-                const Spacer(),
-                const Text("Select all"),
-                Checkbox(
-                  value: false,
-                  onChanged: (b) {},
-                ),
-              ],
+                  const Text(
+                    "My bag(3)",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  const Spacer(),
+                  const Text("Select all"),
+                  Checkbox(
+                    value: false,
+                    onChanged: (b) {},
+                  ),
+                ],
+              ),
             ),
             Container(
               margin: const EdgeInsets.only(top: 16, bottom: 8),
@@ -64,6 +67,55 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
               height: 120,
               decoration: const BoxDecoration(
                 color: Colors.white,
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.confirmation_number,
+                      ),
+                      Text("Voucher"),
+                      Text("Click to add Voucher"),
+                      Icon(
+                        Icons.keyboard_arrow_right_outlined,
+                      )
+                    ],
+                  ),
+                  Divider(),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Text("Total Price"),
+                            Text(
+                              "\$50.00",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                                color: Colors.teal,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          child: Center(
+                            child: Text(
+                              "Checkout (2)",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
+                ],
               ),
             ),
           ],
