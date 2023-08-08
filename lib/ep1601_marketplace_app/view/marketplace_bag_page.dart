@@ -102,6 +102,11 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                       ),
                       Expanded(
                         child: Container(
+                          height: 48,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+
+                          ),
                           child: Center(
                             child: Text(
                               "Checkout (2)",
