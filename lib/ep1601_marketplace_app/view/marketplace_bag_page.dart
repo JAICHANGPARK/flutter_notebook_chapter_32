@@ -79,11 +79,26 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                       SizedBox(
                         width: 8,
                       ),
-                      Text("Voucher"),
+                      Text(
+                        "Voucher",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       Spacer(),
-                      Text("Click to add Voucher"),
+                      Text(
+                        "Click to add Voucher",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 12,
+                      ),
                       Icon(
                         Icons.keyboard_arrow_right_outlined,
+                        color: Colors.grey,
                       )
                     ],
                   ),
