@@ -120,9 +120,10 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                       ),
                       Expanded(
                         child: Container(
-                          height: 48,
-                          decoration: const BoxDecoration(
+                          height: 52,
+                          decoration: BoxDecoration(
                             color: Colors.black,
+                            borderRadius: BorderRadius.circular(8),
                           ),
                           child: const Center(
                             child: Text(
