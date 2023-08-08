@@ -64,31 +64,40 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
               child: Placeholder(),
             ),
             Container(
-              height: 120,
+              // height: 120,
               decoration: const BoxDecoration(
                 color: Colors.white,
               ),
+              padding: EdgeInsets.all(16),
               child: Column(
                 children: [
-                  Row(
+                  const Row(
                     children: [
                       Icon(
                         Icons.confirmation_number,
                       ),
                       Text("Voucher"),
+                      Spacer(),
                       Text("Click to add Voucher"),
                       Icon(
                         Icons.keyboard_arrow_right_outlined,
                       )
                     ],
                   ),
-                  Divider(),
+                  const Divider(
+                    color: Colors.grey,
+                    height: 32,
+                  ),
                   Row(
                     children: [
-                      Expanded(
+                      const Expanded(
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Total Price"),
+                            SizedBox(
+                              height: 8,
+                            ),
                             Text(
                               "\$50.00",
                               style: TextStyle(
@@ -103,11 +112,10 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                       Expanded(
                         child: Container(
                           height: 48,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.black,
-
                           ),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Checkout (2)",
                               style: TextStyle(
