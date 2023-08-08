@@ -76,6 +76,9 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                       Icon(
                         Icons.confirmation_number,
                       ),
+                      SizedBox(
+                        width: 8,
+                      ),
                       Text("Voucher"),
                       Spacer(),
                       Text("Click to add Voucher"),
@@ -94,7 +97,13 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Total Price"),
+                            Text(
+                              "Total Price",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey,
+                              ),
+                            ),
                             SizedBox(
                               height: 8,
                             ),
