@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MarketplaceBagPage extends StatefulWidget {
   const MarketplaceBagPage({super.key});
 
@@ -11,6 +10,10 @@ class MarketplaceBagPage extends StatefulWidget {
 class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: [],
+      ),
+    );
   }
 }
