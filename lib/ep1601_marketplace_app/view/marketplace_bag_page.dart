@@ -37,16 +37,20 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
             ),
             Container(
               margin: EdgeInsets.only(top: 16, bottom: 8),
-              color: Colors.green[200],
-              padding: EdgeInsets.all(8),
+              color: Colors.green[50],
+              padding: EdgeInsets.all(12),
               child: Row(
                 children: [
                   Icon(
                     Icons.local_activity,
                   ),
+                  SizedBox(
+                    width: 8,
+                  ),
                   Text(
                     "You have a discount voucher for the products",
                   ),
+                  Spacer(),
                   Icon(
                     Icons.keyboard_arrow_right,
                   ),
