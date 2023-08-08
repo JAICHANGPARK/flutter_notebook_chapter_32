@@ -23,7 +23,10 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                     Icons.arrow_back_ios_new,
                   ),
                 ),
-                Text("My bag(3)"),
+                Text(
+                  "My bag(3)",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
                 Spacer(),
                 Text("Select all"),
                 Checkbox(
@@ -33,10 +36,20 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
               ],
             ),
             Container(
+              margin: EdgeInsets.only(top: 16, bottom: 8),
               color: Colors.green[200],
+              padding: EdgeInsets.all(8),
               child: Row(
                 children: [
-                  Icon(Icons.local_activity),
+                  Icon(
+                    Icons.local_activity,
+                  ),
+                  Text(
+                    "You have a discount voucher for the products",
+                  ),
+                  Icon(
+                    Icons.keyboard_arrow_right,
+                  ),
                 ],
               ),
             )
