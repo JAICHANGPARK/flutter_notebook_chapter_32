@@ -61,18 +61,27 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
               ),
             ),
             Expanded(
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Checkbox(value: true, onChanged: (v) {}),
-                      Icon(Icons.storefront),
-                      Text("Dreamwalker"),
-                      Spacer(),
-                      Text("\$50.00 (2)"),
-                    ],
-                  )
-                ],
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Checkbox(value: true, onChanged: (v) {}),
+                        Icon(Icons.storefront),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text("Dreamwalker"),
+                        Spacer(),
+                        Text(
+                          "\$50.00 (2)",
+                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.teal, fontSize: 18),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
             Container(
