@@ -88,6 +88,20 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                           ),
                         ),
                       ],
+                    ),
+                    Divider(),
+                    Container(
+                      child: Row(
+                        children: [
+                          Checkbox(value: true, onChanged: (v) {}),
+                          Container(
+                            height: 100,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
