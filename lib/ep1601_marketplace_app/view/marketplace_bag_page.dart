@@ -115,10 +115,13 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                                   "Men's Flutter T-Shirts",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
+                                    fontSize: 18
                                   ),
                                 ),
+
                                 Container(
                                   height: 32,
+                                  margin: EdgeInsets.symmetric(vertical: 8),
                                   decoration: BoxDecoration(
                                     color: Colors.grey[200],
                                     borderRadius: BorderRadius.circular(2),
