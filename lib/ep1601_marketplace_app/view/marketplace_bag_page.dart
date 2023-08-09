@@ -113,12 +113,8 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                               children: [
                                 Text(
                                   "Men's Flutter T-Shirts",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 18
-                                  ),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                 ),
-
                                 Container(
                                   height: 32,
                                   margin: EdgeInsets.symmetric(vertical: 8),
@@ -126,6 +122,26 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                                     color: Colors.grey[200],
                                     borderRadius: BorderRadius.circular(2),
                                   ),
+                                ),
+                                Row(
+                                  children: [
+                                    Text(
+                                      "\$50.00",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                    Text(
+                                      "\$35.00",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.teal,
+                                      ),
+                                    )
+                                  ],
                                 )
                               ],
                             ),
