@@ -162,6 +162,13 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                                         ],
                                       ),
                                     ),
+                                    Text(
+                                      "Remaining 5 pcs",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.grey,
+                                      ),
+                                    )
                                   ],
                                 ),
                               ],
