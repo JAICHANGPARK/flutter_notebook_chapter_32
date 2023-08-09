@@ -146,10 +146,22 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                                 Row(
                                   children: [
                                     Container(
-                                      child: Row(
-                                        children: [],
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.grey[100]!,
+                                        ),
                                       ),
-                                    )
+                                      child: Row(
+                                        children: [
+                                          Icon(Icons.remove),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text("1"),
+                                          ),
+                                          Icon(Icons.add),
+                                        ],
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ],
