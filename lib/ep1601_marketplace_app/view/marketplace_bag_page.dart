@@ -72,11 +72,20 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                         SizedBox(
                           width: 8,
                         ),
-                        Text("Dreamwalker"),
+                        Text(
+                          "Dreamwalker",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                         Spacer(),
                         Text(
                           "\$50.00 (2)",
-                          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.teal, fontSize: 18),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.teal,
+                            fontSize: 18,
+                          ),
                         ),
                       ],
                     )
