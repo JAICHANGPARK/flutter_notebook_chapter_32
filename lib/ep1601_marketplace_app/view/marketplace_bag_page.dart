@@ -140,9 +140,18 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                                         fontWeight: FontWeight.bold,
                                         color: Colors.teal,
                                       ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      child: Row(
+                                        children: [],
+                                      ),
                                     )
                                   ],
-                                )
+                                ),
                               ],
                             ),
                           )
