@@ -97,7 +97,185 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                         children: [
                           Checkbox(value: true, onChanged: (v) {}),
                           Container(
-                            height: 140,
+                            height: 120,
+                            width: 100,
+                            decoration: BoxDecoration(
+                              color: Colors.grey[100],
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Men's Flutter T-Shirts",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                ),
+                                Container(
+                                  height: 32,
+                                  margin: EdgeInsets.symmetric(vertical: 8),
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200],
+                                    borderRadius: BorderRadius.circular(2),
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Text(
+                                      "\$50.00",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                    Text(
+                                      "\$35.00",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.teal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.grey[100]!,
+                                        ),
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          Icon(Icons.remove),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text("1"),
+                                          ),
+                                          Icon(Icons.add),
+                                        ],
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    Text(
+                                      "Remaining 5 pcs",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.grey,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(top: 16),
+                      child: Row(
+
+                        children: [
+                          Checkbox(value: true, onChanged: (v) {}),
+                          Container(
+                            height: 120,
+                            width: 100,
+                            decoration: BoxDecoration(
+                              color: Colors.grey[100],
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Men's Flutter T-Shirts",
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                ),
+                                Container(
+                                  height: 32,
+                                  margin: EdgeInsets.symmetric(vertical: 8),
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200],
+                                    borderRadius: BorderRadius.circular(2),
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Text(
+                                      "\$50.00",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                    Text(
+                                      "\$35.00",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.teal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.grey[100]!,
+                                        ),
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          Icon(Icons.remove),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text("1"),
+                                          ),
+                                          Icon(Icons.add),
+                                        ],
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    Text(
+                                      "Remaining 5 pcs",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.grey,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(top: 16),
+                      child: Row(
+
+                        children: [
+                          Checkbox(value: true, onChanged: (v) {}),
+                          Container(
+                            height: 120,
                             width: 100,
                             decoration: BoxDecoration(
                               color: Colors.grey[100],
@@ -185,6 +363,7 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
             ),
             Container(
               // height: 120,
+
               decoration: const BoxDecoration(
                 color: Colors.white,
               ),
