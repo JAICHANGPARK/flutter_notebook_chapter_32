@@ -68,7 +68,7 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
               decoration: const BoxDecoration(
                 color: Colors.white,
               ),
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
                   const Row(
