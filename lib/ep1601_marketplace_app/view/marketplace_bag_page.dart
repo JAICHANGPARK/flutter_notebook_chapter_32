@@ -60,8 +60,20 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                 ],
               ),
             ),
-            const Expanded(
-              child: Placeholder(),
+            Expanded(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Checkbox(value: true, onChanged: (v) {}),
+                      Icon(Icons.storefront),
+                      Text("Dreamwalker"),
+                      Spacer(),
+                      Text("\$50.00 (2)"),
+                    ],
+                  )
+                ],
+              ),
             ),
             Container(
               // height: 120,
