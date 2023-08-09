@@ -110,6 +110,7 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
                                   "Men's Flutter T-Shirts",
