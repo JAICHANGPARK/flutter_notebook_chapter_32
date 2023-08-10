@@ -55,16 +55,24 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
                 children: [
                   Icon(Icons.location_pin),
                   Expanded(
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Text("Dream Walker"),
-                            Text("(000) 123-4567"),
-                          ],
-                        ),
-                        Text("Customizing web app initialization"),
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Dream Walker"),
+                              Text("(000) 123-4567"),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text("Customizing web app initialization"),
+                        ],
+                      ),
                     ),
                   ),
                   Icon(
