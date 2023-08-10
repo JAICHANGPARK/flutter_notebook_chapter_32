@@ -227,10 +227,14 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
               ),
             ),
             const Divider(),
-            const Text(
-              "Shipping Method",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: const Text(
+                "Shipping Method",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18
+                ),
               ),
             )
           ],
