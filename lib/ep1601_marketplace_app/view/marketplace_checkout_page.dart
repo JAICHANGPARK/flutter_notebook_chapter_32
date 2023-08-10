@@ -81,18 +81,16 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
                 ],
               ),
             ),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
                   Text(
                     "Your order",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black,
-                      fontSize: 16
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 16),
                   ),
                   Spacer(),
                   Text(
@@ -225,6 +223,13 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
                     ),
                   )
                 ],
+              ),
+            ),
+            Divider(),
+            Text(
+              "Shipping Method",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
               ),
             )
           ],
