@@ -182,7 +182,6 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                     Container(
                       margin: EdgeInsets.only(top: 16),
                       child: Row(
-
                         children: [
                           Checkbox(value: true, onChanged: (v) {}),
                           Container(
@@ -271,7 +270,6 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                     Container(
                       margin: EdgeInsets.only(top: 16),
                       child: Row(
-
                         children: [
                           Checkbox(value: true, onChanged: (v) {}),
                           Container(
@@ -433,18 +431,27 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                         ),
                       ),
                       Expanded(
-                        child: Container(
-                          height: 52,
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: const Center(
-                            child: Text(
-                              "Checkout (2)",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
+                        child: GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => MarketplaceCheckoutPage(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            height: 52,
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: const Center(
+                              child: Text(
+                                "Checkout (2)",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
                               ),
                             ),
                           ),
