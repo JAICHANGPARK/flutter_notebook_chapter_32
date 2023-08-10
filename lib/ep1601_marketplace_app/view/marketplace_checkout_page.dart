@@ -280,6 +280,80 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
                   ),
                 ],
               ),
+            ),
+            Container(
+              margin: EdgeInsets.only(bottom: 8, left: 8, right: 8),
+              padding: EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(),
+              ),
+              child: Row(
+                children: [
+                  Checkbox(value: false, onChanged: (v) {}),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Free shipping",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text("7-12 business day"),
+                      ],
+                    ),
+                  ),
+                  Text(
+                    "\$0",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(bottom: 8, left: 8, right: 8),
+              padding: EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(),
+              ),
+              child: Row(
+                children: [
+                  Checkbox(value: false, onChanged: (v) {}),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Free shipping",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text("7-12 business day"),
+                      ],
+                    ),
+                  ),
+                  Text(
+                    "\$0",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18
+                    ),
+                  ),
+                ],
+              ),
             )
           ],
         ),
