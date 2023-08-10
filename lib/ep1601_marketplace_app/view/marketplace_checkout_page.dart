@@ -110,18 +110,77 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
               ),
             ),
             Container(
-              padding: EdgeInsets.all(16),
+              padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               child: Row(
                 children: [
                   Container(
                     height: 100,
                     width: 100,
                     decoration: BoxDecoration(
-                      color: Colors.black,
+                      color: Colors.grey,
                     ),
                   ),
                   const SizedBox(
-                    width: 8,
+                    width: 12,
+                  ),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "Men's Flutter T-Shirts",
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                        Container(
+                          height: 32,
+                          margin: const EdgeInsets.symmetric(vertical: 8),
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(2),
+                          ),
+                        ),
+                        const Row(
+                          children: [
+                            Text(
+                              "\$50.00",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Text(
+                              "\$35.00",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.teal,
+                              ),
+                            ),
+                            Spacer(),
+                            Text("1x"),
+                          ],
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              child: Row(
+                children: [
+                  Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 12,
                   ),
                   Expanded(
                     child: Column(
