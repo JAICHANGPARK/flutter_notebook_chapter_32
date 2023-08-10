@@ -43,6 +43,35 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
                   ),
                 ],
               ),
+            ),
+            Container(
+              margin: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              padding: EdgeInsets.all(16),
+              child: Row(
+                children: [
+                  Icon(Icons.location_pin),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Text("Dream Walker"),
+                            Text("(000) 123-4567"),
+                          ],
+                        ),
+                        Text("Customizing web app initialization"),
+                      ],
+                    ),
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios,
+                  )
+                ],
+              ),
             )
           ],
         ),
