@@ -234,9 +234,9 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
               ),
             ),
             const Divider(),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: const Text(
+            const Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Text(
                 "Shipping Method",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
