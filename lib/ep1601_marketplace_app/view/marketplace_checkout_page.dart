@@ -80,6 +80,24 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
                   )
                 ],
               ),
+            ),
+            Row(
+              children: [
+                Text("Your order"),
+                Text("Hide"),
+                Icon(Icons.keyboard_arrow_down_sharp),
+              ],
+            ),
+            Row(
+              children: [
+                Container(
+                  height: 100,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                  ),
+                )
+              ],
             )
           ],
         ),
