@@ -15,18 +15,19 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         elevation: 0,
-        title: Text("Checkout"),
+        title: const Text("Checkout"),
       ),
       body: Padding(
         padding: const EdgeInsets.only(top: 16),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               decoration: BoxDecoration(
                 color: Colors.orange[100],
               ),
-              child: Row(
+              child: const Row(
                 children: [
                   Icon(
                     Icons.info,
@@ -45,18 +46,18 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 border: Border.all(),
                 borderRadius: BorderRadius.circular(8),
               ),
-              padding: EdgeInsets.all(16),
-              child: Row(
+              padding: const EdgeInsets.all(16),
+              child: const Row(
                 children: [
                   Icon(Icons.location_pin),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(8.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -81,11 +82,11 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
                   Text(
@@ -108,13 +109,13 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
               ),
             ),
             Container(
-              padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               child: Row(
                 children: [
                   Container(
                     height: 100,
                     width: 100,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.grey,
                     ),
                   ),
@@ -167,13 +168,13 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
               ),
             ),
             Container(
-              padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
               child: Row(
                 children: [
                   Container(
                     height: 100,
                     width: 100,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.grey,
                     ),
                   ),
@@ -225,8 +226,8 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
                 ],
               ),
             ),
-            Divider(),
-            Text(
+            const Divider(),
+            const Text(
               "Shipping Method",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
