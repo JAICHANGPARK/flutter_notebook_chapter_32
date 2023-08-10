@@ -45,6 +45,9 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
                 ],
               ),
             ),
+            const SizedBox(
+              height: 16,
+            ),
             Container(
               margin: const EdgeInsets.all(16),
               decoration: BoxDecoration(
@@ -91,7 +94,11 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
                 children: [
                   Text(
                     "Your order",
-                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 16),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                      fontSize: 18,
+                    ),
                   ),
                   Spacer(),
                   Text(
@@ -231,10 +238,7 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
               padding: const EdgeInsets.all(16.0),
               child: const Text(
                 "Shipping Method",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18
-                ),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
             )
           ],
