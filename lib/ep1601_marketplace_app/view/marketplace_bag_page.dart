@@ -69,18 +69,18 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                     Row(
                       children: [
                         Checkbox(value: true, onChanged: (v) {}),
-                        Icon(Icons.storefront),
-                        SizedBox(
+                        const Icon(Icons.storefront),
+                        const SizedBox(
                           width: 8,
                         ),
-                        Text(
+                        const Text(
                           "Dreamwalker",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Spacer(),
-                        Text(
+                        const Spacer(),
+                        const Text(
                           "\$50.00 (2)",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -90,7 +90,7 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                         ),
                       ],
                     ),
-                    Divider(
+                    const Divider(
                       height: 42,
                     ),
                     Container(
@@ -105,7 +105,7 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
                           Expanded(
@@ -113,19 +113,19 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "Men's Flutter T-Shirts",
                                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                 ),
                                 Container(
                                   height: 32,
-                                  margin: EdgeInsets.symmetric(vertical: 8),
+                                  margin: const EdgeInsets.symmetric(vertical: 8),
                                   decoration: BoxDecoration(
                                     color: Colors.grey[200],
                                     borderRadius: BorderRadius.circular(2),
                                   ),
                                 ),
-                                Row(
+                                const Row(
                                   children: [
                                     Text(
                                       "\$50.00",
@@ -153,19 +153,19 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                                           color: Colors.grey[100]!,
                                         ),
                                       ),
-                                      child: Row(
+                                      child: const Row(
                                         children: [
                                           Icon(Icons.remove),
                                           Padding(
-                                            padding: const EdgeInsets.all(8.0),
+                                            padding: EdgeInsets.all(8.0),
                                             child: Text("1"),
                                           ),
                                           Icon(Icons.add),
                                         ],
                                       ),
                                     ),
-                                    Spacer(),
-                                    Text(
+                                    const Spacer(),
+                                    const Text(
                                       "Remaining 5 pcs",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -181,7 +181,7 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 16),
+                      margin: const EdgeInsets.only(top: 16),
                       child: Row(
                         children: [
                           Checkbox(value: true, onChanged: (v) {}),
@@ -193,7 +193,7 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
                           Expanded(
@@ -201,19 +201,19 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "Men's Flutter T-Shirts",
                                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                 ),
                                 Container(
                                   height: 32,
-                                  margin: EdgeInsets.symmetric(vertical: 8),
+                                  margin: const EdgeInsets.symmetric(vertical: 8),
                                   decoration: BoxDecoration(
                                     color: Colors.grey[200],
                                     borderRadius: BorderRadius.circular(2),
                                   ),
                                 ),
-                                Row(
+                                const Row(
                                   children: [
                                     Text(
                                       "\$50.00",
@@ -241,19 +241,19 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                                           color: Colors.grey[100]!,
                                         ),
                                       ),
-                                      child: Row(
+                                      child: const Row(
                                         children: [
                                           Icon(Icons.remove),
                                           Padding(
-                                            padding: const EdgeInsets.all(8.0),
+                                            padding: EdgeInsets.all(8.0),
                                             child: Text("1"),
                                           ),
                                           Icon(Icons.add),
                                         ],
                                       ),
                                     ),
-                                    Spacer(),
-                                    Text(
+                                    const Spacer(),
+                                    const Text(
                                       "Remaining 5 pcs",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -269,7 +269,7 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 16),
+                      margin: const EdgeInsets.only(top: 16),
                       child: Row(
                         children: [
                           Checkbox(value: true, onChanged: (v) {}),
@@ -281,7 +281,7 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
                           Expanded(
@@ -289,19 +289,19 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "Men's Flutter T-Shirts",
                                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                 ),
                                 Container(
                                   height: 32,
-                                  margin: EdgeInsets.symmetric(vertical: 8),
+                                  margin: const EdgeInsets.symmetric(vertical: 8),
                                   decoration: BoxDecoration(
                                     color: Colors.grey[200],
                                     borderRadius: BorderRadius.circular(2),
                                   ),
                                 ),
-                                Row(
+                                const Row(
                                   children: [
                                     Text(
                                       "\$50.00",
@@ -329,19 +329,19 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                                           color: Colors.grey[100]!,
                                         ),
                                       ),
-                                      child: Row(
+                                      child: const Row(
                                         children: [
                                           Icon(Icons.remove),
                                           Padding(
-                                            padding: const EdgeInsets.all(8.0),
+                                            padding: EdgeInsets.all(8.0),
                                             child: Text("1"),
                                           ),
                                           Icon(Icons.add),
                                         ],
                                       ),
                                     ),
-                                    Spacer(),
-                                    Text(
+                                    const Spacer(),
+                                    const Text(
                                       "Remaining 5 pcs",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -436,7 +436,7 @@ class _MarketplaceBagPageState extends State<MarketplaceBagPage> {
                           onTap: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (context) => MarketplaceCheckoutPage(),
+                                builder: (context) => const MarketplaceCheckoutPage(),
                               ),
                             );
                           },
