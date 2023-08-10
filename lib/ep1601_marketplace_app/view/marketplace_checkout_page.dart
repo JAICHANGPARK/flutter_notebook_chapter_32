@@ -81,13 +81,31 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
                 ],
               ),
             ),
+            SizedBox(height: 16,),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
-                  Text("Your order"),
-                  Text("Hide"),
-                  Icon(Icons.keyboard_arrow_down_sharp),
+                  Text(
+                    "Your order",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                      fontSize: 16
+                    ),
+                  ),
+                  Spacer(),
+                  Text(
+                    "Hide",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  Icon(
+                    Icons.keyboard_arrow_down_sharp,
+                    color: Colors.grey,
+                  ),
                 ],
               ),
             ),
