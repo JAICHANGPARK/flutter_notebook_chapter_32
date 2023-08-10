@@ -258,12 +258,26 @@ class _MarketplaceCheckoutPageState extends State<MarketplaceCheckoutPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Free shipping"),
+                        Text(
+                          "Free shipping",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Text("7-12 business day"),
                       ],
                     ),
                   ),
-                  Text("\$0"),
+                  Text(
+                    "\$0",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18
+                    ),
+                  ),
                 ],
               ),
             )
