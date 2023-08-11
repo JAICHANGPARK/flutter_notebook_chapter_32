@@ -100,13 +100,22 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                     Icons.shopping_bag_outlined,
                     color: Colors.white,
                   ),
+                  SizedBox(
+                    width: 8,
+                  ),
                   Text(
                     "YOU ADD 3 ITEMS TO BAG",
                     style: TextStyle(
                       color: Colors.white,
                     ),
                   ),
-                  Text("TOTAL \$ 4,222"),
+                  Spacer(),
+                  Text(
+                    "TOTAL \$ 4,222",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
                 ],
               ),
             ),
