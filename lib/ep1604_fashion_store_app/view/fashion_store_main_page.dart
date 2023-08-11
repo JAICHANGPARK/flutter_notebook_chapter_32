@@ -87,7 +87,14 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                   );
                 },
               ),
-            )
+            ),
+            Expanded(child: Placeholder()),
+            Container(
+              height: 54,
+              decoration: BoxDecoration(
+                color: Colors.black,
+              ),
+            ),
           ],
         ),
       ),
