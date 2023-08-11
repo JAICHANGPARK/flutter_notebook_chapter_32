@@ -32,6 +32,7 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                     decoration: BoxDecoration(
                       border: Border.all(),
                     ),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     child: Center(
                       child: TextField(
                         decoration: InputDecoration(
@@ -57,6 +58,12 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                   ),
                 ),
               ],
+            ),
+            Container(
+              height: 32,
+              decoration: BoxDecoration(
+                color: Colors.black,
+              ),
             )
           ],
         ),
