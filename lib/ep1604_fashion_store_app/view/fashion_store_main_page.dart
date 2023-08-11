@@ -67,7 +67,6 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
             ),
             Container(
               height: 160,
-
               decoration: BoxDecoration(
                 color: Colors.pink,
                 border: Border.all(),
@@ -77,6 +76,16 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
               height: 52,
               decoration: BoxDecoration(
                 border: Border.all(),
+              ),
+              child: ListView.builder(
+                itemCount: 10,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return TextButton(
+                    onPressed: () {},
+                    child: Text("NEW"),
+                  );
+                },
               ),
             )
           ],
