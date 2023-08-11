@@ -27,10 +27,37 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                     ),
                   ),
                 ),
-                Expanded(child: Container(child: TextField())),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                    ),
+                    child: Center(
+                      child: TextField(
+                        decoration: InputDecoration(
+                          icon: Icon(Icons.search),
+                          hintText: "What's the lowdown, pal?",
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                  ),
+                  child: Center(
+                    child: Badge(
+                      child: IconButton(
+                        icon: Icon(Icons.notifications_active_outlined),
+                        onPressed: () {},
+                      ),
+                      label: Text("99"),
+                    ),
+                  ),
+                ),
               ],
             )
-
           ],
         ),
       ),
