@@ -94,6 +94,21 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
               decoration: BoxDecoration(
                 color: Colors.black,
               ),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.shopping_bag_outlined,
+                    color: Colors.white,
+                  ),
+                  Text(
+                    "YOU ADD 3 ITEMS TO BAG",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  Text("TOTAL \$ 4,222"),
+                ],
+              ),
             ),
           ],
         ),
