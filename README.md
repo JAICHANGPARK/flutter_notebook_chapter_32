@@ -2,9 +2,11 @@
 
 ## EP1604
 
-- Checkout Flow - Marketplace Mobile App Concept
-- by Ali Husni ✨ for Enver Studio
-- https://dribbble.com/shots/22202456-Checkout-Flow-Marketplace-Mobile-App-Concept
+- Stizy - Fashion Store Mobile App
+- by Rijal ☘️ for everteam
+- https://dribbble.com/shots/22235711-Stizy-Fashion-Store-Mobile-App
+
+<img src="https://cdn.dribbble.com/userupload/9199343/file/original-2617b4df322f1ea03da55e54f006713d.jpg?resize=1600x1200"/>
 
 ## EP1601-1603
 
