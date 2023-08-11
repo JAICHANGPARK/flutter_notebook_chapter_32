@@ -10,9 +10,20 @@ class FashionStoreMainPage extends StatefulWidget {
 class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: SafeArea(
-        child: Column(),
+        child: Column(
+          children: [
+            Container(
+              child: IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.menu,
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
