@@ -67,7 +67,17 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
             ),
             Container(
               height: 160,
-              color: Colors.pink,
+
+              decoration: BoxDecoration(
+                color: Colors.pink,
+                border: Border.all(),
+              ),
+            ),
+            Container(
+              height: 52,
+              decoration: BoxDecoration(
+                border: Border.all(),
+              ),
             )
           ],
         ),
