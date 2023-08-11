@@ -94,6 +94,7 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
               decoration: BoxDecoration(
                 color: Colors.black,
               ),
+              padding: EdgeInsets.symmetric(horizontal: 8),
               child: Row(
                 children: [
                   Icon(
