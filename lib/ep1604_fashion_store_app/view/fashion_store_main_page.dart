@@ -110,21 +110,25 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                   return Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      border: Border.all(width:0.5),
+                      border: Border.all(width: 0.5),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Expanded(child: Container(
+                        Expanded(
+                            child: Container(
                           decoration: BoxDecoration(
-                            // border: Border.all(
-                            //   // width: 0.5
-                            // )
-                          ),
+                              // border: Border.all(
+                              //   // width: 0.5
+                              // )
+                              ),
                         )),
                         Container(
+                          width: double.infinity,
                           decoration: BoxDecoration(
-                            
+                            border: Border(
+                              top: BorderSide(),
+                            ),
                           ),
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
