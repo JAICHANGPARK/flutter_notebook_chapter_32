@@ -116,13 +116,14 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(
-                            child: Container(
-                          decoration: BoxDecoration(
-                              // border: Border.all(
-                              //   // width: 0.5
-                              // )
-                              ),
-                        )),
+                          child: Container(
+                            decoration: BoxDecoration(
+                                // border: Border.all(
+                                //   // width: 0.5
+                                // )
+                                ),
+                          ),
+                        ),
                         Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
