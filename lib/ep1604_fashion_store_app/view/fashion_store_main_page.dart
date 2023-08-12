@@ -8,6 +8,8 @@ class FashionStoreMainPage extends StatefulWidget {
 }
 
 class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
+  int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,8 +84,21 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return TextButton(
-                    onPressed: () {},
-                    child: Text("NEW"),
+                    onPressed: () {
+                      setState(() {
+                        selectedIndex = index;
+                      });
+                    },
+                    child: Text(
+                      "NEW",
+                      style: TextStyle(
+                        decoration: selectedIndex == index ? TextDecoration.underline : TextDecoration.none,
+                        height: 1.2
+                      ),
+                    ),
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.black,
+                    ),
                   );
                 },
               ),
