@@ -124,10 +124,14 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                                 ),
                             child: Stack(
                               children: [
-                                IconButton(
-                                  onPressed: () {},
-                                  icon: const Icon(
-                                    Icons.favorite_border,
+                                Positioned(
+                                  right: 0,
+                                  top: 0,
+                                  child: IconButton(
+                                    onPressed: () {},
+                                    icon: const Icon(
+                                      Icons.favorite_border,
+                                    ),
                                   ),
                                 )
                               ],
