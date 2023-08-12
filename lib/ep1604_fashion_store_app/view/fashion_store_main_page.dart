@@ -108,8 +108,11 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                     const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 0.85),
                 itemBuilder: (context, index) {
                   return Container(
-                    decoration: BoxDecoration(color: Colors.white, border: Border.all(width: 0.5),),
-                    child: const Column(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(width: 0.5),
+                    ),
+                    child:  Column(
                       children: [
                         Expanded(child: Container()),
                       ],
