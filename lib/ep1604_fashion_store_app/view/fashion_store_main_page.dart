@@ -104,21 +104,14 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
             ),
             Expanded(
               child: GridView.builder(
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  childAspectRatio: 0.85
-                ),
+                gridDelegate:
+                    const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, childAspectRatio: 0.85),
                 itemBuilder: (context, index) {
                   return Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(
-                        width: 0.5
-                      )
-                    ),
+                    decoration: BoxDecoration(color: Colors.white, border: Border.all(width: 0.5),),
                     child: const Column(
                       children: [
-
+                        Expanded(child: Container()),
                       ],
                     ),
                   );
