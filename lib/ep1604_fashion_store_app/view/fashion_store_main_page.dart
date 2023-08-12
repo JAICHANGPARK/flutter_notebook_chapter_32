@@ -117,22 +117,32 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                       children: [
                         Expanded(
                           child: Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                                 // border: Border.all(
                                 //   // width: 0.5
                                 // )
                                 ),
+                            child: Stack(
+                              children: [
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(
+                                    Icons.favorite_border,
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         Container(
                           width: double.infinity,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             border: Border(
                               top: BorderSide(),
                             ),
                           ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                          child: const Padding(
+                            padding: EdgeInsets.all(8.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
