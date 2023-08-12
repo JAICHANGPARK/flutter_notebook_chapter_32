@@ -51,11 +51,11 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                   ),
                   child: Center(
                     child: Badge(
+                      label: Text("99"),
                       child: IconButton(
                         icon: Icon(Icons.notifications_active_outlined),
                         onPressed: () {},
                       ),
-                      label: Text("99"),
                     ),
                   ),
                 ),
@@ -89,21 +89,27 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                         selectedIndex = index;
                       });
                     },
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.black,
+                    ),
                     child: Text(
                       "NEW",
                       style: TextStyle(
-                        decoration: selectedIndex == index ? TextDecoration.underline : TextDecoration.none,
-                        height: 1.2
-                      ),
-                    ),
-                    style: TextButton.styleFrom(
-                      foregroundColor: Colors.black,
+                          decoration: selectedIndex == index ? TextDecoration.underline : TextDecoration.none,
+                          height: 1.2),
                     ),
                   );
                 },
               ),
             ),
-            Expanded(child: Placeholder()),
+            Expanded(
+              child: GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                ),
+                itemBuilder: (context, index) {},
+              ),
+            ),
             Container(
               height: 54,
               decoration: BoxDecoration(
