@@ -112,9 +112,14 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                       color: Colors.white,
                       border: Border.all(width: 0.5),
                     ),
-                    child:  Column(
+                    child: Column(
                       children: [
                         Expanded(child: Container()),
+                        Column(
+                          children: [
+                            Text("CONTRAST PICK"),
+                          ],
+                        )
                       ],
                     ),
                   );
