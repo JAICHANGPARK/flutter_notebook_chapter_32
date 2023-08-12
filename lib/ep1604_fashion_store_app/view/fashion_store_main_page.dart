@@ -113,12 +113,18 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                       border: Border.all(width: 0.5),
                     ),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(child: Container()),
-                        Column(
-                          children: [
-                            Text("CONTRAST PICK"),
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("CONTRAST PICK"),
+                              Text("\$ 245"),
+                            ],
+                          ),
                         )
                       ],
                     ),
