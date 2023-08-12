@@ -106,8 +106,23 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
+                  childAspectRatio: 0.85
                 ),
-                itemBuilder: (context, index) {},
+                itemBuilder: (context, index) {
+                  return Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(
+                        width: 0.5
+                      )
+                    ),
+                    child: Column(
+                      children: [
+                        
+                      ],
+                    ),
+                  );
+                },
               ),
             ),
             Container(
