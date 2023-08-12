@@ -24,7 +24,7 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                   ),
                   child: IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.menu,
                     ),
                   ),
@@ -34,8 +34,8 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                     decoration: BoxDecoration(
                       border: Border.all(),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 16),
-                    child: Center(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: const Center(
                       child: TextField(
                         decoration: InputDecoration(
                           icon: Icon(Icons.search),
@@ -51,9 +51,9 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                   ),
                   child: Center(
                     child: Badge(
-                      label: Text("99"),
+                      label: const Text("99"),
                       child: IconButton(
-                        icon: Icon(Icons.notifications_active_outlined),
+                        icon: const Icon(Icons.notifications_active_outlined),
                         onPressed: () {},
                       ),
                     ),
@@ -63,7 +63,7 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
             ),
             Container(
               height: 38,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.black,
               ),
             ),
@@ -104,7 +104,7 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
             ),
             Expanded(
               child: GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   childAspectRatio: 0.85
                 ),
@@ -116,9 +116,9 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                         width: 0.5
                       )
                     ),
-                    child: Column(
+                    child: const Column(
                       children: [
-                        
+
                       ],
                     ),
                   );
@@ -127,11 +127,11 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
             ),
             Container(
               height: 54,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.black,
               ),
-              padding: EdgeInsets.symmetric(horizontal: 8),
-              child: Row(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: const Row(
                 children: [
                   Icon(
                     Icons.shopping_bag_outlined,
