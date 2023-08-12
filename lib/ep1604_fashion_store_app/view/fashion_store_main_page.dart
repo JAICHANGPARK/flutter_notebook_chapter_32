@@ -110,6 +110,7 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                   return Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
+                      border: Border.all(width:0.5),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
