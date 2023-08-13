@@ -11,10 +11,16 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
 
-        ],
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
