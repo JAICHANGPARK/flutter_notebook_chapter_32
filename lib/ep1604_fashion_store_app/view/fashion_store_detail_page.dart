@@ -35,7 +35,9 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                     height: 50,
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: const Center(
-                     child: Text("Detail"),
+                     child: Text("Detail",style: TextStyle(
+                       fontSize: 18
+                     ),),
                     ),
                   ),
                 ),
@@ -45,7 +47,7 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                   ),
                   child: Center(
                     child: IconButton(
-                      icon: const Icon(Icons.notifications_active_outlined),
+                      icon: const Icon(Icons.share),
                       onPressed: () {},
                     ),
                   ),
