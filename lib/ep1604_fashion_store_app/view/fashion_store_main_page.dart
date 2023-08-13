@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_32/ep1604_fashion_store_app/view/fashion_store_detail_page.dart';
 
 class FashionStoreMainPage extends StatefulWidget {
   const FashionStoreMainPage({super.key});
@@ -112,7 +113,11 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                   ),
                   itemBuilder: (context, index) {
                     return GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                          return FashionStoreDetailPage();
+                        }));
+                      },
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.white,
