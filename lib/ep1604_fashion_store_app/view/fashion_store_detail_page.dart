@@ -60,22 +60,27 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                 child: Column(
                   children: [
                     Container(
-                      height: 460,
+                      height: 440,
                       decoration: BoxDecoration(
                         border: Border.all(width: 0.5),
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.all(12),
+                      padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
                         border: Border.all(width: 0.5),
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("SODA CAN HOODIE"),
+                              Text(
+                                "SODA CAN HOODIE",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               Text("\$ 1,245"),
                             ],
                           ),
@@ -89,22 +94,55 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                       decoration: BoxDecoration(
                         border: Border.all(width: 0.5),
                       ),
-                      padding: EdgeInsets.all(12),
+                      padding: const EdgeInsets.all(12),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("COLOR(BLACK)"),
-                          SizedBox(
+                          const Text(
+                            "COLOR(BLACK)",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(
                             height: 16,
                           ),
                           Row(
                             children: [
                               Container(
+                                margin: EdgeInsets.only(right: 8),
                                 height: 64,
                                 width: 52,
                                 decoration: BoxDecoration(
                                   color: Colors.blue,
                                   border: Border.all(),
+                                ),
+                              ),
+                              Container(
+                                height: 64,
+                                width: 52,
+                                margin: EdgeInsets.only(right: 8),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+
+                                ),
+                              ),
+                              Container(
+                                height: 64,
+                                width: 52,
+                                margin: EdgeInsets.only(right: 8),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+
+                                ),
+                              ),
+                              Container(
+                                height: 64,
+                                width: 52,
+                                margin: EdgeInsets.only(right: 8),
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+
                                 ),
                               )
                             ],
@@ -118,10 +156,10 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
             ),
             Container(
               height: 48,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.black,
               ),
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
