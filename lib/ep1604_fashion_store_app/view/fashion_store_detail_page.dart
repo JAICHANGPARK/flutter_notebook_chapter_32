@@ -35,9 +35,10 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                     height: 50,
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: const Center(
-                     child: Text("Detail",style: TextStyle(
-                       fontSize: 18
-                     ),),
+                      child: Text(
+                        "Detail",
+                        style: TextStyle(fontSize: 18),
+                      ),
                     ),
                   ),
                 ),
@@ -54,6 +55,18 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                 ),
               ],
             ),
+            Expanded(child: Placeholder()),
+            Container(
+              height: 48,
+              decoration: BoxDecoration(
+                color: Colors.black,
+              ),
+              child: Row(
+                children: [
+                  Icon(Icons.shopping_bag_outlined),
+                ],
+              ),
+            )
           ],
         ),
       ),
