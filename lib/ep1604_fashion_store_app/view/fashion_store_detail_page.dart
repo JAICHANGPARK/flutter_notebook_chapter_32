@@ -63,7 +63,14 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
               ),
               child: Row(
                 children: [
-                  Icon(Icons.shopping_bag_outlined),
+                  Icon(
+                    Icons.shopping_bag_outlined,
+                    color: Colors.white,
+                  ),
+                  Text(
+                    "ADD TO YOUR BAG",
+                    style: TextStyle(color: Colors.white),
+                  )
                 ],
               ),
             )
