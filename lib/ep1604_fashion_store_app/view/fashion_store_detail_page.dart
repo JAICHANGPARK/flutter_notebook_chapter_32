@@ -55,17 +55,52 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                 ),
               ],
             ),
-            Expanded(child: Placeholder()),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(
+                      height: 460,
+                      decoration: BoxDecoration(
+                        border: Border.all(),
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.all(8),
+                      child: Row(
+
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("SODA CAN HOODIE"),
+                              Text("\$ 1,245"),
+                            ],
+                          ),
+                          Spacer(),
+                          Icon(Icons.star),
+                          Text("4.9"),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
             Container(
               height: 48,
               decoration: BoxDecoration(
                 color: Colors.black,
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
                     Icons.shopping_bag_outlined,
                     color: Colors.white,
+                  ),
+                  SizedBox(
+                    width: 8,
                   ),
                   Text(
                     "ADD TO YOUR BAG",
