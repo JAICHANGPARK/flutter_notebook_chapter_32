@@ -32,14 +32,10 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                     decoration: BoxDecoration(
                       border: Border.all(),
                     ),
+                    height: 50,
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: const Center(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          icon: Icon(Icons.search),
-                          hintText: "What's the lowdown, pal?",
-                        ),
-                      ),
+                     child: Text("Detail"),
                     ),
                   ),
                 ),
@@ -48,12 +44,9 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                     border: Border.all(),
                   ),
                   child: Center(
-                    child: Badge(
-                      label: const Text("99"),
-                      child: IconButton(
-                        icon: const Icon(Icons.notifications_active_outlined),
-                        onPressed: () {},
-                      ),
+                    child: IconButton(
+                      icon: const Icon(Icons.notifications_active_outlined),
+                      onPressed: () {},
                     ),
                   ),
                 ),
