@@ -124,7 +124,6 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                                 margin: EdgeInsets.only(right: 8),
                                 decoration: BoxDecoration(
                                   color: Colors.blue,
-
                                 ),
                               ),
                               Container(
@@ -133,7 +132,6 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                                 margin: EdgeInsets.only(right: 8),
                                 decoration: BoxDecoration(
                                   color: Colors.blue,
-
                                 ),
                               ),
                               Container(
@@ -142,7 +140,28 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                                 margin: EdgeInsets.only(right: 8),
                                 decoration: BoxDecoration(
                                   color: Colors.blue,
-
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text(
+                                "SIZE (INTERNATIONAL)",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "SIZE GUIDELINES",
+                                style: TextStyle(
+                                  decoration: TextDecoration.underline,
                                 ),
                               )
                             ],
