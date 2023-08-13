@@ -148,9 +148,11 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                       ),
                     ),
                     Container(
+                      padding: EdgeInsets.all(12),
                       child: Column(
                         children: [
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
                                 "SIZE (INTERNATIONAL)",
