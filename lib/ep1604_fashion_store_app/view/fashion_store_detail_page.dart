@@ -89,12 +89,23 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                       decoration: BoxDecoration(
                         border: Border.all(width: 0.5),
                       ),
+                      padding: EdgeInsets.all(8),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("COLOR(BLACK)"),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Row(
                             children: [
-
+                              Container(
+                                height: 64,
+                                width: 52,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                              )
                             ],
                           )
                         ],
@@ -126,7 +137,6 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                 ],
               ),
             ),
-
           ],
         ),
       ),
