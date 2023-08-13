@@ -62,13 +62,15 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                     Container(
                       height: 460,
                       decoration: BoxDecoration(
-                        border: Border.all(),
+                        border: Border.all(width: 0.5),
                       ),
                     ),
                     Container(
                       padding: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        border: Border.all(width: 0.5),
+                      ),
                       child: Row(
-
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,6 +82,21 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                           Spacer(),
                           Icon(Icons.star),
                           Text("4.9"),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(width: 0.5),
+                      ),
+                      child: Column(
+                        children: [
+                          Text("COLOR(BLACK)"),
+                          Row(
+                            children: [
+
+                            ],
+                          )
                         ],
                       ),
                     )
@@ -108,7 +125,8 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                   )
                 ],
               ),
-            )
+            ),
+
           ],
         ),
       ),
