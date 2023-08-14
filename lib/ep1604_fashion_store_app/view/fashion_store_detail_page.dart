@@ -64,6 +64,18 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                       decoration: BoxDecoration(
                         border: Border.all(width: 0.5),
                       ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            right: 8,
+                            top: 8,
+                            child: IconButton(
+                              icon: Icon(Icons.favorite_border),
+                              onPressed: () {},
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     Container(
                       padding: const EdgeInsets.all(12),
