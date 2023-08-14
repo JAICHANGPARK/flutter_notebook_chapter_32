@@ -91,17 +91,28 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                 ],
               ),
             ),
-            Expanded(child: ListView(
+            Expanded(
+                child: ListView(
               children: [
                 Container(
                   height: 160,
                   decoration: BoxDecoration(
                     color: Colors.blue,
-
+                    border: Border.all(),
                   ),
                   child: Row(
                     children: [
-                      
+                      Container(
+                        width: 140,
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [],
+                        ),
+                      )
                     ],
                   ),
                 )
