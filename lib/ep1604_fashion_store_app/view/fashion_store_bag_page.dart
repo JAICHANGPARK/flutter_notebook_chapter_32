@@ -60,6 +60,7 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
               decoration: BoxDecoration(
                 border: Border.all(),
               ),
+              padding: EdgeInsets.symmetric(horizontal: 8),
               child: Row(
                 children: [
                   Container(
@@ -70,11 +71,36 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                       border: Border.all(),
                     ),
                   ),
-                  Text("SHIP TO DREAM"),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  Text(
+                    "SHIP TO DREAM",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   Spacer(),
-                  Text("SEOUL, KOREA"),
+                  Text(
+                    "SEOUL, KOREA",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   Icon(Icons.keyboard_arrow_down),
                 ],
+              ),
+            ),
+            Expanded(child: Placeholder()),
+            Container(
+              decoration: BoxDecoration(
+                border: Border.all(),
+              ),
+            ),
+            Container(
+              height: 64,
+              decoration: BoxDecoration(
+                color: Colors.black,
               ),
             )
           ],
