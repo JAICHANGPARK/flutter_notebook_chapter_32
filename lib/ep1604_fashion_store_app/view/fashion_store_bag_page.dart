@@ -97,31 +97,38 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                 Container(
                   height: 160,
                   decoration: BoxDecoration(
-                    color: Colors.blue,
-                    border: Border.all(),
-                  ),
+                      color: Colors.blue,
+                      border: Border(
+                        top: BorderSide(),
+                      )),
                   child: Row(
                     children: [
                       Container(
                         width: 140,
                         decoration: BoxDecoration(
-                          border: Border.all(),
-                        ),
+                            border: Border(
+                          right: BorderSide(),
+                              left: BorderSide(),
+                        )),
                         child: Column(
                           children: [
                             Expanded(child: Container()),
-                            Divider(
+                            const Divider(
                               color: Colors.black,
                               height: 0,
                             ),
-                            IntrinsicHeight(
+                            const IntrinsicHeight(
                               child: Row(
                                 children: [
                                   Icon(Icons.remove),
                                   VerticalDivider(
                                     color: Colors.black,
                                   ),
-                                  Expanded(child: Center(child: Text("1"))),
+                                  Expanded(
+                                    child: Center(
+                                      child: Text("1"),
+                                    ),
+                                  ),
                                   VerticalDivider(
                                     color: Colors.black,
                                   ),
@@ -139,24 +146,24 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
-                              Text(
+                              const Text(
                                 "BIG BASIC SHORT",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Text(
+                              const Text(
                                 "SHIPPED NOVEMBER 12TH",
                               ),
-                              Text("SIZE M"),
+                              const Text("SIZE M"),
                               Row(
                                 children: [
-                                  Text("\$ 999"),
-                                  SizedBox(
+                                  const Text("\$ 999"),
+                                  const SizedBox(
                                     width: 8,
                                   ),
-                                  Text("\$ 666"),
-                                  SizedBox(
+                                  const Text("\$ 666"),
+                                  const SizedBox(
                                     width: 8,
                                   ),
                                   Container(
@@ -164,8 +171,8 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                                       border: Border.all(),
                                       borderRadius: BorderRadius.circular(16),
                                     ),
-                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
-                                    child: Text("- 23%"),
+                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                                    child: const Text("- 23%"),
                                   )
                                 ],
                               )
