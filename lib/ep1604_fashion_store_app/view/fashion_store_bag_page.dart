@@ -101,7 +101,20 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                 child: Row(
                   children: [
                     Expanded(child: Row()),
-                    VerticalDivider(),
+                    VerticalDivider(
+                      color: Colors.black,
+                      width: 0,
+                      thickness: 1.5,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "APPLY",
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
