@@ -114,9 +114,13 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                   itemBuilder: (context, index) {
                     return GestureDetector(
                       onTap: () {
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context){
-                          return FashionStoreDetailPage();
-                        }));
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return FashionStoreDetailPage();
+                            },
+                          ),
+                        );
                       },
                       child: Container(
                         decoration: BoxDecoration(
