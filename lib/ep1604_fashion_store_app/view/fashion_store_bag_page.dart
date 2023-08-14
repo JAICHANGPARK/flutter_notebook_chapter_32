@@ -137,6 +137,13 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
               decoration: BoxDecoration(
                 color: Colors.black,
               ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("CHECK OUT NOW"),
+                  Text("TOTAL \$999999"),
+                ],
+              ),
             )
           ],
         ),
