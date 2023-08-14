@@ -126,6 +126,9 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                         child: const Text(
                           "APPLY",
                         ),
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.black
+                        ),
                       ),
                     )
                   ],
