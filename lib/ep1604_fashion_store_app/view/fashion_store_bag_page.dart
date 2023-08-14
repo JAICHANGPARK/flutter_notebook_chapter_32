@@ -21,7 +21,7 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                     border: Border.all(),
                   ),
                   child: IconButton(
-                    onPressed: () {},
+                    onPressed: () => Navigator.of(context).pop(),
                     icon: const Icon(
                       Icons.clear,
                     ),
