@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_32/ep1604_fashion_store_app/view/fashion_store_bag_page.dart';
 
 class FashionStoreDetailPage extends StatefulWidget {
   const FashionStoreDetailPage({super.key});
@@ -207,7 +208,7 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                     ),
                     Container(
                       padding: const EdgeInsets.all(12),
-                      child:  Column(
+                      child: Column(
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -228,12 +229,48 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                           ),
                           Row(
                             children: [
-                              TextButton(onPressed: () {}, child: Text("XS")),
-                              TextButton(onPressed: () {}, child: Text("S")),
-                              TextButton(onPressed: () {}, child: Text("M")),
-                              TextButton(onPressed: () {}, child: Text("L")),
-                              TextButton(onPressed: () {}, child: Text("XL")),
-                              TextButton(onPressed: () {}, child: Text("XXL")),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("XS"),
+                                style: TextButton.styleFrom(
+                                  foregroundColor: Colors.grey,
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("S"),
+                                style: TextButton.styleFrom(
+                                  foregroundColor: Colors.black,
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("M"),
+                                style: TextButton.styleFrom(
+                                  foregroundColor: Colors.black,
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("L"),
+                                style: TextButton.styleFrom(
+                                  foregroundColor: Colors.grey,
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("XL"),
+                                style: TextButton.styleFrom(
+                                  foregroundColor: Colors.black,
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("XXL"),
+                                style: TextButton.styleFrom(
+                                  foregroundColor: Colors.black,
+                                ),
+                              ),
                             ],
                           )
                         ],
@@ -243,26 +280,35 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                 ),
               ),
             ),
-            Container(
-              height: 48,
-              decoration: const BoxDecoration(
-                color: Colors.black,
-              ),
-              child: const Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.shopping_bag_outlined,
-                    color: Colors.white,
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => FashionStoreBagPage(),
                   ),
-                  SizedBox(
-                    width: 8,
-                  ),
-                  Text(
-                    "ADD TO YOUR BAG",
-                    style: TextStyle(color: Colors.white),
-                  )
-                ],
+                );
+              },
+              child: Container(
+                height: 48,
+                decoration: const BoxDecoration(
+                  color: Colors.black,
+                ),
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.shopping_bag_outlined,
+                      color: Colors.white,
+                    ),
+                    SizedBox(
+                      width: 8,
+                    ),
+                    Text(
+                      "ADD TO YOUR BAG",
+                      style: TextStyle(color: Colors.white),
+                    )
+                  ],
+                ),
               ),
             ),
           ],
