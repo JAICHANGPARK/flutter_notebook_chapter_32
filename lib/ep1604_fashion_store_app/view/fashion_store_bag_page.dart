@@ -101,11 +101,17 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Row(
-                        children: [
-                          Icon(Icons.check),
-                          Text("POKEHLEBER"),
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Row(
+                          children: [
+                            Icon(Icons.check),
+                            SizedBox(
+                              width: 8,
+                            ),
+                            Text("POKEHLEBER"),
+                          ],
+                        ),
                       ),
                     ),
                     VerticalDivider(
