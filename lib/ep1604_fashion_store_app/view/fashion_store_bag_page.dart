@@ -121,16 +121,25 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Text("SHIPPED NOVEMBER 12TH", ),
+                              Text(
+                                "SHIPPED NOVEMBER 12TH",
+                              ),
                               Text("SIZE M"),
                               Row(
                                 children: [
                                   Text("\$ 999"),
-                                  SizedBox(width: 8,),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
                                   Text("\$ 666"),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
                                   Container(
-                                    decoration:
-                                        BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(16)),
+                                    decoration: BoxDecoration(
+                                      border: Border.all(),
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
                                     child: Text("- 23%"),
                                   )
                                 ],
