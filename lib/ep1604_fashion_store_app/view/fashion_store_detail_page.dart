@@ -70,7 +70,7 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                             right: 8,
                             top: 8,
                             child: IconButton(
-                              icon: Icon(Icons.favorite_border),
+                              icon: const Icon(Icons.favorite_border),
                               onPressed: () {},
                             ),
                           ),
@@ -79,48 +79,43 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                             left: 16,
                             right: 16,
                             child: Row(
-
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 4,
                                   backgroundColor: Colors.black,
                                 ),
-                                SizedBox(width: 6,),
-                                Container(
-                                  height: 8,
-                                  width: 8,
-                                  decoration: BoxDecoration(
-                                    border: Border.all(),
-                                    shape: BoxShape.circle
-                                  ),
+                                const SizedBox(
+                                  width: 6,
                                 ),
-                                SizedBox(width: 6,),
                                 Container(
                                   height: 8,
                                   width: 8,
-                                  decoration: BoxDecoration(
-                                      border: Border.all(),
-                                      shape: BoxShape.circle
-                                  ),
+                                  decoration: BoxDecoration(border: Border.all(), shape: BoxShape.circle),
                                 ),
-                                SizedBox(width: 6,),
-                                Container(
-                                  height: 8,
-                                  width: 8,
-                                  decoration: BoxDecoration(
-                                      border: Border.all(),
-                                      shape: BoxShape.circle
-                                  ),
+                                const SizedBox(
+                                  width: 6,
                                 ),
-                                SizedBox(width: 6,),
                                 Container(
                                   height: 8,
                                   width: 8,
-                                  decoration: BoxDecoration(
-                                      border: Border.all(),
-                                      shape: BoxShape.circle
-                                  ),
+                                  decoration: BoxDecoration(border: Border.all(), shape: BoxShape.circle),
+                                ),
+                                const SizedBox(
+                                  width: 6,
+                                ),
+                                Container(
+                                  height: 8,
+                                  width: 8,
+                                  decoration: BoxDecoration(border: Border.all(), shape: BoxShape.circle),
+                                ),
+                                const SizedBox(
+                                  width: 6,
+                                ),
+                                Container(
+                                  height: 8,
+                                  width: 8,
+                                  decoration: BoxDecoration(border: Border.all(), shape: BoxShape.circle),
                                 )
                               ],
                             ),
@@ -173,7 +168,7 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                           Row(
                             children: [
                               Container(
-                                margin: EdgeInsets.only(right: 8),
+                                margin: const EdgeInsets.only(right: 8),
                                 height: 64,
                                 width: 52,
                                 decoration: BoxDecoration(
@@ -184,24 +179,24 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                               Container(
                                 height: 64,
                                 width: 52,
-                                margin: EdgeInsets.only(right: 8),
-                                decoration: BoxDecoration(
+                                margin: const EdgeInsets.only(right: 8),
+                                decoration: const BoxDecoration(
                                   color: Colors.blue,
                                 ),
                               ),
                               Container(
                                 height: 64,
                                 width: 52,
-                                margin: EdgeInsets.only(right: 8),
-                                decoration: BoxDecoration(
+                                margin: const EdgeInsets.only(right: 8),
+                                decoration: const BoxDecoration(
                                   color: Colors.blue,
                                 ),
                               ),
                               Container(
                                 height: 64,
                                 width: 52,
-                                margin: EdgeInsets.only(right: 8),
-                                decoration: BoxDecoration(
+                                margin: const EdgeInsets.only(right: 8),
+                                decoration: const BoxDecoration(
                                   color: Colors.blue,
                                 ),
                               )
@@ -211,8 +206,8 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.all(12),
-                      child: Column(
+                      padding: const EdgeInsets.all(12),
+                      child:  Column(
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -229,6 +224,11 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                                   decoration: TextDecoration.underline,
                                 ),
                               )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              TextButton(onPressed: () {}, child: Text("XS")),
                             ],
                           )
                         ],
