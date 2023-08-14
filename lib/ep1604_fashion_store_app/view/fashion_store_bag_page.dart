@@ -107,6 +107,30 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                         decoration: BoxDecoration(
                           border: Border.all(),
                         ),
+                        child: Column(
+                          children: [
+                            Expanded(child: Container()),
+                            Divider(
+                              color: Colors.black,
+                              height: 0,
+                            ),
+                            IntrinsicHeight(
+                              child: Row(
+                                children: [
+                                  Icon(Icons.remove),
+                                  VerticalDivider(
+                                    color: Colors.black,
+                                  ),
+                                  Expanded(child: Center(child: Text("1"))),
+                                  VerticalDivider(
+                                    color: Colors.black,
+                                  ),
+                                  Icon(Icons.add)
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                       Expanded(
                         child: Padding(
