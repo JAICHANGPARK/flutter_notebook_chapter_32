@@ -22,7 +22,7 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                     border: Border.all(),
                   ),
                   child: IconButton(
-                    onPressed: () {},
+                    onPressed: () => Navigator.of(context).pop(),
                     icon: const Icon(
                       Icons.clear,
                     ),
