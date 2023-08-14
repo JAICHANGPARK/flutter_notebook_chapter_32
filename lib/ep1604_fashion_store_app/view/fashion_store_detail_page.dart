@@ -229,6 +229,11 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                           Row(
                             children: [
                               TextButton(onPressed: () {}, child: Text("XS")),
+                              TextButton(onPressed: () {}, child: Text("S")),
+                              TextButton(onPressed: () {}, child: Text("M")),
+                              TextButton(onPressed: () {}, child: Text("L")),
+                              TextButton(onPressed: () {}, child: Text("XL")),
+                              TextButton(onPressed: () {}, child: Text("XXL")),
                             ],
                           )
                         ],
