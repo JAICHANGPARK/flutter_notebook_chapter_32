@@ -117,7 +117,7 @@ class _FashionStoreMainPageState extends State<FashionStoreMainPage> {
                         Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) {
-                              return FashionStoreDetailPage();
+                              return const FashionStoreDetailPage();
                             },
                           ),
                         );
