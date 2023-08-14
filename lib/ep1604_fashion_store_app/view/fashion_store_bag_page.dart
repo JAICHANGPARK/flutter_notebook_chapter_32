@@ -100,7 +100,14 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
               child: IntrinsicHeight(
                 child: Row(
                   children: [
-                    Expanded(child: Row()),
+                    Expanded(
+                      child: Row(
+                        children: [
+                          Icon(Icons.check),
+                          Text("POKEHLEBER"),
+                        ],
+                      ),
+                    ),
                     VerticalDivider(
                       color: Colors.black,
                       width: 0,
