@@ -73,6 +73,25 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                               icon: Icon(Icons.favorite_border),
                               onPressed: () {},
                             ),
+                          ),
+                          Positioned(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                CircleAvatar(
+                                  radius: 4,
+                                  backgroundColor: Colors.black,
+                                ),
+                                Container(
+                                  height: 8,
+                                  width: 8,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(),
+                                    shape: BoxShape.circle
+                                  ),
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),
