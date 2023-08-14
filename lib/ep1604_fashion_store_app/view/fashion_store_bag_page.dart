@@ -109,25 +109,34 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                         ),
                       ),
                       Expanded(
-                        child: Column(
-                          children: [
-                            Text("BIG BASIC SHORT"),
-                            Text("SHIPPED NOVEMBER 12TH"),
-                            Text("SIZE M"),
-                            Row(
-                              children: [
-                                Text("\$ 999"),
-                                Text("\$ 666"),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    border: Border.all(),
-                                    borderRadius: BorderRadius.circular(16)
-                                  ),
-                                  child: Text("- 23%"),
-                                )
-                              ],
-                            )
-                          ],
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Text(
+                                "BIG BASIC SHORT",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text("SHIPPED NOVEMBER 12TH", ),
+                              Text("SIZE M"),
+                              Row(
+                                children: [
+                                  Text("\$ 999"),
+                                  SizedBox(width: 8,),
+                                  Text("\$ 666"),
+                                  Container(
+                                    decoration:
+                                        BoxDecoration(border: Border.all(), borderRadius: BorderRadius.circular(16)),
+                                    child: Text("- 23%"),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       )
                     ],
