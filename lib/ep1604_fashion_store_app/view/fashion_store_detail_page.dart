@@ -75,19 +75,42 @@ class _FashionStoreDetailPageState extends State<FashionStoreDetailPage> {
                             ),
                           ),
                           Positioned(
+                            bottom: 16,
+                            left: 16,
+                            right: 16,
                             child: Row(
+
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 CircleAvatar(
                                   radius: 4,
                                   backgroundColor: Colors.black,
                                 ),
+                                SizedBox(width: 6,),
                                 Container(
                                   height: 8,
                                   width: 8,
                                   decoration: BoxDecoration(
                                     border: Border.all(),
                                     shape: BoxShape.circle
+                                  ),
+                                ),
+                                SizedBox(width: 6,),
+                                Container(
+                                  height: 8,
+                                  width: 8,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(),
+                                      shape: BoxShape.circle
+                                  ),
+                                ),
+                                SizedBox(width: 6,),
+                                Container(
+                                  height: 8,
+                                  width: 8,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(),
+                                      shape: BoxShape.circle
                                   ),
                                 )
                               ],
