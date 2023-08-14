@@ -140,6 +140,7 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                                       border: Border.all(),
                                       borderRadius: BorderRadius.circular(16),
                                     ),
+                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                                     child: Text("- 23%"),
                                   )
                                 ],
