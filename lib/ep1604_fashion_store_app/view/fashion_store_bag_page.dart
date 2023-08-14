@@ -91,7 +91,22 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                 ],
               ),
             ),
-            const Expanded(child: Placeholder()),
+            Expanded(child: ListView(
+              children: [
+                Container(
+                  height: 160,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+
+                  ),
+                  child: Row(
+                    children: [
+                      
+                    ],
+                  ),
+                )
+              ],
+            )),
             Container(
               height: 52,
               decoration: BoxDecoration(
@@ -109,7 +124,12 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                             SizedBox(
                               width: 8,
                             ),
-                            Text("POKEHLEBER"),
+                            Text(
+                              "POKEHLEBER",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -126,9 +146,7 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                         child: const Text(
                           "APPLY",
                         ),
-                        style: TextButton.styleFrom(
-                          foregroundColor: Colors.black
-                        ),
+                        style: TextButton.styleFrom(foregroundColor: Colors.black),
                       ),
                     )
                   ],
