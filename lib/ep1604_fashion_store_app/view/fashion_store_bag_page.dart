@@ -60,7 +60,7 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
               decoration: BoxDecoration(
                 border: Border.all(),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 8),
               child: Row(
                 children: [
                   Container(
@@ -71,27 +71,27 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                       border: Border.all(),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
-                  Text(
+                  const Text(
                     "SHIP TO DREAM",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Spacer(),
-                  Text(
+                  const Spacer(),
+                  const Text(
                     "SEOUL, KOREA",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Icon(Icons.keyboard_arrow_down),
+                  const Icon(Icons.keyboard_arrow_down),
                 ],
               ),
             ),
-            Expanded(child: Placeholder()),
+            const Expanded(child: Placeholder()),
             Container(
               height: 52,
               decoration: BoxDecoration(
@@ -100,9 +100,9 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
               child: IntrinsicHeight(
                 child: Row(
                   children: [
-                    Expanded(
+                    const Expanded(
                       child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        padding: EdgeInsets.symmetric(horizontal: 16),
                         child: Row(
                           children: [
                             Icon(Icons.check),
@@ -114,7 +114,7 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                         ),
                       ),
                     ),
-                    VerticalDivider(
+                    const VerticalDivider(
                       color: Colors.black,
                       width: 0,
                       thickness: 1.5,
@@ -123,7 +123,7 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                       padding: const EdgeInsets.symmetric(horizontal: 8),
                       child: TextButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           "APPLY",
                         ),
                       ),
@@ -134,11 +134,11 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
             ),
             Container(
               height: 52,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.black,
               ),
-              padding: EdgeInsets.symmetric(horizontal: 12),
-              child: Row(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
