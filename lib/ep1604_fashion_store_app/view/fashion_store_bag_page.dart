@@ -110,7 +110,14 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                       ),
                       Expanded(
                         child: Column(
-                          children: [],
+                          children: [
+                            Text("BIG BASIC SHORT"),
+                            Text("SHIPPED NOVEMBER 12TH"),
+                            Text("SIZE M"),
+                            Row(
+                              children: [Text("\$ 999"), Text("\$ 666")],
+                            )
+                          ],
                         ),
                       )
                     ],
@@ -157,7 +164,9 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
                         child: const Text(
                           "APPLY",
                         ),
-                        style: TextButton.styleFrom(foregroundColor: Colors.black),
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.black,
+                        ),
                       ),
                     )
                   ],
