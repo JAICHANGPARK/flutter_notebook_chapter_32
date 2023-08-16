@@ -89,12 +89,16 @@ class _PetHomePageState extends State<PetHomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.pets), label: "My pets"),
-        BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Clinic"),
-        BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Products"),
-        BottomNavigationBarItem(icon: Icon(Icons.account_circle_rounded), label: "Profile"),
-      ]),
+      bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.brown,
+        unselectedItemColor: Colors.grey,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.pets), label: "My pets"),
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Clinic"),
+          BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Products"),
+          BottomNavigationBarItem(icon: Icon(Icons.account_circle_rounded), label: "Profile"),
+        ],
+      ),
     );
   }
 }
