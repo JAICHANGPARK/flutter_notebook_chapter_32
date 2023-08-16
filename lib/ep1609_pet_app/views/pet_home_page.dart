@@ -13,13 +13,14 @@ class _PetHomePageState extends State<PetHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("My Pets"),
-        actions: [IconButton(onPressed: (){}, icon: Icon(Icons.add_circle_outlined)],
+        actions: [
+          IconButton(onPressed: () {}, icon: Icon(Icons.add_circle_outlined)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.notifications)),
+        ],
       ),
       body: SafeArea(
         child: Column(
-          children: [
-            
-          ],
+          children: [],
         ),
       ),
     );
