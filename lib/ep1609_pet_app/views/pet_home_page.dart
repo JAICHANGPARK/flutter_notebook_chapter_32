@@ -20,7 +20,47 @@ class _PetHomePageState extends State<PetHomePage> {
       ),
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Container(
+              height: 160,
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+            ),
+            Row(
+              children: [
+                Text("Veterinary"),
+                TextButton(onPressed: () {}, child: Text("View all")),
+              ],
+            ),
+            Row(
+              children: [
+                CircleAvatar(),
+                SizedBox(
+                  width: 16,
+                ),
+                Expanded(
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Column(
+                            children: [
+                              Text("Dreamwalker"),
+                              Text("Mon-Web, 9 am - 6 pm"),
+                            ],
+                          ),
+                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
+                          
+                        ],
+                      ),
+                      Divider(),
+                    ],
+                  ),
+                )
+              ],
+            )
+          ],
         ),
       ),
     );
