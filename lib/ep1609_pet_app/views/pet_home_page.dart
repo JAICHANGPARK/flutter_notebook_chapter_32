@@ -22,7 +22,7 @@ class _PetHomePageState extends State<PetHomePage> {
         child: Column(
           children: [
             Container(
-              height: 160,
+              height: 280,
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
