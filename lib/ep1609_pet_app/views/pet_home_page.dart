@@ -92,6 +92,7 @@ class _PetHomePageState extends State<PetHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.brown,
         unselectedItemColor: Colors.grey,
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.pets), label: "My pets"),
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Clinic"),
