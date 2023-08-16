@@ -50,8 +50,7 @@ class _PetHomePageState extends State<PetHomePage> {
                               Text("Mon-Web, 9 am - 6 pm"),
                             ],
                           ),
-                          IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward_ios))
-                          
+                          IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward_ios))
                         ],
                       ),
                       Divider(),
@@ -59,10 +58,43 @@ class _PetHomePageState extends State<PetHomePage> {
                   ),
                 )
               ],
-            )
+            ),
+            Row(
+              children: [
+                CircleAvatar(),
+                SizedBox(
+                  width: 16,
+                ),
+                Expanded(
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Column(
+                            children: [
+                              Text("Dreamwalker"),
+                              Text("Mon-Web, 9 am - 6 pm"),
+                            ],
+                          ),
+                          IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward_ios))
+                        ],
+                      ),
+                      Divider(),
+                    ],
+                  ),
+                )
+              ],
+            ),
+            Text("Training"),
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.pets), label: "My pets"),
+        BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Clinic"),
+        BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Products"),
+        BottomNavigationBarItem(icon: Icon(Icons.account_circle_rounded), label: "Profile"),
+      ]),
     );
   }
 }
