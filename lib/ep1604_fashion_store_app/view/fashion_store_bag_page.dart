@@ -283,7 +283,7 @@ class _FashionStoreBagPageState extends State<FashionStoreBagPage> {
               child: IntrinsicHeight(
                 child: Row(
                   children: [
-                    const Expanded(
+                    const Expanded(gi
                       child: Padding(
                         padding: EdgeInsets.symmetric(horizontal: 16),
                         child: Row(
