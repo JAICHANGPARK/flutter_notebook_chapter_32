@@ -32,6 +32,7 @@ class _PetHomePageState extends State<PetHomePage> {
       ),
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               height: 240,
@@ -142,33 +143,51 @@ class _PetHomePageState extends State<PetHomePage> {
                 ],
               ),
             ),
-            Row(
-              children: [
-                CircleAvatar(),
-                SizedBox(
-                  width: 16,
-                ),
-                Expanded(
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          Column(
-                            children: [
-                              Text("Dreamwalker"),
-                              Text("Mon-Web, 9 am - 6 pm"),
-                            ],
-                          ),
-                          IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward_ios))
-                        ],
-                      ),
-                      Divider(),
-                    ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 28,
                   ),
-                )
-              ],
+                  SizedBox(
+                    width: 16,
+                  ),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Dreamwalker",
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text("Mon-Web, 9 am - 6 pm"),
+                              ],
+                            ),
+                            Spacer(),
+                            IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward_ios))
+                          ],
+                        ),
+                        Divider(),
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
-            Text("Training"),
+            Text("Training", style: TextStyle(
+              fontSize: 20
+            ),),
           ],
         ),
       ),
