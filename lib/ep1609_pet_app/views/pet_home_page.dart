@@ -37,6 +37,18 @@ class _PetHomePageState extends State<PetHomePage> {
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
+              child: Row(
+                children: [
+                  Expanded(
+                      child: Column(
+                    children: [
+                      Expanded(child: CircleAvatar()),
+                      SizedBox(height: 16,),
+                      Text("Barbos"),
+                    ],
+                  )),
+                ],
+              ),
             ),
             Row(
               children: [
