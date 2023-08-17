@@ -16,7 +16,12 @@ class _PetHomePageState extends State<PetHomePage> {
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         elevation: 0,
-        title: const Text("My Pets"),
+        title: const Text(
+          "My Pets",
+          style: TextStyle(
+            fontSize: 24,
+          ),
+        ),
         actions: [
           IconButton(
             onPressed: () {},
@@ -185,9 +190,20 @@ class _PetHomePageState extends State<PetHomePage> {
                 ],
               ),
             ),
-            const Text("Training", style: TextStyle(
-              fontSize: 20
-            ),),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: const Text(
+                "Training",
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
+            Container(
+              height: 120,
+              margin: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+            )
           ],
         ),
       ),
