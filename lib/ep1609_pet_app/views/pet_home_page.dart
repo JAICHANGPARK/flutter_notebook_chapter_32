@@ -44,9 +44,12 @@ class _PetHomePageState extends State<PetHomePage> {
                     child: Column(
                       children: [
                         Expanded(
-                            child: CircleAvatar(
-                          radius: 84,
-                        )),
+                          child: CircleAvatar(
+                            radius: 84,
+                            backgroundImage: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2018/03/18/18/06/australian-shepherd-3237735_1280.jpg"),
+                          ),
+                        ),
                         SizedBox(
                           height: 8,
                         ),
@@ -58,9 +61,13 @@ class _PetHomePageState extends State<PetHomePage> {
                     child: Column(
                       children: [
                         Expanded(
-                            child: CircleAvatar(
-                          radius: 84,
-                        )),
+                          child: CircleAvatar(
+                            radius: 84,
+                            backgroundImage: NetworkImage(
+                              "https://cdn.pixabay.com/photo/2020/12/01/10/04/dog-5793625_1280.jpg",
+                            ),
+                          ),
+                        ),
                         SizedBox(
                           height: 8,
                         ),
@@ -71,7 +78,9 @@ class _PetHomePageState extends State<PetHomePage> {
                 ],
               ),
             ),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
@@ -79,40 +88,42 @@ class _PetHomePageState extends State<PetHomePage> {
                 children: [
                   Text(
                     "Veterinary",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                   TextButton(onPressed: () {}, child: Text("View all")),
                 ],
               ),
             ),
-            Row(
-              children: [
-                CircleAvatar(),
-                SizedBox(
-                  width: 16,
-                ),
-                Expanded(
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          Column(
-                            children: [
-                              Text("Dreamwalker"),
-                              Text("Mon-Web, 9 am - 6 pm"),
-                            ],
-                          ),
-                          IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward_ios))
-                        ],
-                      ),
-                      Divider(),
-                    ],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 24,
                   ),
-                )
-              ],
+                  SizedBox(
+                    width: 16,
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Column(
+                              children: [
+                                Text("Dreamwalker"),
+                                Text("Mon-Web, 9 am - 6 pm"),
+                              ],
+                            ),
+                            IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward_ios))
+                          ],
+                        ),
+                        Divider(),
+                      ],
+                    ),
+                  )
+                ],
+              ),
             ),
             Row(
               children: [
