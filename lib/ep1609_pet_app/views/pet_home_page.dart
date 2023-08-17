@@ -17,8 +17,16 @@ class _PetHomePageState extends State<PetHomePage> {
         elevation: 0,
         title: Text("My Pets"),
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.add_circle_outlined)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.notifications)),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.add_circle_outlined),
+            color: Colors.grey,
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.notifications),
+            color: Colors.grey,
+          ),
         ],
       ),
       body: SafeArea(
