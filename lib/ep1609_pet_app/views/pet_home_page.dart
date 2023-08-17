@@ -190,6 +190,9 @@ class _PetHomePageState extends State<PetHomePage> {
                 ],
               ),
             ),
+            SizedBox(
+              height: 16,
+            ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: const Text(
@@ -198,10 +201,11 @@ class _PetHomePageState extends State<PetHomePage> {
               ),
             ),
             Container(
-              height: 120,
-              margin: EdgeInsets.all(16),
+              height: 140,
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               decoration: BoxDecoration(
                 color: Colors.blue,
+                borderRadius: BorderRadius.circular(8)
               ),
             )
           ],
