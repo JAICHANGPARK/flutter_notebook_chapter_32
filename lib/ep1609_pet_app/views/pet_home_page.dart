@@ -88,9 +88,15 @@ class _PetHomePageState extends State<PetHomePage> {
                 children: [
                   Text(
                     "Veterinary",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                   ),
-                  TextButton(onPressed: () {}, child: Text("View all")),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text("View all"),
+                  ),
                 ],
               ),
             ),
