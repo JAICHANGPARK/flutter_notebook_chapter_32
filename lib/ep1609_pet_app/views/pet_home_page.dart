@@ -23,14 +23,15 @@ class _PetHomePageState extends State<PetHomePage> {
           ),
         ),
         actions: [
+
           IconButton(
             onPressed: () {},
-            icon: const Icon(Icons.add_circle_outlined),
+            icon: const Icon(Icons.notifications),
             color: Colors.grey,
           ),
           IconButton(
             onPressed: () {},
-            icon: const Icon(Icons.notifications),
+            icon: const Icon(Icons.add_circle_outlined),
             color: Colors.grey,
           ),
         ],
