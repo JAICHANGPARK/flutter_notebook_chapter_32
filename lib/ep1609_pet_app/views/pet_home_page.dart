@@ -106,15 +106,26 @@ class _PetHomePageState extends State<PetHomePage> {
                   ),
                   Expanded(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
                             Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Dreamwalker"),
+                                Text(
+                                  "Dreamwalker",
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
                                 Text("Mon-Web, 9 am - 6 pm"),
                               ],
                             ),
+                            Spacer(),
                             IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward_ios))
                           ],
                         ),
