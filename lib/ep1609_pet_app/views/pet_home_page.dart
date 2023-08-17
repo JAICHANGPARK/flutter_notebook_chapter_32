@@ -71,6 +71,7 @@ class _PetHomePageState extends State<PetHomePage> {
                 ],
               ),
             ),
+            SizedBox(height: 16,),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
