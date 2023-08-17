@@ -201,11 +201,22 @@ class _PetHomePageState extends State<PetHomePage> {
               ),
             ),
             Container(
-              height: 140,
+              height: 130,
               margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              decoration: BoxDecoration(
-                color: Colors.blue,
-                borderRadius: BorderRadius.circular(8)
+              decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(16)),
+              child: Row(
+                children: [
+                  Expanded(child: Container()),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text("Cleaning dog's teeth", style: TextStyle(
+                          fontSize: 18
+                        ),)
+                      ],
+                    ),
+                  )
+                ],
               ),
             )
           ],
