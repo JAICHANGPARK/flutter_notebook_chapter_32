@@ -36,14 +36,15 @@ class _PetHomePageState extends State<PetHomePage> {
             Container(
               height: 240,
               decoration: BoxDecoration(
-                // color: Colors.blue,
-              ),
+                  // color: Colors.blue,
+                  ),
               child: Row(
                 children: [
                   Expanded(
                     child: Column(
                       children: [
-                        Expanded(child: CircleAvatar(
+                        Expanded(
+                            child: CircleAvatar(
                           radius: 84,
                         )),
                         SizedBox(
@@ -56,25 +57,34 @@ class _PetHomePageState extends State<PetHomePage> {
                   Expanded(
                     child: Column(
                       children: [
-                        Expanded(child: CircleAvatar(
+                        Expanded(
+                            child: CircleAvatar(
                           radius: 84,
                         )),
                         SizedBox(
                           height: 8,
                         ),
-                        Text("Barbos"),
+                        Text("Luna"),
                       ],
                     ),
                   ),
-
                 ],
               ),
             ),
-            Row(
-              children: [
-                Text("Veterinary"),
-                TextButton(onPressed: () {}, child: Text("View all")),
-              ],
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Text(
+                    "Veterinary",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20
+                    ),
+                  ),
+                  TextButton(onPressed: () {}, child: Text("View all")),
+                ],
+              ),
             ),
             Row(
               children: [
