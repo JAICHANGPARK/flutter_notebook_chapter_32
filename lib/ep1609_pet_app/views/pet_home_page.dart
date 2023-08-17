@@ -33,7 +33,7 @@ class _PetHomePageState extends State<PetHomePage> {
         child: Column(
           children: [
             Container(
-              height: 280,
+              height: 240,
               decoration: BoxDecoration(
                 // color: Colors.blue,
               ),
@@ -42,9 +42,11 @@ class _PetHomePageState extends State<PetHomePage> {
                   Expanded(
                     child: Column(
                       children: [
-                        Expanded(child: CircleAvatar()),
+                        Expanded(child: CircleAvatar(
+                          radius: 84,
+                        )),
                         SizedBox(
-                          height: 16,
+                          height: 8,
                         ),
                         Text("Barbos"),
                       ],
