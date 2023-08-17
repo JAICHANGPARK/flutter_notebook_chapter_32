@@ -16,16 +16,16 @@ class _PetHomePageState extends State<PetHomePage> {
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         elevation: 0,
-        title: Text("My Pets"),
+        title: const Text("My Pets"),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.add_circle_outlined),
+            icon: const Icon(Icons.add_circle_outlined),
             color: Colors.grey,
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.notifications),
+            icon: const Icon(Icons.notifications),
             color: Colors.grey,
           ),
         ],
@@ -36,10 +36,10 @@ class _PetHomePageState extends State<PetHomePage> {
           children: [
             Container(
               height: 240,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   // color: Colors.blue,
                   ),
-              child: Row(
+              child: const Row(
                 children: [
                   Expanded(
                     child: Column(
@@ -79,7 +79,7 @@ class _PetHomePageState extends State<PetHomePage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Padding(
@@ -87,7 +87,7 @@ class _PetHomePageState extends State<PetHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "Veterinary",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -96,7 +96,7 @@ class _PetHomePageState extends State<PetHomePage> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text("View all"),
+                    child: const Text("View all"),
                   ),
                 ],
               ),
@@ -105,10 +105,10 @@ class _PetHomePageState extends State<PetHomePage> {
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               child: Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 28,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
                   Expanded(
@@ -117,7 +117,7 @@ class _PetHomePageState extends State<PetHomePage> {
                       children: [
                         Row(
                           children: [
-                            Column(
+                            const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
@@ -132,11 +132,11 @@ class _PetHomePageState extends State<PetHomePage> {
                                 Text("Mon-Web, 9 am - 6 pm"),
                               ],
                             ),
-                            Spacer(),
-                            IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward_ios))
+                            const Spacer(),
+                            IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_forward_ios))
                           ],
                         ),
-                        Divider(),
+                        const Divider(),
                       ],
                     ),
                   )
@@ -147,10 +147,10 @@ class _PetHomePageState extends State<PetHomePage> {
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
               child: Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 28,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
                   Expanded(
@@ -159,7 +159,7 @@ class _PetHomePageState extends State<PetHomePage> {
                       children: [
                         Row(
                           children: [
-                            Column(
+                            const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
@@ -174,18 +174,18 @@ class _PetHomePageState extends State<PetHomePage> {
                                 Text("Mon-Web, 9 am - 6 pm"),
                               ],
                             ),
-                            Spacer(),
-                            IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward_ios))
+                            const Spacer(),
+                            IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_forward_ios))
                           ],
                         ),
-                        Divider(),
+                        const Divider(),
                       ],
                     ),
                   )
                 ],
               ),
             ),
-            Text("Training", style: TextStyle(
+            const Text("Training", style: TextStyle(
               fontSize: 20
             ),),
           ],
@@ -196,10 +196,10 @@ class _PetHomePageState extends State<PetHomePage> {
         unselectedItemColor: Colors.grey,
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.pets), label: "My pets"),
-          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Clinic"),
-          BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Products"),
-          BottomNavigationBarItem(icon: Icon(Icons.account_circle_rounded), label: "Profile"),
+          const BottomNavigationBarItem(icon: Icon(Icons.pets), label: "My pets"),
+          const BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Clinic"),
+          const BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Products"),
+          const BottomNavigationBarItem(icon: Icon(Icons.account_circle_rounded), label: "Profile"),
         ],
       ),
     );
