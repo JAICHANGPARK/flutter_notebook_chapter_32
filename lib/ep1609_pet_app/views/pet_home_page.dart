@@ -12,6 +12,9 @@ class _PetHomePageState extends State<PetHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        elevation: 0,
         title: Text("My Pets"),
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.add_circle_outlined)),
