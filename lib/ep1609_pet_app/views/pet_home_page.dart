@@ -82,7 +82,7 @@ class _PetHomePageState extends State<PetHomePage> {
               height: 16,
             ),
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -95,11 +95,11 @@ class _PetHomePageState extends State<PetHomePage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               child: Row(
                 children: [
                   CircleAvatar(
-                    radius: 24,
+                    radius: 28,
                   ),
                   SizedBox(
                     width: 16,
