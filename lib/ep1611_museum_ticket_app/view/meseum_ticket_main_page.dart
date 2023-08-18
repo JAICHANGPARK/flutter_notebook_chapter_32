@@ -26,11 +26,11 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.museum),
-            label: "Tickets",
+            label: "Places",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.notifications),
-            label: "Tickets",
+            label: "Notifications",
           ),
           BottomNavigationBarItem(
             icon: Icon(
