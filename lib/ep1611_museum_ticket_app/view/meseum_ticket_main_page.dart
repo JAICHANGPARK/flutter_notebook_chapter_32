@@ -13,22 +13,45 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
     // TODO: implement initState
     super.initState();
 
-    Future.delayed(Duration.zero).then((value) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text("Buy pass for \$3334"),
-          behavior: SnackBarBehavior.floating,
-          duration: Duration(days: 365),
-        ),
-      );
-    });
+    Future.delayed(Duration.zero).then(
+      (value) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text("Buy pass for \$3334"),
+            behavior: SnackBarBehavior.floating,
+            duration: Duration(days: 365),
+          ),
+        );
+      },
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    decoration: InputDecoration(),
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.orange,
+                  ),
+                  child: IconButton(
+                    icon: Icon(Icons.star_border),
+                    onPressed: () {},
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
