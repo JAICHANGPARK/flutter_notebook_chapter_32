@@ -9,6 +9,21 @@ class MuseumTicketMainPage extends StatefulWidget {
 
 class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    Future.delayed(Duration.zero).then((value) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text("Buy pass for \$3334"),
+          
+        ),
+      );
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
