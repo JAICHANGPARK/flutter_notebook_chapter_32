@@ -16,7 +16,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
     Future.delayed(Duration.zero).then(
       (value) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
+          const SnackBar(
             content: Center(child: Text("Buy pass for \$3334")),
             behavior: SnackBarBehavior.floating,
             duration: Duration(days: 365),
@@ -35,24 +35,24 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
           children: [
             Row(
               children: [
-                Expanded(
+                const Expanded(
                   child: TextField(
                     decoration: InputDecoration(),
                   ),
                 ),
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.orange,
                   ),
                   child: IconButton(
-                    icon: Icon(Icons.star_border),
+                    icon: const Icon(Icons.star_border),
                     onPressed: () {},
                   ),
                 )
               ],
             ),
             Container(
-              child: Column(
+              child: const Column(
                 children: [
                   Row(
                     children: [
@@ -78,7 +78,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 ],
               ),
             ),
-            Text(
+            const Text(
               "Editors choice",
               style: TextStyle(
                 fontSize: 18,
@@ -86,7 +86,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
             ),
             Container(
               height: 420,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.blue,
               ),
             )
@@ -98,23 +98,23 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
         selectedItemColor: Colors.orange,
         unselectedItemColor: Colors.grey,
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.confirmation_number),
             label: "Tickets",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.calendar_month),
             label: "Tickets",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.museum),
             label: "Places",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.notifications),
             label: "Notifications",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.person,
             ),
