@@ -17,7 +17,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
       (value) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Buy pass for \$3334"),
+            content: Center(child: Text("Buy pass for \$3334")),
             behavior: SnackBarBehavior.floating,
             duration: Duration(days: 365),
           ),
