@@ -31,6 +31,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               children: [
@@ -75,6 +76,12 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                   ),
                   Divider(),
                 ],
+              ),
+            ),
+            Text(
+              "Editors choice",
+              style: TextStyle(
+                fontSize: 18,
               ),
             )
           ],
