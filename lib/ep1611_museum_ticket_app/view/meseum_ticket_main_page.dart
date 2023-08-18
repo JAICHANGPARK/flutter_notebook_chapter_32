@@ -83,6 +83,12 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               style: TextStyle(
                 fontSize: 18,
               ),
+            ),
+            Container(
+              height: 420,
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
             )
           ],
         ),
