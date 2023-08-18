@@ -15,6 +15,9 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
         children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Colors.orange,
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.confirmation_number),
