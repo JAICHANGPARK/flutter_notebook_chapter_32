@@ -49,6 +49,33 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                   ),
                 )
               ],
+            ),
+            Container(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("Location"),
+                      Text("Rome, Italy"),
+                    ],
+                  ),
+                  Divider(),
+                  Row(
+                    children: [
+                      Text("Price tag"),
+                      Text("\$332/mounth"),
+                    ],
+                  ),
+                  Divider(),
+                  Row(
+                    children: [
+                      Text("Museums"),
+                      Text("165"),
+                    ],
+                  ),
+                  Divider(),
+                ],
+              ),
             )
           ],
         ),
