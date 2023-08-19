@@ -150,7 +150,10 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                             ),
                           ),
                           SizedBox(height: 16,),
-                          Text("Galleria Borghese"),
+                          Text("Galleria Borghese",style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16
+                          ),),
                           SizedBox(height: 8,),
                           Text("Piazzale del Museo Bonghese, 5,"),
                           SizedBox(height: 8,),
@@ -161,7 +164,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                               Row(
                                 children: List.generate(
                                   5,
-                                  (index) => Icon(Icons.star),
+                                  (index) => Icon(Icons.star, size: 18,),
                                 ),
                               )
                             ],
