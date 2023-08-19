@@ -41,8 +41,9 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 children: [
                   Expanded(
                     child: Container(
-                      decoration: const BoxDecoration(
+                      decoration:  BoxDecoration(
                         color: Colors.grey,
+                        borderRadius: BorderRadius.circular(8)
                       ),
                       padding: const EdgeInsets.only(left: 16),
                       child: const TextField(
