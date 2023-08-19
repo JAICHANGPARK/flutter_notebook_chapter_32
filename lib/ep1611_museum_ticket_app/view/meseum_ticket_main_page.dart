@@ -39,9 +39,18 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 children: [
                    Expanded(
                     child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
 
+                      ),
+                      padding: EdgeInsets.only(left: 16),
                       child: TextField(
-                        decoration: InputDecoration(),
+                        decoration: InputDecoration(
+                          icon: Icon(Icons.search),
+                          hintText: "Search..",
+                          suffixIcon: Icon(Icons.tune)
+                        ),
+
                       ),
                     ),
                   ),
