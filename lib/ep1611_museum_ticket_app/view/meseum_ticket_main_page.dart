@@ -125,7 +125,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               ),
             ),
             Container(
-              height: 340,
+              height: 320,
               margin: EdgeInsets.only(
                 left: 12,
               ),
