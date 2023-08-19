@@ -37,11 +37,15 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               padding: const EdgeInsets.all(12.0),
               child: Row(
                 children: [
-                  const Expanded(
-                    child: TextField(
-                      decoration: InputDecoration(),
+                   Expanded(
+                    child: Container(
+
+                      child: TextField(
+                        decoration: InputDecoration(),
+                      ),
                     ),
                   ),
+                  SizedBox(width: 16,),
                   Container(
                     decoration: const BoxDecoration(
                       color: Colors.orange,
@@ -57,16 +61,19 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
             Container(
               margin: EdgeInsets.all(12),
               padding: EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                color: Colors.grey
-              ),
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(8), color: Colors.grey),
               child: const Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Location"),
-                      Text("Rome, Italy"),
+                      Text(
+                        "Rome, Italy",
+                        style: TextStyle(
+                          fontSize: 24,
+                        ),
+                      ),
                     ],
                   ),
                   Divider(),
