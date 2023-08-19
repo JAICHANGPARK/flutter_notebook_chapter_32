@@ -57,7 +57,10 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                     width: 16,
                   ),
                   Container(
-                    decoration: BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(8)),
+                    decoration: BoxDecoration(
+                      color: Colors.orange,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                     child: IconButton(
                       icon: const Icon(Icons.star_border),
                       onPressed: () {},
@@ -70,7 +73,10 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
             Container(
               margin: EdgeInsets.all(12),
               padding: EdgeInsets.all(12),
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(8), color: Colors.grey),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: Colors.grey,
+              ),
               child: const Column(
                 children: [
                   Row(
@@ -149,22 +155,33 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                               ),
                             ),
                           ),
-                          SizedBox(height: 16,),
-                          Text("Galleria Borghese",style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16
-                          ),),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Text(
+                            "Galleria Borghese",
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                          ),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Text("Piazzale del Museo Bonghese, 5,"),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Row(
                             children: [
                               Text("5.0"),
-                              SizedBox(width: 12,),
+                              SizedBox(
+                                width: 12,
+                              ),
                               Row(
                                 children: List.generate(
                                   5,
-                                  (index) => Icon(Icons.star, size: 18,),
+                                  (index) => Icon(
+                                    Icons.star,
+                                    size: 18,
+                                  ),
                                 ),
                               )
                             ],
@@ -192,24 +209,24 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.orange,
         unselectedItemColor: Colors.grey,
-        items: [
-          const BottomNavigationBarItem(
+        items: const [
+          BottomNavigationBarItem(
             icon: Icon(Icons.confirmation_number),
             label: "Tickets",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.calendar_month),
             label: "Tickets",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.museum),
             label: "Places",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.notifications),
             label: "Notifications",
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(
               Icons.person,
             ),
