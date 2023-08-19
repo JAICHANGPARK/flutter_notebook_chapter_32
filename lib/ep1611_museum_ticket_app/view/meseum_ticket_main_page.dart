@@ -33,25 +33,34 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                const Expanded(
-                  child: TextField(
-                    decoration: InputDecoration(),
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Row(
+                children: [
+                  const Expanded(
+                    child: TextField(
+                      decoration: InputDecoration(),
+                    ),
                   ),
-                ),
-                Container(
-                  decoration: const BoxDecoration(
-                    color: Colors.orange,
-                  ),
-                  child: IconButton(
-                    icon: const Icon(Icons.star_border),
-                    onPressed: () {},
-                  ),
-                )
-              ],
+                  Container(
+                    decoration: const BoxDecoration(
+                      color: Colors.orange,
+                    ),
+                    child: IconButton(
+                      icon: const Icon(Icons.star_border),
+                      onPressed: () {},
+                    ),
+                  )
+                ],
+              ),
             ),
             Container(
+              margin: EdgeInsets.all(12),
+              padding: EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: Colors.grey
+              ),
               child: const Column(
                 children: [
                   Row(
