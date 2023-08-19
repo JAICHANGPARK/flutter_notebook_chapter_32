@@ -8,6 +8,7 @@ class MuseumTicketMainPage extends StatefulWidget {
 }
 
 class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
+  int menuIndex = 0;
   @override
   void initState() {
     // TODO: implement initState
