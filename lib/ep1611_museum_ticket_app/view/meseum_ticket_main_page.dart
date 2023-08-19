@@ -41,11 +41,11 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 children: [
                   Expanded(
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.grey,
                       ),
-                      padding: EdgeInsets.only(left: 16),
-                      child: TextField(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: const TextField(
                         decoration: InputDecoration(
                           icon: Icon(Icons.search),
                           hintText: "Search..",
@@ -55,7 +55,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
                   Container(
@@ -73,8 +73,8 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(12),
-              padding: EdgeInsets.all(12),
+              margin: const EdgeInsets.all(12),
+              padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 color: Colors.grey,
@@ -123,9 +123,9 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: const Text(
+            const Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Text(
                 "Editors choice",
                 style: TextStyle(
                   fontSize: 24,
@@ -134,7 +134,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
             ),
             Container(
               height: 320,
-              margin: EdgeInsets.only(
+              margin: const EdgeInsets.only(
                 left: 12,
               ),
               decoration: const BoxDecoration(
@@ -144,8 +144,8 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 itemBuilder: (context, index) {
                   return Container(
                       width: 300,
-                      margin: EdgeInsets.only(right: 16),
-                      decoration: BoxDecoration(color: Colors.orange),
+                      margin: const EdgeInsets.only(right: 16),
+                      decoration: const BoxDecoration(color: Colors.orange),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -157,33 +157,33 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
-                          Text(
+                          const Text(
                             "Galleria Borghese",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
-                          Text("Piazzale del Museo Bonghese, 5,"),
-                          SizedBox(
+                          const Text("Piazzale del Museo Bonghese, 5,"),
+                          const SizedBox(
                             height: 8,
                           ),
                           Row(
                             children: [
-                              Text("5.0"),
-                              SizedBox(
+                              const Text("5.0"),
+                              const SizedBox(
                                 width: 12,
                               ),
                               Row(
                                 children: List.generate(
                                   5,
-                                  (index) => Icon(
+                                  (index) => const Icon(
                                     Icons.star,
                                     size: 18,
                                   ),
@@ -198,9 +198,9 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 scrollDirection: Axis.horizontal,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: const Text(
+            const Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Text(
                 "Rating",
                 style: TextStyle(
                   fontSize: 24,
