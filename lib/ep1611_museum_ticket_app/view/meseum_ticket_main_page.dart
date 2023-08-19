@@ -135,12 +135,18 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
-                    width: 300,
+                      width: 300,
                       margin: EdgeInsets.only(right: 16),
-                      decoration: BoxDecoration(
-                        color: Colors.orange
-                      ),
-                      child: Column());
+                      decoration: BoxDecoration(color: Colors.orange),
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(16)),
+                            ),
+                          ),
+                        ],
+                      ));
                 },
                 itemCount: 10,
                 scrollDirection: Axis.horizontal,
