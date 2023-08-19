@@ -86,37 +86,64 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                     ],
                   ),
                   Divider(),
-                  Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Price tag"),
-                      Text("\$332/mounth",  style: TextStyle(
-                        fontSize: 24,
-                      ),),
+                      Text(
+                        "\$332/mounth",
+                        style: TextStyle(
+                          fontSize: 24,
+                        ),
+                      ),
                     ],
                   ),
                   Divider(),
-                  Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Museums"),
-                      Text("165",  style: TextStyle(
-                        fontSize: 24,
-                      ),),
+                      Text(
+                        "165",
+                        style: TextStyle(
+                          fontSize: 24,
+                        ),
+                      ),
                     ],
                   ),
                   Divider(),
                 ],
               ),
             ),
-            const Text(
-              "Editors choice",
-              style: TextStyle(
-                fontSize: 18,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: const Text(
+                "Editors choice",
+                style: TextStyle(
+                  fontSize: 24,
+                ),
               ),
             ),
             Container(
-              height: 420,
+              height: 340,
+              margin: EdgeInsets.only(
+                left: 16,
+              ),
               decoration: const BoxDecoration(
                 color: Colors.blue,
+              ),
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: 240,
+                      
+                      decoration: BoxDecoration(
+                        color: Colors.orange
+                      ),
+                      child: Column());
+                },
+                itemCount: 10,
+                scrollDirection: Axis.horizontal,
               ),
             )
           ],
