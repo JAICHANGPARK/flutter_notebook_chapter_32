@@ -175,7 +175,16 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 itemCount: 10,
                 scrollDirection: Axis.horizontal,
               ),
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: const Text(
+                "Rating",
+                style: TextStyle(
+                  fontSize: 24,
+                ),
+              ),
+            ),
           ],
         ),
       ),
