@@ -47,12 +47,14 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                   ),
                   SizedBox(width: 16,),
                   Container(
-                    decoration: const BoxDecoration(
+                    decoration:  BoxDecoration(
                       color: Colors.orange,
+                      borderRadius: BorderRadius.circular(8)
                     ),
                     child: IconButton(
                       icon: const Icon(Icons.star_border),
                       onPressed: () {},
+                      color: Colors.white,
                     ),
                   )
                 ],
