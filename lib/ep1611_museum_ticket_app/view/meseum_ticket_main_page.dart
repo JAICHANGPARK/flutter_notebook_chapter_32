@@ -37,29 +37,27 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               padding: const EdgeInsets.all(12.0),
               child: Row(
                 children: [
-                   Expanded(
+                  Expanded(
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.grey,
-
                       ),
                       padding: EdgeInsets.only(left: 16),
                       child: TextField(
                         decoration: InputDecoration(
                           icon: Icon(Icons.search),
                           hintText: "Search..",
-                          suffixIcon: Icon(Icons.tune)
+                          suffixIcon: Icon(Icons.tune),
+                          border: InputBorder.none,
                         ),
-
                       ),
                     ),
                   ),
-                  SizedBox(width: 16,),
+                  SizedBox(
+                    width: 16,
+                  ),
                   Container(
-                    decoration:  BoxDecoration(
-                      color: Colors.orange,
-                      borderRadius: BorderRadius.circular(8)
-                    ),
+                    decoration: BoxDecoration(color: Colors.orange, borderRadius: BorderRadius.circular(8)),
                     child: IconButton(
                       icon: const Icon(Icons.star_border),
                       onPressed: () {},
