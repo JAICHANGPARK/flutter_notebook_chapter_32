@@ -210,6 +210,12 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.orange,
         unselectedItemColor: Colors.grey,
+        currentIndex: menuIndex,
+        onTap: (idx){
+          setState(() {
+            menuIndex = idx;
+          });
+        },
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.confirmation_number),
