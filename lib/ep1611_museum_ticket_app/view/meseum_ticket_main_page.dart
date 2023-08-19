@@ -9,6 +9,7 @@ class MuseumTicketMainPage extends StatefulWidget {
 
 class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
   int menuIndex = 0;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -161,7 +162,10 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                           ),
                           Text(
                             "Galleria Borghese",
-                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
                           ),
                           SizedBox(
                             height: 8,
@@ -211,7 +215,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
         selectedItemColor: Colors.orange,
         unselectedItemColor: Colors.grey,
         currentIndex: menuIndex,
-        onTap: (idx){
+        onTap: (idx) {
           setState(() {
             menuIndex = idx;
           });
