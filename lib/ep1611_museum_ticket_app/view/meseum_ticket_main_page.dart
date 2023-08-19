@@ -127,7 +127,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
             Container(
               height: 340,
               margin: EdgeInsets.only(
-                left: 16,
+                left: 12,
               ),
               decoration: const BoxDecoration(
                 color: Colors.blue,
@@ -135,8 +135,8 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
-                    width: 240,
-                      
+                    width: 300,
+                      margin: EdgeInsets.only(right: 16),
                       decoration: BoxDecoration(
                         color: Colors.orange
                       ),
