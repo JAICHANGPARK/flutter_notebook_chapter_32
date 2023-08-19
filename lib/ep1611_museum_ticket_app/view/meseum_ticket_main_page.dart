@@ -142,9 +142,25 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                         children: [
                           Expanded(
                             child: Container(
-                              decoration: BoxDecoration(color: Colors.pink, borderRadius: BorderRadius.circular(16)),
+                              decoration: BoxDecoration(
+                                color: Colors.pink,
+                                borderRadius: BorderRadius.circular(16),
+                              ),
                             ),
                           ),
+                          Text("Galleria Borghese"),
+                          Text("Piazzale del Museo Bonghese, 5,"),
+                          Row(
+                            children: [
+                              Text("5.0"),
+                              Row(
+                                children: List.generate(
+                                  5,
+                                  (index) => Icon(Icons.star),
+                                ),
+                              )
+                            ],
+                          )
                         ],
                       ));
                 },
