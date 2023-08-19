@@ -139,6 +139,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                       margin: EdgeInsets.only(right: 16),
                       decoration: BoxDecoration(color: Colors.orange),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
                             child: Container(
@@ -148,11 +149,15 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                               ),
                             ),
                           ),
+                          SizedBox(height: 16,),
                           Text("Galleria Borghese"),
+                          SizedBox(height: 8,),
                           Text("Piazzale del Museo Bonghese, 5,"),
+                          SizedBox(height: 8,),
                           Row(
                             children: [
                               Text("5.0"),
+                              SizedBox(width: 12,),
                               Row(
                                 children: List.generate(
                                   5,
