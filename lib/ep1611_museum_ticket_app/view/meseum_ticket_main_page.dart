@@ -86,17 +86,21 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                     ],
                   ),
                   Divider(),
-                  Row(
+                  Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Price tag"),
-                      Text("\$332/mounth"),
+                      Text("\$332/mounth",  style: TextStyle(
+                        fontSize: 24,
+                      ),),
                     ],
                   ),
                   Divider(),
-                  Row(
+                  Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Museums"),
-                      Text("165"),
+                      Text("165",  style: TextStyle(
+                        fontSize: 24,
+                      ),),
                     ],
                   ),
                   Divider(),
