@@ -57,7 +57,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                     ),
                   ),
                   const SizedBox(
-                    width: 16,
+                    width: 12,
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -74,7 +74,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               ),
             ),
             Container(
-              margin: const EdgeInsets.all(12),
+              margin: const EdgeInsets.fromLTRB(12, 0,12,12),
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
@@ -125,7 +125,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               ),
             ),
             const Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: EdgeInsets.fromLTRB(16.0, 8, 16.0,16.0),
               child: Text(
                 "Editors choice",
                 style: TextStyle(
