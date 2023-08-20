@@ -258,6 +258,12 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 ),
               ),
             ),
+            Container(
+              height: 72,
+              decoration: BoxDecoration(
+                color: const Color.fromRGBO(39, 48, 63, 1),
+              ),
+            )
           ],
         ),
       ),
