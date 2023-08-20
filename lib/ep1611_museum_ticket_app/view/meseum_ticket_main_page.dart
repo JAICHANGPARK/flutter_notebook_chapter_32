@@ -54,6 +54,9 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                             color: Colors.white,
                           ),
                           hintText: "Search..",
+                          hintStyle: TextStyle(
+                            color: Colors.white,
+                          ),
                           suffixIcon: Icon(
                             Icons.tune,
                             color: Colors.white,
