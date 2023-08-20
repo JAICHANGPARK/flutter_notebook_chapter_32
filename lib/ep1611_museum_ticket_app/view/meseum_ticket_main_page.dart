@@ -31,7 +31,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(28, 35, 47, 1),
+      backgroundColor: const Color.fromRGBO(28, 35, 47, 1),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,7 +43,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color.fromRGBO(39, 48, 63, 1),
+                        color: const Color.fromRGBO(39, 48, 63, 1),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       padding: const EdgeInsets.only(left: 16),
@@ -71,7 +71,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                      color: Color.fromRGBO(186, 128, 63, 1),
+                      color: const Color.fromRGBO(186, 128, 63, 1),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: IconButton(
