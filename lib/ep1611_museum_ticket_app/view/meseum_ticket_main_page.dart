@@ -88,18 +88,24 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
-                color: Colors.grey,
+                color: Color.fromRGBO(39, 48, 63, 1),
               ),
-              child: const Column(
+              child: Column(
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Location"),
+                      Text(
+                        "Location",
+                        style: TextStyle(
+                          color: Colors.white.withOpacity(0.2),
+                        ),
+                      ),
                       Text(
                         "Rome, Italy",
                         style: TextStyle(
-                          fontSize: 24,
+                          fontSize: 28,
+                          color: Colors.white,
                         ),
                       ),
                     ],
@@ -108,11 +114,17 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Price tag"),
+                      Text(
+                        "Price tag",
+                        style: TextStyle(
+                          color: Colors.white.withOpacity(0.2),
+                        ),
+                      ),
                       Text(
                         "\$332/mounth",
                         style: TextStyle(
-                          fontSize: 24,
+                          fontSize: 28,
+                          color: Colors.white,
                         ),
                       ),
                     ],
@@ -121,11 +133,17 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Museums"),
+                      Text(
+                        "Museums",
+                        style: TextStyle(
+                          color: Colors.white.withOpacity(0.2),
+                        ),
+                      ),
                       Text(
                         "165",
                         style: TextStyle(
-                          fontSize: 24,
+                          fontSize: 28,
+                          color: Colors.white,
                         ),
                       ),
                     ],
@@ -140,6 +158,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 "Editors choice",
                 style: TextStyle(
                   fontSize: 24,
+                  color: Color.fromRGBO(171, 173, 178, 1),
                 ),
               ),
             ),
