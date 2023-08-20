@@ -22,6 +22,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
             content: Center(child: Text("Buy pass for \$3334")),
             behavior: SnackBarBehavior.floating,
             duration: Duration(days: 365),
+            backgroundColor: const Color.fromRGBO(186, 128, 63, 1),
           ),
         );
       },
@@ -242,9 +243,11 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.orange,
+        // selectedItemColor: Colors.orange,
+        selectedItemColor: const Color.fromRGBO(186, 128, 63, 1),
         unselectedItemColor: Colors.grey,
         currentIndex: menuIndex,
+        backgroundColor: const Color.fromRGBO(28, 35, 47, 1),
         onTap: (idx) {
           setState(() {
             menuIndex = idx;
