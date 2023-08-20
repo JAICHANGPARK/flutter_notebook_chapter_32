@@ -31,6 +31,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(28, 35, 47, 1),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
