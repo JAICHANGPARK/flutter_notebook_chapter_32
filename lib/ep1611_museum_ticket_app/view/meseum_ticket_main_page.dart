@@ -169,7 +169,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 left: 12,
               ),
               decoration: const BoxDecoration(
-                color: Colors.blue,
+                // color: Colors.blue,
               ),
               child: ListView.builder(
                 itemBuilder: (context, index) {
@@ -185,7 +185,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                               decoration: BoxDecoration(
                                 color: Colors.pink,
                                 borderRadius: BorderRadius.circular(16),
-                                image: DecorationImage(
+                                image: const DecorationImage(
                                   image: NetworkImage(
                                     "https://cdn.pixabay.com/photo/2017/04/05/01/10/natural-history-museum-2203648_1280.jpg",
                                   ),
