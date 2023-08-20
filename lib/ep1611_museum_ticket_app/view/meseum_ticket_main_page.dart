@@ -248,8 +248,9 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 scrollDirection: Axis.horizontal,
               ),
             ),
+            SizedBox(height: 16,),
             const Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: EdgeInsets.all(12.0),
               child: Text(
                 "Rating",
                 style: TextStyle(
