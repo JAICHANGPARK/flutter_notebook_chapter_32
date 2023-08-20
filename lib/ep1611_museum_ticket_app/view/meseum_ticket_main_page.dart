@@ -219,7 +219,13 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                           ),
                           Row(
                             children: [
-                              const Text("5.0"),
+                              const Text(
+                                "5.0",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               const SizedBox(
                                 width: 12,
                               ),
@@ -229,6 +235,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                                   (index) => const Icon(
                                     Icons.star,
                                     size: 18,
+                                    color: Colors.orange,
                                   ),
                                 ),
                               )
