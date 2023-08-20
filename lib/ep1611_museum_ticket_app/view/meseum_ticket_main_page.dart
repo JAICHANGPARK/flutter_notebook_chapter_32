@@ -164,7 +164,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               ),
             ),
             Container(
-              height: 320,
+              height: 300,
               margin: const EdgeInsets.only(
                 left: 12,
               ),
@@ -174,9 +174,9 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
-                      width: 300,
+                      width: 280,
                       margin: const EdgeInsets.only(right: 16),
-                      decoration: const BoxDecoration(color: Colors.orange),
+                      // decoration: const BoxDecoration(color: Colors.orange),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -185,6 +185,12 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                               decoration: BoxDecoration(
                                 color: Colors.pink,
                                 borderRadius: BorderRadius.circular(16),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2017/04/05/01/10/natural-history-museum-2203648_1280.jpg",
+                                  ),
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                           ),
