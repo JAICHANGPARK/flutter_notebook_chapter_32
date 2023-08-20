@@ -263,6 +263,22 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               decoration: BoxDecoration(
                 color: const Color.fromRGBO(39, 48, 63, 1),
               ),
+              padding: EdgeInsets.all(16),
+              margin: EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                children: [
+                  Column(
+                    children: [
+                      Text("Vatican Museum"),
+                      Text("Plazzale del Museo "),
+                    ],
+                  ),
+                  Spacer(),
+                  Icon(
+                    Icons.arrow_forward_ios,
+                  )
+                ],
+              ),
             )
           ],
         ),
