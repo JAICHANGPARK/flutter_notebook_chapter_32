@@ -268,6 +268,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               child: Row(
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Vatican Museum"),
                       Text("Plazzale del Museo "),
