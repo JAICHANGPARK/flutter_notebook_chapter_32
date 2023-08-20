@@ -260,9 +260,8 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
             ),
             Container(
               height: 72,
-              decoration: BoxDecoration(
-                color: const Color.fromRGBO(39, 48, 63, 1),
-              ),
+              decoration:
+                  BoxDecoration(color: const Color.fromRGBO(39, 48, 63, 1), borderRadius: BorderRadius.circular(8)),
               padding: EdgeInsets.all(16),
               margin: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
@@ -270,7 +269,16 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Vatican Museum"),
+                      Text(
+                        "Vatican Museum",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
                       Text("Plazzale del Museo "),
                     ],
                   ),
