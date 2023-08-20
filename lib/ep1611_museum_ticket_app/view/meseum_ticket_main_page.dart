@@ -169,8 +169,8 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 left: 12,
               ),
               decoration: const BoxDecoration(
-                // color: Colors.blue,
-              ),
+                  // color: Colors.blue,
+                  ),
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
@@ -202,12 +202,18 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
+                              color: Colors.white,
                             ),
                           ),
                           const SizedBox(
                             height: 8,
                           ),
-                          const Text("Piazzale del Museo Bonghese, 5,"),
+                          Text(
+                            "Piazzale del Museo Bonghese, 5,",
+                            style: TextStyle(
+                              color: Colors.white.withOpacity(0.2),
+                            ),
+                          ),
                           const SizedBox(
                             height: 8,
                           ),
