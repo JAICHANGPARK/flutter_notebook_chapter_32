@@ -88,7 +88,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
-                color: Color.fromRGBO(39, 48, 63, 1),
+                color: const Color.fromRGBO(39, 48, 63, 1),
               ),
               child: Column(
                 children: [
@@ -101,7 +101,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                           color: Colors.white.withOpacity(0.2),
                         ),
                       ),
-                      Text(
+                      const Text(
                         "Rome, Italy",
                         style: TextStyle(
                           fontSize: 28,
@@ -110,7 +110,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                       ),
                     ],
                   ),
-                  Divider(),
+                  const Divider(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -120,7 +120,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                           color: Colors.white.withOpacity(0.2),
                         ),
                       ),
-                      Text(
+                      const Text(
                         "\$332/mounth",
                         style: TextStyle(
                           fontSize: 28,
@@ -129,7 +129,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                       ),
                     ],
                   ),
-                  Divider(),
+                  const Divider(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -139,7 +139,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                           color: Colors.white.withOpacity(0.2),
                         ),
                       ),
-                      Text(
+                      const Text(
                         "165",
                         style: TextStyle(
                           fontSize: 28,
@@ -148,7 +148,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                       ),
                     ],
                   ),
-                  Divider(),
+                  const Divider(),
                 ],
               ),
             ),
