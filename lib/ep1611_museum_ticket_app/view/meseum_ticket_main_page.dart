@@ -42,16 +42,22 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 children: [
                   Expanded(
                     child: Container(
-                      decoration:  BoxDecoration(
-                        color: Colors.grey,
-                        borderRadius: BorderRadius.circular(8)
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(39, 48, 63, 1),
+                        borderRadius: BorderRadius.circular(8),
                       ),
                       padding: const EdgeInsets.only(left: 16),
                       child: const TextField(
                         decoration: InputDecoration(
-                          icon: Icon(Icons.search),
+                          icon: Icon(
+                            Icons.search,
+                            color: Colors.white,
+                          ),
                           hintText: "Search..",
-                          suffixIcon: Icon(Icons.tune),
+                          suffixIcon: Icon(
+                            Icons.tune,
+                            color: Colors.white,
+                          ),
                           border: InputBorder.none,
                         ),
                       ),
@@ -62,7 +68,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                      color: Colors.orange,
+                      color: Color.fromRGBO(186, 128, 63, 1),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: IconButton(
@@ -75,7 +81,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               ),
             ),
             Container(
-              margin: const EdgeInsets.fromLTRB(12, 0,12,12),
+              margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
@@ -126,7 +132,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
               ),
             ),
             const Padding(
-              padding: EdgeInsets.fromLTRB(16.0, 8, 16.0,16.0),
+              padding: EdgeInsets.fromLTRB(16.0, 8, 16.0, 16.0),
               child: Text(
                 "Editors choice",
                 style: TextStyle(
