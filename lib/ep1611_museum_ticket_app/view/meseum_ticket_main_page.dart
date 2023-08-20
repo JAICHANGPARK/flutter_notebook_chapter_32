@@ -254,6 +254,7 @@ class _MuseumTicketMainPageState extends State<MuseumTicketMainPage> {
                 "Rating",
                 style: TextStyle(
                   fontSize: 24,
+                  color: Color.fromRGBO(171, 173, 178, 1),
                 ),
               ),
             ),
