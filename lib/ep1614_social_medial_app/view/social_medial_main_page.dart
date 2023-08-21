@@ -25,7 +25,13 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
       bottomNavigationBar: BottomAppBar(
         height: 72,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
+            IconButton(onPressed: (){}, icon: Icon(Icons.apps)),
+            IconButton(onPressed: (){}, icon: Icon(Icons.explore_outlined)),
+            SizedBox(width: 64,),
+            IconButton(onPressed: (){}, icon: Icon(Icons.video_collection_outlined)),
+            IconButton(onPressed: (){}, icon: Icon(Icons.account_circle_outlined)),
 
           ],
         ),
