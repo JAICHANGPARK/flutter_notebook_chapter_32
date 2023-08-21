@@ -11,6 +11,23 @@ class SocialMediaMainPage extends StatefulWidget {
 class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {  },
+        child: Icon(Icons.add),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [
+
+          ],
+        ),
+      ),
+    );
   }
 }
