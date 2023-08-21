@@ -14,31 +14,46 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(
-                  radius: 24,
-                  child: Text("P."),
-                ),
-                Text("Pipe"),
-                Spacer(),
-                CircleAvatar(
-                  radius: 24,
-                  child: Badge(
-                    child: Icon(Icons.notifications_none),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 24,
+                    child: Text("P."),
                   ),
-                  foregroundColor: Colors.black,
-                  backgroundColor: Colors.grey[300],
-
-                ),
-                CircleAvatar(
-                  child: Badge(
-                    child: Icon(Icons.inbox),
+                  SizedBox(
+                    width: 8,
                   ),
-                ),
-              ],
+                  Text(
+                    "Pipe",
+                    style: TextStyle(
+                      fontSize: 32,
+                    ),
+                  ),
+                  Spacer(),
+                  CircleAvatar(
+                    radius: 24,
+                    child: Badge(
+                      child: Icon(Icons.notifications_none),
+                    ),
+                    foregroundColor: Colors.black,
+                    backgroundColor: Colors.grey[300],
+                  ),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  CircleAvatar(
+                    radius: 24,
+                    child: Badge(
+                      child: Icon(Icons.inbox),
+                    ),
+                    foregroundColor: Colors.black,
+                    backgroundColor: Colors.grey[300],
+                  ),
+                ],
+              ),
             ),
-
           ],
         ),
       ),
