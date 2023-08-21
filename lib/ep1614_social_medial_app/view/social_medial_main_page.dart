@@ -62,16 +62,28 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                         ],
                       ),
                     ),
+                    SizedBox(
+                      height: 120,
+                      child: ListView(
+                        children: [],
+                      ),
+                    ),
+                    TabBar(
+                      tabs: [
+                        Tab(
+                          text: "Home",
+                        ),
+                        Tab(
+                          text: "For you",
+                        )
+                      ],
+                    )
                   ],
                 ),
               ),
-              SizedBox(
-                height: 120,
-                child: ListView(
-                  children: [],
-                ),
-              ),
-
+              Expanded(child: Container(
+                color: Colors.grey[200],
+              )),
             ],
           ),
         ),
