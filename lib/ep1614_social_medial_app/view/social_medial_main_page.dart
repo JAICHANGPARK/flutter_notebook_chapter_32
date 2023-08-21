@@ -71,7 +71,9 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                         children: [],
                       ),
                     ),
-                    SizedBox(height: 16,),
+                    SizedBox(
+                      height: 16,
+                    ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: TabBar(
@@ -96,9 +98,15 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                 ),
               ),
               Expanded(
-                  child: Container(
-                color: Colors.grey[200],
-              )),
+                child: Container(
+                  color: Colors.grey[200],
+                  child: ListView(
+                    children: [
+                      
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
