@@ -71,20 +71,32 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                         children: [],
                       ),
                     ),
-                    TabBar(
-                      tabs: [
-                        Tab(
-                          text: "Home",
+                    SizedBox(height: 16,),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: TabBar(
+                        labelColor: Colors.black,
+                        unselectedLabelColor: Colors.grey,
+                        indicatorColor: Colors.black,
+                        labelStyle: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
                         ),
-                        Tab(
-                          text: "For you",
-                        )
-                      ],
+                        tabs: [
+                          Tab(
+                            text: "Home",
+                          ),
+                          Tab(
+                            text: "For you",
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
               ),
-              Expanded(child: Container(
+              Expanded(
+                  child: Container(
                 color: Colors.grey[200],
               )),
             ],
