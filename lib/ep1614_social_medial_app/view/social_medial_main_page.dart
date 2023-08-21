@@ -15,7 +15,7 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
                   CircleAvatar(
@@ -36,9 +36,10 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                     radius: 24,
                     child: Badge(
                       child: Icon(Icons.notifications_none),
+                      label: Text("2"),
                     ),
                     foregroundColor: Colors.black,
-                    backgroundColor: Colors.grey[300],
+                    backgroundColor: Colors.grey[200],
                   ),
                   SizedBox(
                     width: 8,
@@ -47,9 +48,10 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                     radius: 24,
                     child: Badge(
                       child: Icon(Icons.inbox),
+                      label: Text("3"),
                     ),
                     foregroundColor: Colors.black,
-                    backgroundColor: Colors.grey[300],
+                    backgroundColor: Colors.grey[200],
                   ),
                 ],
               ),
