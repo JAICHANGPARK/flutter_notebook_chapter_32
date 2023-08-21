@@ -11,52 +11,69 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  CircleAvatar(
-                    radius: 24,
-                    child: Text("P."),
-                  ),
-                  SizedBox(
-                    width: 8,
-                  ),
-                  Text(
-                    "Pipe",
-                    style: TextStyle(
-                      fontSize: 32,
+      body: DefaultTabController(
+        length: 2,
+        child: SafeArea(
+          child: Column(
+            children: [
+              Container(
+                color: Colors.white,
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        children: [
+                          CircleAvatar(
+                            radius: 24,
+                            child: Text("P."),
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Text(
+                            "Pipe",
+                            style: TextStyle(
+                              fontSize: 32,
+                            ),
+                          ),
+                          Spacer(),
+                          CircleAvatar(
+                            radius: 24,
+                            child: Badge(
+                              child: Icon(Icons.notifications_none),
+                              label: Text("2"),
+                            ),
+                            foregroundColor: Colors.black,
+                            backgroundColor: Colors.grey[200],
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          CircleAvatar(
+                            radius: 24,
+                            child: Badge(
+                              child: Icon(Icons.inbox),
+                              label: Text("3"),
+                            ),
+                            foregroundColor: Colors.black,
+                            backgroundColor: Colors.grey[200],
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  Spacer(),
-                  CircleAvatar(
-                    radius: 24,
-                    child: Badge(
-                      child: Icon(Icons.notifications_none),
-                      label: Text("2"),
-                    ),
-                    foregroundColor: Colors.black,
-                    backgroundColor: Colors.grey[200],
-                  ),
-                  SizedBox(
-                    width: 8,
-                  ),
-                  CircleAvatar(
-                    radius: 24,
-                    child: Badge(
-                      child: Icon(Icons.inbox),
-                      label: Text("3"),
-                    ),
-                    foregroundColor: Colors.black,
-                    backgroundColor: Colors.grey[200],
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+              SizedBox(
+                height: 120,
+                child: ListView(
+                  children: [],
+                ),
+              ),
+
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
