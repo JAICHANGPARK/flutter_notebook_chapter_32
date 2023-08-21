@@ -62,8 +62,11 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 8),
                       height: 120,
+                      color: Colors.blue,
+                      padding: EdgeInsets.only(left: 16),
                       child: ListView(
                         children: [],
                       ),
