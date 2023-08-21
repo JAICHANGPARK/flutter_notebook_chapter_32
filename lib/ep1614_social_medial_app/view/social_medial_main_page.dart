@@ -21,7 +21,9 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
         onPressed: () {  },
         child: Icon(Icons.add),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
+        height: 72,
         child: Row(
           children: [
 
