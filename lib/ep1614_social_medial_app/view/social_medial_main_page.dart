@@ -140,6 +140,46 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                 Text("Dream")
                               ],
                             ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 16),
+                            width: 64,
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Stack(
+                                    children: [
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          border: Border.all(),
+                                        ),
+                                      ),
+                                      // Positioned(
+                                      //   left: 12,
+                                      //   right: 12,
+                                      //   bottom: 2,
+                                        // child: Container(
+                                        //   decoration: BoxDecoration(
+                                        //       color: Colors.red,
+                                        //       borderRadius: BorderRadius.circular(32)
+                                        //   ),
+                                        //   child: Center(
+                                        //     child: Text("Live",style: TextStyle(
+                                        //         color: Colors.white
+                                        //     ),),
+                                        //   ),
+                                        // ),
+                                      // ),
+                                    ],
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text("Dream")
+                              ],
+                            ),
                           )
                         ],
                       ),
