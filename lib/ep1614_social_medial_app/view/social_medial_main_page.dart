@@ -101,8 +101,28 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                 child: Container(
                   color: Colors.grey[200],
                   child: ListView(
+                    scrollDirection: Axis.horizontal,
                     children: [
-                      
+                      Container(
+                        child: Column(
+                          children: [
+                            Expanded(
+                              child: Stack(
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      border: Border.all(),
+                                    ),
+                                  ),
+                                  Positioned(child: CircleAvatar()),
+                                ],
+                              ),
+                            ),
+                            Text("Your story")
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 ),
