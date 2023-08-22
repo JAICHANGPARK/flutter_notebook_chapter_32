@@ -137,7 +137,7 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                 SizedBox(
                                   height: 8,
                                 ),
-                                Text("Dreamwalker")
+                                Text("Dream")
                               ],
                             ),
                           )
