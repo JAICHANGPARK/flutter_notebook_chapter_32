@@ -65,7 +65,6 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                     Container(
                       margin: EdgeInsets.symmetric(vertical: 8),
                       height: 100,
-                      color: Colors.blue,
                       padding: EdgeInsets.only(left: 16),
                       child: ListView(
                         scrollDirection: Axis.horizontal,
@@ -74,7 +73,6 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                             margin: EdgeInsets.only(right: 16),
                             width: 64,
                             child: Column(
-
                               children: [
                                 Expanded(
                                   child: Stack(
@@ -86,22 +84,29 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                         ),
                                       ),
                                       Positioned(
+                                        left: 2,
                                         right: 2,
-                                        bottom:2,
-                                        child: CircleAvatar(
-                                        radius: 12,
-                                        child: Icon(Icons.add),
-                                      ),),
+                                        bottom: 2,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.red,
+                                          ),
+                                          child: Text("Live"),
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ),
-                                SizedBox(height: 8,),
+                                SizedBox(
+                                  height: 8,
+                                ),
                                 Text("Your story")
                               ],
                             ),
                           ),
                           Container(
                             margin: EdgeInsets.only(right: 16),
+                            width: 64,
                             child: Column(
                               children: [
                                 Expanded(
@@ -110,10 +115,20 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                       Container(
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
-                                          border: Border.all(),
+                                          border: Border.all(color: Colors.red),
                                         ),
                                       ),
-                                      Positioned(child: CircleAvatar()),
+                                      Positioned(
+                                        left: 2,
+                                        right: 2,
+                                        bottom: 2,
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.red,
+                                          ),
+                                          child: Text("Live"),
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ),
@@ -154,10 +169,7 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                 child: Container(
                   color: Colors.grey[200],
                   child: ListView(
-
-                    children: [
-
-                    ],
+                    children: [],
                   ),
                 ),
               ),
