@@ -218,6 +218,7 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                   child: ListView(
                     children: [
                       Container(
+                        padding: EdgeInsets.all(16),
                         margin: EdgeInsets.all(16),
                         decoration: BoxDecoration(
                           color: Colors.white,
@@ -231,9 +232,10 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                               ],
                             ),
                             Container(
-                              height: 180,
+                              height: 220,
                               color: Colors.blue,
-                            )
+                            ),
+                            Divider(),
 
                           ],
                         ),
