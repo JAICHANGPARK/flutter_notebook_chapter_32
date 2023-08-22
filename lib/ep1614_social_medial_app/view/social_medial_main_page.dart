@@ -71,6 +71,7 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                         scrollDirection: Axis.horizontal,
                         children: [
                           Container(
+                            margin: EdgeInsets.only(right: 16),
                             width: 64,
                             child: Column(
 
@@ -95,6 +96,27 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                   ),
                                 ),
                                 SizedBox(height: 8,),
+                                Text("Your story")
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(right: 16),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Stack(
+                                    children: [
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          border: Border.all(),
+                                        ),
+                                      ),
+                                      Positioned(child: CircleAvatar()),
+                                    ],
+                                  ),
+                                ),
                                 Text("Your story")
                               ],
                             ),
