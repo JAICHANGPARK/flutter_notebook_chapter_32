@@ -64,11 +64,35 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                     ),
                     Container(
                       margin: EdgeInsets.symmetric(vertical: 8),
-                      height: 120,
+                      height: 100,
                       color: Colors.blue,
                       padding: EdgeInsets.only(left: 16),
                       child: ListView(
-                        children: [],
+                        scrollDirection: Axis.horizontal,
+                        children: [
+                          Container(
+                            width: 64,
+                            child: Column(
+
+                              children: [
+                                Expanded(
+                                  child: Stack(
+                                    children: [
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          border: Border.all(),
+                                        ),
+                                      ),
+                                      Positioned(child: CircleAvatar()),
+                                    ],
+                                  ),
+                                ),
+                                Text("Your story")
+                              ],
+                            ),
+                          )
+                        ],
                       ),
                     ),
                     SizedBox(
@@ -101,28 +125,9 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                 child: Container(
                   color: Colors.grey[200],
                   child: ListView(
-                    scrollDirection: Axis.horizontal,
+
                     children: [
-                      Container(
-                        child: Column(
-                          children: [
-                            Expanded(
-                              child: Stack(
-                                children: [
-                                  Container(
-                                    decoration: BoxDecoration(
-                                      shape: BoxShape.circle,
-                                      border: Border.all(),
-                                    ),
-                                  ),
-                                  Positioned(child: CircleAvatar()),
-                                ],
-                              ),
-                            ),
-                            Text("Your story")
-                          ],
-                        ),
-                      )
+
                     ],
                   ),
                 ),
