@@ -223,6 +223,20 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(16)
                         ),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                CircleAvatar()
+                              ],
+                            ),
+                            Container(
+                              height: 180,
+                              color: Colors.blue,
+                            )
+
+                          ],
+                        ),
                       )
                     ],
                   ),
