@@ -84,15 +84,12 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                         ),
                                       ),
                                       Positioned(
-                                        left: 2,
+
                                         right: 2,
                                         bottom: 2,
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.red,
-                                          ),
-                                          child: Text("Live"),
-                                        ),
+                                        child: CircleAvatar(
+                                          radius: 12,
+                                        )
                                       ),
                                     ],
                                   ),
@@ -131,6 +128,9 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                       ),
                                     ],
                                   ),
+                                ),
+                                SizedBox(
+                                  height: 8,
                                 ),
                                 Text("Your story")
                               ],
