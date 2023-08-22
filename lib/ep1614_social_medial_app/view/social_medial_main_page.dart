@@ -24,35 +24,35 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                       padding: const EdgeInsets.all(16.0),
                       child: Row(
                         children: [
-                          CircleAvatar(
+                          const CircleAvatar(
                             radius: 24,
                             child: Text("P."),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
-                          Text(
+                          const Text(
                             "Pipe",
                             style: TextStyle(
                               fontSize: 32,
                             ),
                           ),
-                          Spacer(),
+                          const Spacer(),
                           CircleAvatar(
                             radius: 24,
-                            child: Badge(
+                            child: const Badge(
                               child: Icon(Icons.notifications_none),
                               label: Text("2"),
                             ),
                             foregroundColor: Colors.black,
                             backgroundColor: Colors.grey[200],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
                           CircleAvatar(
                             radius: 24,
-                            child: Badge(
+                            child: const Badge(
                               child: Icon(Icons.inbox),
                               label: Text("3"),
                             ),
@@ -63,14 +63,14 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(vertical: 8),
+                      margin: const EdgeInsets.symmetric(vertical: 8),
                       height: 100,
-                      padding: EdgeInsets.only(left: 16),
+                      padding: const EdgeInsets.only(left: 16),
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
                           Container(
-                            margin: EdgeInsets.only(right: 16),
+                            margin: const EdgeInsets.only(right: 16),
                             width: 64,
                             child: Column(
                               children: [
@@ -83,26 +83,24 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                           border: Border.all(),
                                         ),
                                       ),
-                                      Positioned(
-
-                                        right: 2,
-                                        bottom: 2,
-                                        child: CircleAvatar(
-                                          radius: 12,
-                                        )
-                                      ),
+                                      const Positioned(
+                                          right: 2,
+                                          bottom: 2,
+                                          child: CircleAvatar(
+                                            radius: 12,
+                                          )),
                                     ],
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
-                                Text("Your story")
+                                const Text("Your story")
                               ],
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(right: 16),
+                            margin: const EdgeInsets.only(right: 16),
                             width: 64,
                             child: Column(
                               children: [
@@ -120,75 +118,79 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                         right: 12,
                                         bottom: 2,
                                         child: Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.red,
-                                            borderRadius: BorderRadius.circular(32)
-                                          ),
-                                          child: Center(
-                                            child: Text("Live",style: TextStyle(
-                                              color: Colors.white
-                                            ),),
+                                          decoration:
+                                              BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(32)),
+                                          child: const Center(
+                                            child: Text(
+                                              "Live",
+                                              style: TextStyle(color: Colors.white),
+                                            ),
                                           ),
                                         ),
                                       ),
                                     ],
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
-                                Text("Dream")
+                                const Text("Dream")
                               ],
                             ),
                           ),
-                         ...List.generate(10, (index) => Container(
-                           margin: EdgeInsets.only(right: 16),
-                           width: 64,
-                           child: Column(
-                             children: [
-                               Expanded(
-                                 child: Stack(
-                                   children: [
-                                     Container(
-                                       decoration: BoxDecoration(
-                                         shape: BoxShape.circle,
-                                         border: Border.all(),
-                                       ),
-                                     ),
-                                     // Positioned(
-                                     //   left: 12,
-                                     //   right: 12,
-                                     //   bottom: 2,
-                                     // child: Container(
-                                     //   decoration: BoxDecoration(
-                                     //       color: Colors.red,
-                                     //       borderRadius: BorderRadius.circular(32)
-                                     //   ),
-                                     //   child: Center(
-                                     //     child: Text("Live",style: TextStyle(
-                                     //         color: Colors.white
-                                     //     ),),
-                                     //   ),
-                                     // ),
-                                     // ),
-                                   ],
-                                 ),
-                               ),
-                               SizedBox(
-                                 height: 8,
-                               ),
-                               Text("Dream")
-                             ],
-                           ),
-                         ))
+                          ...List.generate(
+                            10,
+                            (index) => Container(
+                              margin: const EdgeInsets.only(right: 16),
+                              width: 64,
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    child: Stack(
+                                      children: [
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                            border: Border.all(),
+                                          ),
+                                        ),
+                                        // Positioned(
+                                        //   left: 12,
+                                        //   right: 12,
+                                        //   bottom: 2,
+                                        // child: Container(
+                                        //   decoration: BoxDecoration(
+                                        //       color: Colors.red,
+                                        //       borderRadius: BorderRadius.circular(32)
+                                        //   ),
+                                        //   child: Center(
+                                        //     child: Text("Live",style: TextStyle(
+                                        //         color: Colors.white
+                                        //     ),),
+                                        //   ),
+                                        // ),
+                                        // ),
+                                      ],
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    height: 8,
+                                  ),
+                                  const Text("Dream")
+                                ],
+                              ),
+                            ),
+                          )
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 16,
+                      ),
                       child: TabBar(
                         labelColor: Colors.black,
                         unselectedLabelColor: Colors.grey,
@@ -214,7 +216,15 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                 child: Container(
                   color: Colors.grey[200],
                   child: ListView(
-                    children: [],
+                    children: [
+                      Container(
+                        margin: EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(16)
+                        ),
+                      )
+                    ],
                   ),
                 ),
               ),
@@ -224,7 +234,7 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
@@ -232,13 +242,13 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.apps)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.explore_outlined)),
-            SizedBox(
+            IconButton(onPressed: () {}, icon: const Icon(Icons.apps)),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.explore_outlined)),
+            const SizedBox(
               width: 64,
             ),
-            IconButton(onPressed: () {}, icon: Icon(Icons.video_collection_outlined)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.account_circle_outlined)),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.video_collection_outlined)),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.account_circle_outlined)),
           ],
         ),
       ),
