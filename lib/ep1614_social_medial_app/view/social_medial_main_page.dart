@@ -84,10 +84,17 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                           border: Border.all(),
                                         ),
                                       ),
-                                      Positioned(child: CircleAvatar()),
+                                      Positioned(
+                                        right: 2,
+                                        bottom:2,
+                                        child: CircleAvatar(
+                                        radius: 12,
+                                        child: Icon(Icons.add),
+                                      ),),
                                     ],
                                   ),
                                 ),
+                                SizedBox(height: 8,),
                                 Text("Your story")
                               ],
                             ),
