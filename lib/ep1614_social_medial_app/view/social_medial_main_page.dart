@@ -302,6 +302,18 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                               maxLines: 2,
                             ),
                             Divider(),
+                            Row(
+                              children: [
+                                Icon(Icons.thumb_up),
+                                Text("349 Likes"),
+                                Icon(Icons.chat_bubble_outline),
+                                Text("760 Comments"),
+                                Spacer(),
+                                Icon(Icons.share),
+                                Icon(Icons.bookmark_border)
+
+                              ],
+                            )
                           ],
                         ),
                       )
