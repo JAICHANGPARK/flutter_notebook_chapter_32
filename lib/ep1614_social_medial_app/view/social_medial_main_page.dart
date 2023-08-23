@@ -257,6 +257,7 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                             Container(
                               height: 220,
                               color: Colors.blue,
+                              margin: EdgeInsets.only(top: 12),
                             ),
                             Divider(),
                           ],
