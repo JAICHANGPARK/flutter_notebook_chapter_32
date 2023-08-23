@@ -239,6 +239,12 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                       )
                                     ],
                                   ),
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.more_horiz,
+                                  ),
                                 )
                               ],
                             ),
