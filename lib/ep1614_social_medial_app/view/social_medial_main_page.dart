@@ -220,15 +220,26 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                       Container(
                         padding: EdgeInsets.all(16),
                         margin: EdgeInsets.all(16),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(16)
-                        ),
+                        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                         child: Column(
                           children: [
                             Row(
                               children: [
-                                CircleAvatar()
+                                CircleAvatar(),
+                                Expanded(
+                                  child: Column(
+                                    children: [
+                                      Text("Dreamwalker"),
+                                      Row(
+                                        children: [
+                                          Text("Walker"),
+                                          Text("1 mins ago"),
+                                          Icon(Icons.language),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                )
                               ],
                             ),
                             Container(
@@ -236,7 +247,6 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                               color: Colors.blue,
                             ),
                             Divider(),
-
                           ],
                         ),
                       )
