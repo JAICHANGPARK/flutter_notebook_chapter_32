@@ -264,8 +264,11 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                             ),
                             Container(
                               height: 240,
-                              margin: EdgeInsets.only(top: 12),
-                              decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(12)),
+                              margin: EdgeInsets.only(top: 16, bottom: 16),
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.circular(12),
+                              ),
                             ),
                             Row(
                               children: [
@@ -273,9 +276,30 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                   decoration: BoxDecoration(
                                     color: Colors.grey[200],
                                   ),
+                                  padding: EdgeInsets.symmetric(horizontal: 2, vertical: 2),
                                   child: Text("😍👍👏"),
-                                )
+                                ),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Text(
+                                  "Dream",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(" and "),
+                                Text(
+                                  "others",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ],
+                            ),
+                            Text(
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae sem eget enim egestas eleifend. Donec blandit, mi pretium mattis tincidunt, arcu quam malesuada leo, ut lacinia lorem dolor in purus. M",
+                              maxLines: 2,
                             ),
                             Divider(),
                           ],
