@@ -297,6 +297,7 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                 ),
                               ],
                             ),
+                            SizedBox(height: 12,),
                             Text(
                               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae sem eget enim egestas eleifend. Donec blandit, mi pretium mattis tincidunt, arcu quam malesuada leo, ut lacinia lorem dolor in purus. M",
                               maxLines: 2,
