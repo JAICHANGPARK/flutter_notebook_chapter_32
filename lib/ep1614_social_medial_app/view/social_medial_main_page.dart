@@ -301,7 +301,7 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae sem eget enim egestas eleifend. Donec blandit, mi pretium mattis tincidunt, arcu quam malesuada leo, ut lacinia lorem dolor in purus. M",
                               maxLines: 2,
                             ),
-                            Divider(),
+                            Divider(height: 32,),
                             Row(
                               children: [
                                 Icon(Icons.thumb_up),
@@ -309,6 +309,7 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                 Text("349 Likes"),
                                 SizedBox(width: 16,),
                                 Icon(Icons.chat_bubble_outline),
+                                SizedBox(width: 8,),
                                 Text("760 Comments"),
 
                                 Spacer(),
