@@ -227,15 +227,19 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                             Row(
                               children: [
                                 CircleAvatar(),
+                                SizedBox(width: 8,),
                                 Expanded(
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text("Dreamwalker"),
+                                      SizedBox(height: 4,),
                                       Row(
                                         children: [
                                           Text("Walker"),
+                                          SizedBox(width: 8,),
                                           Text("1 mins ago"),
+                                          SizedBox(width: 8,),
                                           Icon(Icons.language),
                                         ],
                                       )
