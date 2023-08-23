@@ -227,19 +227,27 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                             Row(
                               children: [
                                 CircleAvatar(),
-                                SizedBox(width: 8,),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 Expanded(
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text("Dreamwalker"),
-                                      SizedBox(height: 4,),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
                                       Row(
                                         children: [
                                           Text("Walker"),
-                                          SizedBox(width: 8,),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
                                           Text("1 mins ago"),
-                                          SizedBox(width: 8,),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
                                           Icon(Icons.language),
                                         ],
                                       )
@@ -255,9 +263,19 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                               ],
                             ),
                             Container(
-                              height: 220,
-                              color: Colors.blue,
+                              height: 240,
                               margin: EdgeInsets.only(top: 12),
+                              decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(12)),
+                            ),
+                            Row(
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200],
+                                  ),
+                                  child: Text("😍👍👏"),
+                                )
+                              ],
                             ),
                             Divider(),
                           ],
