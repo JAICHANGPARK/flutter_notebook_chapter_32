@@ -305,9 +305,12 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                             Row(
                               children: [
                                 Icon(Icons.thumb_up),
+                                SizedBox(width: 8,),
                                 Text("349 Likes"),
+                                SizedBox(width: 16,),
                                 Icon(Icons.chat_bubble_outline),
                                 Text("760 Comments"),
+
                                 Spacer(),
                                 Icon(Icons.share),
                                 Icon(Icons.bookmark_border)
