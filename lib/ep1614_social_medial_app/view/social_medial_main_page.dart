@@ -218,19 +218,19 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                   child: ListView(
                     children: [
                       Container(
-                        padding: EdgeInsets.all(16),
-                        margin: EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(16),
+                        margin: const EdgeInsets.all(16),
                         decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
                               children: [
-                                CircleAvatar(),
-                                SizedBox(
+                                const CircleAvatar(),
+                                const SizedBox(
                                   width: 8,
                                 ),
-                                Expanded(
+                                const Expanded(
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
@@ -256,7 +256,7 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                 ),
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.more_horiz,
                                   ),
                                 )
@@ -264,7 +264,7 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                             ),
                             Container(
                               height: 240,
-                              margin: EdgeInsets.only(top: 16, bottom: 16),
+                              margin: const EdgeInsets.only(top: 16, bottom: 16),
                               decoration: BoxDecoration(
                                 color: Colors.blue,
                                 borderRadius: BorderRadius.circular(12),
@@ -276,20 +276,20 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                   decoration: BoxDecoration(
                                     color: Colors.grey[200],
                                   ),
-                                  padding: EdgeInsets.symmetric(horizontal: 2, vertical: 2),
-                                  child: Text("😍👍👏"),
+                                  padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
+                                  child: const Text("😍👍👏"),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 8,
                                 ),
-                                Text(
+                                const Text(
                                   "Dream",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                Text(" and "),
-                                Text(
+                                const Text(" and "),
+                                const Text(
                                   "others",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -297,13 +297,13 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                 ),
                               ],
                             ),
-                            SizedBox(height: 12,),
-                            Text(
+                            const SizedBox(height: 12,),
+                            const Text(
                               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae sem eget enim egestas eleifend. Donec blandit, mi pretium mattis tincidunt, arcu quam malesuada leo, ut lacinia lorem dolor in purus. M",
                               maxLines: 2,
                             ),
-                            Divider(height: 32,),
-                            Row(
+                            const Divider(height: 32,),
+                            const Row(
                               children: [
                                 Icon(Icons.thumb_up),
                                 SizedBox(width: 8,),
