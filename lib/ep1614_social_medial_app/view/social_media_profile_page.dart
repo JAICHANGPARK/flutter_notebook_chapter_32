@@ -10,6 +10,32 @@ class SocialMediaProfilePage extends StatefulWidget {
 class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.add),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar: BottomAppBar(
+        height: 72,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(onPressed: () {}, icon: const Icon(Icons.apps)),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.explore_outlined)),
+            const SizedBox(
+              width: 64,
+            ),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.video_collection_outlined)),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.account_circle_outlined)),
+          ],
+        ),
+      ),
+    );
   }
 }
