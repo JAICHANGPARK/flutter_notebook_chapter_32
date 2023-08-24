@@ -29,6 +29,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                             image: DecorationImage(
                               image:
                                   NetworkImage("https://cdn.pixabay.com/photo/2016/07/22/16/29/fog-1535201_1280.jpg"),
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
@@ -39,7 +40,54 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  Positioned(
+                      top: 16,
+                      left: 16,
+                      right: 16,
+                      bottom: 0,
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.arrow_back),
+                              ),
+                              Spacer(),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.notifications_none),
+                              ),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(Icons.more_horiz),
+                              ),
+                            ],
+                          ),
+                          SizedBox(
+                            height: 72,
+                          ),
+                          Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 54,
+                              ),
+                              CircleAvatar(),
+                              Container(
+                                child: Center(
+                                  child: Text(
+                                    "Follow",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ))
                 ],
               ),
             ),
