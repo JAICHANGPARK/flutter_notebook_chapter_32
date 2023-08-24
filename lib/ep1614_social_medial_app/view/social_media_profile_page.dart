@@ -72,9 +72,18 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                             children: [
                               CircleAvatar(
                                 radius: 54,
+
                               ),
-                              CircleAvatar(),
+                              Spacer(),
+                              CircleAvatar(
+                                radius: 28,
+                              ),
                               Container(
+                                decoration: BoxDecoration(
+
+                                ),
+                                margin: EdgeInsets.only(left: 16),
+                                padding: EdgeInsets.symmetric(horizontal: 16),
                                 child: Center(
                                   child: Text(
                                     "Follow",
