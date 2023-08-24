@@ -137,27 +137,36 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                               Expanded(
                                   child: Column(
                                 children: [
-                                  Text("200", style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),),
+                                  Text(
+                                    "200",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   Text("Posts"),
                                 ],
                               )),
                               Expanded(
                                   child: Column(
                                 children: [
-                                  Text("200", style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),),
+                                  Text(
+                                    "200",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   Text("Posts"),
                                 ],
                               )),
                               Expanded(
                                   child: Column(
                                 children: [
-                                  Text("200", style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  ),),
+                                  Text(
+                                    "200",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   Text("Posts"),
                                 ],
                               ))
@@ -185,6 +194,20 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                   ],
                 ),
               ),
+              Expanded(
+                  child: TabBarView(
+                children: [
+                  Container(
+                    color: Colors.red,
+                  ),
+                  Container(
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    color: Colors.green,
+                  )
+                ],
+              )),
             ],
           ),
         ),
