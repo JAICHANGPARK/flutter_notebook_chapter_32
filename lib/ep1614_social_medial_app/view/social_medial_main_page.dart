@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_32/ep1614_social_medial_app/view/social_media_profile_page.dart';
 
 class SocialMediaMainPage extends StatefulWidget {
   const SocialMediaMainPage({super.key});
@@ -228,7 +229,8 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                               children: [
                                 GestureDetector(
                                   onTap: (){
-                                    
+                                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
+                                    SocialMediaProfilePage()));
                                   },
                                   child: const CircleAvatar(),
                                 ),
