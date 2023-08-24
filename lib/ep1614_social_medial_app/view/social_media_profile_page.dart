@@ -13,7 +13,11 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            SizedBox(
+              height: MediaQuery.of(context).size.height /2,
+            )
+          ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
