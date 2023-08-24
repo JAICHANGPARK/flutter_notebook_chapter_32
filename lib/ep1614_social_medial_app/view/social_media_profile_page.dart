@@ -15,15 +15,25 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
         child: Column(
           children: [
             Container(
-              height: MediaQuery.of(context).size.height /2,
+              height: MediaQuery.of(context).size.height / 2,
               color: Colors.blue,
               child: Stack(
                 children: [
-                  Positioned(child: Column(
-                    children: [
-                      
-                    ],
-                  ))
+                  Positioned(
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 180,
+                          color: Colors.blue,
+                        ),
+                        Expanded(
+                          child: Container(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
