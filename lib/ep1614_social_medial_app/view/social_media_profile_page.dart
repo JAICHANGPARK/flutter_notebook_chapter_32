@@ -17,7 +17,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
           child: Column(
             children: [
               Container(
-                height: MediaQuery.of(context).size.height / 2,
+                height: MediaQuery.of(context).size.height / 1.9,
                 color: Colors.blue,
                 child: Stack(
                   children: [
@@ -95,10 +95,15 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                               )
                             ],
                           ),
+                          SizedBox(height: 16,),
                           Text("Dreamwalker"),
+                          SizedBox(height: 8,),
                           Text("dreamwalker"),
+                          SizedBox(height: 24,),
                           Text("Flutter Live Coding"),
+                          SizedBox(height: 8,),
                           Text("Unknown Location"),
+                          SizedBox(height: 16,),
                           Row(
                             children: [
                               Expanded(
@@ -131,6 +136,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                               ))
                             ],
                           ),
+
                           Spacer(),
                           TabBar(
                             labelColor: Colors.black,
