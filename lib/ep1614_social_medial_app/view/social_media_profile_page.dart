@@ -94,7 +94,12 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                 ),
                               )
                             ],
-                          )
+                          ),
+
+                          Text("Dreamwalker"),
+                          Text("dreamwalker"),
+                          Text("Flutter Live Coding"),
+                          Text("Unknown Location"),
                         ],
                       ))
                 ],
