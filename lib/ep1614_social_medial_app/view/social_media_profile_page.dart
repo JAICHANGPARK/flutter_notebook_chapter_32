@@ -125,28 +125,39 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                               Expanded(
                                   child: Column(
                                 children: [
-                                  Text("200"),
+                                  Text(
+                                    "200",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                   Text("Posts"),
                                 ],
                               )),
                               Expanded(
                                   child: Column(
                                 children: [
-                                  Text("200"),
+                                  Text("200", style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),),
                                   Text("Posts"),
                                 ],
                               )),
                               Expanded(
                                   child: Column(
                                 children: [
-                                  Text("200"),
+                                  Text("200", style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),),
                                   Text("Posts"),
                                 ],
                               )),
                               Expanded(
                                   child: Column(
                                 children: [
-                                  Text("200"),
+                                  Text("200", style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),),
                                   Text("Posts"),
                                 ],
                               ))
