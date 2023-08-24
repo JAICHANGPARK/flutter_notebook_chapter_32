@@ -47,6 +47,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                       right: 16,
                       bottom: 0,
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             children: [
@@ -78,12 +79,10 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                 radius: 28,
                               ),
                               Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.yellow,
-                                  borderRadius: BorderRadius.circular(16)
-                                ),
+                                decoration:
+                                    BoxDecoration(color: Colors.yellow, borderRadius: BorderRadius.circular(16)),
                                 margin: EdgeInsets.only(left: 16),
-                                padding: EdgeInsets.symmetric(horizontal: 16,vertical:12),
+                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                                 child: Center(
                                   child: Text(
                                     "Follow",
@@ -95,11 +94,42 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                               )
                             ],
                           ),
-
                           Text("Dreamwalker"),
                           Text("dreamwalker"),
                           Text("Flutter Live Coding"),
                           Text("Unknown Location"),
+                          Row(
+                            children: [
+                              Expanded(
+                                  child: Column(
+                                children: [
+                                  Text("200"),
+                                  Text("Posts"),
+                                ],
+                              )),
+                              Expanded(
+                                  child: Column(
+                                    children: [
+                                      Text("200"),
+                                      Text("Posts"),
+                                    ],
+                                  )),
+                              Expanded(
+                                  child: Column(
+                                    children: [
+                                      Text("200"),
+                                      Text("Posts"),
+                                    ],
+                                  )),
+                              Expanded(
+                                  child: Column(
+                                    children: [
+                                      Text("200"),
+                                      Text("Posts"),
+                                    ],
+                                  ))
+                            ],
+                          )
                         ],
                       ))
                 ],
