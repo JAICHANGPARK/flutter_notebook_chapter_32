@@ -81,9 +81,15 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                 radius: 28,
                               ),
                               Container(
-                                decoration: BoxDecoration(color: Colors.yellow, borderRadius: BorderRadius.circular(16)),
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
                                 margin: EdgeInsets.only(left: 16),
-                                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                  vertical: 12,
+                                ),
                                 child: Center(
                                   child: Text(
                                     "Follow",
@@ -95,15 +101,25 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                               )
                             ],
                           ),
-                          SizedBox(height: 16,),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Text("Dreamwalker"),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Text("dreamwalker"),
-                          SizedBox(height: 24,),
+                          SizedBox(
+                            height: 24,
+                          ),
                           Text("Flutter Live Coding"),
-                          SizedBox(height: 8,),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Text("Unknown Location"),
-                          SizedBox(height: 16,),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Row(
                             children: [
                               Expanded(
@@ -136,7 +152,6 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                               ))
                             ],
                           ),
-
                           Spacer(),
                           TabBar(
                             labelColor: Colors.black,
@@ -144,7 +159,6 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                             tabs: [
                               Tab(
                                 icon: Icon(Icons.grid_4x4),
-
                               ),
                               Tab(
                                 icon: Icon(Icons.video_collection_outlined),
