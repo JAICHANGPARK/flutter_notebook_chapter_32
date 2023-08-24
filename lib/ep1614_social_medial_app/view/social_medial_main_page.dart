@@ -226,7 +226,12 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                           children: [
                             Row(
                               children: [
-                                const CircleAvatar(),
+                                GestureDetector(
+                                  onTap: (){
+                                    
+                                  },
+                                  child: const CircleAvatar(),
+                                ),
                                 const SizedBox(
                                   width: 8,
                                 ),
@@ -297,26 +302,34 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                                 ),
                               ],
                             ),
-                            const SizedBox(height: 12,),
+                            const SizedBox(
+                              height: 12,
+                            ),
                             const Text(
                               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae sem eget enim egestas eleifend. Donec blandit, mi pretium mattis tincidunt, arcu quam malesuada leo, ut lacinia lorem dolor in purus. M",
                               maxLines: 2,
                             ),
-                            const Divider(height: 32,),
+                            const Divider(
+                              height: 32,
+                            ),
                             const Row(
                               children: [
                                 Icon(Icons.thumb_up),
-                                SizedBox(width: 8,),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 Text("349 Likes"),
-                                SizedBox(width: 16,),
+                                SizedBox(
+                                  width: 16,
+                                ),
                                 Icon(Icons.chat_bubble_outline),
-                                SizedBox(width: 8,),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 Text("760 Comments"),
-
                                 Spacer(),
                                 Icon(Icons.share),
                                 Icon(Icons.bookmark_border)
-
                               ],
                             )
                           ],
