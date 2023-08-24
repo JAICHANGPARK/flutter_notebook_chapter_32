@@ -14,9 +14,19 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
       body: SafeArea(
         child: Column(
           children: [
-            SizedBox(
+            Container(
               height: MediaQuery.of(context).size.height /2,
-            )
+              color: Colors.blue,
+              child: Stack(
+                children: [
+                  Positioned(child: Column(
+                    children: [
+                      
+                    ],
+                  ))
+                ],
+              ),
+            ),
           ],
         ),
       ),
