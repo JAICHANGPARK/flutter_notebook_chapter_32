@@ -131,10 +131,20 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                               ))
                             ],
                           ),
+                          Spacer(),
                           TabBar(
+                            labelColor: Colors.black,
+                            unselectedLabelColor: Colors.grey,
                             tabs: [
                               Tab(
                                 icon: Icon(Icons.grid_4x4),
+
+                              ),
+                              Tab(
+                                icon: Icon(Icons.video_collection_outlined),
+                              ),
+                              Tab(
+                                icon: Icon(Icons.bookmark_border),
                               )
                             ],
                           )
