@@ -40,24 +40,24 @@ class _SocialMediaMainPageState extends State<SocialMediaMainPage> {
                           const Spacer(),
                           CircleAvatar(
                             radius: 24,
+                            foregroundColor: Colors.black,
+                            backgroundColor: Colors.grey[200],
                             child: const Badge(
                               child: Icon(Icons.notifications_none),
                               label: Text("2"),
                             ),
-                            foregroundColor: Colors.black,
-                            backgroundColor: Colors.grey[200],
                           ),
                           const SizedBox(
                             width: 8,
                           ),
                           CircleAvatar(
                             radius: 24,
+                            foregroundColor: Colors.black,
+                            backgroundColor: Colors.grey[200],
                             child: const Badge(
                               child: Icon(Icons.inbox),
                               label: Text("3"),
                             ),
-                            foregroundColor: Colors.black,
-                            backgroundColor: Colors.grey[200],
                           ),
                         ],
                       ),
