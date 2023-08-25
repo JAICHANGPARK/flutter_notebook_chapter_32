@@ -17,7 +17,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
           child: Column(
             children: [
               Container(
-                height: MediaQuery.of(context).size.height / 1.9,
+                height: MediaQuery.of(context).size.height / 1.8,
                 color: Colors.blue,
                 child: Stack(
                   children: [
@@ -135,8 +135,10 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                     "200",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
+
                                     ),
                                   ),
+                                  SizedBox(height: 6,),
                                   Text("Posts"),
                                 ],
                               )),
@@ -149,6 +151,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
+                                  SizedBox(height: 6,),
                                   Text("Posts"),
                                 ],
                               )),
@@ -160,7 +163,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
-                                  ),
+                                  ),SizedBox(height: 6,),
                                   Text("Posts"),
                                 ],
                               )),
@@ -172,7 +175,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
-                                  ),
+                                  ),SizedBox(height: 6,),
                                   Text("Posts"),
                                 ],
                               ))
