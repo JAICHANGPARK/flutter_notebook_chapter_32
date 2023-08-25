@@ -25,7 +25,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                       child: Column(
                         children: [
                           Container(
-                            height: 180,
+                            height: 152,
                             decoration: BoxDecoration(
                               color: Colors.blue,
                               image: DecorationImage(
