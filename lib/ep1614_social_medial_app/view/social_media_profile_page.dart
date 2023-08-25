@@ -74,11 +74,13 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                           Row(
                             children: [
                               CircleAvatar(
-                                radius: 42,
+                                radius: 54,
+                                backgroundColor: Colors.grey,
                               ),
                               Spacer(),
                               CircleAvatar(
-                                radius: 28,
+                                radius: 24,
+                                backgroundColor: Colors.grey,
                               ),
                               Container(
                                 decoration: BoxDecoration(
