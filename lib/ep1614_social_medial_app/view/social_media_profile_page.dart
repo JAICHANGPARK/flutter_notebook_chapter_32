@@ -245,7 +245,16 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                       ),
                       itemBuilder: (context, index) {
                         return Container(
-                          decoration: BoxDecoration(color: Colors.yellow, borderRadius: BorderRadius.circular(8)),
+                          decoration: BoxDecoration(
+                            color: Colors.yellow,
+                            borderRadius: BorderRadius.circular(8),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2023/07/10/06/13/mountain-8117525_1280.jpg",
+                              ),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
                         );
                       },
                     ),
