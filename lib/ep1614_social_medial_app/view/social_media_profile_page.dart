@@ -78,9 +78,13 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                 backgroundColor: Colors.grey,
                               ),
                               const Spacer(),
-                              const CircleAvatar(
+                              CircleAvatar(
                                 radius: 24,
-                                backgroundColor: Colors.grey,
+                                backgroundColor: Colors.grey[200],
+                                foregroundColor: Colors.black,
+                                child: Icon(
+                                  Icons.mail_outline,
+                                ),
                               ),
                               Container(
                                 decoration: BoxDecoration(
@@ -120,17 +124,23 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                           const SizedBox(
                             height: 24,
                           ),
-                          const Text("Flutter Live Coding",style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 14,
-                          ),),
+                          const Text(
+                            "Flutter Live Coding",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 14,
+                            ),
+                          ),
                           const SizedBox(
                             height: 8,
                           ),
-                          const Text("Unknown Location",style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 14,
-                          ),),
+                          const Text(
+                            "Unknown Location",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 14,
+                            ),
+                          ),
                           const SizedBox(
                             height: 24,
                           ),
