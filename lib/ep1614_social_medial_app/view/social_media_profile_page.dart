@@ -108,7 +108,10 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                           ),
                           const Text(
                             "Dreamwalker",
-                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
                           ),
                           const SizedBox(
                             height: 8,
@@ -117,11 +120,17 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                           const SizedBox(
                             height: 24,
                           ),
-                          const Text("Flutter Live Coding"),
+                          const Text("Flutter Live Coding",style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 14,
+                          ),),
                           const SizedBox(
                             height: 8,
                           ),
-                          const Text("Unknown Location"),
+                          const Text("Unknown Location",style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 14,
+                          ),),
                           const SizedBox(
                             height: 24,
                           ),
@@ -215,7 +224,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                   child: TabBarView(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(16.0, 16,16,0),
+                    padding: const EdgeInsets.fromLTRB(16.0, 16, 16, 0),
                     child: GridView.builder(
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 3,
@@ -225,10 +234,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                       ),
                       itemBuilder: (context, index) {
                         return Container(
-                          decoration: BoxDecoration(
-                            color: Colors.yellow,
-                            borderRadius: BorderRadius.circular(8)
-                          ),
+                          decoration: BoxDecoration(color: Colors.yellow, borderRadius: BorderRadius.circular(8)),
                         );
                       },
                     ),
