@@ -82,7 +82,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                 radius: 24,
                                 backgroundColor: Colors.grey[200],
                                 foregroundColor: Colors.black,
-                                child: Icon(
+                                child: const Icon(
                                   Icons.mail_outline,
                                 ),
                               ),
@@ -237,7 +237,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16.0, 16, 16, 0),
                     child: GridView.builder(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 3,
                         crossAxisSpacing: 8,
                         mainAxisSpacing: 8,
@@ -248,7 +248,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                           decoration: BoxDecoration(
                             color: Colors.yellow,
                             borderRadius: BorderRadius.circular(8),
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               image: NetworkImage(
                                 "https://cdn.pixabay.com/photo/2023/07/10/06/13/mountain-8117525_1280.jpg",
                               ),
