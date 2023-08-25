@@ -108,6 +108,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                             "Dreamwalker",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              fontSize: 18
                             ),
                           ),
                           SizedBox(
