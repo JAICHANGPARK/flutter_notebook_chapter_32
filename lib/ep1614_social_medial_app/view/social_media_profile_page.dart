@@ -215,7 +215,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                   child: TabBarView(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(16.0),
+                    padding: const EdgeInsets.fromLTRB(16.0, 16,16,0),
                     child: GridView.builder(
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 3,
