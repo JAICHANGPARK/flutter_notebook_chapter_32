@@ -124,7 +124,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                           ),
                           Text("Unknown Location"),
                           SizedBox(
-                            height: 16,
+                            height: 24,
                           ),
                           Row(
                             children: [
