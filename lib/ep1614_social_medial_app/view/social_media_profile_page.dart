@@ -212,6 +212,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                           const TabBar(
                             labelColor: Colors.black,
                             unselectedLabelColor: Colors.grey,
+                            indicatorColor: Colors.black,
                             tabs: [
                               Tab(
                                 icon: Icon(Icons.grid_4x4),
