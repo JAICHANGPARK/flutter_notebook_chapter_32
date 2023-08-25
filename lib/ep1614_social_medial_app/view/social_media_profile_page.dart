@@ -17,10 +17,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
           child: Column(
             children: [
               Container(
-                height: MediaQuery
-                    .of(context)
-                    .size
-                    .height / 1.8,
+                height: MediaQuery.of(context).size.height / 1.8,
                 color: Colors.blue,
                 child: Stack(
                   children: [
@@ -33,7 +30,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                               color: Colors.blue,
                               image: DecorationImage(
                                 image:
-                                NetworkImage("https://cdn.pixabay.com/photo/2016/07/22/16/29/fog-1535201_1280.jpg"),
+                                    NetworkImage("https://cdn.pixabay.com/photo/2016/07/22/16/29/fog-1535201_1280.jpg"),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -132,64 +129,64 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                             children: [
                               Expanded(
                                   child: Column(
-                                    children: [
-                                      Text(
-                                        "200",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        height: 6,
-                                      ),
-                                      Text("Posts"),
-                                    ],
-                                  )),
+                                children: [
+                                  Text(
+                                    "200",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
+                                  Text("Posts"),
+                                ],
+                              )),
                               Expanded(
                                   child: Column(
-                                    children: [
-                                      Text(
-                                        "200",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        height: 6,
-                                      ),
-                                      Text("Posts"),
-                                    ],
-                                  )),
+                                children: [
+                                  Text(
+                                    "200",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
+                                  Text("Posts"),
+                                ],
+                              )),
                               Expanded(
                                   child: Column(
-                                    children: [
-                                      Text(
-                                        "200",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        height: 6,
-                                      ),
-                                      Text("Posts"),
-                                    ],
-                                  )),
+                                children: [
+                                  Text(
+                                    "200",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
+                                  Text("Posts"),
+                                ],
+                              )),
                               Expanded(
                                   child: Column(
-                                    children: [
-                                      Text(
-                                        "200",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      SizedBox(
-                                        height: 6,
-                                      ),
-                                      Text("Posts"),
-                                    ],
-                                  ))
+                                children: [
+                                  Text(
+                                    "200",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
+                                  Text("Posts"),
+                                ],
+                              ))
                             ],
                           ),
                           const Spacer(),
@@ -216,27 +213,33 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
               ),
               Expanded(
                   child: TabBarView(
-                    children: [
-                      GridView.builder(
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 3,
-                        ),
-                        itemBuilder: (context, index) {
-                          return Container(
-                            decoration: BoxDecoration(
-                              color: Colors.yellow,
-                            ),
-                          );
-                        },
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: GridView.builder(
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 3,
+                        crossAxisSpacing: 8,
+                        mainAxisSpacing: 8,
+                        childAspectRatio: 0.7
                       ),
-                      Container(
-                        color: Colors.blue,
-                      ),
-                      Container(
-                        color: Colors.green,
-                      )
-                    ],
-                  )),
+                      itemBuilder: (context, index) {
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.yellow,
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  Container(
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    color: Colors.green,
+                  )
+                ],
+              )),
             ],
           ),
         ),
