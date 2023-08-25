@@ -215,18 +215,19 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                   child: TabBarView(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.fromLTRB(16.0),
                     child: GridView.builder(
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 3,
                         crossAxisSpacing: 8,
                         mainAxisSpacing: 8,
-                        childAspectRatio: 0.7
+                        childAspectRatio: 0.75,
                       ),
                       itemBuilder: (context, index) {
                         return Container(
                           decoration: BoxDecoration(
                             color: Colors.yellow,
+                            borderRadius: BorderRadius.circular(8)
                           ),
                         );
                       },
