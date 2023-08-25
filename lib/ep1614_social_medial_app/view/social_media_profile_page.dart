@@ -69,12 +69,12 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                             ],
                           ),
                           SizedBox(
-                            height: 72,
+                            height: 64,
                           ),
                           Row(
                             children: [
                               CircleAvatar(
-                                radius: 54,
+                                radius: 42,
                               ),
                               Spacer(),
                               CircleAvatar(
