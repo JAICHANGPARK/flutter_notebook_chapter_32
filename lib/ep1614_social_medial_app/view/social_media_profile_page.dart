@@ -26,7 +26,7 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                         children: [
                           Container(
                             height: 152,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.blue,
                               image: DecorationImage(
                                 image:
@@ -55,30 +55,30 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                             children: [
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.arrow_back),
+                                icon: const Icon(Icons.arrow_back),
                               ),
-                              Spacer(),
+                              const Spacer(),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.notifications_none),
+                                icon: const Icon(Icons.notifications_none),
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.more_horiz),
+                                icon: const Icon(Icons.more_horiz),
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 64,
                           ),
                           Row(
                             children: [
-                              CircleAvatar(
+                              const CircleAvatar(
                                 radius: 54,
                                 backgroundColor: Colors.grey,
                               ),
-                              Spacer(),
-                              CircleAvatar(
+                              const Spacer(),
+                              const CircleAvatar(
                                 radius: 24,
                                 backgroundColor: Colors.grey,
                               ),
@@ -87,12 +87,12 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                   color: Colors.yellow,
                                   borderRadius: BorderRadius.circular(16),
                                 ),
-                                margin: EdgeInsets.only(left: 16),
-                                padding: EdgeInsets.symmetric(
+                                margin: const EdgeInsets.only(left: 16),
+                                padding: const EdgeInsets.symmetric(
                                   horizontal: 16,
                                   vertical: 12,
                                 ),
-                                child: Center(
+                                child: const Center(
                                   child: Text(
                                     "Follow",
                                     style: TextStyle(
@@ -103,32 +103,29 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 16,
                           ),
-                          Text(
+                          const Text(
                             "Dreamwalker",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
-                            ),
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
-                          Text("dreamwalker"),
-                          SizedBox(
+                          const Text("dreamwalker"),
+                          const SizedBox(
                             height: 24,
                           ),
-                          Text("Flutter Live Coding"),
-                          SizedBox(
+                          const Text("Flutter Live Coding"),
+                          const SizedBox(
                             height: 8,
                           ),
-                          Text("Unknown Location"),
-                          SizedBox(
+                          const Text("Unknown Location"),
+                          const SizedBox(
                             height: 24,
                           ),
-                          Row(
+                          const Row(
                             children: [
                               Expanded(
                                   child: Column(
@@ -137,10 +134,11 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                     "200",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-
                                     ),
                                   ),
-                                  SizedBox(height: 6,),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
                                   Text("Posts"),
                                 ],
                               )),
@@ -153,7 +151,9 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  SizedBox(height: 6,),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
                                   Text("Posts"),
                                 ],
                               )),
@@ -165,7 +165,10 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
-                                  ),SizedBox(height: 6,),
+                                  ),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
                                   Text("Posts"),
                                 ],
                               )),
@@ -177,14 +180,17 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                     ),
-                                  ),SizedBox(height: 6,),
+                                  ),
+                                  SizedBox(
+                                    height: 6,
+                                  ),
                                   Text("Posts"),
                                 ],
                               ))
                             ],
                           ),
-                          Spacer(),
-                          TabBar(
+                          const Spacer(),
+                          const TabBar(
                             labelColor: Colors.black,
                             unselectedLabelColor: Colors.grey,
                             tabs: [
@@ -208,8 +214,11 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
               Expanded(
                   child: TabBarView(
                 children: [
-                  Container(
-                    color: Colors.red,
+                  GridView.builder(
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 3,
+                    ),
+                    itemBuilder: (context, index) {},
                   ),
                   Container(
                     color: Colors.blue,
