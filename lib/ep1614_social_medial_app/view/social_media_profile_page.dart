@@ -104,7 +104,12 @@ class _SocialMediaProfilePageState extends State<SocialMediaProfilePage> {
                           SizedBox(
                             height: 16,
                           ),
-                          Text("Dreamwalker"),
+                          Text(
+                            "Dreamwalker",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           SizedBox(
                             height: 8,
                           ),
