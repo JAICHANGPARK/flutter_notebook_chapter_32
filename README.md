@@ -1,6 +1,15 @@
 # flutter_notebook_chapter_32
 
-https://dribbble.com/shots/22372050-Roamie-Tourist-app
+
+
+## EP169
+
+- Roamie- Tourist app
+- by Netro Creative for Netro UX/UI
+- https://dribbble.com/shots/22372050-Roamie-Tourist-app
+
+<img src="https://cdn.dribbble.com/userupload/9379674/file/original-78eb6e4e4e6ae76002e91a874b21776d.jpg?resize=1600x1202"/>
+
 
 ## EP1614-1618
 
