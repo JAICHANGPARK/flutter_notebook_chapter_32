@@ -11,6 +11,15 @@ class TouristMainPage extends StatefulWidget {
 class _TouristMainPageState extends State<TouristMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled))
+        ],
+      ),
+    );
   }
 }
