@@ -25,6 +25,14 @@ class _TouristMainPageState extends State<TouristMainPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
             label: "Search",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.list_alt_outlined),
+            label: "Booking",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_circle_outlined),
+            label: "Profile",
           )
         ],
       ),
