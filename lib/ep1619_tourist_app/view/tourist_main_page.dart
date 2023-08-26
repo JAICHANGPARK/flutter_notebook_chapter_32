@@ -30,10 +30,14 @@ class _TouristMainPageState extends State<TouristMainPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Hello"),
+                      SizedBox(
+                        height: 4,
+                      ),
                       Text(
                         "Dream Walker!",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          fontSize: 18
                         ),
                       ),
                     ],
@@ -42,7 +46,7 @@ class _TouristMainPageState extends State<TouristMainPage> {
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.redAccent,
-                      borderRadius: BorderRadius.circular(16),
+                      borderRadius: BorderRadius.circular(32),
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 12),
                     child: IconButton(
