@@ -17,6 +17,7 @@ class _TouristMainPageState extends State<TouristMainPage> {
         children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: menuIndex,
         onTap: (index){
           setState(() {
             menuIndex = index;
