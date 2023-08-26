@@ -16,31 +16,44 @@ class _TouristMainPageState extends State<TouristMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("Hello"),
-                    Text("Dream Walker!"),
-                  ],
-                ),
-                Spacer(),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.redAccent,
-                    borderRadius: BorderRadius.circular(16)
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 24,
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 12),
-                  child: IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.notifications,
+                  SizedBox(
+                    width: 12,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Hello"),
+                      Text(
+                        "Dream Walker!",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Spacer(),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.redAccent,
+                      borderRadius: BorderRadius.circular(16),
                     ),
-                  ),
-                )
-              ],
+                    padding: EdgeInsets.symmetric(horizontal: 12),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.notifications,
+                      ),
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
