@@ -13,8 +13,30 @@ class _TouristMainPageState extends State<TouristMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                CircleAvatar(),
+                Column(
+                  children: [
+                    Text("Hello"),
+                    Text("Dream Walker!"),
+                  ],
+                ),
+                Container(
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.notifications,
+                    ),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
       ),
       bottomNavigationBar: SizedBox(
         height: 80,
