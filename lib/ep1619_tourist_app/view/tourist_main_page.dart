@@ -15,6 +15,8 @@ class _TouristMainPageState extends State<TouristMainPage> {
         children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.redAccent,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
