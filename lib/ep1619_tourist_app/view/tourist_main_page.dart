@@ -20,12 +20,19 @@ class _TouristMainPageState extends State<TouristMainPage> {
               children: [
                 CircleAvatar(),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("Hello"),
                     Text("Dream Walker!"),
                   ],
                 ),
+                Spacer(),
                 Container(
+                  decoration: BoxDecoration(
+                    color: Colors.redAccent,
+                    borderRadius: BorderRadius.circular(16)
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 12),
                   child: IconButton(
                     onPressed: () {},
                     icon: Icon(
