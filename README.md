@@ -1,15 +1,12 @@
 # flutter_notebook_chapter_32
 
-
-
 ## EP169
 
 - Roamie- Tourist app
 - by Netro Creative for Netro UX/UI
 - https://dribbble.com/shots/22372050-Roamie-Tourist-app
 
-<img src="https://cdn.dribbble.com/userupload/9379674/file/original-78eb6e4e4e6ae76002e91a874b21776d.jpg?resize=1600x1202"/>
-
+<img src="https://cdn.dribbble.com/userupload/9563025/file/original-67102b79a773790f36325a03cd980a3d.jpg?resize=1600x1200"/>
 
 ## EP1614-1618
 
@@ -19,7 +16,6 @@
 
 <img src="https://cdn.dribbble.com/userupload/9379674/file/original-78eb6e4e4e6ae76002e91a874b21776d.jpg?resize=1600x1202"/>
 
-
 ## EP1611-1613
 
 - Museum Ticket Mobile App
@@ -27,7 +23,6 @@
 - https://dribbble.com/shots/21870011-Museum-Ticket-Mobile-App
 
 <img src="https://cdn.dribbble.com/userupload/8188430/file/original-cd60c2b59329578bc2c29664677ca0ea.png?resize=1600x1200"/>
-
 
 ## EP1609-1610
 
