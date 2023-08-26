@@ -8,13 +8,20 @@ class TouristMainPage extends StatefulWidget {
 }
 
 class _TouristMainPageState extends State<TouristMainPage> {
+  int menuIndex = 0;
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       body: Column(
         children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (index){
+          setState(() {
+            menuIndex = index;
+          });
+        },
         unselectedItemColor: Colors.grey,
         selectedItemColor: Colors.redAccent,
         items: [
