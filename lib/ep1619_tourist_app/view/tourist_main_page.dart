@@ -128,6 +128,10 @@ class _TouristMainPageState extends State<TouristMainPage> {
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(8),
+                      image: DecorationImage(
+                        image: NetworkImage("https://cdn.pixabay.com/photo/2019/08/19/13/58/bed-4416515_1280.jpg"),
+                        fit: BoxFit.cover,
+                      ),
                     ),
                     padding: EdgeInsets.all(8),
                     child: Column(
