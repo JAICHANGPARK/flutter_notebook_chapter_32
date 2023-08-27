@@ -78,12 +78,12 @@ class _TouristMainPageState extends State<TouristMainPage> {
               ),
             ),
             Container(
-              height: 120,
+              height: 140,
               color: Colors.redAccent,
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
-                    width: ,
+                    width: 140,
                     decoration: BoxDecoration(
                       color: Colors.redAccent,
                       borderRadius: BorderRadius.circular(8),
