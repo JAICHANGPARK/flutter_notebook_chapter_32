@@ -79,12 +79,12 @@ class _TouristMainPageState extends State<TouristMainPage> {
             ),
             Container(
               height: 140,
-              padding: EdgeInsets.only(left: 16),
+              padding: const EdgeInsets.only(left: 16),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
-                    margin: EdgeInsets.only(right: 12),
+                    margin: const EdgeInsets.only(right: 12),
                     width: 140,
                     decoration: BoxDecoration(
                       color: Colors.redAccent,
@@ -118,32 +118,44 @@ class _TouristMainPageState extends State<TouristMainPage> {
             ),
             Container(
               height: 220,
-              padding: EdgeInsets.only(left: 16),
+              padding: const EdgeInsets.only(left: 16),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
                     width: 160,
-                    margin: EdgeInsets.only(right: 12),
+                    margin: const EdgeInsets.only(right: 12),
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(8),
                     ),
+                    padding: EdgeInsets.all(8),
                     child: Column(
                       children: [
-                        Container(
-                          child: Row(
-                            children: [
-                              Icon(
-                                Icons.star,
-                                size: 18,
-                              ),
-                              Text("4.9")
-                            ],
-                          ),
-                        ),
-                        Text("Flutter Hotel"),
                         Row(
+                          children: [
+                            Spacer(),
+                            Container(
+                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                              decoration: BoxDecoration(
+                                color: Colors.redAccent,
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                              child: const Row(
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    size: 18,
+                                  ),
+                                  Text("4.9")
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                        Spacer(),
+                        const Text("Flutter Hotel"),
+                        const Row(
                           children: [
                             Icon(
                               Icons.location_on_outlined,
@@ -153,11 +165,11 @@ class _TouristMainPageState extends State<TouristMainPage> {
                         ),
                         Row(
                           children: [
-                            Text("\$30"),
-                            Text("/per night"),
+                            const Text("\$30"),
+                            const Text("/per night"),
                             IconButton(
                               onPressed: () {},
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.bookmark_border,
                               ),
                             )
