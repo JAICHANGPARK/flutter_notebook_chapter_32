@@ -35,7 +35,10 @@ class _TouristMainPageState extends State<TouristMainPage> {
                       ),
                       Text(
                         "Dream Walker!",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
                       ),
                     ],
                   ),
@@ -61,26 +64,22 @@ class _TouristMainPageState extends State<TouristMainPage> {
               height: 64,
               color: Colors.redAccent,
             ),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             Container(
               height: 160,
               color: Colors.redAccent,
             ),
             Row(
-              children: [
-                Text("Popular Hotels"),
-                TextButton(onPressed: (){}, child: Text("See All"))
-              ],
+              children: [Text("Popular Hotels"), TextButton(onPressed: () {}, child: Text("See All"))],
             ),
             Container(
               height: 240,
               color: Colors.redAccent,
             ),
             Row(
-              children: [
-                Text("Popular Hotels"),
-                TextButton(onPressed: (){}, child: Text("See All"))
-              ],
+              children: [Text("Popular Hotels"), TextButton(onPressed: () {}, child: Text("See All"))],
             ),
           ],
         ),
