@@ -61,8 +61,19 @@ class _TouristMainPageState extends State<TouristMainPage> {
               ),
             ),
             Container(
-              height: 64,
-              color: Colors.redAccent,
+              margin: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(
+                  color: Colors.grey[200]!,
+                ),
+              ),
+              child: TextField(
+                decoration: InputDecoration(
+                  icon: Icon(Icons.search),
+                  
+                ),
+              ),
             ),
             SizedBox(
               height: 16,
