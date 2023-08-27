@@ -79,7 +79,6 @@ class _TouristMainPageState extends State<TouristMainPage> {
             ),
             Container(
               height: 140,
-              color: Colors.redAccent,
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
@@ -93,14 +92,21 @@ class _TouristMainPageState extends State<TouristMainPage> {
                 scrollDirection: Axis.horizontal,
               ),
             ),
-            Row(
-              children: [
-                const Text("Popular Hotels"),
-                TextButton(
-                  onPressed: () {},
-                  child: const Text("See All"),
-                ),
-              ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text(
+                    "Popular Hotels",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: const Text("See All"),
+                  ),
+                ],
+              ),
             ),
             Container(
               height: 240,
