@@ -20,13 +20,13 @@ class _TouristMainPageState extends State<TouristMainPage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 24,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 12,
                   ),
-                  Column(
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Hello"),
@@ -42,16 +42,16 @@ class _TouristMainPageState extends State<TouristMainPage> {
                       ),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.redAccent,
                       borderRadius: BorderRadius.circular(32),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 12),
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.notifications,
                       ),
                       color: Colors.white,
@@ -61,23 +61,23 @@ class _TouristMainPageState extends State<TouristMainPage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
+              padding: const EdgeInsets.symmetric(horizontal: 8),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(
                   color: Colors.grey[200]!,
                 ),
               ),
-              child: TextField(
+              child: const TextField(
                 decoration: InputDecoration(
-                  icon: Icon(Icons.search),
-                  border: InputBorder.none,
-                  suffixIcon: Icon(Icons.apps),
-                  hintText: "Hotel, Flight, Place, Food.."
-                ),
+                    icon: Icon(Icons.search),
+                    border: InputBorder.none,
+                    suffixIcon: Icon(Icons.apps),
+                    hintText: "Hotel, Flight, Place, Food.."),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Container(
@@ -85,14 +85,26 @@ class _TouristMainPageState extends State<TouristMainPage> {
               color: Colors.redAccent,
             ),
             Row(
-              children: [Text("Popular Hotels"), TextButton(onPressed: () {}, child: Text("See All"))],
+              children: [
+                const Text("Popular Hotels"),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text("See All"),
+                ),
+              ],
             ),
             Container(
               height: 240,
               color: Colors.redAccent,
             ),
             Row(
-              children: [Text("Popular Hotels"), TextButton(onPressed: () {}, child: Text("See All"))],
+              children: [
+                const Text("Popular Hotels"),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text("See All"),
+                ),
+              ],
             ),
           ],
         ),
@@ -110,19 +122,19 @@ class _TouristMainPageState extends State<TouristMainPage> {
           unselectedItemColor: Colors.grey,
           selectedItemColor: Colors.redAccent,
           items: [
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Icons.home_filled),
               label: "Home",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Icons.search),
               label: "Search",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Icons.list_alt_outlined),
               label: "Booking",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(Icons.account_circle_outlined),
               label: "Profile",
             )
