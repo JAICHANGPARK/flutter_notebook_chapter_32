@@ -117,8 +117,57 @@ class _TouristMainPageState extends State<TouristMainPage> {
               ),
             ),
             Container(
-              height: 240,
-              color: Colors.redAccent,
+              height: 220,
+              padding: EdgeInsets.only(left: 16),
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: 160,
+                    margin: EdgeInsets.only(right: 12),
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.star,
+                                size: 18,
+                              ),
+                              Text("4.9")
+                            ],
+                          ),
+                        ),
+                        Text("Flutter Hotel"),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.location_on_outlined,
+                            ),
+                            Text("Seoul, ROK"),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Text("\$30"),
+                            Text("/per night"),
+                            IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.bookmark_border,
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  );
+                },
+              ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
@@ -128,10 +177,13 @@ class _TouristMainPageState extends State<TouristMainPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text("Recently Booked",  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18,
-                  ),),
+                  const Text(
+                    "Recently Booked",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
                   TextButton(
                     onPressed: () {},
                     child: const Text("See All"),
