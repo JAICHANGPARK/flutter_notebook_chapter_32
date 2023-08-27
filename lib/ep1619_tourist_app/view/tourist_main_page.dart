@@ -95,7 +95,9 @@ class _TouristMainPageState extends State<TouristMainPage> {
               ),
             ),
             Expanded(child: SingleChildScrollView(
-              child: Column(children: [
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
                 Padding(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 16,
