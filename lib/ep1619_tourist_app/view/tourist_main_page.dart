@@ -71,7 +71,8 @@ class _TouristMainPageState extends State<TouristMainPage> {
               child: TextField(
                 decoration: InputDecoration(
                   icon: Icon(Icons.search),
-                  
+                  border: InputBorder.none,
+                  suffixIcon: Icon(Icons.apps),
                 ),
               ),
             ),
