@@ -154,8 +154,14 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                   Icon(
                                     Icons.star,
                                     size: 16,
+                                    color: Colors.white,
                                   ),
-                                  Text("4.9")
+                                  Text(
+                                    "4.9",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  )
                                 ],
                               ),
                             ),
