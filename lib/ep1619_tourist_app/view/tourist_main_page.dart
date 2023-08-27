@@ -131,12 +131,16 @@ class _TouristMainPageState extends State<TouristMainPage> {
                     ),
                     padding: EdgeInsets.all(8),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
                             Spacer(),
                             Container(
-                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 4,
+                              ),
                               decoration: BoxDecoration(
                                 color: Colors.redAccent,
                                 borderRadius: BorderRadius.circular(16),
@@ -145,7 +149,7 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                 children: [
                                   Icon(
                                     Icons.star,
-                                    size: 18,
+                                    size: 16,
                                   ),
                                   Text("4.9")
                                 ],
@@ -154,11 +158,21 @@ class _TouristMainPageState extends State<TouristMainPage> {
                           ],
                         ),
                         Spacer(),
-                        const Text("Flutter Hotel"),
+                        const Text(
+                          "Flutter Hotel",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
                         const Row(
                           children: [
                             Icon(
                               Icons.location_on_outlined,
+                              size: 16,
                             ),
                             Text("Seoul, ROK"),
                           ],
@@ -167,6 +181,7 @@ class _TouristMainPageState extends State<TouristMainPage> {
                           children: [
                             const Text("\$30"),
                             const Text("/per night"),
+                            Spacer(),
                             IconButton(
                               onPressed: () {},
                               icon: const Icon(
