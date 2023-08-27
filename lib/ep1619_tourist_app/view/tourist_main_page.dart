@@ -73,6 +73,7 @@ class _TouristMainPageState extends State<TouristMainPage> {
                   icon: Icon(Icons.search),
                   border: InputBorder.none,
                   suffixIcon: Icon(Icons.apps),
+                  hintText: "Hotel, Flight, Place, Food.."
                 ),
               ),
             ),
