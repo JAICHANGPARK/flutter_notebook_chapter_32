@@ -77,12 +77,21 @@ class _TouristMainPageState extends State<TouristMainPage> {
                     hintText: "Hotel, Flight, Place, Food.."),
               ),
             ),
-            const SizedBox(
-              height: 16,
-            ),
             Container(
-              height: 160,
+              height: 120,
               color: Colors.redAccent,
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: ,
+                    decoration: BoxDecoration(
+                      color: Colors.redAccent,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  );
+                },
+                scrollDirection: Axis.horizontal,
+              ),
             ),
             Row(
               children: [
