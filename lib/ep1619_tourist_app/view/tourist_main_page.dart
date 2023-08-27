@@ -92,17 +92,22 @@ class _TouristMainPageState extends State<TouristMainPage> {
                     ),
                   );
                 },
-
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 8,
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
                     "Popular Hotels",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
                   ),
                   TextButton(
                     onPressed: () {},
@@ -115,14 +120,24 @@ class _TouristMainPageState extends State<TouristMainPage> {
               height: 240,
               color: Colors.redAccent,
             ),
-            Row(
-              children: [
-                const Text("Popular Hotels"),
-                TextButton(
-                  onPressed: () {},
-                  child: const Text("See All"),
-                ),
-              ],
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 8,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text("Recently Booked",  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),),
+                  TextButton(
+                    onPressed: () {},
+                    child: const Text("See All"),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
