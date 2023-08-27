@@ -79,9 +79,12 @@ class _TouristMainPageState extends State<TouristMainPage> {
             ),
             Container(
               height: 140,
+              padding: EdgeInsets.only(left: 16),
               child: ListView.builder(
+                scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
+                    margin: EdgeInsets.only(right: 12),
                     width: 140,
                     decoration: BoxDecoration(
                       color: Colors.redAccent,
@@ -89,7 +92,7 @@ class _TouristMainPageState extends State<TouristMainPage> {
                     ),
                   );
                 },
-                scrollDirection: Axis.horizontal,
+
               ),
             ),
             Padding(
