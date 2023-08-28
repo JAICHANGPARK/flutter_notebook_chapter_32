@@ -240,7 +240,6 @@ class _TouristMainPageState extends State<TouristMainPage> {
                         children: List.generate(
                           10,
                           (index) => Container(
-
                             margin: const EdgeInsets.only(bottom: 8),
                             decoration: BoxDecoration(
                               color: Colors.white,
@@ -267,10 +266,25 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                       children: [
                                         Row(
                                           children: [
-                                            Text("Flutter Hotel"),
+                                            Text(
+                                              "Flutter Hotel",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18,
+                                              ),
+                                            ),
                                             Spacer(),
-                                            Icon(Icons.star),
-                                            Text("4.9"),
+                                            Icon(
+                                              Icons.star,
+                                              size: 14,
+                                              color: Colors.orange,
+                                            ),
+                                            Text(
+                                              "4.9",
+                                              style: TextStyle(
+                                                color: Colors.redAccent,
+                                              ),
+                                            ),
                                           ],
                                         ),
                                         Row(
@@ -290,6 +304,7 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                           children: [
                                             Text("\#30"),
                                             Text("/per night"),
+                                            Spacer(),
                                             IconButton(
                                               onPressed: () {},
                                               icon: Icon(
