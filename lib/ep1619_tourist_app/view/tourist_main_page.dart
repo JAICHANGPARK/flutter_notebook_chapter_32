@@ -250,10 +250,22 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                 )
                               ],
                             ),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 64,
+                                  width: 64,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(8)
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
