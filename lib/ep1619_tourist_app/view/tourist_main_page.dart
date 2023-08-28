@@ -287,6 +287,9 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                             ),
                                           ],
                                         ),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
                                         Row(
                                           children: [
                                             Icon(
