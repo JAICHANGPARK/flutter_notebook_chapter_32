@@ -305,7 +305,13 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                         ),
                                         Row(
                                           children: [
-                                            Text("\#30"),
+                                            Text(
+                                              "\$30",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18
+                                              ),
+                                            ),
                                             Text("/per night"),
                                             Spacer(),
                                             IconButton(
