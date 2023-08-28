@@ -51,10 +51,16 @@ class _TouristFilterPageState extends State<TouristFilterPage> {
               ],
             ),
           ),
-
-          Text("Sort Result"),
+          Padding(
+            padding: const EdgeInsets.only(left: 16, top: 16),
+            child: Text("Sort Result"),
+          ),
+          SizedBox(
+            height: 12,
+          ),
           Container(
             height: 48,
+            margin: EdgeInsets.only(left: 16),
             decoration: BoxDecoration(
               color: Colors.blue,
             ),
@@ -80,7 +86,6 @@ class _TouristFilterPageState extends State<TouristFilterPage> {
               ],
             ),
           )
-
         ],
       ),
     );
