@@ -133,21 +133,21 @@ class _TouristMainPageState extends State<TouristMainPage> {
                             decoration: BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(8),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image:
                                     NetworkImage("https://cdn.pixabay.com/photo/2019/08/19/13/58/bed-4416515_1280.jpg"),
                                 fit: BoxFit.cover,
                               ),
                             ),
-                            padding: EdgeInsets.all(8),
+                            padding: const EdgeInsets.all(8),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Row(
                                   children: [
-                                    Spacer(),
+                                    const Spacer(),
                                     Container(
-                                      padding: EdgeInsets.symmetric(
+                                      padding: const EdgeInsets.symmetric(
                                         horizontal: 8,
                                         vertical: 4,
                                       ),
@@ -173,7 +173,7 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                     ),
                                   ],
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 const Text(
                                   "Flutter Hotel",
                                   style: TextStyle(
@@ -181,7 +181,7 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                     color: Colors.white,
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
                                 const Row(
@@ -197,7 +197,7 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                   children: [
                                     const Text("\$30"),
                                     const Text("/per night"),
-                                    Spacer(),
+                                    const Spacer(),
                                     IconButton(
                                       onPressed: () {},
                                       icon: const Icon(
@@ -241,12 +241,14 @@ class _TouristMainPageState extends State<TouristMainPage> {
                           10,
                           (index) => Container(
                             height: 84,
-                            margin: EdgeInsets.only(bottom: 8),
+                            margin: const EdgeInsets.only(bottom: 8),
                             decoration: BoxDecoration(
                               color: Colors.white,
                               boxShadow: [
-                                BoxShadow(color: Colors.black.withOpacity(0.2))
-                              ]
+                                BoxShadow(
+                                  color: Colors.black.withOpacity(0.2),
+                                )
+                              ],
                             ),
                           ),
                         ),
