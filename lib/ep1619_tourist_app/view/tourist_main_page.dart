@@ -255,9 +255,36 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                 Container(
                                   height: 64,
                                   width: 64,
-                                  decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(8)
+                                  decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                                ),
+                                Expanded(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Text("Flutter Hotel"),
+                                            Spacer(),
+                                            Icon(Icons.star),
+                                            Text("4.9"),
+                                          ],
+                                        ),
+                                        Row(
+                                          children: [
+                                            Icon(
+                                              Icons.location_on_outlined,
+                                              size: 12,
+                                            ),
+                                            Text("Paris, France"),
+                                            Spacer(),
+                                            Text(
+                                              "(4,579 review)",
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 )
                               ],
