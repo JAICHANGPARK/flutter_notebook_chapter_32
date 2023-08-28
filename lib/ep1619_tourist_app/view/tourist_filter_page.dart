@@ -83,6 +83,33 @@ class _TouristFilterPageState extends State<TouristFilterPage> {
                   onChanged: (d) {},
                 ),
                 Text("Facilities"),
+                Container(
+                  height: 84,
+                  color: Colors.blue,
+                ),
+                Text("Accommodation Type"),
+                Container(
+                  height: 32,
+                  color: Colors.blue,
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.redAccent,
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                        child: Center(
+                      child: TextButton(
+                        onPressed: () {},
+                        child: Text("Reset"),
+                      ),
+                    )),
+                  ],
+                )
               ],
             ),
           )
