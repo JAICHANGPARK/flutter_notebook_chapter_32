@@ -11,6 +11,13 @@ class TouristFilterPage extends StatefulWidget {
 class _TouristFilterPageState extends State<TouristFilterPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Filter"),
+        backgroundColor: Colors.white,
+        elevation: 0,
+        foregroundColor: Colors.black,
+      ),
+    );
   }
 }
