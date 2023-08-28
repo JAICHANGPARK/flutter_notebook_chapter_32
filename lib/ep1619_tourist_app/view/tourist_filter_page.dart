@@ -18,6 +18,7 @@ class _TouristFilterPageState extends State<TouristFilterPage> {
         foregroundColor: Colors.black,
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
             padding: const EdgeInsets.all(16.0),
@@ -50,6 +51,7 @@ class _TouristFilterPageState extends State<TouristFilterPage> {
               ],
             ),
           ),
+
           Text("Sort Result"),
           Container(
             height: 48,
@@ -57,19 +59,28 @@ class _TouristFilterPageState extends State<TouristFilterPage> {
               color: Colors.blue,
             ),
           ),
-          Text("Rating"),
-          Container(
-            height: 48,
-            decoration: BoxDecoration(
-              color: Colors.blue,
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Rating"),
+                Container(
+                  height: 48,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                  ),
+                ),
+                Text("Price Range"),
+                RangeSlider(
+                  values: RangeValues(0.1, 0.5),
+                  onChanged: (d) {},
+                ),
+                Text("Facilities"),
+              ],
             ),
-          ),
-          Text("Price Range"),
-          RangeSlider(
-            values: RangeValues(0.1, 0.5),
-            onChanged: (d) {},
-          ),
-          Text("Facilities"),
+          )
+
         ],
       ),
     );
