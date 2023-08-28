@@ -99,6 +99,16 @@ class _TouristFilterPageState extends State<TouristFilterPage> {
                         decoration: BoxDecoration(
                           color: Colors.redAccent,
                         ),
+                        child: Center(
+                          child: Text(
+                            "Apply Filter",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                     Expanded(
