@@ -240,7 +240,7 @@ class _TouristMainPageState extends State<TouristMainPage> {
                         children: List.generate(
                           10,
                           (index) => Container(
-                            height: 84,
+
                             margin: const EdgeInsets.only(bottom: 8),
                             decoration: BoxDecoration(
                               color: Colors.white,
@@ -253,9 +253,12 @@ class _TouristMainPageState extends State<TouristMainPage> {
                             child: Row(
                               children: [
                                 Container(
-                                  height: 64,
-                                  width: 64,
-                                  decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                                  height: 72,
+                                  width: 72,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
                                 ),
                                 Expanded(
                                   child: Padding(
@@ -280,6 +283,18 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                             Spacer(),
                                             Text(
                                               "(4,579 review)",
+                                            )
+                                          ],
+                                        ),
+                                        Row(
+                                          children: [
+                                            Text("\#30"),
+                                            Text("/per night"),
+                                            IconButton(
+                                              onPressed: () {},
+                                              icon: Icon(
+                                                Icons.bookmark,
+                                              ),
                                             )
                                           ],
                                         )
