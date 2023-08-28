@@ -309,16 +309,19 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                               "\$30",
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
-                                                fontSize: 18
+                                                fontSize: 20
                                               ),
                                             ),
-                                            Text("/per night"),
+                                            Text("/per night", style: TextStyle(
+                                              fontSize: 12
+                                            ),),
                                             Spacer(),
                                             IconButton(
                                               onPressed: () {},
                                               icon: Icon(
                                                 Icons.bookmark,
                                               ),
+                                              color: Colors.redAccent,
                                             )
                                           ],
                                         )
