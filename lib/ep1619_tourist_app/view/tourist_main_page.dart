@@ -264,7 +264,7 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                     padding: const EdgeInsets.all(8.0),
                                     child: Column(
                                       children: [
-                                        Row(
+                                        const Row(
                                           children: [
                                             Text(
                                               "Flutter Hotel",
@@ -287,10 +287,10 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                             ),
                                           ],
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 8,
                                         ),
-                                        Row(
+                                        const Row(
                                           children: [
                                             Icon(
                                               Icons.location_on_outlined,
@@ -305,20 +305,20 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                         ),
                                         Row(
                                           children: [
-                                            Text(
+                                            const Text(
                                               "\$30",
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                                 fontSize: 20
                                               ),
                                             ),
-                                            Text("/per night", style: TextStyle(
+                                            const Text("/per night", style: TextStyle(
                                               fontSize: 12
                                             ),),
-                                            Spacer(),
+                                            const Spacer(),
                                             IconButton(
                                               onPressed: () {},
-                                              icon: Icon(
+                                              icon: const Icon(
                                                 Icons.bookmark,
                                               ),
                                               color: Colors.redAccent,
