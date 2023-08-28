@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_32/ep1619_tourist_app/view/tourist_filter_page.dart';
 
 class TouristMainPage extends StatefulWidget {
   const TouristMainPage({super.key});
@@ -69,11 +70,20 @@ class _TouristMainPageState extends State<TouristMainPage> {
                   color: Colors.grey[200]!,
                 ),
               ),
-              child: const TextField(
+              child: TextField(
                 decoration: InputDecoration(
                     icon: Icon(Icons.search),
                     border: InputBorder.none,
-                    suffixIcon: Icon(Icons.apps),
+                    suffixIcon: IconButton(
+                      icon: Icon(Icons.apps),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => TouristFilterPage(),
+                          ),
+                        );
+                      },
+                    ),
                     hintText: "Hotel, Flight, Place, Food.."),
               ),
             ),
@@ -307,14 +317,12 @@ class _TouristMainPageState extends State<TouristMainPage> {
                                           children: [
                                             const Text(
                                               "\$30",
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 20
-                                              ),
+                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                                             ),
-                                            const Text("/per night", style: TextStyle(
-                                              fontSize: 12
-                                            ),),
+                                            const Text(
+                                              "/per night",
+                                              style: TextStyle(fontSize: 12),
+                                            ),
                                             const Spacer(),
                                             IconButton(
                                               onPressed: () {},
