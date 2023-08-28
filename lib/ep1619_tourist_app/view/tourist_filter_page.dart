@@ -68,7 +68,8 @@ class _TouristFilterPageState extends State<TouristFilterPage> {
           RangeSlider(
             values: RangeValues(0.1, 0.5),
             onChanged: (d) {},
-          )
+          ),
+          Text("Facilities"),
         ],
       ),
     );
