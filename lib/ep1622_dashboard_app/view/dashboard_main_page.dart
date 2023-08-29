@@ -107,6 +107,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                       ],
                     ),
                     Container(
+                      width: double.infinity,
                       margin: EdgeInsets.symmetric(vertical: 16),
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -116,6 +117,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                         ),
                       ),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Information"),
                         ],
