@@ -42,22 +42,46 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
               ),
             ),
             Divider(),
-            Row(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey[300]!,
-                    ),
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: IconButton(
-                    icon: Icon(Icons.notifications_none),
-                    onPressed: () {},
-                  ),
-                )
-              ],
-            )
+            Expanded(
+                child: SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[300]!,
+                            ),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: IconButton(
+                            icon: Icon(Icons.notifications_none),
+                            onPressed: () {},
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[300]!,
+                            ),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.inbox_outlined,
+                            ),
+                            onPressed: () {},
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            )),
           ],
         ),
       ),
