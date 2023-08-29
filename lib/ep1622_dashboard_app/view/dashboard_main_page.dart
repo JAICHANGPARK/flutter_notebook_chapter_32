@@ -62,6 +62,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             onPressed: () {},
                           ),
                         ),
+                        SizedBox(width: 8,),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -76,6 +77,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             onPressed: () {},
                           ),
                         ),
+                        SizedBox(width: 8,),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
