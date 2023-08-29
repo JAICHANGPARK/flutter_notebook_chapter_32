@@ -76,6 +76,28 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             onPressed: () {},
                           ),
                         ),
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey[300]!,
+                            ),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Row(
+                            children: [
+                              IconButton(
+                                icon: Icon(Icons.notifications_none),
+                                onPressed: () {},
+                              ),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.arrow_drop_up_sharp,
+                                ),
+                              )
+                            ],
+                          ),
+                        )
                       ],
                     )
                   ],
