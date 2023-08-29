@@ -116,6 +116,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                           color: Colors.grey[200]!,
                         ),
                       ),
+
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
