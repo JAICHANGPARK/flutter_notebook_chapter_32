@@ -14,22 +14,35 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Container(
-                  child: IconButton(
-                    icon: Icon(Icons.menu),
-                    onPressed: () {},
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(6),
+                      border: Border.all(
+                        color: Colors.grey[400]!,
+                      ),
+                    ),
+                    child: IconButton(
+                      icon: Icon(Icons.menu),
+                      onPressed: () {},
+                    ),
                   ),
-                ),
-                Text(
-                  "Product Oprimz",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                  Text(
+                    "Product Oprimz",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24
+                    ),
                   ),
-                ),
-              ],
-            )
+                ],
+              ),
+            ),
+            Divider(),
+
           ],
         ),
       ),
