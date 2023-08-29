@@ -107,9 +107,13 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                       ],
                     ),
                     Container(
+                      margin: EdgeInsets.symmetric(vertical: 16),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: Colors.grey[200]!,
+                        ),
                       ),
                       child: Column(
                         children: [
