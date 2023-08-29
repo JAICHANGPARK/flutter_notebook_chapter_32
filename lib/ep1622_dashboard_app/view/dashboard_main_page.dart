@@ -86,7 +86,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                           child: Row(
                             children: [
                               IconButton(
-                                icon: Icon(Icons.notifications_none),
+                                icon: Icon(Icons.calendar_today),
                                 onPressed: () {},
                               ),
                               IconButton(
@@ -97,8 +97,25 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               )
                             ],
                           ),
-                        )
+                        ),
+                        Spacer(),
+                        ElevatedButton.icon(
+                          onPressed: () {},
+                          label: Text("Add Product"),
+                          icon: Icon(Icons.add),
+                        ),
                       ],
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Column(
+                        children: [
+                          Text("Information"),
+                        ],
+                      ),
                     )
                   ],
                 ),
