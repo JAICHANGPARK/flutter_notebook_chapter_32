@@ -35,14 +35,29 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                     "Product Oprimz",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 24
+                      fontSize: 24,
                     ),
                   ),
                 ],
               ),
             ),
             Divider(),
-
+            Row(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey[300]!,
+                    ),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: IconButton(
+                    icon: Icon(Icons.notifications_none),
+                    onPressed: () {},
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
