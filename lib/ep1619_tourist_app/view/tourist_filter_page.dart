@@ -12,7 +12,7 @@ class _TouristFilterPageState extends State<TouristFilterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Filter"),
+        title: const Text("Filter"),
         backgroundColor: Colors.white,
         elevation: 0,
         foregroundColor: Colors.black,
@@ -29,20 +29,20 @@ class _TouristFilterPageState extends State<TouristFilterPage> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: TextField(
+                    child: const TextField(
                       decoration: InputDecoration(
                         hintText: "Hotel, Flight, Place, Food..",
                       ),
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 16,
                 ),
                 Container(
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: IconButton(
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.location_on_outlined,
                     ),
                     onPressed: () {},
@@ -51,17 +51,17 @@ class _TouristFilterPageState extends State<TouristFilterPage> {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16, top: 16),
+          const Padding(
+            padding: EdgeInsets.only(left: 16, top: 16),
             child: Text("Sort Result"),
           ),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
           Container(
             height: 48,
-            margin: EdgeInsets.only(left: 16),
-            decoration: BoxDecoration(
+            margin: const EdgeInsets.only(left: 16),
+            decoration: const BoxDecoration(
               color: Colors.blue,
             ),
           ),
@@ -70,24 +70,24 @@ class _TouristFilterPageState extends State<TouristFilterPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Rating"),
+                const Text("Rating"),
                 Container(
                   height: 48,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.blue,
                   ),
                 ),
-                Text("Price Range"),
+                const Text("Price Range"),
                 RangeSlider(
-                  values: RangeValues(0.1, 0.5),
+                  values: const RangeValues(0.1, 0.5),
                   onChanged: (d) {},
                 ),
-                Text("Facilities"),
+                const Text("Facilities"),
                 Container(
                   height: 84,
                   color: Colors.blue,
                 ),
-                Text("Accommodation Type"),
+                const Text("Accommodation Type"),
                 Container(
                   height: 32,
                   color: Colors.blue,
@@ -96,10 +96,10 @@ class _TouristFilterPageState extends State<TouristFilterPage> {
                   children: [
                     Expanded(
                       child: Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.redAccent,
                         ),
-                        child: Center(
+                        child: const Center(
                           child: Text(
                             "Apply Filter",
                             style: TextStyle(
@@ -115,7 +115,7 @@ class _TouristFilterPageState extends State<TouristFilterPage> {
                         child: Center(
                       child: TextButton(
                         onPressed: () {},
-                        child: Text("Reset"),
+                        child: const Text("Reset"),
                       ),
                     )),
                   ],
