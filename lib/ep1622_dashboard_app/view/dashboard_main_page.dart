@@ -27,11 +27,11 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                       ),
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.menu),
+                      icon: const Icon(Icons.menu),
                       onPressed: () {},
                     ),
                   ),
-                  Text(
+                  const Text(
                     "Product Oprimz",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -41,7 +41,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                 ],
               ),
             ),
-            Divider(),
+            const Divider(),
             Expanded(
                 child: SingleChildScrollView(
               child: Padding(
@@ -58,11 +58,11 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: IconButton(
-                            icon: Icon(Icons.notifications_none),
+                            icon: const Icon(Icons.notifications_none),
                             onPressed: () {},
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 8,
                         ),
                         Container(
@@ -73,13 +73,13 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: IconButton(
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.inbox_outlined,
                             ),
                             onPressed: () {},
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 8,
                         ),
                         Container(
@@ -92,30 +92,30 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                           child: Row(
                             children: [
                               IconButton(
-                                icon: Icon(Icons.calendar_today),
+                                icon: const Icon(Icons.calendar_today),
                                 onPressed: () {},
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.arrow_drop_up_sharp,
                                 ),
                               )
                             ],
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         ElevatedButton.icon(
                           onPressed: () {},
-                          label: Text("Add Product"),
-                          icon: Icon(Icons.add),
+                          label: const Text("Add Product"),
+                          icon: const Icon(Icons.add),
                         ),
                       ],
                     ),
                     Container(
                       width: double.infinity,
-                      margin: EdgeInsets.symmetric(vertical: 16),
-                      padding: EdgeInsets.all(12),
+                      margin: const EdgeInsets.symmetric(vertical: 16),
+                      padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(8),
@@ -126,18 +126,19 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Information"),
-                          SizedBox(height: 12,),
+                          const Text("Information"),
+                          const SizedBox(height: 12,),
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.indigo[50],
                               borderRadius: BorderRadius.circular(4),
                             ),
-                            margin: EdgeInsets.only(bottom: 8),
-                            padding: EdgeInsets.all(6),
-                            child: Row(
+                            margin: const EdgeInsets.only(bottom: 8),
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                            child: const Row(
                               children: [
                                 Icon(Icons.language),
+                                SizedBox(width: 8,),
                                 Text("Website"),
                                 Spacer(),
                                 Text("www.flutter.dev"),
@@ -145,17 +146,35 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.only(bottom: 8),
-                            padding: EdgeInsets.all(6),
-                            child: Row(
+                            margin: const EdgeInsets.only(bottom: 8),
+                            padding: const EdgeInsets.all(6),
+                            child: const Row(
                               children: [
                                 Icon(Icons.email_outlined),
+                                SizedBox(width: 8,),
                                 Text("Email"),
                                 Spacer(),
                                 Text("www.flutter.dev"),
                               ],
                             ),
-                          )
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.indigo[50],
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            margin: const EdgeInsets.only(bottom: 8),
+                            padding: const EdgeInsets.all(6),
+                            child: const Row(
+                              children: [
+                                Icon(Icons.phone),
+                                SizedBox(width: 8,),
+                                Text("Phone"),
+                                Spacer(),
+                                Text("+1 2345 6789 00"),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     )
