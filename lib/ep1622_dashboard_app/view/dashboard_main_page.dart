@@ -127,7 +127,9 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Text("Information"),
-                          const SizedBox(height: 12,),
+                          const SizedBox(
+                            height: 12,
+                          ),
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.indigo[50],
@@ -138,7 +140,9 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             child: const Row(
                               children: [
                                 Icon(Icons.language),
-                                SizedBox(width: 8,),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 Text("Website"),
                                 Spacer(),
                                 Text("www.flutter.dev"),
@@ -151,7 +155,9 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             child: const Row(
                               children: [
                                 Icon(Icons.email_outlined),
-                                SizedBox(width: 8,),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 Text("Email"),
                                 Spacer(),
                                 Text("www.flutter.dev"),
@@ -168,7 +174,9 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             child: const Row(
                               children: [
                                 Icon(Icons.phone),
-                                SizedBox(width: 8,),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 Text("Phone"),
                                 Spacer(),
                                 Text("+1 2345 6789 00"),
@@ -181,13 +189,37 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             child: const Row(
                               children: [
                                 Icon(Icons.calendar_month),
-                                SizedBox(width: 8,),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 Text("Joined"),
                                 Spacer(),
                                 Text("12 Jun 2010"),
                               ],
                             ),
                           ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text("Earning"),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.green[50],
+                                ),
+                                child: Row(
+                                  children: [
+                                    Icon(Icons.arrow_upward),
+                                    Text("6.4%"),
+                                  ],
+                                ),
+                              )
+                            ],
+                          )
                         ],
                       ),
                     )
