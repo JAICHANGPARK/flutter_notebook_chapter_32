@@ -62,7 +62,9 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             onPressed: () {},
                           ),
                         ),
-                        SizedBox(width: 8,),
+                        SizedBox(
+                          width: 8,
+                        ),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -77,7 +79,9 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             onPressed: () {},
                           ),
                         ),
-                        SizedBox(width: 8,),
+                        SizedBox(
+                          width: 8,
+                        ),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
@@ -118,11 +122,30 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                           color: Colors.grey[200]!,
                         ),
                       ),
-
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Information"),
+                          Container(
+                            child: Row(
+                              children: [
+                                Icon(Icons.language),
+                                Text("Website"),
+                                Spacer(),
+                                Text("www.flutter.dev"),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            child: Row(
+                              children: [
+                                Icon(Icons.email_outlined),
+                                Text("Email"),
+                                Spacer(),
+                                Text("www.flutter.dev"),
+                              ],
+                            ),
+                          )
                         ],
                       ),
                     )
