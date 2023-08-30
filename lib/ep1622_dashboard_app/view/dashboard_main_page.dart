@@ -147,7 +147,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                           ),
                           Container(
                             margin: const EdgeInsets.only(bottom: 8),
-                            padding: const EdgeInsets.all(6),
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
                             child: const Row(
                               children: [
                                 Icon(Icons.email_outlined),
@@ -164,7 +164,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               borderRadius: BorderRadius.circular(4),
                             ),
                             margin: const EdgeInsets.only(bottom: 8),
-                            padding: const EdgeInsets.all(6),
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
                             child: const Row(
                               children: [
                                 Icon(Icons.phone),
@@ -172,6 +172,19 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                 Text("Phone"),
                                 Spacer(),
                                 Text("+1 2345 6789 00"),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(bottom: 8),
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                            child: const Row(
+                              children: [
+                                Icon(Icons.calendar_month),
+                                SizedBox(width: 8,),
+                                Text("Joined"),
+                                Spacer(),
+                                Text("12 Jun 2010"),
                               ],
                             ),
                           ),
