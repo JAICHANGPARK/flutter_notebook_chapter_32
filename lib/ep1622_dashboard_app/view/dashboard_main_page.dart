@@ -206,7 +206,9 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                         border: Border.all(color: Colors.grey[300]!),
                         borderRadius: BorderRadius.circular(8),
                       ),
+                      padding: EdgeInsets.all(12),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -240,7 +242,10 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                 ),
                               )
                             ],
-                          )
+                          ),
+                          Text("213,95 M\$", style: TextStyle(
+                            fontSize: 24
+                          ),)
                         ],
                       ),
                     )
