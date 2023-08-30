@@ -202,6 +202,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                         ),
                       ),
                       Container(
+                        margin: const EdgeInsets.only(bottom: 8),
                         padding: const EdgeInsets.all(12),
                         decoration: BoxDecoration(
                           border: Border.all(color: Colors.grey[300]!),
@@ -257,6 +258,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                         ),
                       ),
                       Container(
+                        margin: const EdgeInsets.only(bottom: 8),
                         padding: const EdgeInsets.all(12),
                         decoration: BoxDecoration(
                           border: Border.all(color: Colors.grey[300]!),
@@ -267,16 +269,28 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text("Financial"),
+                                const Text(
+                                  "Financial",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
+                                ),
                                 Container(
                                   child: DropdownButton<String?>(
-                                    items: [DropdownMenuItem(child: Text("August"))],
+                                    items: [
+                                      const DropdownMenuItem(
+                                        child: Text("August"),
+                                      ),
+                                    ],
                                     onChanged: (Object? value) {},
                                   ),
                                 )
                               ],
                             ),
-                            SizedBox(height: 180,)
+                            const SizedBox(
+                              height: 180,
+                            )
                           ],
                         ),
                       ),
