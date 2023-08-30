@@ -202,11 +202,11 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                         ),
                       ),
                       Container(
+                        padding: const EdgeInsets.all(12),
                         decoration: BoxDecoration(
                           border: Border.all(color: Colors.grey[300]!),
                           borderRadius: BorderRadius.circular(8),
                         ),
-                        padding: const EdgeInsets.all(12),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -256,7 +256,30 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                           ],
                         ),
                       ),
-
+                      Container(
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Colors.grey[300]!),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text("Financial"),
+                                Container(
+                                  child: DropdownButton<String?>(
+                                    items: [DropdownMenuItem(child: Text("August"))],
+                                    onChanged: (Object? value) {},
+                                  ),
+                                )
+                              ],
+                            ),
+                            SizedBox(height: 180,)
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ),
