@@ -243,9 +243,16 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               )
                             ],
                           ),
-                          Text("213,95 M\$", style: TextStyle(
-                            fontSize: 24
-                          ),)
+                          SizedBox(
+                            height: 12,
+                          ),
+                          Text(
+                            "213,95 M\$",
+                            style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
                         ],
                       ),
                     )
