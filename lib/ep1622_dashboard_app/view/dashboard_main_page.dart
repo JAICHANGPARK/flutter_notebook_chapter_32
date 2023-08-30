@@ -202,12 +202,22 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                       ),
                     ),
                     Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey[300]!),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                       child: Column(
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("Earning"),
+                              Text(
+                                "Earning",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
+                              ),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.green[50],
@@ -223,7 +233,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                       "6.4%",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        color: Colors.green
+                                        color: Colors.green,
                                       ),
                                     ),
                                   ],
