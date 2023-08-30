@@ -133,6 +133,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               color: Colors.indigo[50],
                               borderRadius: BorderRadius.circular(4),
                             ),
+                            margin: EdgeInsets.only(bottom: 8),
                             padding: EdgeInsets.all(6),
                             child: Row(
                               children: [
@@ -144,6 +145,8 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             ),
                           ),
                           Container(
+                            margin: EdgeInsets.only(bottom: 8),
+                            padding: EdgeInsets.all(6),
                             child: Row(
                               children: [
                                 Icon(Icons.email_outlined),
