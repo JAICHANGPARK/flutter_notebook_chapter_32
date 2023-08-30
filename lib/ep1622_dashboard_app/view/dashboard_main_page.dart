@@ -205,16 +205,27 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                       child: Column(
                         children: [
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("Earning"),
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.green[50],
                                 ),
+                                padding: EdgeInsets.all(4),
                                 child: Row(
                                   children: [
-                                    Icon(Icons.arrow_upward),
-                                    Text("6.4%"),
+                                    Icon(
+                                      Icons.arrow_upward,
+                                      color: Colors.green,
+                                    ),
+                                    Text(
+                                      "6.4%",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.green
+                                      ),
+                                    ),
                                   ],
                                 ),
                               )
