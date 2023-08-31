@@ -92,7 +92,6 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                         Icon(
                           Icons.arrow_drop_up_sharp,
                         ),
-
                       ],
                     ),
                   ),
@@ -101,6 +100,10 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                     onPressed: () {},
                     label: const Text("Add Product"),
                     icon: const Icon(Icons.add),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green,
+                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12)
+                    ),
                   ),
                 ],
               ),
@@ -111,7 +114,6 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                   padding: const EdgeInsets.only(left: 16, right: 16),
                   child: Column(
                     children: [
-
                       Container(
                         width: double.infinity,
                         margin: const EdgeInsets.symmetric(vertical: 16),
