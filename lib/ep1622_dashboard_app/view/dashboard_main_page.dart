@@ -319,6 +319,11 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                         (index) => FlSpot(index.toDouble(), Random().nextDouble() * 15),
                                       ),
                                       isCurved: true,
+                                      // gradient: LinearGradient(
+                                      //   colors: [Colors.red[300]!, Colors.red[200]!, Colors.red[100]!],
+                                      // ),
+                                      dashArray: [12, 4],
+                                      color: Colors.red
                                     )
                                   ],
                                   borderData: FlBorderData(
