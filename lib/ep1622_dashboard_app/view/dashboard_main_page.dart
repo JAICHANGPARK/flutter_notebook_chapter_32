@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
@@ -303,7 +305,20 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             SizedBox(
                               height: 180,
                               child: LineChart(
-                                LineChartData(),
+                                LineChartData(
+                                  lineBarsData: [
+                                    LineChartBarData(
+                                      dotData: FlDotData(
+                                        show: false,
+                                      ),
+                                      spots: List.generate(
+                                        24,
+                                        (index) => FlSpot(index.toDouble(), Random().nextDouble() * 15),
+                                      ),
+                                      isCurved: true,
+                                    )
+                                  ],
+                                ),
                               ),
                             )
                           ],
