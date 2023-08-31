@@ -316,7 +316,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                       ),
                                       spots: List.generate(
                                         24,
-                                        (index) => FlSpot(index.toDouble(), Random().nextDouble() * 15),
+                                        (index) => FlSpot(index.toDouble(), (Random().nextDouble() * 2) + 4),
                                       ),
                                       isCurved: true,
 
