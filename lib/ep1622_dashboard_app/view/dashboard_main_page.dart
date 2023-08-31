@@ -282,6 +282,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                   ),
                                 ),
                                 Container(
+                                  decoration: BoxDecoration(),
                                   child: DropdownButton<String?>(
                                     items: [
                                       const DropdownMenuItem(
