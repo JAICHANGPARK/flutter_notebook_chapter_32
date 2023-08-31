@@ -101,8 +101,11 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                     label: const Text("Add Product"),
                     icon: const Icon(Icons.add),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Color.fromRGBO(45, 182, 125, 1),
-                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12)
+                      backgroundColor: const Color.fromRGBO(45, 182, 125, 1),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 12,
+                      ),
                     ),
                   ),
                 ],
