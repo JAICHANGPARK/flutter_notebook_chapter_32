@@ -303,7 +303,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               ],
                             ),
                             SizedBox(
-                              height: 16,
+                              height: 24,
                             ),
                             SizedBox(
                               height: 180,
@@ -319,13 +319,16 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                         (index) => FlSpot(index.toDouble(), Random().nextDouble() * 15),
                                       ),
                                       isCurved: true,
-                                      // gradient: LinearGradient(
-                                      //   colors: [Colors.red[300]!, Colors.red[200]!, Colors.red[100]!],
-                                      // ),
+
                                       dashArray: [12, 4],
                                       color: Colors.red,
                                       belowBarData: BarAreaData(
                                         show: true,
+                                        gradient: LinearGradient(
+                                          colors: [Colors.red[300]!, Colors.red[200]!, Colors.red[100]!],
+                                          begin: Alignment.topCenter,
+                                          end: Alignment.bottomCenter
+                                        ),
                                       ),
                                     )
                                   ],
