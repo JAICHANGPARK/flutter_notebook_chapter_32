@@ -87,16 +87,11 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                     ),
                     child: Row(
                       children: [
-                        IconButton(
-                          icon: const Icon(Icons.calendar_today),
-                          onPressed: () {},
+                        const Icon(Icons.calendar_today),
+                        const Icon(
+                          Icons.arrow_drop_up_sharp,
                         ),
-                        IconButton(
-                          onPressed: () {},
-                          icon: const Icon(
-                            Icons.arrow_drop_up_sharp,
-                          ),
-                        )
+                       
                       ],
                     ),
                   ),
