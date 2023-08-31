@@ -306,7 +306,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               height: 24,
                             ),
                             SizedBox(
-                              height: 180,
+                              height: 140,
                               child: LineChart(
                                 LineChartData(
                                   lineBarsData: [
