@@ -85,13 +85,14 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                       ),
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: Row(
+                    padding: const EdgeInsets.all(12),
+                    child: const Row(
                       children: [
-                        const Icon(Icons.calendar_today),
-                        const Icon(
+                        Icon(Icons.calendar_today),
+                        Icon(
                           Icons.arrow_drop_up_sharp,
                         ),
-                       
+
                       ],
                     ),
                   ),
