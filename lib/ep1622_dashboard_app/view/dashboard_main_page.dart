@@ -303,6 +303,9 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               ],
                             ),
                             SizedBox(
+                              height: 16,
+                            ),
+                            SizedBox(
                               height: 180,
                               child: LineChart(
                                 LineChartData(
@@ -318,6 +321,13 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                       isCurved: true,
                                     )
                                   ],
+                                  borderData: FlBorderData(
+                                    show: false,
+                                  ),
+                                  titlesData: FlTitlesData(show: false),
+                                  gridData: FlGridData(
+                                    show: false,
+                                  ),
                                 ),
                               ),
                             )
