@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class DashboardMainPage extends StatefulWidget {
@@ -282,7 +283,12 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                   ),
                                 ),
                                 Container(
-                                  decoration: BoxDecoration(),
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: Colors.grey[300]!,
+                                      ),
+                                      borderRadius: BorderRadius.circular(8)),
+                                  padding: EdgeInsets.symmetric(horizontal: 12),
                                   child: DropdownButton<String?>(
                                     items: [
                                       const DropdownMenuItem(
@@ -294,8 +300,11 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                 )
                               ],
                             ),
-                            const SizedBox(
+                            SizedBox(
                               height: 180,
+                              child: LineChart(
+                                LineChartData(),
+                              ),
                             )
                           ],
                         ),
