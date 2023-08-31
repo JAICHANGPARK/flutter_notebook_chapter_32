@@ -323,7 +323,10 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                       //   colors: [Colors.red[300]!, Colors.red[200]!, Colors.red[100]!],
                                       // ),
                                       dashArray: [12, 4],
-                                      color: Colors.red
+                                      color: Colors.red,
+                                      belowBarData: BarAreaData(
+                                        show: true,
+                                      ),
                                     )
                                   ],
                                   borderData: FlBorderData(
