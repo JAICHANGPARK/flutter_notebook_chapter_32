@@ -507,8 +507,26 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                     duration: Duration(milliseconds: 250),
                     child: Container(
                       color: Colors.blue,
-                      child: Column(
-                        children: [],
+
+                      child: ListView(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Text("General"),
+                          ),
+                          Container(
+                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                            decoration: BoxDecoration(
+                              color: Colors.indigo[50],
+                            ),
+                            child: Row(
+                              children: [
+                                Icon(Icons.apps),
+                                Text("Overview"),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
