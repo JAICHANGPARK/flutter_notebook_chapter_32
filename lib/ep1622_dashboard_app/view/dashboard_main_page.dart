@@ -367,11 +367,12 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  border: Border.all(
-                                    color: Colors.grey,
-                                  ),
-                                  color: Colors.white),
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                              ),
                               padding: const EdgeInsets.all(8),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -388,7 +389,9 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(height: 8,),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
                                   const Padding(
                                     padding: EdgeInsets.symmetric(vertical: 8),
                                     child: Text(
@@ -400,11 +403,64 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
                                     maxLines: 3,
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
-                                      height: 1.5
+                                    style: TextStyle(height: 1.5),
+                                  ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  OutlinedButton(
+                                    onPressed: () {},
+                                    child: Text("View more"),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: 16,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              padding: const EdgeInsets.all(8),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    height: 140,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      image: const DecorationImage(
+                                        image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2023/05/01/06/17/pelican-7962189_1280.jpg",
+                                        ),
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
                                   ),
-                                  SizedBox(height: 8,),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  const Padding(
+                                    padding: EdgeInsets.symmetric(vertical: 8),
+                                    child: Text(
+                                      "Flutter Care",
+                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                                    ),
+                                  ),
+                                  const Text(
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    maxLines: 3,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(height: 1.5),
+                                  ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
                                   OutlinedButton(
                                     onPressed: () {},
                                     child: Text("View more"),
