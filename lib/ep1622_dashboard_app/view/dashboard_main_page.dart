@@ -319,16 +319,14 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                         (index) => FlSpot(index.toDouble(), (Random().nextDouble() * 2) + 4),
                                       ),
                                       isCurved: true,
-
                                       dashArray: [12, 4],
                                       color: Colors.red,
                                       belowBarData: BarAreaData(
                                         show: true,
                                         gradient: LinearGradient(
-                                          colors: [Colors.red[300]!, Colors.red[200]!, Colors.red[100]!],
-                                          begin: Alignment.topCenter,
-                                          end: Alignment.bottomCenter
-                                        ),
+                                            colors: [Colors.red[300]!, Colors.red[200]!, Colors.red[100]!],
+                                            begin: Alignment.topCenter,
+                                            end: Alignment.bottomCenter),
                                       ),
                                     )
                                   ],
@@ -345,6 +343,25 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                           ],
                         ),
                       ),
+                      Container(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                
+                              ],
+                            )
+                            Text(
+                              "Top Recommended",
+                            ),
+                            TextButton(
+                              onPressed: () {},
+                              child: Text("View All"),
+                            ),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 ),
