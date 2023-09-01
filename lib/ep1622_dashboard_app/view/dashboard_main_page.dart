@@ -349,16 +349,16 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                           children: [
                             Row(
                               children: [
-                                
+                                Text(
+                                  "Top Recommended",
+                                ),
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text("View All"),
+                                ),
                               ],
                             )
-                            Text(
-                              "Top Recommended",
-                            ),
-                            TextButton(
-                              onPressed: () {},
-                              child: Text("View All"),
-                            ),
+
                           ],
                         ),
                       )
