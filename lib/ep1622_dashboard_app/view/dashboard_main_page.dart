@@ -508,172 +508,189 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                     bottom: 0,
                     duration: const Duration(milliseconds: 250),
                     child: Container(
-                      color: Colors.blue,
-                      child: ListView(
+                      child: Column(
                         children: [
-                          const Padding(
-                            padding: EdgeInsets.all(16.0),
-                            child: Text("General"),
+                          Expanded(
+                            child: ListView(
+                              children: [
+                                const Padding(
+                                  padding: EdgeInsets.all(16.0),
+                                  child: Text("General"),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 16,
+                                    vertical: 12,
+                                  ),
+                                  margin: const EdgeInsets.only(bottom: 8),
+                                  decoration: BoxDecoration(
+                                    color: Colors.indigo[50],
+                                  ),
+                                  child: const Row(
+                                    children: [
+                                      Icon(Icons.apps),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Text("Overview"),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 16,
+                                    vertical: 12,
+                                  ),
+                                  margin: const EdgeInsets.only(bottom: 8),
+                                  decoration: BoxDecoration(),
+                                  child: const Row(
+                                    children: [
+                                      Icon(Icons.wallet),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Text("Wallet"),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 16,
+                                    vertical: 12,
+                                  ),
+                                  margin: const EdgeInsets.only(bottom: 8),
+                                  decoration: BoxDecoration(),
+                                  child: const Row(
+                                    children: [
+                                      Icon(Icons.wallet),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Text("Wallet"),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 16,
+                                    vertical: 12,
+                                  ),
+                                  margin: const EdgeInsets.only(bottom: 8),
+                                  decoration: BoxDecoration(),
+                                  child: const Row(
+                                    children: [
+                                      Icon(Icons.wallet),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Text("Wallet"),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 16,
+                                    vertical: 12,
+                                  ),
+                                  margin: const EdgeInsets.only(bottom: 8),
+                                  decoration: BoxDecoration(),
+                                  child: const Row(
+                                    children: [
+                                      Icon(Icons.wallet),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Text("Wallet"),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 16,
+                                    vertical: 12,
+                                  ),
+                                  margin: const EdgeInsets.only(bottom: 8),
+                                  decoration: BoxDecoration(),
+                                  child: const Row(
+                                    children: [
+                                      Icon(Icons.wallet),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Text("Wallet"),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 16,
+                                    vertical: 12,
+                                  ),
+                                  margin: const EdgeInsets.only(bottom: 8),
+                                  decoration: BoxDecoration(),
+                                  child: const Row(
+                                    children: [
+                                      Icon(Icons.wallet),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Text("Wallet"),
+                                    ],
+                                  ),
+                                ),
+                                const Padding(
+                                  padding: EdgeInsets.all(16.0),
+                                  child: Text("Support"),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 16,
+                                    vertical: 12,
+                                  ),
+                                  margin: const EdgeInsets.only(bottom: 8),
+                                  decoration: BoxDecoration(),
+                                  child: const Row(
+                                    children: [
+                                      Icon(Icons.wallet),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Text("Wallet"),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 16,
+                                    vertical: 12,
+                                  ),
+                                  margin: const EdgeInsets.only(bottom: 8),
+                                  decoration: BoxDecoration(),
+                                  child: const Row(
+                                    children: [
+                                      Icon(Icons.wallet),
+                                      SizedBox(
+                                        width: 12,
+                                      ),
+                                      Text("Wallet"),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                           Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 12,
-                            ),
-                            margin: const EdgeInsets.only(bottom: 8),
                             decoration: BoxDecoration(
-                              color: Colors.indigo[50],
+                              color: Colors.red[50],
+                              border: Border.all(
+                                color: Colors.red,
+                              ),
                             ),
-                            child: const Row(
-                              children: [
-                                Icon(Icons.apps),
-                                SizedBox(
-                                  width: 12,
-                                ),
-                                Text("Overview"),
-                              ],
+                            margin: EdgeInsets.all(16),
+                            child: Row(
+                              children: [Icon(Icons.logout), Text("LogOut")],
                             ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 12,
-                            ),
-                            margin: const EdgeInsets.only(bottom: 8),
-                            decoration: BoxDecoration(),
-                            child: const Row(
-                              children: [
-                                Icon(Icons.wallet),
-                                SizedBox(
-                                  width: 12,
-                                ),
-                                Text("Wallet"),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 12,
-                            ),
-                            margin: const EdgeInsets.only(bottom: 8),
-                            decoration: BoxDecoration(),
-                            child: const Row(
-                              children: [
-                                Icon(Icons.wallet),
-                                SizedBox(
-                                  width: 12,
-                                ),
-                                Text("Wallet"),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 12,
-                            ),
-                            margin: const EdgeInsets.only(bottom: 8),
-                            decoration: BoxDecoration(),
-                            child: const Row(
-                              children: [
-                                Icon(Icons.wallet),
-                                SizedBox(
-                                  width: 12,
-                                ),
-                                Text("Wallet"),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 12,
-                            ),
-                            margin: const EdgeInsets.only(bottom: 8),
-                            decoration: BoxDecoration(),
-                            child: const Row(
-                              children: [
-                                Icon(Icons.wallet),
-                                SizedBox(
-                                  width: 12,
-                                ),
-                                Text("Wallet"),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 12,
-                            ),
-                            margin: const EdgeInsets.only(bottom: 8),
-                            decoration: BoxDecoration(),
-                            child: const Row(
-                              children: [
-                                Icon(Icons.wallet),
-                                SizedBox(
-                                  width: 12,
-                                ),
-                                Text("Wallet"),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 12,
-                            ),
-                            margin: const EdgeInsets.only(bottom: 8),
-                            decoration: BoxDecoration(),
-                            child: const Row(
-                              children: [
-                                Icon(Icons.wallet),
-                                SizedBox(
-                                  width: 12,
-                                ),
-                                Text("Wallet"),
-                              ],
-                            ),
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.all(16.0),
-                            child: Text("Support"),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 12,
-                            ),
-                            margin: const EdgeInsets.only(bottom: 8),
-                            decoration: BoxDecoration(),
-                            child: const Row(
-                              children: [
-                                Icon(Icons.wallet),
-                                SizedBox(
-                                  width: 12,
-                                ),
-                                Text("Wallet"),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 12,
-                            ),
-                            margin: const EdgeInsets.only(bottom: 8),
-                            decoration: BoxDecoration(),
-                            child: const Row(
-                              children: [
-                                Icon(Icons.wallet),
-                                SizedBox(
-                                  width: 12,
-                                ),
-                                Text("Wallet"),
-                              ],
-                            ),
-                          ),
+                          )
                         ],
                       ),
                     ),
