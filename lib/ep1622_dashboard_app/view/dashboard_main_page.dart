@@ -11,6 +11,8 @@ class DashboardMainPage extends StatefulWidget {
 }
 
 class _DashboardMainPageState extends State<DashboardMainPage> {
+  bool isOpen = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,8 +32,12 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                       ),
                     ),
                     child: IconButton(
-                      icon: const Icon(Icons.menu),
-                      onPressed: () {},
+                      icon: isOpen ? const Icon(Icons.cancel_outlined) : const Icon(Icons.menu),
+                      onPressed: () {
+                        setState(() {
+                          isOpen = !isOpen;
+                        });
+                      },
                     ),
                   ),
                   const Text(
@@ -389,7 +395,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
                                   const Padding(
@@ -405,17 +411,17 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                     overflow: TextOverflow.ellipsis,
                                     style: TextStyle(height: 1.5),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
                                   OutlinedButton(
                                     onPressed: () {},
-                                    child: Text("View more"),
+                                    child: const Text("View more"),
                                   ),
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 16,
                             ),
                             Container(
@@ -442,7 +448,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
                                   const Padding(
@@ -458,12 +464,12 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                     overflow: TextOverflow.ellipsis,
                                     style: TextStyle(height: 1.5),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
                                   OutlinedButton(
                                     onPressed: () {},
-                                    child: Text("View more"),
+                                    child: const Text("View more"),
                                   ),
                                 ],
                               ),
