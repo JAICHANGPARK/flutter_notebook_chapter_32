@@ -352,15 +352,37 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
                                   "Top Recommended",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16
+                                  ),
                                 ),
                                 TextButton(
                                   onPressed: () {},
                                   child: Text("View All"),
                                 ),
                               ],
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(4),
+                                  border: Border.all(
+                                    color: Colors.grey,
+                                  ),
+                                  color: Colors.white),
+                              padding: EdgeInsets.all(4),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    height: 140,
+                                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)),
+                                  )
+                                ],
+                              ),
                             )
                           ],
                         ),
