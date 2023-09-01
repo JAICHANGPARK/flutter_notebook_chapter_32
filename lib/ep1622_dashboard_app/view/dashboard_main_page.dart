@@ -347,6 +347,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                         decoration: BoxDecoration(
                           color: Colors.indigo[50],
                         ),
+                        padding: EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
