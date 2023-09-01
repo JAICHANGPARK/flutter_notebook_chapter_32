@@ -344,6 +344,9 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                         ),
                       ),
                       Container(
+                        decoration: BoxDecoration(
+                          color: Colors.indigo[50],
+                        ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -358,7 +361,6 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                 ),
                               ],
                             )
-
                           ],
                         ),
                       )
