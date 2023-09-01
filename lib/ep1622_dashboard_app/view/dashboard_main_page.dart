@@ -388,6 +388,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                       ),
                                     ),
                                   ),
+                                  SizedBox(height: 8,),
                                   const Padding(
                                     padding: EdgeInsets.symmetric(vertical: 8),
                                     child: Text(
@@ -399,6 +400,14 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
                                     maxLines: 3,
                                     overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                      height: 1.5
+                                    ),
+                                  ),
+                                  SizedBox(height: 8,),
+                                  OutlinedButton(
+                                    onPressed: () {},
+                                    child: Text("View more"),
                                   ),
                                 ],
                               ),
