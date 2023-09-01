@@ -507,7 +507,6 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                     duration: Duration(milliseconds: 250),
                     child: Container(
                       color: Colors.blue,
-
                       child: ListView(
                         children: [
                           Padding(
@@ -515,13 +514,19 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                             child: Text("General"),
                           ),
                           Container(
-                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 16,
+                              vertical: 12,
+                            ),
                             decoration: BoxDecoration(
                               color: Colors.indigo[50],
                             ),
                             child: Row(
                               children: [
                                 Icon(Icons.apps),
+                                SizedBox(
+                                  width: 12,
+                                ),
                                 Text("Overview"),
                               ],
                             ),
