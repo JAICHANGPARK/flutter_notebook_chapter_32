@@ -518,6 +518,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               horizontal: 16,
                               vertical: 12,
                             ),
+                            margin: EdgeInsets.only(bottom: 8),
                             decoration: BoxDecoration(
                               color: Colors.indigo[50],
                             ),
