@@ -367,7 +367,9 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                          color: Colors.indigo[50], borderRadius: BorderRadius.circular(8)),
+                                        color: Colors.indigo[50],
+                                        borderRadius: BorderRadius.circular(8),
+                                      ),
                                       padding: const EdgeInsets.all(16),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -538,9 +540,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               vertical: 12,
                             ),
                             margin: const EdgeInsets.only(bottom: 8),
-                            decoration: BoxDecoration(
-
-                            ),
+                            decoration: BoxDecoration(),
                             child: const Row(
                               children: [
                                 Icon(Icons.wallet),
@@ -557,9 +557,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               vertical: 12,
                             ),
                             margin: const EdgeInsets.only(bottom: 8),
-                            decoration: BoxDecoration(
-
-                            ),
+                            decoration: BoxDecoration(),
                             child: const Row(
                               children: [
                                 Icon(Icons.wallet),
@@ -576,9 +574,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               vertical: 12,
                             ),
                             margin: const EdgeInsets.only(bottom: 8),
-                            decoration: BoxDecoration(
-
-                            ),
+                            decoration: BoxDecoration(),
                             child: const Row(
                               children: [
                                 Icon(Icons.wallet),
@@ -595,9 +591,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               vertical: 12,
                             ),
                             margin: const EdgeInsets.only(bottom: 8),
-                            decoration: BoxDecoration(
-
-                            ),
+                            decoration: BoxDecoration(),
                             child: const Row(
                               children: [
                                 Icon(Icons.wallet),
@@ -614,9 +608,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               vertical: 12,
                             ),
                             margin: const EdgeInsets.only(bottom: 8),
-                            decoration: BoxDecoration(
-
-                            ),
+                            decoration: BoxDecoration(),
                             child: const Row(
                               children: [
                                 Icon(Icons.wallet),
@@ -633,9 +625,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               vertical: 12,
                             ),
                             margin: const EdgeInsets.only(bottom: 8),
-                            decoration: BoxDecoration(
-
-                            ),
+                            decoration: BoxDecoration(),
                             child: const Row(
                               children: [
                                 Icon(Icons.wallet),
@@ -649,6 +639,40 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                           const Padding(
                             padding: EdgeInsets.all(16.0),
                             child: Text("Support"),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 16,
+                              vertical: 12,
+                            ),
+                            margin: const EdgeInsets.only(bottom: 8),
+                            decoration: BoxDecoration(),
+                            child: const Row(
+                              children: [
+                                Icon(Icons.wallet),
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Text("Wallet"),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 16,
+                              vertical: 12,
+                            ),
+                            margin: const EdgeInsets.only(bottom: 8),
+                            decoration: BoxDecoration(),
+                            child: const Row(
+                              children: [
+                                Icon(Icons.wallet),
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Text("Wallet"),
+                              ],
+                            ),
                           ),
                         ],
                       ),
