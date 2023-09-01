@@ -343,11 +343,11 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                           ],
                         ),
                       ),
+                      SizedBox(
+                        height: 16,
+                      ),
                       Container(
-                        decoration: BoxDecoration(
-                          color: Colors.indigo[50],
-                          borderRadius: BorderRadius.circular(8)
-                        ),
+                        decoration: BoxDecoration(color: Colors.indigo[50], borderRadius: BorderRadius.circular(8)),
                         padding: EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -357,10 +357,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               children: [
                                 Text(
                                   "Top Recommended",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16
-                                  ),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                 ),
                                 TextButton(
                                   onPressed: () {},
@@ -380,8 +377,16 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                 children: [
                                   Container(
                                     height: 140,
-                                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)),
-                                  )
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                  ),
+                                  Text("Flutter Care"),
+                                  Text(
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
+                                    maxLines: 3,
+                                    overflow: TextOverflow.ellipsis,
+                                  ),
                                 ],
                               ),
                             )
