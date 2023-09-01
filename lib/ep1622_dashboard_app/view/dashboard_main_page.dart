@@ -685,7 +685,9 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                               border: Border.all(
                                 color: Colors.red,
                               ),
+                              borderRadius: BorderRadius.circular(8)
                             ),
+                            padding: EdgeInsets.all(8),
                             margin: EdgeInsets.all(16),
                             child: Row(
                               children: [Icon(Icons.logout), Text("LogOut")],
