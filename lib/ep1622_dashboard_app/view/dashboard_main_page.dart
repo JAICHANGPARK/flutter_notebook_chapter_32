@@ -290,7 +290,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                         color: Colors.grey[300]!,
                                       ),
                                       borderRadius: BorderRadius.circular(8)),
-                                  padding: EdgeInsets.symmetric(horizontal: 12),
+                                  padding: const EdgeInsets.symmetric(horizontal: 12),
                                   child: DropdownButton<String?>(
                                     items: [
                                       const DropdownMenuItem(
@@ -302,7 +302,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                 )
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 24,
                             ),
                             SizedBox(
@@ -311,7 +311,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                 LineChartData(
                                   lineBarsData: [
                                     LineChartBarData(
-                                      dotData: FlDotData(
+                                      dotData: const FlDotData(
                                         show: false,
                                       ),
                                       spots: List.generate(
@@ -333,8 +333,8 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                   borderData: FlBorderData(
                                     show: false,
                                   ),
-                                  titlesData: FlTitlesData(show: false),
-                                  gridData: FlGridData(
+                                  titlesData: const FlTitlesData(show: false),
+                                  gridData: const FlGridData(
                                     show: false,
                                   ),
                                 ),
@@ -343,36 +343,36 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       Container(
                         decoration: BoxDecoration(color: Colors.indigo[50], borderRadius: BorderRadius.circular(8)),
-                        padding: EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "Top Recommended",
                                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                 ),
                                 TextButton(
                                   onPressed: () {},
-                                  child: Text("View All"),
+                                  child: const Text("View All"),
                                 ),
                               ],
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(4),
+                                  borderRadius: BorderRadius.circular(8),
                                   border: Border.all(
                                     color: Colors.grey,
                                   ),
                                   color: Colors.white),
-                              padding: EdgeInsets.all(8),
+                              padding: const EdgeInsets.all(8),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -380,7 +380,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                     height: 140,
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(8),
-                                      image: DecorationImage(
+                                      image: const DecorationImage(
                                         image: NetworkImage(
                                           "https://cdn.pixabay.com/photo/2023/05/01/06/17/pelican-7962189_1280.jpg",
                                         ),
@@ -388,14 +388,14 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                                       ),
                                     ),
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(vertical: 8),
+                                  const Padding(
+                                    padding: EdgeInsets.symmetric(vertical: 8),
                                     child: Text(
                                       "Flutter Care",
                                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                                     ),
                                   ),
-                                  Text(
+                                  const Text(
                                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
                                     maxLines: 3,
                                     overflow: TextOverflow.ellipsis,
