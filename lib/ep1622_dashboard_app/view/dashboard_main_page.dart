@@ -346,6 +346,7 @@ class _DashboardMainPageState extends State<DashboardMainPage> {
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.indigo[50],
+                          borderRadius: BorderRadius.circular(8)
                         ),
                         padding: EdgeInsets.all(16),
                         child: Column(
