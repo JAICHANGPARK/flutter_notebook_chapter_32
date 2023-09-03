@@ -6,7 +6,7 @@
 - by Saheda akter Shipa for SylGraph
 - https://dribbble.com/shots/22443987-Hotel-Booking-App
 
-<img src="https://cdn.dribbble.com/userupload/9652607/file/original-c1080b7b8f548c55c2b4ae44a531d759.png?resize=1600x1200"/>
+<img src="https://cdn.dribbble.com/userupload/9753975/file/original-82357c1187d58f156b067e8ca025085f.jpg?resize=1600x1198"/>
 
 ## EP1622-1625
 
