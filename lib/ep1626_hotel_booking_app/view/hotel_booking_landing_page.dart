@@ -14,6 +14,29 @@ class HotelBookingLandingPage extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
+          Positioned(
+            left: 16,
+            right: 16,
+            bottom: 16,
+            child: Container(
+              child: Column(
+                children: [
+                  Text(
+                    "Booking a loading space with us is simple!",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    "You can book flights, hotels, and restaurants, and other things",
+                    style: TextStyle(
+                      color: Colors.brown,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          )
         ],
       ),
     );
