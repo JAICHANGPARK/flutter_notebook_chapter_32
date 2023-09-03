@@ -27,16 +27,17 @@ class HotelBookingLandingPage extends StatelessWidget {
                 children: [
                   Text(
                     "Booking a loading space with us is simple!",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 28
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
                     textAlign: TextAlign.center,
                   ),
-                  Text(
-                    "You can book flights, hotels, and restaurants, and other things",
-                    style: TextStyle(
-                      color: Colors.brown,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: Text(
+                      "You can book flights, hotels, and restaurants, and other things",
+                      style: TextStyle(
+                        color: Colors.brown,
+                        fontSize: 16,
+                      ),
                     ),
                   )
                 ],
