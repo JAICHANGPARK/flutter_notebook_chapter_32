@@ -19,6 +19,10 @@ class HotelBookingLandingPage extends StatelessWidget {
             right: 16,
             bottom: 16,
             child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
               child: Column(
                 children: [
                   Text(
