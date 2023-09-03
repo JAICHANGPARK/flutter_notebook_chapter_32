@@ -19,9 +19,10 @@ class HotelBookingLandingPage extends StatelessWidget {
             right: 16,
             bottom: 16,
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 36),
               decoration: BoxDecoration(
                 color: Colors.white,
+                borderRadius: BorderRadius.circular(16),
               ),
               child: Column(
                 children: [
@@ -57,10 +58,7 @@ class HotelBookingLandingPage extends StatelessWidget {
                     child: Center(
                       child: Text(
                         "Get Started",
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.white
-                        ),
+                        style: TextStyle(fontSize: 16, color: Colors.white),
                       ),
                     ),
                   )
