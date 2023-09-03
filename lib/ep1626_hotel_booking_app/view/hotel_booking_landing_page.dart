@@ -29,7 +29,9 @@ class HotelBookingLandingPage extends StatelessWidget {
                     "Booking a loading space with us is simple!",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      fontSize: 28
                     ),
+                    textAlign: TextAlign.center,
                   ),
                   Text(
                     "You can book flights, hotels, and restaurants, and other things",
