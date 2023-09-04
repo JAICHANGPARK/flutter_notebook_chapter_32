@@ -11,7 +11,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:  SafeArea(
+      body: SafeArea(
         child: Column(
           children: [
             Padding(
@@ -45,16 +45,19 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
               ),
             ),
             Container(
-              decoration: BoxDecoration(
-                color: Colors.grey[300]!,
-                borderRadius: BorderRadius.circular(8)
-              ),
+              decoration: BoxDecoration(color: Colors.grey[300]!, borderRadius: BorderRadius.circular(8)),
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              padding: EdgeInsets.only(left: 16, bottom: 4, top: 4),
               child: Row(
                 children: [
-                  Expanded(child: TextField()),
+                  Expanded(
+                      child: TextField(
+                    decoration: InputDecoration(icon: Icon(Icons.search)),
+                  )),
                   Container(
                     child: IconButton(
-                      icon: Icon(Icons.tune), onPressed: () {  },
+                      icon: Icon(Icons.tune),
+                      onPressed: () {},
                     ),
                   )
                 ],
