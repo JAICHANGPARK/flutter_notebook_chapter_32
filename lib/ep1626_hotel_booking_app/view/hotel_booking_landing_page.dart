@@ -48,19 +48,24 @@ class HotelBookingLandingPage extends StatelessWidget {
                   const SizedBox(
                     height: 16,
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.brown,
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    margin: const EdgeInsets.symmetric(horizontal: 64),
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    child: const Center(
-                      child: Text(
-                        "Get Started",
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.white,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).pushReplacementNamed("/");
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.brown,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      margin: const EdgeInsets.symmetric(horizontal: 64),
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: const Center(
+                        child: Text(
+                          "Get Started",
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),
