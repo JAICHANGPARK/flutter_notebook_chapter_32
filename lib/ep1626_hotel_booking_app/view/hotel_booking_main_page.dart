@@ -11,7 +11,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const SafeArea(
+      body:  SafeArea(
         child: Column(
           children: [
             Padding(
@@ -44,6 +44,12 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                 ],
               ),
             ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.grey[300]!,
+                borderRadius: BorderRadius.circular(8)
+              ),
+            )
           ],
         ),
       ),
