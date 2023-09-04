@@ -16,14 +16,36 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
           children: [],
         ),
       ),
-      bottomNavigationBar:  BottomAppBar(
+      bottomNavigationBar: BottomAppBar(
         height: 72,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             IconButton(
               onPressed: () {},
               icon: Icon(
                 Icons.home_outlined,
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.search,
+              ),
+            ),
+            SizedBox(
+              width: 72,
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.chat_outlined,
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.person_2_outlined,
               ),
             )
           ],
