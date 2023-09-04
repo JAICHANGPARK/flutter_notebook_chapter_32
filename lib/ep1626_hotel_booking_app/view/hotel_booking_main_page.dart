@@ -21,6 +21,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                   CircleAvatar(
                     radius: 24,
                   ),
+                  SizedBox(width: 8,),
                   Expanded(
                       child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,6 +30,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                         "Hello, Dream",
                         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                       ),
+                      SizedBox(height: 8,),
                       Text(
                         "Welcome to Beauty Salon",
                       )
