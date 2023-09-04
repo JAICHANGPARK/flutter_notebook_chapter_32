@@ -14,25 +14,28 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
       body: const SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Expanded(
-                    child: Column(
-                  children: [
-                    Text(
-                      "Hello, Dream",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18
+            Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 24,
+                  ),
+                  Expanded(
+                      child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Hello, Dream",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                       ),
-                    ),
-                    Text(
-                      "Welcome to Beauty Salon",
-                    )
-                  ],
-                ))
-              ],
+                      Text(
+                        "Welcome to Beauty Salon",
+                      )
+                    ],
+                  ))
+                ],
+              ),
             )
           ],
         ),
