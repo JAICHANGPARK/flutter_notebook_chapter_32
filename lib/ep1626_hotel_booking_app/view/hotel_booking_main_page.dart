@@ -51,13 +51,22 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
               child: Row(
                 children: [
                   Expanded(
-                      child: TextField(
-                    decoration: InputDecoration(icon: Icon(Icons.search)),
-                  )),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        icon: Icon(Icons.search),
+                        border: InputBorder.none,
+                      ),
+                    ),
+                  ),
                   Container(
+                    decoration: BoxDecoration(
+                      color: Colors.brown,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
                     child: IconButton(
                       icon: Icon(Icons.tune),
                       onPressed: () {},
+                      color: Colors.white,
                     ),
                   )
                 ],
