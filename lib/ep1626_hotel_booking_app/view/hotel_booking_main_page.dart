@@ -11,12 +11,12 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
+      body: const SafeArea(
         child: Column(
           children: [],
         ),
       ),
-      bottomNavigationBar: BottomAppBar(
+      bottomNavigationBar: const BottomAppBar(
         height: 72,
         child: Row(
           children: [],
@@ -26,6 +26,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
         onPressed: () {},
         foregroundColor: Colors.white,
         backgroundColor: Colors.brown,
+        child: const Icon(Icons.document_scanner_outlined),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
