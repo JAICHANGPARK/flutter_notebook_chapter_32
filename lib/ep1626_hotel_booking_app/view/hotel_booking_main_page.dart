@@ -49,6 +49,16 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                 color: Colors.grey[300]!,
                 borderRadius: BorderRadius.circular(8)
               ),
+              child: Row(
+                children: [
+                  Expanded(child: TextField()),
+                  Container(
+                    child: IconButton(
+                      icon: Icon(Icons.tune), onPressed: () {  },
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
