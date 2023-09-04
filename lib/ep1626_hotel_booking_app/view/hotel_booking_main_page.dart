@@ -13,7 +13,28 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
     return Scaffold(
       body: const SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Row(
+              children: [
+                CircleAvatar(),
+                Expanded(
+                    child: Column(
+                  children: [
+                    Text(
+                      "Hello, Dream",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18
+                      ),
+                    ),
+                    Text(
+                      "Welcome to Beauty Salon",
+                    )
+                  ],
+                ))
+              ],
+            )
+          ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
