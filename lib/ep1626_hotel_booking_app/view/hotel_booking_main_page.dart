@@ -23,28 +23,28 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
           children: [
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.home_outlined,
               ),
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.search,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 72,
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.chat_outlined,
               ),
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.person_2_outlined,
               ),
             )
