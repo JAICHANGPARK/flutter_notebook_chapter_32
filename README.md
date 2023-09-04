@@ -1,6 +1,6 @@
 # flutter_notebook_chapter_32
 
-## EP1626
+## EP1627
 
 - Hotel Booking App
 - by Saheda akter Shipa for SylGraph
@@ -8,7 +8,7 @@
 
 <img src="https://cdn.dribbble.com/userupload/9753975/file/original-82357c1187d58f156b067e8ca025085f.jpg?resize=1600x1198"/>
 
-## EP1622-1625
+## EP1622-1626
 
 - Dashboard Mobile Responsive - Product Optimization
 - by Norch Studio
