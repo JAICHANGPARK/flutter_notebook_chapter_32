@@ -58,7 +58,10 @@ class HotelBookingLandingPage extends StatelessWidget {
                     child: Center(
                       child: Text(
                         "Get Started",
-                        style: TextStyle(fontSize: 16, color: Colors.white),
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   )
