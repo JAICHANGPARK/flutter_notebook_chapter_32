@@ -16,19 +16,26 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
           children: [],
         ),
       ),
-      bottomNavigationBar: const BottomAppBar(
+      bottomNavigationBar:  BottomAppBar(
         height: 72,
         child: Row(
-          children: [],
+          children: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.home_outlined,
+              ),
+            )
+          ],
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         foregroundColor: Colors.white,
         backgroundColor: Colors.brown,
         child: const Icon(Icons.document_scanner_outlined),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
