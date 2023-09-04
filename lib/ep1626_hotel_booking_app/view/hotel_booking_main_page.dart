@@ -24,7 +24,10 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: () {  },),
+      floatingActionButton: FloatingActionButton(onPressed: () {
+
+      },),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
