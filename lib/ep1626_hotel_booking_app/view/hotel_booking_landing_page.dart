@@ -19,14 +19,14 @@ class HotelBookingLandingPage extends StatelessWidget {
             right: 16,
             bottom: 16,
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 36),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 36),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Column(
                 children: [
-                  Text(
+                  const Text(
                     "Booking a loading space with us is simple!",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -34,8 +34,8 @@ class HotelBookingLandingPage extends StatelessWidget {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 16),
                     child: Text(
                       "You can book flights, hotels, and restaurants, and other things",
                       style: TextStyle(
@@ -45,7 +45,7 @@ class HotelBookingLandingPage extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
                   Container(
@@ -53,9 +53,9 @@ class HotelBookingLandingPage extends StatelessWidget {
                       color: Colors.brown,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    margin: EdgeInsets.symmetric(horizontal: 64),
-                    padding: EdgeInsets.symmetric(vertical: 16),
-                    child: Center(
+                    margin: const EdgeInsets.symmetric(horizontal: 64),
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: const Center(
                       child: Text(
                         "Get Started",
                         style: TextStyle(
