@@ -112,6 +112,11 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                     height: 240,
                     margin: EdgeInsets.symmetric(vertical: 16),
                     color: Colors.blue,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {},
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
