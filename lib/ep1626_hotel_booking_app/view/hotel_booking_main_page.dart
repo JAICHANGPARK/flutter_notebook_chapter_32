@@ -111,7 +111,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                   Container(
                     height: 240,
                     margin: EdgeInsets.symmetric(vertical: 16),
-                    color: Colors.blue,
+                    // color: Colors.blue,
                     padding: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
@@ -124,7 +124,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                           decoration: BoxDecoration(
                             color: Colors.white,
                             border: Border.all(
-                              color: Colors.grey[100]!,
+                              color: Colors.grey[200]!,
                             ),
                             borderRadius: BorderRadius.circular(8),
                           ),
