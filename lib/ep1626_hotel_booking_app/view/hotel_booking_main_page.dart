@@ -109,7 +109,8 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                     ),
                   ),
                   Container(
-                    height: 280,
+                    height: 240,
+                    margin: EdgeInsets.symmetric(vertical: 16),
                     color: Colors.blue,
                   ),
                   Padding(
@@ -133,6 +134,11 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                         )
                       ],
                     ),
+                  ),
+                  Container(
+                    height: 240,
+                    margin: EdgeInsets.symmetric(vertical: 16),
+                    color: Colors.blue,
                   ),
                 ],
               ),
