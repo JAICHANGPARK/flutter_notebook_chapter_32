@@ -45,7 +45,10 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
               ),
             ),
             Container(
-              decoration: BoxDecoration(color: Colors.grey[300]!, borderRadius: BorderRadius.circular(8)),
+              decoration: BoxDecoration(
+                color: Colors.grey[300]!,
+                borderRadius: BorderRadius.circular(8),
+              ),
               margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               padding: EdgeInsets.only(left: 16, bottom: 4, top: 4),
               child: Row(
@@ -102,7 +105,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                   Container(
                     height: 240,
                     color: Colors.blue,
-                  )
+                  ),
                 ],
               ),
             ))
