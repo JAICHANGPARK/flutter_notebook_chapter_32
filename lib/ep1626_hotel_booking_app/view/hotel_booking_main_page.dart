@@ -199,7 +199,68 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                   Container(
                     height: 240,
                     margin: EdgeInsets.symmetric(vertical: 16),
-                    color: Colors.blue,
+                    // color: Colors.blue,
+                    padding: EdgeInsets.only(left: 16),
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 180,
+                          margin: EdgeInsets.only(right: 16),
+                          padding: EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(
+                              color: Colors.grey[200]!,
+                            ),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(8)
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "Flutter Hotel",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16
+                                ),
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "\$120/",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text(
+                                    "night",
+                                  ),
+                                  Spacer(),
+                                  CircleAvatar(
+                                    radius: 16,
+                                    backgroundColor: Colors.brown,
+                                    child: Icon(Icons.arrow_forward),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                    ),
                   ),
                 ],
               ),
