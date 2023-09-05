@@ -119,6 +119,8 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                       itemBuilder: (context, index) {
                         return Container(
                           width: 180,
+                          margin: EdgeInsets.only(right: 16),
+                          padding: EdgeInsets.all(8),
                           decoration: BoxDecoration(
                             color: Colors.white,
                             border: Border.all(
@@ -127,16 +129,33 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Expanded(child: Container()),
-                              Text("Flutter Hotel"),
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                              ),
+                              Text(
+                                "Flutter Hotel",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               Row(
                                 children: [
-                                  Text("\$120/"),
-                                  Text("night"),
+                                  Text(
+                                    "\$120/",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Text("night",),
+                                  Spacer(),
                                   CircleAvatar(
                                     radius: 12,
-
                                   )
                                 ],
                               ),
