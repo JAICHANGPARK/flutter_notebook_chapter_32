@@ -100,17 +100,39 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: const Text("See all"),
                           style: TextButton.styleFrom(
                             foregroundColor: Colors.black,
                           ),
+                          child: const Text("See all"),
                         )
                       ],
                     ),
                   ),
                   Container(
-                    height: 240,
+                    height: 280,
                     color: Colors.blue,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "Popular Hotels",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.black,
+                          ),
+                          child: const Text("See all"),
+                        )
+                      ],
+                    ),
                   ),
                 ],
               ),
