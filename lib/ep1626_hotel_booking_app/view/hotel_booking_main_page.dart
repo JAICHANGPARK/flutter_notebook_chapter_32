@@ -53,7 +53,10 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                   Expanded(
                     child: TextField(
                       decoration: InputDecoration(
-                          icon: Icon(Icons.search), border: InputBorder.none, hintText: "Search your needs here"),
+                        icon: Icon(Icons.search),
+                        border: InputBorder.none,
+                        hintText: "Search your needs here",
+                      ),
                     ),
                   ),
                   Container(
@@ -69,7 +72,16 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                   )
                 ],
               ),
-            )
+            ),
+            Expanded(child: SingleChildScrollView(child: Column(
+              children: [
+                Row(
+                  children: [
+                  ],
+                )
+              ],
+            ),))
+
           ],
         ),
       ),
