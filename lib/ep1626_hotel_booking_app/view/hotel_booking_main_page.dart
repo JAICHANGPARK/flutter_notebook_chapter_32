@@ -138,6 +138,9 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                                   ),
                                 ),
                               ),
+                              SizedBox(
+                                height: 8,
+                              ),
                               Text(
                                 "Flutter Hotel",
                                 style: TextStyle(
@@ -152,10 +155,14 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  Text("night",),
+                                  Text(
+                                    "night",
+                                  ),
                                   Spacer(),
                                   CircleAvatar(
-                                    radius: 12,
+                                    radius: 16,
+                                    backgroundColor: Colors.brown,
+                                    child: Icon(Icons.arrow_forward),
                                   )
                                 ],
                               ),
