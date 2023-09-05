@@ -14,7 +14,9 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             const Padding(
               padding: EdgeInsets.all(16.0),
               child: Row(
@@ -31,7 +33,10 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                       children: [
                         Text(
                           "Hello, Dream",
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
                         ),
                         SizedBox(
                           height: 8,
