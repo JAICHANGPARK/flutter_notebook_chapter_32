@@ -80,11 +80,18 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("All Hotels",style: TextStyle(),),
+                        Text(
+                          "All Hotels",
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
                         TextButton(
                           onPressed: () {},
                           child: Text("See all"),
+                          style: TextButton.styleFrom(
+                            foregroundColor: Colors.black,
+                          ),
                         )
                       ],
                     ),
