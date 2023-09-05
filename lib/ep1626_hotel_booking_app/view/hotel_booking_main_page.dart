@@ -135,6 +135,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                                 child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(8)
                                   ),
                                 ),
                               ),
@@ -145,6 +146,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                                 "Flutter Hotel",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
+                                  fontSize: 16
                                 ),
                               ),
                               Row(
