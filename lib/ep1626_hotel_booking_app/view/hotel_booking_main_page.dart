@@ -14,7 +14,8 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
+            SizedBox(height: 16,),
+            const Padding(
               padding: EdgeInsets.all(16.0),
               child: Row(
                 children: [
@@ -49,11 +50,11 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                 color: Colors.grey[300]!,
                 borderRadius: BorderRadius.circular(8),
               ),
-              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-              padding: EdgeInsets.only(left: 16, bottom: 4, top: 4),
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              padding: const EdgeInsets.only(left: 16, bottom: 4, top: 4),
               child: Row(
                 children: [
-                  Expanded(
+                  const Expanded(
                     child: TextField(
                       decoration: InputDecoration(
                         icon: Icon(Icons.search),
@@ -68,7 +69,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                       borderRadius: BorderRadius.circular(4),
                     ),
                     child: IconButton(
-                      icon: Icon(Icons.tune),
+                      icon: const Icon(Icons.tune),
                       onPressed: () {},
                       color: Colors.white,
                     ),
@@ -85,7 +86,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "All Hotels",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -94,7 +95,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text("See all"),
+                          child: const Text("See all"),
                           style: TextButton.styleFrom(
                             foregroundColor: Colors.black,
                           ),
