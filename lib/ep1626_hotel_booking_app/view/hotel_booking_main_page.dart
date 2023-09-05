@@ -112,10 +112,38 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                     height: 240,
                     margin: EdgeInsets.symmetric(vertical: 16),
                     color: Colors.blue,
+                    padding: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
-                      itemBuilder: (context, index) {},
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 180,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(
+                              color: Colors.grey[100]!,
+                            ),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Column(
+                            children: [
+                              Expanded(child: Container()),
+                              Text("Flutter Hotel"),
+                              Row(
+                                children: [
+                                  Text("\$120/"),
+                                  Text("night"),
+                                  CircleAvatar(
+                                    radius: 12,
+
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        );
+                      },
                     ),
                   ),
                   Padding(
