@@ -84,7 +84,10 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                       children: [
                         Text(
                           "All Hotels",
-                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
                         ),
                         TextButton(
                           onPressed: () {},
