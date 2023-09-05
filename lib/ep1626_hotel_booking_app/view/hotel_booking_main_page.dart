@@ -73,15 +73,26 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                 ],
               ),
             ),
-            Expanded(child: SingleChildScrollView(child: Column(
-              children: [
-                Row(
-                  children: [
-                  ],
-                )
-              ],
-            ),))
-
+            Expanded(
+                child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("All Hotels"),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("See all"),
+                      )
+                    ],
+                  ),
+                  Container(
+                    height: 240,
+                    color: Colors.blue,
+                  )
+                ],
+              ),
+            ))
           ],
         ),
       ),
