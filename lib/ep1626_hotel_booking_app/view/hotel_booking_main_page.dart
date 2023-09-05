@@ -77,14 +77,17 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                 child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      Text("All Hotels"),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text("See all"),
-                      )
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      children: [
+                        Text("All Hotels",style: TextStyle(),),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("See all"),
+                        )
+                      ],
+                    ),
                   ),
                   Container(
                     height: 240,
