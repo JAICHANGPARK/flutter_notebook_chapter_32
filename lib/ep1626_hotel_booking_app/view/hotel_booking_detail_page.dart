@@ -28,6 +28,7 @@ class HotelBookingDetailPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(16),
               ),
               height: MediaQuery.sizeOf(context).height / 1.8,
+              padding: EdgeInsets.only(left: 16, top: 24, bottom: 24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -39,9 +40,25 @@ class HotelBookingDetailPage extends StatelessWidget {
                   ),
                   Container(
                     height: 72,
+                    margin: EdgeInsets.symmetric(vertical: 16),
                     decoration: BoxDecoration(
                       color: Colors.blue,
                     ),
+                  ),
+                  Row(
+                    children: [
+                      Column(
+                        children: [
+                          Text("Flutter Hotel"),
+                          Text("Flutter Platform"),
+                          Row(
+                            children: [
+                              
+                            ],
+                          )
+                        ],
+                      )
+                    ],
                   )
                 ],
               ),
