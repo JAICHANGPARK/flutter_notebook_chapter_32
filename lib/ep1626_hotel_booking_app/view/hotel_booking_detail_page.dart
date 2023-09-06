@@ -8,9 +8,13 @@ class HotelBookingDetailPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned.fill(
+          Positioned(
+            bottom: 200,
+            left: 0,
+            right: 0,
+            top: 0,
             child: Image.network(
-              "https://cdn.pixabay.com/photo/2016/11/18/13/03/apple-1834328_1280.jpg",
+              "https://cdn.pixabay.com/photo/2015/05/29/19/17/study-789631_1280.jpg",
               fit: BoxFit.cover,
             ),
           ),
