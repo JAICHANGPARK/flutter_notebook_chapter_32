@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_32/ep1626_hotel_booking_app/view/hotel_booking_detail_page.dart';
 
 class HotelBookingMainPage extends StatefulWidget {
   const HotelBookingMainPage({super.key});
@@ -118,8 +119,9 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return GestureDetector(
-                          onTap: (){
-                            
+                          onTap: () {
+                            Navigator.of(context)
+                                .push(MaterialPageRoute(builder: (context) => HotelBookingDetailPage()));
                           },
                           child: Container(
                             width: 180,
@@ -137,10 +139,8 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                               children: [
                                 Expanded(
                                   child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.blue,
-                                      borderRadius: BorderRadius.circular(8)
-                                    ),
+                                    decoration:
+                                        BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                                   ),
                                 ),
                                 const SizedBox(
@@ -148,10 +148,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                                 ),
                                 const Text(
                                   "Flutter Hotel",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16
-                                  ),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                 ),
                                 const Row(
                                   children: [
@@ -226,10 +223,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                             children: [
                               Expanded(
                                 child: Container(
-                                  decoration: BoxDecoration(
-                                      color: Colors.blue,
-                                      borderRadius: BorderRadius.circular(8)
-                                  ),
+                                  decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
                                 ),
                               ),
                               const SizedBox(
@@ -237,10 +231,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                               ),
                               const Text(
                                 "Flutter Hotel",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16
-                                ),
+                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                               ),
                               const Row(
                                 children: [
