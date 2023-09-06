@@ -10,8 +10,18 @@ class HotelBookingDetailPage extends StatelessWidget {
         children: [
           Positioned.fill(
             child: Image.network(
-              "https://cdn.pixabay.com/photo/2017/08/01/23/51/apple-2568755_1280.jpg",
+              "https://cdn.pixabay.com/photo/2016/11/18/13/03/apple-1834328_1280.jpg",
               fit: BoxFit.cover,
+            ),
+          ),
+          Positioned(
+            left: 0,
+            bottom: 0,
+            right: 0,
+            child: Container(
+              decoration: BoxDecoration(color: Colors.white,
+              borderRadius: BorderRadius.circular(16)),
+              height: MediaQuery.sizeOf(context).height / 1.8,
             ),
           )
         ],
