@@ -23,9 +23,28 @@ class HotelBookingDetailPage extends StatelessWidget {
             bottom: 0,
             right: 0,
             child: Container(
-              decoration: BoxDecoration(color: Colors.white,
-              borderRadius: BorderRadius.circular(16)),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(16),
+              ),
               height: MediaQuery.sizeOf(context).height / 1.8,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "See All Room",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Container(
+                    height: 72,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                    ),
+                  )
+                ],
+              ),
             ),
           )
         ],
