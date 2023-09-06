@@ -14,7 +14,7 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             const Padding(
@@ -110,17 +110,17 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                   ),
                   Container(
                     height: 240,
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
                     // color: Colors.blue,
-                    padding: EdgeInsets.only(left: 16),
+                    padding: const EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
                           width: 180,
-                          margin: EdgeInsets.only(right: 16),
-                          padding: EdgeInsets.all(8),
+                          margin: const EdgeInsets.only(right: 16),
+                          padding: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
                             color: Colors.white,
                             border: Border.all(
@@ -139,17 +139,17 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 8,
                               ),
-                              Text(
+                              const Text(
                                 "Flutter Hotel",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16
                                 ),
                               ),
-                              Row(
+                              const Row(
                                 children: [
                                   Text(
                                     "\$120/",
@@ -198,17 +198,17 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                   ),
                   Container(
                     height: 240,
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
                     // color: Colors.blue,
-                    padding: EdgeInsets.only(left: 16),
+                    padding: const EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
                           width: 180,
-                          margin: EdgeInsets.only(right: 16),
-                          padding: EdgeInsets.all(8),
+                          margin: const EdgeInsets.only(right: 16),
+                          padding: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
                             color: Colors.white,
                             border: Border.all(
@@ -227,17 +227,17 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 8,
                               ),
-                              Text(
+                              const Text(
                                 "Flutter Hotel",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16
                                 ),
                               ),
-                              Row(
+                              const Row(
                                 children: [
                                   Text(
                                     "\$120/",
