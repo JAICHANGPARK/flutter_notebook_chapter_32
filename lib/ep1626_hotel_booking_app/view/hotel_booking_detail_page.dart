@@ -47,14 +47,44 @@ class HotelBookingDetailPage extends StatelessWidget {
                   ),
                   Row(
                     children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Flutter Hotel"),
+                            Text("Flutter Platform"),
+                            Row(
+                              children: [
+                                ...List.generate(
+                                  5,
+                                  (index) => Icon(
+                                    Icons.star,
+                                    size: 14,
+                                  ),
+                                ),
+                                Text("4.5"),
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                      
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Flutter Hotel"),
-                          Text("Flutter Platform"),
-                          Row(
-                            children: [
-                              
-                            ],
+                          Text(
+                            "Latest Price",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18
+                            ),
+                          ),
+                          Text(
+                            "\$120",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24
+                            ),
                           )
                         ],
                       )
