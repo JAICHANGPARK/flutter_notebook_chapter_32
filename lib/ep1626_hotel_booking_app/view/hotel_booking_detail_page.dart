@@ -84,11 +84,17 @@ class HotelBookingDetailPage extends StatelessWidget {
                           children: [
                             Text(
                               "Latest Price",
-                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
                             ),
                             Text(
                               "\$120",
-                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                              ),
                             )
                           ],
                         ),
