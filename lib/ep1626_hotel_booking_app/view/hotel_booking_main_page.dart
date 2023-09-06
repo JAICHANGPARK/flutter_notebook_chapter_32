@@ -117,58 +117,63 @@ class _HotelBookingMainPageState extends State<HotelBookingMainPage> {
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
-                        return Container(
-                          width: 180,
-                          margin: const EdgeInsets.only(right: 16),
-                          padding: const EdgeInsets.all(8),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(
-                              color: Colors.grey[200]!,
+                        return GestureDetector(
+                          onTap: (){
+                            
+                          },
+                          child: Container(
+                            width: 180,
+                            margin: const EdgeInsets.only(right: 16),
+                            padding: const EdgeInsets.all(8),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                              borderRadius: BorderRadius.circular(8),
                             ),
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(8)
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 8,
-                              ),
-                              const Text(
-                                "Flutter Hotel",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16
-                                ),
-                              ),
-                              const Row(
-                                children: [
-                                  Text(
-                                    "\$120/",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(8)
                                     ),
                                   ),
-                                  Text(
-                                    "night",
+                                ),
+                                const SizedBox(
+                                  height: 8,
+                                ),
+                                const Text(
+                                  "Flutter Hotel",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16
                                   ),
-                                  Spacer(),
-                                  CircleAvatar(
-                                    radius: 16,
-                                    backgroundColor: Colors.brown,
-                                    child: Icon(Icons.arrow_forward),
-                                  )
-                                ],
-                              ),
-                            ],
+                                ),
+                                const Row(
+                                  children: [
+                                    Text(
+                                      "\$120/",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      "night",
+                                    ),
+                                    Spacer(),
+                                    CircleAvatar(
+                                      radius: 16,
+                                      backgroundColor: Colors.brown,
+                                      child: Icon(Icons.arrow_forward),
+                                    )
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         );
                       },
