@@ -51,8 +51,17 @@ class HotelBookingDetailPage extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Flutter Hotel"),
-                            Text("Flutter Platform"),
+                            Text(
+                              "Flutter Hotel",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 8),
+                              child: Text("Flutter Platform"),
+                            ),
                             Row(
                               children: [
                                 ...List.generate(
@@ -68,25 +77,21 @@ class HotelBookingDetailPage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Latest Price",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18
+                      Padding(
+                        padding: const EdgeInsets.only(right: 16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Latest Price",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                             ),
-                          ),
-                          Text(
-                            "\$120",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24
-                            ),
-                          )
-                        ],
+                            Text(
+                              "\$120",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                            )
+                          ],
+                        ),
                       )
                     ],
                   )
