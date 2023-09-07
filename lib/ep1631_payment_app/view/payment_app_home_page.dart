@@ -10,19 +10,29 @@ class PaymentAppHomePage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                CircleAvatar(),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.brown,
+            Padding(
+              padding: const EdgeInsets.all(24.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CircleAvatar(),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.brown,
+                    ),
+                    child: Text(
+                      "PRO",
+                    ),
                   ),
-                  child: Text(
-                    "PRO",
-                  ),
-                ),
-              ],
+                ],
+              ),
+            ),
+            Text(
+              "YOUR BALANCE",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.grey,
+              ),
             )
           ],
         ),
