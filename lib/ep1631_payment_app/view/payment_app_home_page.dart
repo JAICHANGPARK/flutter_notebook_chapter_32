@@ -124,15 +124,18 @@ class PaymentAppHomePage extends StatelessWidget {
                 ],
               ),
             ),
-            Row(
-              children: [
-                Text("ACCOUNTS"),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.menu),
-                  color: Colors.white,
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.fromLTRB(24,16,16,24),
+              child: Row(
+                children: [
+                  Text("ACCOUNTS"),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.menu),
+                    color: Colors.white,
+                  )
+                ],
+              ),
             ),
           ],
         ),
