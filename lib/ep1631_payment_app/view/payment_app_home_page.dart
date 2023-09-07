@@ -69,13 +69,37 @@ class PaymentAppHomePage extends StatelessWidget {
                 ],
               ),
             ),
-            Row(
-              children: [
-                Text("MY WALLET"),
-                IconButton(onPressed: (){}, icon: Icon(Icons.menu)),
-                IconButton(onPressed: (){}, icon: Icon(Icons.add)),
-                IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward)),
-              ],
+            Padding(
+              padding: const EdgeInsets.only(
+                top: 64,
+                left: 24,
+                right: 24,
+                bottom: 24
+              ),
+              child: Row(
+                children: [
+                  Text(
+                    "MY WALLET",
+                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                  ),
+                  Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.menu),
+                    color: Colors.white,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.add),
+                    color: Colors.white,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.arrow_forward),
+                    color: Colors.white,
+                  ),
+                ],
+              ),
             )
           ],
         ),
