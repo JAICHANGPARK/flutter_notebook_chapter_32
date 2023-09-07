@@ -70,12 +70,7 @@ class PaymentAppHomePage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(
-                top: 64,
-                left: 24,
-                right: 24,
-                bottom: 24
-              ),
+              padding: const EdgeInsets.only(top: 64, left: 24, right: 24, bottom: 24),
               child: Row(
                 children: [
                   Text(
@@ -100,6 +95,31 @@ class PaymentAppHomePage extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            Expanded(
+              child: Container(
+                color: Colors.yellow,
+              ),
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    children: [
+                      Text("SHEAR HOLDINGS"),
+                      Text("50.15220054"),
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Column(
+                    children: [
+                      Text("SHEAR HOLDINGS"),
+                      Text("50.15220054"),
+                    ],
+                  ),
+                )
+              ],
             )
           ],
         ),
