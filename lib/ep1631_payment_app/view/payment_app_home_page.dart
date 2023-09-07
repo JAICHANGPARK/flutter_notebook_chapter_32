@@ -33,6 +33,13 @@ class PaymentAppHomePage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 color: Colors.grey,
               ),
+            ),
+            Text.rich(
+              TextSpan(
+                children: [
+                  Text('11  458.  5809'),
+                ]
+              )
             )
           ],
         ),
