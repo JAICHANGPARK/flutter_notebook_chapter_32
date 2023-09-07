@@ -16,25 +16,25 @@ class PaymentAppHomePage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 28,
                   ),
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.brown,
                     ),
-                    child: Text(
+                    child: const Text(
                       "PRO",
                     ),
                   ),
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 36,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -68,6 +68,14 @@ class PaymentAppHomePage extends StatelessWidget {
                   )
                 ],
               ),
+            ),
+            Row(
+              children: [
+                Text("MY WALLET"),
+                IconButton(onPressed: (){}, icon: Icon(Icons.menu)),
+                IconButton(onPressed: (){}, icon: Icon(Icons.add)),
+                IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward)),
+              ],
             )
           ],
         ),
