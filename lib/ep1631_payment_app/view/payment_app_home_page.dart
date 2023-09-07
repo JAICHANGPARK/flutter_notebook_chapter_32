@@ -101,26 +101,39 @@ class PaymentAppHomePage extends StatelessWidget {
                 color: Colors.yellow,
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(24.0),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text("SHEAR HOLDINGS"),
+                        Text("50.15220054"),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text("SHEAR HOLDINGS"),
+                        Text("50.15220054"),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
             Row(
               children: [
-                Expanded(
-                  child: Column(
-                    children: [
-                      Text("SHEAR HOLDINGS"),
-                      Text("50.15220054"),
-                    ],
-                  ),
-                ),
-                Expanded(
-                  child: Column(
-                    children: [
-                      Text("SHEAR HOLDINGS"),
-                      Text("50.15220054"),
-                    ],
-                  ),
+                Text("ACCOUNTS"),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.menu),
+                  color: Colors.white,
                 )
               ],
-            )
+            ),
           ],
         ),
       ),
