@@ -108,16 +108,24 @@ class PaymentAppHomePage extends StatelessWidget {
                   Expanded(
                     child: Column(
                       children: [
-                        Text("SHEAR HOLDINGS"),
-                        Text("50.15220054"),
+                        Text("SHEAR HOLDINGS", style: TextStyle(
+                          color: Colors.grey,
+                        ),),
+                        Text("50.15220054", style: TextStyle(
+                          color: Colors.white,
+                        ),),
                       ],
                     ),
                   ),
                   Expanded(
                     child: Column(
                       children: [
-                        Text("SHEAR HOLDINGS"),
-                        Text("50.15220054"),
+                        Text("SHEAR HOLDINGS", style: TextStyle(
+                          color: Colors.grey,
+                        ),),
+                        Text("50.15220054", style: TextStyle(
+                          color: Colors.white,
+                        ),),
                       ],
                     ),
                   )
@@ -127,8 +135,11 @@ class PaymentAppHomePage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.fromLTRB(24,16,16,24),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("ACCOUNTS"),
+                  Text("ACCOUNTS", style: TextStyle(
+                    color: Colors.grey,
+                  ),),
                   IconButton(
                     onPressed: () {},
                     icon: Icon(Icons.menu),
