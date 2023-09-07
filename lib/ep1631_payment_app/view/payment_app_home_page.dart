@@ -34,12 +34,24 @@ class PaymentAppHomePage extends StatelessWidget {
                 color: Colors.grey,
               ),
             ),
+            SizedBox(height: 24,),
             Text.rich(
               TextSpan(
                 children: [
-                  Text('11  458.  5809'),
-                ]
-              )
+                  TextSpan(
+                      text: '11  458.  5809',
+                      style: TextStyle(
+                        fontSize: 28,
+                        color: Colors.white,
+                      )),
+                  TextSpan(
+                      text: ' USD',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey,
+                      ))
+                ],
+              ),
             )
           ],
         ),
