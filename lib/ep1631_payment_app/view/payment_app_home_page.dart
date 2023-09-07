@@ -7,10 +7,25 @@ class PaymentAppHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Column(
-        children: [
-
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                CircleAvatar(),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.brown,
+                  ),
+                  child: Text(
+                    "PRO",
+                  ),
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
