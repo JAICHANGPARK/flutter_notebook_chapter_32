@@ -110,8 +110,11 @@ class PaymentAppHomePage extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                color: Colors.yellow,
+                color: Color.fromRGBO(238, 192, 80, 1),
               ),
+            ),
+            Container(
+              color: Color.fromRGBO(215, 172, 72, 1),
             ),
             const Padding(
               padding: EdgeInsets.all(24.0),
