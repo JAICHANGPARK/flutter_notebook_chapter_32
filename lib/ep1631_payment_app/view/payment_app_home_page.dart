@@ -213,6 +213,7 @@ class PaymentAppHomePage extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(height: 16,),
             const Padding(
               padding: EdgeInsets.all(24.0),
               child: Row(
@@ -265,7 +266,7 @@ class PaymentAppHomePage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(24, 8, 16, 24),
+              padding: const EdgeInsets.fromLTRB(24, 0, 16, 24),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
