@@ -102,11 +102,10 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                             SizedBox(
                               height: 8,
                             ),
-                            Text("(F4AX..5X..LM)",
-                              style: TextStyle(
-                                color: Colors.white,
-                                  fontSize: 16
-                              ),)
+                            Text(
+                              "(F4AX..5X..LM)",
+                              style: TextStyle(color: Colors.white, fontSize: 16),
+                            )
                           ],
                         ),
                       ),
@@ -123,11 +122,10 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                             SizedBox(
                               height: 8,
                             ),
-                            Text("(F4AX..5X..LM)",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 16
-                              ),)
+                            Text(
+                              "(F4AX..5X..LM)",
+                              style: TextStyle(color: Colors.white, fontSize: 16),
+                            )
                           ],
                         ),
                       ),
@@ -135,6 +133,16 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                   )
                 ],
               ),
+            ),
+            Container(
+              height: 180,
+              color: Colors.blue,
+            ),
+            Row(
+              children: [
+                Text("SEND PAYMENT TO"),
+                Text("DREAM WALKER"),
+              ],
             )
           ],
         ),
