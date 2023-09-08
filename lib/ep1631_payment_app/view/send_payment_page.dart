@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SendPaymentPage extends StatefulWidget {
   const SendPaymentPage({super.key});
 
@@ -22,7 +21,22 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
       body: Column(
         children: [
           Text("ACCOUNT NUMBER"),
-          Text("")
+          Text("0.   15220250  KC"),
+          Row(
+            children: [
+              Expanded(
+                child: Column(),
+              ),
+              RotatedBox(
+                quarterTurns: 2,
+                child: IconButton(
+                  color: Colors.white,
+                  onPressed: () {},
+                  icon: Icon(Icons.import_export),
+                ),
+              )
+            ],
+          )
         ],
       ),
     );
