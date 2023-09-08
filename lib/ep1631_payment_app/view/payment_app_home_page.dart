@@ -18,6 +18,7 @@ class PaymentAppHomePage extends StatelessWidget {
                 children: [
                   const CircleAvatar(
                     radius: 28,
+                    backgroundColor: Colors.white,
                   ),
                   Container(
                     decoration: const BoxDecoration(
@@ -26,7 +27,9 @@ class PaymentAppHomePage extends StatelessWidget {
                     padding: const EdgeInsets.all(8),
                     child: const Text(
                       "PRO",
-                      style: TextStyle(color: Color.fromRGBO(243, 212, 88, 1)),
+                      style: TextStyle(
+                        color: Color.fromRGBO(243, 212, 88, 1),
+                      ),
                     ),
                   ),
                 ],
@@ -159,14 +162,19 @@ class PaymentAppHomePage extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          "USD",
+                          " USD",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Colors.black.withOpacity(0.5),
                           ),
                         ),
                         Spacer(),
-                        Text("CARD"),
+                        Text(
+                          "CARD",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ],
                     )
                   ],
