@@ -154,6 +154,26 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                   ),
                 ),
               ],
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "SEND PAYMENT TO",
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                ),
+                Text(
+                  "DREAM WALKER",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+              ],
             )
           ],
         ),
