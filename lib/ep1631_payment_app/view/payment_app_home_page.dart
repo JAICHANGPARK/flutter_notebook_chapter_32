@@ -23,7 +23,7 @@ class PaymentAppHomePage extends StatelessWidget {
                     decoration: const BoxDecoration(
                       color: Color.fromRGBO(42, 20, 9, 1),
                     ),
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     child: const Text(
                       "PRO",
                       style: TextStyle(color: Color.fromRGBO(243, 212, 88, 1)),
@@ -110,21 +110,21 @@ class PaymentAppHomePage extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                color: Color.fromRGBO(238, 192, 80, 1),
+                color: const Color.fromRGBO(238, 192, 80, 1),
               ),
             ),
             Container(
-              color: Color.fromRGBO(215, 172, 72, 1),
-              padding: EdgeInsets.all(24),
+              color: const Color.fromRGBO(215, 172, 72, 1),
+              padding: const EdgeInsets.all(24),
               child: Row(
                 children: [
-                  Text(
+                  const Text(
                     "GOLD PASS",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   Text(
