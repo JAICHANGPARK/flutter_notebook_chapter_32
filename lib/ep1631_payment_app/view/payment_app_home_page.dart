@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_32/ep1631_payment_app/view/send_payment_page.dart';
 
 class PaymentAppHomePage extends StatelessWidget {
   const PaymentAppHomePage({super.key});
@@ -104,7 +105,13 @@ class PaymentAppHomePage extends StatelessWidget {
                     color: Colors.white,
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => SendPaymentPage(),
+                        ),
+                      );
+                    },
                     icon: const Icon(Icons.arrow_forward),
                     color: Colors.white,
                   ),
@@ -213,7 +220,9 @@ class PaymentAppHomePage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 16,),
+            SizedBox(
+              height: 16,
+            ),
             const Padding(
               padding: EdgeInsets.all(24.0),
               child: Row(
