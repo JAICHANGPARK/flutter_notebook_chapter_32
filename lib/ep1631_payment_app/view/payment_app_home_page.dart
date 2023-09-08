@@ -148,9 +148,13 @@ class PaymentAppHomePage extends StatelessWidget {
                         ),
                       ],
                     ),
+                    Spacer(),
                     Row(
                       children: [
-                        Text("11 458. 5809"),
+                        Text("11 458. 5809",style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 32
+                        ),),
                         Text("USD"),
                         Spacer(),
                         Text("CARD"),
