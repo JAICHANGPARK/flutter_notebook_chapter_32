@@ -151,6 +151,7 @@ class PaymentAppHomePage extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           "SHEAR HOLDINGS",
@@ -158,6 +159,7 @@ class PaymentAppHomePage extends StatelessWidget {
                             color: Colors.grey,
                           ),
                         ),
+                        SizedBox(height: 14,),
                         Text(
                           "50.15220054",
                           style: TextStyle(
@@ -169,6 +171,7 @@ class PaymentAppHomePage extends StatelessWidget {
                   ),
                   Expanded(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           "SHEAR HOLDINGS",
@@ -176,6 +179,7 @@ class PaymentAppHomePage extends StatelessWidget {
                             color: Colors.grey,
                           ),
                         ),
+                        SizedBox(height: 14,),
                         Text(
                           "50.15220054",
                           style: TextStyle(
@@ -189,7 +193,7 @@ class PaymentAppHomePage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(24, 16, 16, 24),
+              padding: const EdgeInsets.fromLTRB(24, 8, 16, 24),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
