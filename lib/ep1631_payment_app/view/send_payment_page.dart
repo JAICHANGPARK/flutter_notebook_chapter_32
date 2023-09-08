@@ -13,6 +13,18 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: Text("SEND PAYMENT"),
+        foregroundColor: Colors.white,
+        elevation: 0,
+      ),
+      body: Column(
+        children: [
+          Text("ACCOUNT NUMBER"),
+          Text("")
+        ],
+      ),
     );
   }
 }
