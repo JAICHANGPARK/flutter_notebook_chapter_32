@@ -102,9 +102,10 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                             SizedBox(
                               height: 8,
                             ),
-                            Text("F4AX..5X..LM",
+                            Text("(F4AX..5X..LM)",
                               style: TextStyle(
                                 color: Colors.white,
+                                  fontSize: 16
                               ),)
                           ],
                         ),
@@ -112,9 +113,24 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [Text("ACCOUNT"), Text("F4AX..5X..LM")],
+                          children: [
+                            Text(
+                              "ACCOUNT",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text("(F4AX..5X..LM)",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16
+                              ),)
+                          ],
                         ),
-                      )
+                      ),
                     ],
                   )
                 ],
