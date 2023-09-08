@@ -115,6 +115,28 @@ class PaymentAppHomePage extends StatelessWidget {
             ),
             Container(
               color: Color.fromRGBO(215, 172, 72, 1),
+              padding: EdgeInsets.all(24),
+              child: Row(
+                children: [
+                  Text(
+                    "GOLD PASS",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  Text(
+                    "PAYMENT CARD",
+                    style: TextStyle(
+                      color: Colors.black.withOpacity(
+                        0.5,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
             const Padding(
               padding: EdgeInsets.all(24.0),
