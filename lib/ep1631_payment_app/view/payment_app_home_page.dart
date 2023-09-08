@@ -111,6 +111,27 @@ class PaymentAppHomePage extends StatelessWidget {
             Expanded(
               child: Container(
                 color: const Color.fromRGBO(238, 192, 80, 1),
+                padding: EdgeInsets.only(left: 24, right: 24, top: 16, bottom: 24),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Text(
+                          "GOLD PASS",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 16,
+                        ),
+                        Text(
+                          "USA AT +15",
+                        )
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
             Container(
@@ -159,7 +180,9 @@ class PaymentAppHomePage extends StatelessWidget {
                             color: Colors.grey,
                           ),
                         ),
-                        SizedBox(height: 14,),
+                        SizedBox(
+                          height: 14,
+                        ),
                         Text(
                           "50.15220054",
                           style: TextStyle(
@@ -179,7 +202,9 @@ class PaymentAppHomePage extends StatelessWidget {
                             color: Colors.grey,
                           ),
                         ),
-                        SizedBox(height: 14,),
+                        SizedBox(
+                          height: 14,
+                        ),
                         Text(
                           "50.15220054",
                           style: TextStyle(
