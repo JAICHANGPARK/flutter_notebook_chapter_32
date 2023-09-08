@@ -30,7 +30,9 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                     color: Colors.grey,
                   ),
                 ),
-                SizedBox(height: 16,),
+                SizedBox(
+                  height: 16,
+                ),
                 Text(
                   "0.   15220250  KC",
                   style: TextStyle(
@@ -41,43 +43,76 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                 ),
               ],
             ),
-
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 84),
-              child: Row(
+              child: Column(
                 children: [
-                  Expanded(
-                    child: Row(
-                      children: [
-                        Container(
-                          height: 100,
-                          width: 100,
-                          color: Colors.white,
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 100,
+                              width: 100,
+                              color: Colors.white,
+                            ),
+                            Expanded(child: Container()),
+                          ],
                         ),
-                        Expanded(child: Container()),
-                      ],
-                    ),
-                  ),
-                  RotatedBox(
-                    quarterTurns: 1,
-                    child: IconButton(
-                      color: Colors.white,
-                      onPressed: () {},
-                      icon: Icon(Icons.import_export),
-                      iconSize: 42,
-                    ),
-                  ),
-                  Expanded(
-                    child: Row(
-                      children: [
-                        Expanded(child: Container()),
-                        Container(
-                          height: 100,
-                          width: 100,
+                      ),
+                      RotatedBox(
+                        quarterTurns: 1,
+                        child: IconButton(
                           color: Colors.white,
+                          onPressed: () {},
+                          icon: Icon(Icons.import_export),
+                          iconSize: 42,
                         ),
-                      ],
-                    ),
+                      ),
+                      Expanded(
+                        child: Row(
+                          children: [
+                            Expanded(child: Container()),
+                            Container(
+                              height: 100,
+                              width: 100,
+                              color: Colors.white,
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "ACCOUNT",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 12,
+                            ),
+                            Text("F4AX..5X..LM",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),)
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [Text("ACCOUNT"), Text("F4AX..5X..LM")],
+                        ),
+                      )
+                    ],
                   )
                 ],
               ),
