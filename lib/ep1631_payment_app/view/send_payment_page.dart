@@ -139,9 +139,20 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
               color: Colors.blue,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("SEND PAYMENT TO"),
-                Text("DREAM WALKER"),
+                Text(
+                  "SEND PAYMENT TO",
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                ),
+                Text(
+                  "DREAM WALKER",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
               ],
             )
           ],
