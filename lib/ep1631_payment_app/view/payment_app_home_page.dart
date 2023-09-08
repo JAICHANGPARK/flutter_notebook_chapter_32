@@ -26,9 +26,7 @@ class PaymentAppHomePage extends StatelessWidget {
                     padding: EdgeInsets.all(8),
                     child: const Text(
                       "PRO",
-                      style: TextStyle(
-                        color: Color.fromRGBO(243, 212, 88, 1)
-                      ),
+                      style: TextStyle(color: Color.fromRGBO(243, 212, 88, 1)),
                     ),
                   ),
                 ],
@@ -56,17 +54,19 @@ class PaymentAppHomePage extends StatelessWidget {
                     TextSpan(
                       children: [
                         TextSpan(
-                            text: '11  458.  5809',
-                            style: TextStyle(
-                              fontSize: 28,
-                              color: Colors.white,
-                            )),
+                          text: '11  458.  5809',
+                          style: TextStyle(
+                            fontSize: 28,
+                            color: Colors.white,
+                          ),
+                        ),
                         TextSpan(
-                            text: ' USD',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.grey,
-                            ))
+                          text: ' USD',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey,
+                          ),
+                        )
                       ],
                     ),
                   )
@@ -74,12 +74,20 @@ class PaymentAppHomePage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 64, left: 24, right: 24, bottom: 24),
+              padding: const EdgeInsets.only(
+                top: 64,
+                left: 24,
+                right: 24,
+                bottom: 24,
+              ),
               child: Row(
                 children: [
                   const Text(
                     "MY WALLET",
-                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.grey,
+                    ),
                   ),
                   const Spacer(),
                   IconButton(
