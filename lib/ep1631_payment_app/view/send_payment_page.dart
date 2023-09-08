@@ -84,6 +84,9 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                       )
                     ],
                   ),
+                  SizedBox(
+                    height: 16,
+                  ),
                   Row(
                     children: [
                       Expanded(
@@ -97,11 +100,11 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                               ),
                             ),
                             SizedBox(
-                              height: 12,
+                              height: 8,
                             ),
                             Text("F4AX..5X..LM",
                               style: TextStyle(
-                                color: Colors.grey,
+                                color: Colors.white,
                               ),)
                           ],
                         ),
