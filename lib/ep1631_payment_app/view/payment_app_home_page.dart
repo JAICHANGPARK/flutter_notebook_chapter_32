@@ -108,7 +108,7 @@ class PaymentAppHomePage extends StatelessWidget {
                     onPressed: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => SendPaymentPage(),
+                          builder: (context) => const SendPaymentPage(),
                         ),
                       );
                     },
@@ -121,7 +121,7 @@ class PaymentAppHomePage extends StatelessWidget {
             Expanded(
               child: Container(
                 color: const Color.fromRGBO(238, 192, 80, 1),
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   left: 24,
                   right: 24,
                   top: 16,
@@ -131,14 +131,14 @@ class PaymentAppHomePage extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           "GOLD PASS",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 16,
                         ),
                         Text(
@@ -148,8 +148,8 @@ class PaymentAppHomePage extends StatelessWidget {
                             fontSize: 16,
                           ),
                         ),
-                        Spacer(),
-                        Text(
+                        const Spacer(),
+                        const Text(
                           "96.24%",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -158,10 +158,10 @@ class PaymentAppHomePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           "11 458. 5809",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -175,8 +175,8 @@ class PaymentAppHomePage extends StatelessWidget {
                             color: Colors.black.withOpacity(0.5),
                           ),
                         ),
-                        Spacer(),
-                        Text(
+                        const Spacer(),
+                        const Text(
                           "CARD",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -210,8 +210,8 @@ class PaymentAppHomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Spacer(),
-                  Text(
+                  const Spacer(),
+                  const Text(
                     "15/20",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -220,7 +220,7 @@ class PaymentAppHomePage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             const Padding(
