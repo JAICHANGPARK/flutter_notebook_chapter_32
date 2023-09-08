@@ -18,43 +18,48 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
         foregroundColor: Colors.white,
         elevation: 0,
       ),
-      body: Column(
-        children: [
-          Text("ACCOUNT NUMBER"),
-          Text("0.   15220250  KC"),
-          Row(
-            children: [
-              Expanded(
-                child: Row(
+      body: Padding(
+        padding: const EdgeInsets.all(24.0),
+        child: Column(
+          children: [
+            Text("ACCOUNT NUMBER"),
+            Text("0.   15220250  KC"),
+            Row(
+              children: [
+                Expanded(
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 100,
+                        width: 100,
+                        color: Colors.white,
+                      ),
+                      Expanded(child: Container()),
+                    ],
+                  ),
+                ),
+                RotatedBox(
+                  quarterTurns: 1,
+                  child: IconButton(
+                    color: Colors.white,
+                    onPressed: () {},
+                    icon: Icon(Icons.import_export),
+                  ),
+                ),
+                Expanded(child: Row(
                   children: [
+                    Expanded(child: Container()),
                     Container(
                       height: 100,
                       width: 100,
                       color: Colors.white,
                     ),
                   ],
-                ),
-              ),
-              RotatedBox(
-                quarterTurns: 1,
-                child: IconButton(
-                  color: Colors.white,
-                  onPressed: () {},
-                  icon: Icon(Icons.import_export),
-                ),
-              ),
-              Expanded(child: Row(
-                children: [
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.white,
-                  ),
-                ],
-              ),)
-            ],
-          )
-        ],
+                ),)
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
