@@ -73,24 +73,24 @@ class PaymentAppHomePage extends StatelessWidget {
               padding: const EdgeInsets.only(top: 64, left: 24, right: 24, bottom: 24),
               child: Row(
                 children: [
-                  Text(
+                  const Text(
                     "MY WALLET",
                     style: TextStyle(fontWeight: FontWeight.bold, color: Colors.grey),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.menu),
+                    icon: const Icon(Icons.menu),
                     color: Colors.white,
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.add),
+                    icon: const Icon(Icons.add),
                     color: Colors.white,
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.arrow_forward),
+                    icon: const Icon(Icons.arrow_forward),
                     color: Colors.white,
                   ),
                 ],
@@ -101,31 +101,43 @@ class PaymentAppHomePage extends StatelessWidget {
                 color: Colors.yellow,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(24.0),
+            const Padding(
+              padding: EdgeInsets.all(24.0),
               child: Row(
                 children: [
                   Expanded(
                     child: Column(
                       children: [
-                        Text("SHEAR HOLDINGS", style: TextStyle(
-                          color: Colors.grey,
-                        ),),
-                        Text("50.15220054", style: TextStyle(
-                          color: Colors.white,
-                        ),),
+                        Text(
+                          "SHEAR HOLDINGS",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        Text(
+                          "50.15220054",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
                       ],
                     ),
                   ),
                   Expanded(
                     child: Column(
                       children: [
-                        Text("SHEAR HOLDINGS", style: TextStyle(
-                          color: Colors.grey,
-                        ),),
-                        Text("50.15220054", style: TextStyle(
-                          color: Colors.white,
-                        ),),
+                        Text(
+                          "SHEAR HOLDINGS",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        Text(
+                          "50.15220054",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
                       ],
                     ),
                   )
@@ -133,16 +145,19 @@ class PaymentAppHomePage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(24,16,16,24),
+              padding: const EdgeInsets.fromLTRB(24, 16, 16, 24),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("ACCOUNTS", style: TextStyle(
-                    color: Colors.grey,
-                  ),),
+                  const Text(
+                    "ACCOUNTS",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.menu),
+                    icon: const Icon(Icons.menu),
                     color: Colors.white,
                   )
                 ],
