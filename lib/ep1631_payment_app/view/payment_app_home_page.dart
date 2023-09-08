@@ -125,7 +125,7 @@ class PaymentAppHomePage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    width: 8,
+                    width: 16,
                   ),
                   Text(
                     "PAYMENT CARD",
@@ -135,6 +135,13 @@ class PaymentAppHomePage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Spacer(),
+                  Text(
+                    "15/20",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
                 ],
               ),
             ),
