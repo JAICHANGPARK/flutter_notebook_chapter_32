@@ -23,6 +23,7 @@ class PaymentAppHomePage extends StatelessWidget {
                     decoration: const BoxDecoration(
                       color: Color.fromRGBO(42, 20, 9, 1),
                     ),
+                    padding: EdgeInsets.all(8),
                     child: const Text(
                       "PRO",
                       style: TextStyle(
