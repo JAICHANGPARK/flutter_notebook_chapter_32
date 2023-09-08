@@ -21,10 +21,13 @@ class PaymentAppHomePage extends StatelessWidget {
                   ),
                   Container(
                     decoration: const BoxDecoration(
-                      color: Colors.brown,
+                      color: Color.fromRGBO(42, 20, 9, 1),
                     ),
                     child: const Text(
                       "PRO",
+                      style: TextStyle(
+                        color: Color.fromRGBO(243, 212, 88, 1)
+                      ),
                     ),
                   ),
                 ],
