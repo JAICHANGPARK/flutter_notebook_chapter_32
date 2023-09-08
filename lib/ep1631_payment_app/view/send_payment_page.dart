@@ -25,16 +25,33 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
           Row(
             children: [
               Expanded(
-                child: Column(),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.white,
+                    ),
+                  ],
+                ),
               ),
               RotatedBox(
-                quarterTurns: 2,
+                quarterTurns: 1,
                 child: IconButton(
                   color: Colors.white,
                   onPressed: () {},
                   icon: Icon(Icons.import_export),
                 ),
-              )
+              ),
+              Expanded(child: Row(
+                children: [
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.white,
+                  ),
+                ],
+              ),)
             ],
           )
         ],
