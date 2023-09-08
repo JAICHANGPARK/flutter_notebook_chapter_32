@@ -22,41 +22,65 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
         padding: const EdgeInsets.all(24.0),
         child: Column(
           children: [
-            Text("ACCOUNT NUMBER"),
-            Text("0.   15220250  KC"),
-            Row(
+            Column(
               children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      Container(
-                        height: 100,
-                        width: 100,
-                        color: Colors.white,
-                      ),
-                      Expanded(child: Container()),
-                    ],
+                Text(
+                  "ACCOUNT NUMBER",
+                  style: TextStyle(
+                    color: Colors.grey,
                   ),
                 ),
-                RotatedBox(
-                  quarterTurns: 1,
-                  child: IconButton(
+                SizedBox(height: 16,),
+                Text(
+                  "0.   15220250  KC",
+                  style: TextStyle(
+                    fontSize: 32,
                     color: Colors.white,
-                    onPressed: () {},
-                    icon: Icon(Icons.import_export),
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-                Expanded(child: Row(
-                  children: [
-                    Expanded(child: Container()),
-                    Container(
-                      height: 100,
-                      width: 100,
-                      color: Colors.white,
-                    ),
-                  ],
-                ),)
               ],
+            ),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 84),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 100,
+                          width: 100,
+                          color: Colors.white,
+                        ),
+                        Expanded(child: Container()),
+                      ],
+                    ),
+                  ),
+                  RotatedBox(
+                    quarterTurns: 1,
+                    child: IconButton(
+                      color: Colors.white,
+                      onPressed: () {},
+                      icon: Icon(Icons.import_export),
+                      iconSize: 42,
+                    ),
+                  ),
+                  Expanded(
+                    child: Row(
+                      children: [
+                        Expanded(child: Container()),
+                        Container(
+                          height: 100,
+                          width: 100,
+                          color: Colors.white,
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
