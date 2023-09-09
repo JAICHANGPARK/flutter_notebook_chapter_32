@@ -136,6 +136,7 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
             ),
             Container(
               height: 180,
+              margin: EdgeInsets.only(bottom: 42),
               color: Colors.blue,
             ),
             Row(
@@ -174,6 +175,16 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                   ),
                 ),
               ],
+            ),
+            Container(
+              child: Center(
+                child: Text(
+                  "CONFIRM",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
             )
           ],
         ),
