@@ -187,6 +187,7 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                   "CONFIRM",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    fontSize: 18
                   ),
                 ),
               ),
