@@ -14,7 +14,7 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text("SEND PAYMENT"),
+        title: const Text("SEND PAYMENT"),
         foregroundColor: Colors.white,
         elevation: 0,
       ),
@@ -22,7 +22,7 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
         padding: const EdgeInsets.all(24.0),
         child: Column(
           children: [
-            Column(
+            const Column(
               children: [
                 Text(
                   "ACCOUNT NUMBER",
@@ -66,7 +66,7 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                         child: IconButton(
                           color: Colors.white,
                           onPressed: () {},
-                          icon: Icon(Icons.import_export),
+                          icon: const Icon(Icons.import_export),
                           iconSize: 42,
                         ),
                       ),
@@ -84,10 +84,10 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                       )
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Expanded(
                         child: Column(
@@ -136,10 +136,10 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
             ),
             Container(
               height: 180,
-              margin: EdgeInsets.only(bottom: 42),
+              margin: const EdgeInsets.only(bottom: 42),
               color: Colors.blue,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
@@ -156,10 +156,10 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
@@ -176,13 +176,13 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                 ),
               ],
             ),
-            SizedBox(height: 24,),
+            const SizedBox(height: 24,),
             Container(
               height: 58,
-              decoration: BoxDecoration(
-                color: const Color.fromRGBO(238, 192, 80, 1),
+              decoration: const BoxDecoration(
+                color: Color.fromRGBO(238, 192, 80, 1),
               ),
-              child: Center(
+              child: const Center(
                 child: Text(
                   "CONFIRM",
                   style: TextStyle(
