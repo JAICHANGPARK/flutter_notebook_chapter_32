@@ -44,7 +44,7 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 84),
+              padding: const EdgeInsets.symmetric(vertical: 64),
               child: Column(
                 children: [
                   Row(
@@ -176,6 +176,7 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
                 ),
               ],
             ),
+            SizedBox(height: 24,),
             Container(
               height: 58,
               decoration: BoxDecoration(
