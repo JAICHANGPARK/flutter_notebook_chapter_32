@@ -44,7 +44,7 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 64),
+              padding: const EdgeInsets.symmetric(vertical: 72),
               child: Column(
                 children: [
                   Row(
