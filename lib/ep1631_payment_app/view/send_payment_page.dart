@@ -177,6 +177,10 @@ class _SendPaymentPageState extends State<SendPaymentPage> {
               ],
             ),
             Container(
+              height: 58,
+              decoration: BoxDecoration(
+                color: const Color.fromRGBO(238, 192, 80, 1),
+              ),
               child: Center(
                 child: Text(
                   "CONFIRM",
