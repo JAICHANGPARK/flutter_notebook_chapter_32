@@ -25,7 +25,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
       body: Column(
         children: [
           Container(
-            height: 48,
+            height: 42,
             margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4)),
             padding: EdgeInsets.all(2),
@@ -33,7 +33,10 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
               children: [
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
                     child: Center(
                       child: Text("Audiobook"),
                     ),
