@@ -12,9 +12,26 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [
-          
-        ],
+        children: [],
+      ),
+      bottomNavigationBar: SizedBox(
+        height: 72,
+        child: BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.menu_book_outlined),
+              label: "Books",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.shopping_bag),
+              label: "Shop",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle),
+              label: "Profile",
+            )
+          ],
+        ),
       ),
     );
   }
