@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'views/audio_books_main_page.dart';
 
-void main() {
-  
-}
+void main() {}
 
 class AudioBooksApp extends StatelessWidget {
   const AudioBooksApp({super.key});
@@ -11,7 +10,9 @@ class AudioBooksApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
+      routes: {
+        "/": (context) => AudioBooksMainPage(),
+      },
     );
   }
 }
