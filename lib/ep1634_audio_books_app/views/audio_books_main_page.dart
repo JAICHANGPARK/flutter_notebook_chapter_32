@@ -27,32 +27,38 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
           Container(
             height: 48,
             margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            decoration: BoxDecoration(
-              color: Colors.grey[300],
-                borderRadius: BorderRadius.circular(4)
-            ),
+            decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4)),
             padding: EdgeInsets.all(2),
             child: Row(
               children: [
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(4)
-                    ),
+                    decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
                     child: Center(
                       child: Text("Audiobook"),
                     ),
                   ),
                 ),
-                Expanded(child: Container(
-                  child:  Center(
-                    child: Text("eBook"),
+                Expanded(
+                    child: Container(
+                  child: Center(
+                    child: Text(
+                      "eBook",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                 )),
-                Expanded(child: Container(
-                  child:  Center(
-                    child: Text("eBook"),
+                Expanded(
+                    child: Container(
+                  child: Center(
+                    child: Text(
+                      "Note",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                 )),
               ],
