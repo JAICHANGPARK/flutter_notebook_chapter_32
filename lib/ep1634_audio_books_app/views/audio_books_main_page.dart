@@ -81,13 +81,25 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
             child: Stack(
               children: [
                 Positioned(
+                  left: 16,
+                  right: 16,
+                  bottom: 0,
+                  top: 0,
                   child: ListView.builder(
                     itemCount: 10,
                     itemBuilder: (context, index) {
                       return Container();
                     },
                   ),
-                )
+                ),
+                Positioned(
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    child: Container(
+                      height: 72,
+                      color: Colors.grey,
+                    ))
               ],
             ),
           )
