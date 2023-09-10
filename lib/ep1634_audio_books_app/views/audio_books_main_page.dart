@@ -18,19 +18,31 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
         foregroundColor: Colors.black,
         elevation: 0,
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.search)),
-          IconButton(onPressed: (){}, icon: Icon(Icons.tune)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.tune)),
         ],
       ),
       body: Column(
         children: [
           Container(
-            height: 64,
+            height: 54,
+            margin: EdgeInsets.symmetric(horizontal: 16),
             decoration: BoxDecoration(
-              
+              color: Colors.grey,
+            ),
+            padding: EdgeInsets.all(4),
+            child: Row(
+              children: [
+                Expanded(child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white
+                  ),
+                )),
+                Expanded(child: Container()),
+                Expanded(child: Container()),
+              ],
             ),
           )
-
         ],
       ),
       bottomNavigationBar: SizedBox(
