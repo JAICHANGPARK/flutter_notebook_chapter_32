@@ -25,12 +25,12 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
       body: Column(
         children: [
           Container(
-            height: 54,
-            margin: EdgeInsets.symmetric(horizontal: 16),
+            height: 48,
+            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             decoration: BoxDecoration(
               color: Colors.grey,
             ),
-            padding: EdgeInsets.all(4),
+            padding: EdgeInsets.all(2),
             child: Row(
               children: [
                 Expanded(child: Container(
