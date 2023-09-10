@@ -11,8 +11,22 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: Text("Dream Walker"),
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        elevation: 0,
+        actions: [
+          IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+          IconButton(onPressed: (){}, icon: Icon(Icons.tune)),
+        ],
+      ),
       body: Column(
-        children: [],
+        children: [
+
+
+        ],
       ),
       bottomNavigationBar: SizedBox(
         height: 72,
