@@ -38,7 +38,10 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       borderRadius: BorderRadius.circular(4),
                     ),
                     child: Center(
-                      child: Text("Audiobook"),
+                      child: Text("Audiobook",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),),
                     ),
                   ),
                 ),
@@ -49,6 +52,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       "eBook",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
+                        color: Colors.grey,
                       ),
                     ),
                   ),
@@ -60,6 +64,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       "Note",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
+                        color: Colors.grey,
                       ),
                     ),
                   ),
