@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class AudioBooksMainPage extends StatefulWidget {
@@ -92,21 +94,45 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                         child: Row(
                           children: [
                             SizedBox(
-                              height: 130,
+                              height: 96,
+                              width: 96,
                               child: Column(
                                 children: [
-                                  Container(
-                                    height: 120,
-                                    width: 120,
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.orange,
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                    ),
                                   ),
-                                  LinearProgressIndicator(),
+                                  SizedBox(
+                                    height: 4,
+                                  ),
+                                  LinearProgressIndicator(
+                                    value: Random().nextDouble(),
+                                  ),
                                 ],
                               ),
                             ),
+                            SizedBox(width: 16,),
                             Expanded(
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
                                 children: [
                                   Text("Title Title Title"),
+                                  Text("Dream Walker"),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.play_circle),
+                                      Text("25%"),
+                                      Text(" subtitle subtitle"),
+                                      Spacer(),
+                                      Icon(Icons.phone_android),
+                                      Icon(Icons.headphones),
+                                    ],
+                                  )
                                 ],
                               ),
                             )
