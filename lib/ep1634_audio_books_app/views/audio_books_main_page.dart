@@ -98,7 +98,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                   bottom: 0,
                   child: Container(
                     height: 64,
-                    color: Colors.grey,
+                    color: Colors.grey[200],
                     child: Column(
                       children: [
                         LinearProgressIndicator(
@@ -109,8 +109,25 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                             children: [
                               Container(
                                 width: 64,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                ),
                               ),
-                              Expanded(child: Column()),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("Flutter Development - Dreamwalker"),
+                                    Text("25% Listening"),
+                                  ],
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.play_arrow,
+                                ),
+                              ),
                             ],
                           ),
                         )
