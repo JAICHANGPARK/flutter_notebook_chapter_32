@@ -168,6 +168,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       );
                     },
                     separatorBuilder: (context, _) => const Divider(
+                      color: Colors.grey,
                       height: 32,
                     ),
                   ),
