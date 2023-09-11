@@ -155,8 +155,9 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                       ),
                                       Text(" subtitle subtitle"),
                                       Spacer(),
-                                      Icon(Icons.phone_android),
-                                      Icon(Icons.headphones),
+                                      Icon(Icons.phone_android, size: 16,),
+                                      SizedBox(width: 8,),
+                                      Icon(Icons.headphones, size: 16,),
                                     ],
                                   )
                                 ],
