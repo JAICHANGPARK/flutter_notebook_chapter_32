@@ -93,13 +93,31 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                   ),
                 ),
                 Positioned(
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    child: Container(
-                      height: 72,
-                      color: Colors.grey,
-                    ))
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  child: Container(
+                    height: 64,
+                    color: Colors.grey,
+                    child: Column(
+                      children: [
+                        LinearProgressIndicator(
+                          value: 0.4,
+                        ),
+                        Expanded(
+                          child: Row(
+                            children: [
+                              Container(
+                                width: 64,
+                              ),
+                              Expanded(child: Column()),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                )
               ],
             ),
           )
