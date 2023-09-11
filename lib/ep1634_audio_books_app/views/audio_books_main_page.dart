@@ -13,25 +13,25 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("Dream Walker"),
+        title: const Text("Dream Walker"),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         elevation: 0,
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.tune)),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.tune)),
         ],
       ),
       body: Column(
         children: [
           Container(
             height: 42,
-            margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             decoration: BoxDecoration(
               color: Colors.grey[300],
               borderRadius: BorderRadius.circular(4),
             ),
-            padding: EdgeInsets.all(2),
+            padding: const EdgeInsets.all(2),
             child: Row(
               children: [
                 Expanded(
@@ -40,7 +40,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(4),
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         "Audiobook",
                         style: TextStyle(
@@ -52,7 +52,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                 ),
                 Expanded(
                     child: Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "eBook",
                       style: TextStyle(
@@ -64,7 +64,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                 )),
                 Expanded(
                     child: Container(
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Note",
                       style: TextStyle(
@@ -85,11 +85,36 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                   right: 16,
                   bottom: 0,
                   top: 0,
-                  child: ListView.builder(
+                  child: ListView.separated(
                     itemCount: 10,
                     itemBuilder: (context, index) {
-                      return Container();
+                      return Container(
+                        child: Row(
+                          children: [
+                            SizedBox(
+                              height: 130,
+                              child: Column(
+                                children: [
+                                  Container(
+                                    height: 120,
+                                    width: 120,
+                                  ),
+                                  LinearProgressIndicator(),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Text("Title Title Title"),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      );
                     },
+                    separatorBuilder: (context, _) => const Divider(),
                   ),
                 ),
                 Positioned(
@@ -101,7 +126,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                     color: Colors.grey[200],
                     child: Column(
                       children: [
-                        LinearProgressIndicator(
+                        const LinearProgressIndicator(
                           value: 0.4,
                         ),
                         Expanded(
@@ -109,25 +134,34 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                             children: [
                               Container(
                                 width: 64,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Colors.yellow,
                                 ),
                               ),
-                              SizedBox(width: 16,),
-                              Expanded(
+                              const SizedBox(
+                                width: 16,
+                              ),
+                              const Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("Flutter Development - Dreamwalker"),
-                                    SizedBox(height: 8,),
+                                    Text(
+                                      "Flutter Development - Dreamwalker",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
                                     Text("25% Listening"),
                                   ],
                                 ),
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.play_arrow,
                                 ),
                               ),
@@ -146,7 +180,9 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
       bottomNavigationBar: SizedBox(
         height: 72,
         child: BottomNavigationBar(
-          items: [
+          selectedItemColor: Colors.black,
+          unselectedItemColor: Colors.grey,
+          items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.menu_book_outlined),
               label: "Books",
