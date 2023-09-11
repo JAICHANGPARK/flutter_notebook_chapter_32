@@ -113,11 +113,14 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                   color: Colors.yellow,
                                 ),
                               ),
+                              SizedBox(width: 16,),
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text("Flutter Development - Dreamwalker"),
+                                    SizedBox(height: 8,),
                                     Text("25% Listening"),
                                   ],
                                 ),
