@@ -94,7 +94,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                         child: Row(
                           children: [
                             SizedBox(
-                              height: 96,
+                              height: 104,
                               width: 96,
                               child: Column(
                                 children: [
