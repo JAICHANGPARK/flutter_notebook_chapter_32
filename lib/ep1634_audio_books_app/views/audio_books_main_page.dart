@@ -197,8 +197,31 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       bottom: 0,
                       top: 16,
                       child: switch (isGrid) {
-                        true => GridView.count(
-                            crossAxisCount: 2,
+                        true => GridView.builder(
+                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 2,
+                              crossAxisSpacing: 16,
+                              mainAxisSpacing: 16
+                            ),
+                            itemBuilder: (BuildContext context, int index) {
+                              return Column(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.yellow,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 4),
+                                    child: LinearProgressIndicator(
+                                      value: Random().nextDouble(),
+                                    ),
+                                  )
+                                ],
+                              );
+                            },
                           ),
                         false => buildListView(),
                       },
