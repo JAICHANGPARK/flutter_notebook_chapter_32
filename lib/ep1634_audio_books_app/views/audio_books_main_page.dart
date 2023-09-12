@@ -11,6 +11,7 @@ class AudioBooksMainPage extends StatefulWidget {
 
 class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
   int menuIndex = 0;
+  bool isGrid = false;
 
   @override
   Widget build(BuildContext context) {
@@ -85,104 +86,106 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
             child: Stack(
               children: [
                 Positioned(
-                  left: 16,
-                  right: 16,
-                  bottom: 0,
-                  top: 16,
-                  child: ListView.separated(
-                    itemCount: 10,
-                    itemBuilder: (context, index) {
-                      return Container(
-                        child: Row(
-                          children: [
-                            SizedBox(
-                              height: 104,
-                              width: 96,
-                              child: Column(
+                    left: 16,
+                    right: 16,
+                    bottom: 0,
+                    top: 16,
+                    child: switch (isGrid) {
+                      true => Container(),
+                      false => ListView.separated(
+                          itemCount: 10,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              child: Row(
                                 children: [
-                                  Expanded(
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.orange,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
+                                  SizedBox(
+                                    height: 104,
+                                    width: 96,
+                                    child: Column(
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.orange,
+                                              borderRadius: BorderRadius.circular(4),
+                                            ),
+                                          ),
+                                        ),
+                                        const SizedBox(
+                                          height: 4,
+                                        ),
+                                        LinearProgressIndicator(
+                                          value: Random().nextDouble(),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                   const SizedBox(
-                                    height: 4,
+                                    width: 16,
                                   ),
-                                  LinearProgressIndicator(
-                                    value: Random().nextDouble(),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            const SizedBox(
-                              width: 16,
-                            ),
-                            const Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                children: [
-                                  Text(
-                                    "Title Title Title",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 8,
-                                  ),
-                                  Text(
-                                    "Dream Walker",
-                                    style: TextStyle(
-                                      color: Colors.grey,
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 8,
-                                  ),
-                                  Row(
-                                    children: [
-                                      Icon(Icons.play_circle),
-                                      SizedBox(
-                                        width: 8,
-                                      ),
-                                      Text(
-                                        "25%",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
+                                  const Expanded(
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                      children: [
+                                        Text(
+                                          "Title Title Title",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
-                                      ),
-                                      Text(" subtitle subtitle"),
-                                      Spacer(),
-                                      Icon(
-                                        Icons.phone_android,
-                                        size: 16,
-                                      ),
-                                      SizedBox(
-                                        width: 8,
-                                      ),
-                                      Icon(
-                                        Icons.headphones,
-                                        size: 16,
-                                      ),
-                                    ],
+                                        SizedBox(
+                                          height: 8,
+                                        ),
+                                        Text(
+                                          "Dream Walker",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.play_circle),
+                                            SizedBox(
+                                              width: 8,
+                                            ),
+                                            Text(
+                                              "25%",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            ),
+                                            Text(" subtitle subtitle"),
+                                            Spacer(),
+                                            Icon(
+                                              Icons.phone_android,
+                                              size: 16,
+                                            ),
+                                            SizedBox(
+                                              width: 8,
+                                            ),
+                                            Icon(
+                                              Icons.headphones,
+                                              size: 16,
+                                            ),
+                                          ],
+                                        )
+                                      ],
+                                    ),
                                   )
                                 ],
                               ),
-                            )
-                          ],
+                            );
+                          },
+                          separatorBuilder: (context, _) => const Divider(
+                            color: Colors.grey,
+                            height: 32,
+                          ),
                         ),
-                      );
-                    },
-                    separatorBuilder: (context, _) => const Divider(
-                      color: Colors.grey,
-                      height: 32,
-                    ),
-                  ),
-                ),
+                    }),
                 Positioned(
                   left: 0,
                   right: 0,
