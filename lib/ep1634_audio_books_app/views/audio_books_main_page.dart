@@ -199,12 +199,10 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       child: switch (isGrid) {
                         true => GridView.builder(
                             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                              crossAxisCount: 2,
-                              crossAxisSpacing: 16,
-                              mainAxisSpacing: 16
-                            ),
+                                crossAxisCount: 2, crossAxisSpacing: 16, mainAxisSpacing: 16),
                             itemBuilder: (BuildContext context, int index) {
                               return Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Expanded(
                                     child: Container(
@@ -218,6 +216,12 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                     child: LinearProgressIndicator(
                                       value: Random().nextDouble(),
                                     ),
+                                  ),
+                                  Text(
+                                    "Flutter Development",
+                                  ),
+                                  Text(
+                                    "Dreamwalker",
                                   )
                                 ],
                               );
