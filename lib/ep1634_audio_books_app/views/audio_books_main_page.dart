@@ -106,7 +106,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 4,
                                   ),
                                   LinearProgressIndicator(
@@ -115,10 +115,10 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 16,
                             ),
-                            Expanded(
+                            const Expanded(
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.spaceAround,
