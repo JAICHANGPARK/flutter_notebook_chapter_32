@@ -120,135 +120,151 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
         elevation: 0,
         actions: [
           IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
-          IconButton(onPressed: () {}, icon: const Icon(Icons.tune)),
+          IconButton(
+            onPressed: () {
+              setState(() {
+                isGrid = !isGrid;
+              });
+            },
+            icon: const Icon(Icons.tune),
+          ),
         ],
       ),
-      body: Column(
+      body: IndexedStack(
+        index: menuIndex,
         children: [
-          Container(
-            height: 42,
-            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            decoration: BoxDecoration(
-              color: Colors.grey[300],
-              borderRadius: BorderRadius.circular(4),
-            ),
-            padding: const EdgeInsets.all(2),
-            child: Row(
-              children: [
-                Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(4),
-                    ),
-                    child: const Center(
-                      child: Text(
-                        "Audiobook",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ),
+          Column(
+            children: [
+              Container(
+                height: 42,
+                margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                decoration: BoxDecoration(
+                  color: Colors.grey[300],
+                  borderRadius: BorderRadius.circular(4),
                 ),
-                Expanded(
-                    child: Container(
-                  child: const Center(
-                    child: Text(
-                      "eBook",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey,
-                      ),
-                    ),
-                  ),
-                )),
-                Expanded(
-                    child: Container(
-                  child: const Center(
-                    child: Text(
-                      "Note",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey,
-                      ),
-                    ),
-                  ),
-                )),
-              ],
-            ),
-          ),
-          Expanded(
-            child: Stack(
-              children: [
-                Positioned(
-                  left: 16,
-                  right: 16,
-                  bottom: 0,
-                  top: 16,
-                  child: switch (isGrid) {
-                    true => Container(),
-                    false => buildListView(),
-                  },
-                ),
-                Positioned(
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  child: Container(
-                    height: 64,
-                    color: Colors.grey[200],
-                    child: Column(
-                      children: [
-                        const LinearProgressIndicator(
-                          value: 0.4,
+                padding: const EdgeInsets.all(2),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(4),
                         ),
-                        Expanded(
-                          child: Row(
-                            children: [
-                              Container(
-                                width: 64,
-                                decoration: const BoxDecoration(
-                                  color: Colors.yellow,
-                                ),
-                              ),
-                              const SizedBox(
-                                width: 16,
-                              ),
-                              const Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      "Flutter Development - Dreamwalker",
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height: 8,
-                                    ),
-                                    Text("25% Listening"),
-                                  ],
-                                ),
-                              ),
-                              IconButton(
-                                onPressed: () {},
-                                icon: const Icon(
-                                  Icons.play_arrow,
-                                ),
-                              ),
-                            ],
+                        child: const Center(
+                          child: Text(
+                            "Audiobook",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        )
-                      ],
+                        ),
+                      ),
                     ),
-                  ),
-                )
-              ],
-            ),
-          )
+                    Expanded(
+                        child: Container(
+                      child: const Center(
+                        child: Text(
+                          "eBook",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ),
+                    )),
+                    Expanded(
+                        child: Container(
+                      child: const Center(
+                        child: Text(
+                          "Note",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ),
+                    )),
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 16,
+                      right: 16,
+                      bottom: 0,
+                      top: 16,
+                      child: switch (isGrid) {
+                        true => GridView.count(
+                            crossAxisCount: 2,
+                          ),
+                        false => buildListView(),
+                      },
+                    ),
+                    Positioned(
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      child: Container(
+                        height: 64,
+                        color: Colors.grey[200],
+                        child: Column(
+                          children: [
+                            const LinearProgressIndicator(
+                              value: 0.4,
+                            ),
+                            Expanded(
+                              child: Row(
+                                children: [
+                                  Container(
+                                    width: 64,
+                                    decoration: const BoxDecoration(
+                                      color: Colors.yellow,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    width: 16,
+                                  ),
+                                  const Expanded(
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          "Flutter Development - Dreamwalker",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
+                                        Text("25% Listening"),
+                                      ],
+                                    ),
+                                  ),
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: const Icon(
+                                      Icons.play_arrow,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
+          Container(),
+          Container(),
         ],
       ),
       bottomNavigationBar: SizedBox(
