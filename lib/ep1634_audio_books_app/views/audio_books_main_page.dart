@@ -210,6 +210,58 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                         color: Colors.yellow,
                                         borderRadius: BorderRadius.circular(4),
                                       ),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                            bottom: 8,
+                                            left: 8,
+                                            right: 8,
+                                            child: Row(
+                                              children: [
+                                                Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.black.withOpacity(0.4),
+                                                    borderRadius: BorderRadius.circular(2),
+                                                  ),
+                                                  margin: EdgeInsets.only(right: 4),
+                                                  padding: EdgeInsets.all(3),
+                                                  child: Icon(
+                                                    Icons.info,
+                                                    color: Colors.white,
+                                                    size: 16,
+                                                  ),
+                                                ),
+                                                Container(
+                                                  margin: EdgeInsets.only(right: 4),
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.black.withOpacity(0.4),
+                                                    borderRadius: BorderRadius.circular(2),
+                                                  ),
+                                                  padding: EdgeInsets.all(3),
+                                                  child: Icon(
+                                                    Icons.headphones,
+                                                    color: Colors.white,
+                                                    size: 16,
+                                                  ),
+                                                ),
+                                                Container(
+                                                  margin: EdgeInsets.only(right: 4),
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.black.withOpacity(0.4),
+                                                    borderRadius: BorderRadius.circular(2),
+                                                  ),
+                                                  padding: EdgeInsets.all(3),
+                                                  child: Icon(
+                                                    Icons.phone_android,
+                                                    color: Colors.white,
+                                                    size: 16,
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     ),
                                   ),
                                   Padding(
@@ -218,8 +270,17 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                       value: Random().nextDouble(),
                                     ),
                                   ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
                                   const Text(
                                     "Flutter Development",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 4,
                                   ),
                                   const Text(
                                     "Dreamwalker",
