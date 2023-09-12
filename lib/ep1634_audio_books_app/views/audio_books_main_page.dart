@@ -10,6 +10,8 @@ class AudioBooksMainPage extends StatefulWidget {
 }
 
 class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
+  int menuIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -155,9 +157,17 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                       ),
                                       Text(" subtitle subtitle"),
                                       Spacer(),
-                                      Icon(Icons.phone_android, size: 16,),
-                                      SizedBox(width: 8,),
-                                      Icon(Icons.headphones, size: 16,),
+                                      Icon(
+                                        Icons.phone_android,
+                                        size: 16,
+                                      ),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
+                                      Icon(
+                                        Icons.headphones,
+                                        size: 16,
+                                      ),
                                     ],
                                   )
                                 ],
@@ -238,6 +248,12 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
         child: BottomNavigationBar(
           selectedItemColor: Colors.black,
           unselectedItemColor: Colors.grey,
+          currentIndex: menuIndex,
+          onTap: (idx) {
+            setState(() {
+              menuIndex = idx;
+            });
+          },
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.menu_book_outlined),
