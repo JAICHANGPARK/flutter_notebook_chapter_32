@@ -152,14 +152,35 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                             itemBuilder: (context, index) {
                               return ListTile(
                                 leading: IconButton(
-                                  icon: Icon(Icons.chat_outlined), onPressed: () {  },
+                                  icon: Icon(Icons.chat_outlined),
+                                  onPressed: () {},
                                 ),
                                 title: Text("Flutter Flutter"),
                                 subtitle: Text("12 notes 22 Sep 2023"),
                                 trailing: Icon(Icons.arrow_forward_ios),
+                                onTap: () {
+                                  showModalBottomSheet(
+                                    context: context,
+                                    builder: (context) => Column(
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Text("Flutter Flutter"),
+                                            TextButton(
+                                              onPressed: () {},
+                                              child: Text("Save"),
+                                            ),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  );
+                                },
                               );
                             },
-                            separatorBuilder: (context, index) => Divider(),
+                            separatorBuilder: (context, index) => Divider(
+                              color: Colors.grey,
+                            ),
                           ),
                         ],
                       ),
