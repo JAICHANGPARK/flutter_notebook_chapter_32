@@ -70,11 +70,12 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                             color: tabIndex == 0 ? Colors.white : Colors.transparent,
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          child: const Center(
+                          child:  Center(
                             child: Text(
                               "Audiobook",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
+                                color: tabIndex == 0 ? Colors.black : Colors.grey,
                               ),
                             ),
                           ),
