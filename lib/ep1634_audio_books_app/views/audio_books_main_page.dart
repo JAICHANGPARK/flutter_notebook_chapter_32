@@ -199,7 +199,11 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       child: switch (isGrid) {
                         true => GridView.builder(
                             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount: 2, crossAxisSpacing: 16, mainAxisSpacing: 16, childAspectRatio: 0.85),
+                              crossAxisCount: 2,
+                              crossAxisSpacing: 16,
+                              mainAxisSpacing: 16,
+                              childAspectRatio: 0.85,
+                            ),
                             itemBuilder: (BuildContext context, int index) {
                               return Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
