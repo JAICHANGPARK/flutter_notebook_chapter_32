@@ -111,7 +111,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
   }
 
   buildGridView() {
-    return  GridView.builder(
+    return GridView.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         crossAxisSpacing: 16,
@@ -252,16 +252,23 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                 child: Row(
                   children: [
                     Expanded(
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: const Center(
-                          child: Text(
-                            "Audiobook",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                      child: GestureDetector(
+                        onTap: (){
+                          setState(() {
+                            tabIndex = 0;
+                          });
+                        },
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: const Center(
+                            child: Text(
+                              "Audiobook",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ),
                         ),
@@ -303,7 +310,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       bottom: 0,
                       top: 16,
                       child: switch (isGrid) {
-                        true =>
+                        true => buildGridView(),
                         false => buildListView(),
                       },
                     ),
