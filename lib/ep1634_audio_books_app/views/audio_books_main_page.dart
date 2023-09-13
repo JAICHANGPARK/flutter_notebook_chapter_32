@@ -67,7 +67,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                         },
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: tabIndex == 0 ? Colors.white : Colors.transparent,
                             borderRadius: BorderRadius.circular(4),
                           ),
                           child: const Center(
