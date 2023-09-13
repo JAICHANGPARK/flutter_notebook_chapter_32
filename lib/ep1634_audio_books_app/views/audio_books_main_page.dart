@@ -163,15 +163,31 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                     context: context,
                                     builder: (context) => Column(
                                       children: [
-                                        Row(
-                                          children: [
-                                            Text("Flutter Flutter"),
-                                            TextButton(
-                                              onPressed: () {},
-                                              child: Text("Save"),
+                                        Padding(
+                                          padding: const EdgeInsets.all(16.0),
+                                          child: Row(
+                                            children: [
+                                              Text("Flutter Flutter"),
+                                              TextButton(
+                                                onPressed: () {},
+                                                child: Text("Save"),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        Divider(),
+                                        Expanded(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(24.0),
+                                            child: TextField(
+                                              decoration: InputDecoration(
+                                                border: InputBorder.none,
+                                              ),
+                                              textAlign: TextAlign.start,
+                                              maxLines: 100,
                                             ),
-                                          ],
-                                        )
+                                          ),
+                                        ),
                                       ],
                                     ),
                                   );
