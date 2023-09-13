@@ -223,35 +223,35 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                                     color: Colors.black.withOpacity(0.4),
                                                     borderRadius: BorderRadius.circular(2),
                                                   ),
-                                                  margin: EdgeInsets.only(right: 4),
-                                                  padding: EdgeInsets.all(3),
-                                                  child: Icon(
+                                                  margin: const EdgeInsets.only(right: 4),
+                                                  padding: const EdgeInsets.all(3),
+                                                  child: const Icon(
                                                     Icons.info,
                                                     color: Colors.white,
                                                     size: 16,
                                                   ),
                                                 ),
                                                 Container(
-                                                  margin: EdgeInsets.only(right: 4),
+                                                  margin: const EdgeInsets.only(right: 4),
                                                   decoration: BoxDecoration(
                                                     color: Colors.black.withOpacity(0.4),
                                                     borderRadius: BorderRadius.circular(2),
                                                   ),
-                                                  padding: EdgeInsets.all(3),
-                                                  child: Icon(
+                                                  padding: const EdgeInsets.all(3),
+                                                  child: const Icon(
                                                     Icons.headphones,
                                                     color: Colors.white,
                                                     size: 16,
                                                   ),
                                                 ),
                                                 Container(
-                                                  margin: EdgeInsets.only(right: 4),
+                                                  margin: const EdgeInsets.only(right: 4),
                                                   decoration: BoxDecoration(
                                                     color: Colors.black.withOpacity(0.4),
                                                     borderRadius: BorderRadius.circular(2),
                                                   ),
-                                                  padding: EdgeInsets.all(3),
-                                                  child: Icon(
+                                                  padding: const EdgeInsets.all(3),
+                                                  child: const Icon(
                                                     Icons.phone_android,
                                                     color: Colors.white,
                                                     size: 16,
@@ -270,7 +270,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                       value: Random().nextDouble(),
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 8,
                                   ),
                                   const Text(
@@ -279,7 +279,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 4,
                                   ),
                                   const Text(
