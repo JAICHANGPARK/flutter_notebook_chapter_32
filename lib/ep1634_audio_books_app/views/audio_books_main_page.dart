@@ -147,8 +147,16 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                             isGrid: isGrid,
                           ),
                           Container(),
-                          ListView.builder(
-                            itemBuilder: (context, index) {},
+                          ListView.separated(
+                            itemCount: 6,
+                            itemBuilder: (context, index) {
+                              return ListTile(
+                                leading: Icon(Icons.chat_outlined),
+                                title: Text("Flutter Flutter"),
+                                subtitle: Text("12 notes 22 Sep 2023"),
+                              );
+                            },
+                            separatorBuilder: (context, index) => Divider(),
                           ),
                         ],
                       ),
