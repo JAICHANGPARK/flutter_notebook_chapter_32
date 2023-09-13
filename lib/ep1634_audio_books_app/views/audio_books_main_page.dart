@@ -11,6 +11,7 @@ class AudioBooksMainPage extends StatefulWidget {
 
 class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
   int menuIndex = 0;
+  int tabIndex = 0;
   bool isGrid = false;
 
   buildListView() {
@@ -109,6 +110,105 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
     );
   }
 
+  buildGridView() {
+    return  GridView.builder(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        crossAxisSpacing: 16,
+        mainAxisSpacing: 16,
+        childAspectRatio: 0.85,
+      ),
+      itemBuilder: (BuildContext context, int index) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      bottom: 8,
+                      left: 8,
+                      right: 8,
+                      child: Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.black.withOpacity(0.4),
+                              borderRadius: BorderRadius.circular(2),
+                            ),
+                            margin: const EdgeInsets.only(right: 4),
+                            padding: const EdgeInsets.all(3),
+                            child: const Icon(
+                              Icons.info,
+                              color: Colors.white,
+                              size: 16,
+                            ),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(right: 4),
+                            decoration: BoxDecoration(
+                              color: Colors.black.withOpacity(0.4),
+                              borderRadius: BorderRadius.circular(2),
+                            ),
+                            padding: const EdgeInsets.all(3),
+                            child: const Icon(
+                              Icons.headphones,
+                              color: Colors.white,
+                              size: 16,
+                            ),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(right: 4),
+                            decoration: BoxDecoration(
+                              color: Colors.black.withOpacity(0.4),
+                              borderRadius: BorderRadius.circular(2),
+                            ),
+                            padding: const EdgeInsets.all(3),
+                            child: const Icon(
+                              Icons.phone_android,
+                              color: Colors.white,
+                              size: 16,
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 4),
+              child: LinearProgressIndicator(
+                value: Random().nextDouble(),
+              ),
+            ),
+            const SizedBox(
+              height: 8,
+            ),
+            const Text(
+              "Flutter Development",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(
+              height: 4,
+            ),
+            const Text(
+              "Dreamwalker",
+            )
+          ],
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -119,7 +219,10 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
         foregroundColor: Colors.black,
         elevation: 0,
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.search),
+          ),
           IconButton(
             onPressed: () {
               setState(() {
@@ -137,7 +240,10 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
             children: [
               Container(
                 height: 42,
-                margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                margin: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 8,
+                ),
                 decoration: BoxDecoration(
                   color: Colors.grey[300],
                   borderRadius: BorderRadius.circular(4),
@@ -197,102 +303,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       bottom: 0,
                       top: 16,
                       child: switch (isGrid) {
-                        true => GridView.builder(
-                            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                              crossAxisCount: 2,
-                              crossAxisSpacing: 16,
-                              mainAxisSpacing: 16,
-                              childAspectRatio: 0.85,
-                            ),
-                            itemBuilder: (BuildContext context, int index) {
-                              return Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Expanded(
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.yellow,
-                                        borderRadius: BorderRadius.circular(4),
-                                      ),
-                                      child: Stack(
-                                        children: [
-                                          Positioned(
-                                            bottom: 8,
-                                            left: 8,
-                                            right: 8,
-                                            child: Row(
-                                              children: [
-                                                Container(
-                                                  decoration: BoxDecoration(
-                                                    color: Colors.black.withOpacity(0.4),
-                                                    borderRadius: BorderRadius.circular(2),
-                                                  ),
-                                                  margin: const EdgeInsets.only(right: 4),
-                                                  padding: const EdgeInsets.all(3),
-                                                  child: const Icon(
-                                                    Icons.info,
-                                                    color: Colors.white,
-                                                    size: 16,
-                                                  ),
-                                                ),
-                                                Container(
-                                                  margin: const EdgeInsets.only(right: 4),
-                                                  decoration: BoxDecoration(
-                                                    color: Colors.black.withOpacity(0.4),
-                                                    borderRadius: BorderRadius.circular(2),
-                                                  ),
-                                                  padding: const EdgeInsets.all(3),
-                                                  child: const Icon(
-                                                    Icons.headphones,
-                                                    color: Colors.white,
-                                                    size: 16,
-                                                  ),
-                                                ),
-                                                Container(
-                                                  margin: const EdgeInsets.only(right: 4),
-                                                  decoration: BoxDecoration(
-                                                    color: Colors.black.withOpacity(0.4),
-                                                    borderRadius: BorderRadius.circular(2),
-                                                  ),
-                                                  padding: const EdgeInsets.all(3),
-                                                  child: const Icon(
-                                                    Icons.phone_android,
-                                                    color: Colors.white,
-                                                    size: 16,
-                                                  ),
-                                                )
-                                              ],
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(vertical: 4),
-                                    child: LinearProgressIndicator(
-                                      value: Random().nextDouble(),
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    height: 8,
-                                  ),
-                                  const Text(
-                                    "Flutter Development",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    height: 4,
-                                  ),
-                                  const Text(
-                                    "Dreamwalker",
-                                  )
-                                ],
-                              );
-                            },
-                          ),
+                        true =>
                         false => buildListView(),
                       },
                     ),
