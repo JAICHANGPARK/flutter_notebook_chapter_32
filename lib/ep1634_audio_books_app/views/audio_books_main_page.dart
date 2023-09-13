@@ -52,7 +52,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                   vertical: 8,
                 ),
                 decoration: BoxDecoration(
-                  color: Colors.grey[300],
+                  color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(4),
                 ),
                 padding: const EdgeInsets.all(2),
@@ -70,7 +70,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                             color: tabIndex == 0 ? Colors.white : Colors.transparent,
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          child:  Center(
+                          child: Center(
                             child: Text(
                               "Audiobook",
                               style: TextStyle(
@@ -135,15 +135,21 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                 child: Stack(
                   children: [
                     Positioned(
-                      left: 16,
-                      right: 16,
-                      bottom: 0,
-                      top: 16,
-                      child: switch (isGrid) {
-                        true => AudioBooksMainGridWidget(),
-                        false => AudioBooksMainListWidget(),
-                      },
-                    ),
+                        left: 16,
+                        right: 16,
+                        bottom: 0,
+                        top: 16,
+                        child: IndexedStack(
+                          index: tabIndex,
+                          children: [
+                            switch (isGrid) {
+                              true => AudioBooksMainGridWidget(),
+                              false => AudioBooksMainListWidget(),
+                            },
+                            Container(),
+                            Container(),
+                          ],
+                        )),
                     Positioned(
                       left: 0,
                       right: 0,
