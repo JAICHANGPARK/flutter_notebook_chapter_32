@@ -283,15 +283,15 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       },
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: tabIndex == 1 ? Colors.white : Colors.transparent,
                           borderRadius: BorderRadius.circular(4),
                         ),
-                        child: const Center(
+                        child:  Center(
                           child: Text(
                             "eBook",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: Colors.grey,
+                              color: tabIndex == 1 ? Colors.black : Colors.grey,
                             ),
                           ),
                         ),
