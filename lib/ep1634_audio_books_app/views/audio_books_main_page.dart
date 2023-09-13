@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_32/ep1634_audio_books_app/views/audio_books_main_grid_widget.dart';
 import 'package:flutter_notebook_chapter_32/ep1634_audio_books_app/views/audio_books_main_list_widget.dart';
+import 'package:flutter_notebook_chapter_32/ep1634_audio_books_app/views/books_audiobook_widget.dart';
 
 class AudioBooksMainPage extends StatefulWidget {
   const AudioBooksMainPage({super.key});
@@ -135,21 +136,23 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                 child: Stack(
                   children: [
                     Positioned(
-                        left: 16,
-                        right: 16,
-                        bottom: 0,
-                        top: 16,
-                        child: IndexedStack(
-                          index: tabIndex,
-                          children: [
-                            switch (isGrid) {
-                              true => AudioBooksMainGridWidget(),
-                              false => AudioBooksMainListWidget(),
-                            },
-                            Container(),
-                            Container(),
-                          ],
-                        )),
+                      left: 16,
+                      right: 16,
+                      bottom: 0,
+                      top: 16,
+                      child: IndexedStack(
+                        index: tabIndex,
+                        children: [
+                          BooksAudiobookWidget(
+                            isGrid: isGrid,
+                          ),
+                          Container(),
+                          ListView.builder(
+                            itemBuilder: (context, index) {},
+                          ),
+                        ],
+                      ),
+                    ),
                     Positioned(
                       left: 0,
                       right: 0,
