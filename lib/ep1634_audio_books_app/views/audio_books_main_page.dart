@@ -165,7 +165,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                     isScrollControlled: true,
 
                                     builder: (context) => SizedBox(
-
+                                      height: 640,
                                       child: Column(
                                         children: [
                                           Padding(
