@@ -253,7 +253,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                   children: [
                     Expanded(
                       child: GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           setState(() {
                             tabIndex = 0;
                           });
@@ -275,25 +275,43 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       ),
                     ),
                     Expanded(
-                        child: Container(
-                      child: const Center(
-                        child: Text(
-                          "eBook",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.grey,
+                        child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          tabIndex = 1;
+                        });
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: const Center(
+                          child: Text(
+                            "eBook",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
                       ),
                     )),
                     Expanded(
-                        child: Container(
-                      child: const Center(
-                        child: Text(
-                          "Note",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.grey,
+                        child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          tabIndex = 2;
+                        });
+                      },
+                      child: Container(
+                        child: const Center(
+                          child: Text(
+                            "Note",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
                       ),
