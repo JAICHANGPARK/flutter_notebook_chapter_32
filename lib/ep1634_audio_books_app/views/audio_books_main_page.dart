@@ -163,7 +163,6 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                     context: context,
                                     showDragHandle: true,
                                     isScrollControlled: true,
-
                                     builder: (context) => SizedBox(
                                       height: 640,
                                       child: Column(
@@ -171,6 +170,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                           Padding(
                                             padding: const EdgeInsets.all(16.0),
                                             child: Row(
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                               children: [
                                                 Text("Flutter Flutter"),
                                                 TextButton(
@@ -180,9 +180,11 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                               ],
                                             ),
                                           ),
-                                          Divider(),
+                                          Divider(
+                                            height: 8,
+                                            color: Colors.grey,
+                                          ),
                                           Expanded(
-
                                             child: Padding(
                                               padding: const EdgeInsets.all(24.0),
                                               child: TextField(
