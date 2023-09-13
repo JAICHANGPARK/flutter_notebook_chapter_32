@@ -93,7 +93,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                           color: tabIndex == 1 ? Colors.white : Colors.transparent,
                           borderRadius: BorderRadius.circular(4),
                         ),
-                        child:  Center(
+                        child: Center(
                           child: Text(
                             "eBook",
                             style: TextStyle(
@@ -112,12 +112,16 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                         });
                       },
                       child: Container(
-                        child: const Center(
+                        decoration: BoxDecoration(
+                          color: tabIndex == 2 ? Colors.white : Colors.transparent,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: Center(
                           child: Text(
                             "Note",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: Colors.grey,
+                              color: tabIndex == 2 ? Colors.black : Colors.grey,
                             ),
                           ),
                         ),
