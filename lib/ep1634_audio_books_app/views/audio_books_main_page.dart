@@ -86,50 +86,50 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                     ),
                     Expanded(
                         child: GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          tabIndex = 1;
-                        });
-                      },
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: tabIndex == 1 ? Colors.white : Colors.transparent,
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: Center(
-                          child: Text(
-                            "eBook",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: tabIndex == 1 ? Colors.black : Colors.grey,
+                          onTap: () {
+                            setState(() {
+                              tabIndex = 1;
+                            });
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: tabIndex == 1 ? Colors.white : Colors.transparent,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "eBook",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: tabIndex == 1 ? Colors.black : Colors.grey,
+                                ),
+                              ),
                             ),
                           ),
-                        ),
-                      ),
-                    )),
+                        )),
                     Expanded(
                         child: GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          tabIndex = 2;
-                        });
-                      },
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: tabIndex == 2 ? Colors.white : Colors.transparent,
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: Center(
-                          child: Text(
-                            "Note",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: tabIndex == 2 ? Colors.black : Colors.grey,
+                          onTap: () {
+                            setState(() {
+                              tabIndex = 2;
+                            });
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: tabIndex == 2 ? Colors.white : Colors.transparent,
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Note",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: tabIndex == 2 ? Colors.black : Colors.grey,
+                                ),
+                              ),
                             ),
                           ),
-                        ),
-                      ),
-                    )),
+                        )),
                   ],
                 ),
               ),
@@ -164,47 +164,49 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                     context: context,
                                     showDragHandle: true,
                                     isScrollControlled: true,
-                                    builder: (context) => SizedBox(
-                                      height: 640,
-                                      child: Column(
-                                        children: [
-                                          Padding(
-                                            padding: const EdgeInsets.all(16.0),
-                                            child: Row(
-                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                              children: [
-                                                const Text("Flutter Flutter"),
-                                                TextButton(
-                                                  onPressed: () {},
-                                                  child: const Text("Save"),
+                                    builder: (context) =>
+                                        SizedBox(
+                                          height: 640,
+                                          child: Column(
+                                            children: [
+                                              Padding(
+                                                padding: const EdgeInsets.all(16.0),
+                                                child: Row(
+                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                  children: [
+                                                    const Text("Flutter Flutter"),
+                                                    TextButton(
+                                                      onPressed: () {},
+                                                      child: const Text("Save"),
+                                                    ),
+                                                  ],
                                                 ),
-                                              ],
-                                            ),
-                                          ),
-                                          const Divider(
-                                            height: 8,
-                                            color: Colors.grey,
-                                          ),
-                                          const Expanded(
-                                            child: Padding(
-                                              padding: EdgeInsets.all(24.0),
-                                              child: TextField(
-                                                decoration: InputDecoration(
-                                                  border: InputBorder.none,
-                                                ),
-                                                textAlign: TextAlign.start,
-                                                maxLines: 100,
                                               ),
-                                            ),
+                                              const Divider(
+                                                height: 8,
+                                                color: Colors.grey,
+                                              ),
+                                              const Expanded(
+                                                child: Padding(
+                                                  padding: EdgeInsets.all(24.0),
+                                                  child: TextField(
+                                                    decoration: InputDecoration(
+                                                      border: InputBorder.none,
+                                                    ),
+                                                    textAlign: TextAlign.start,
+                                                    maxLines: 100,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
                                           ),
-                                        ],
-                                      ),
-                                    ),
+                                        ),
                                   );
                                 },
                               );
                             },
-                            separatorBuilder: (context, index) => const Divider(
+                            separatorBuilder: (context, index) =>
+                            const Divider(
                               color: Colors.grey,
                             ),
                           ),
@@ -219,9 +221,16 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                         onTap: () {
                           Navigator.of(context).push(
                             PageRouteBuilder(
-                              pageBuilder: (context, animation, secondaryAnimation) {
-                                return AudiobookPlayerPage();
-                              },
+                                pageBuilder: (context, animation, secondaryAnimation) {
+                                  return AudiobookPlayerPage();
+                                },
+                                transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                                  const begin = Offset(0, 1);
+                                  const end = Offset.zero;
+                                  final tween = Tween(begin: begin, end: end);
+                                  final offsetAnimation = animation.drive(tween);
+                                  return SlideTransition(position: offsetAnimation);
+                                }
                             ),
                           );
                         },
