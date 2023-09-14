@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_32/ep1634_audio_books_app/views/audio_books_main_grid_widget.dart';
 import 'package:flutter_notebook_chapter_32/ep1634_audio_books_app/views/audio_books_main_list_widget.dart';
+import 'package:flutter_notebook_chapter_32/ep1634_audio_books_app/views/audiobook_player_page.dart';
 import 'package:flutter_notebook_chapter_32/ep1634_audio_books_app/views/books_audiobook_widget.dart';
 
 class AudioBooksMainPage extends StatefulWidget {
@@ -214,54 +215,65 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                       left: 0,
                       right: 0,
                       bottom: 0,
-                      child: Container(
-                        height: 64,
-                        color: Colors.grey[200],
-                        child: Column(
-                          children: [
-                            const LinearProgressIndicator(
-                              value: 0.4,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).push(
+                            PageRouteBuilder(
+                              pageBuilder: (context, animation, secondaryAnimation) {
+                                return AudiobookPlayerPage();
+                              },
                             ),
-                            Expanded(
-                              child: Row(
-                                children: [
-                                  Container(
-                                    width: 64,
-                                    decoration: const BoxDecoration(
-                                      color: Colors.yellow,
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    width: 16,
-                                  ),
-                                  const Expanded(
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text(
-                                          "Flutter Development - Dreamwalker",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          height: 8,
-                                        ),
-                                        Text("25% Listening"),
-                                      ],
-                                    ),
-                                  ),
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: const Icon(
-                                      Icons.play_arrow,
-                                    ),
-                                  ),
-                                ],
+                          );
+                        },
+                        child: Container(
+                          height: 64,
+                          color: Colors.grey[200],
+                          child: Column(
+                            children: [
+                              const LinearProgressIndicator(
+                                value: 0.4,
                               ),
-                            )
-                          ],
+                              Expanded(
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      width: 64,
+                                      decoration: const BoxDecoration(
+                                        color: Colors.yellow,
+                                      ),
+                                    ),
+                                    const SizedBox(
+                                      width: 16,
+                                    ),
+                                    const Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            "Flutter Development - Dreamwalker",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            height: 8,
+                                          ),
+                                          Text("25% Listening"),
+                                        ],
+                                      ),
+                                    ),
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: const Icon(
+                                        Icons.play_arrow,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     )
