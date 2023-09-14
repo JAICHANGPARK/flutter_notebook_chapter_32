@@ -52,6 +52,9 @@ class _AudiobookPlayerPageState extends State<AudiobookPlayerPage> {
               ),
             ),
           ),
+          SizedBox(
+            height: 32,
+          ),
           Text(
             "Flutter Developer Story",
             style: TextStyle(
@@ -109,7 +112,9 @@ class _AudiobookPlayerPageState extends State<AudiobookPlayerPage> {
               ),
             ],
           ),
+
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               IconButton(
                 onPressed: () {},
