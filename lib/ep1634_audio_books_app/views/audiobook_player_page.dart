@@ -15,8 +15,25 @@ class _AudiobookPlayerPageState extends State<AudiobookPlayerPage> {
         leading: IconButton(
           icon: Icon(
             Icons.keyboard_arrow_down,
-          ), onPressed: () { Navigator.of(context).pop(); },
+          ),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
         ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.add,
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.phone_android,
+            ),
+          ),
+        ],
       ),
     );
   }
