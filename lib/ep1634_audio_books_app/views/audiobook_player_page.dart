@@ -112,29 +112,32 @@ class _AudiobookPlayerPageState extends State<AudiobookPlayerPage> {
               ),
             ],
           ),
-
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.file_upload_outlined,
+          Spacer(),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.file_upload_outlined,
+                  ),
                 ),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.podcasts,
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.podcasts,
+                  ),
                 ),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.more_horiz,
-                ),
-              )
-            ],
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.more_horiz,
+                  ),
+                )
+              ],
+            ),
           )
         ],
       ),
