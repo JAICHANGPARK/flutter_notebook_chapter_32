@@ -81,7 +81,7 @@ class _AudiobookPlayerPageState extends State<AudiobookPlayerPage> {
             ),
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               IconButton(
                 onPressed: () {},
@@ -103,8 +103,32 @@ class _AudiobookPlayerPageState extends State<AudiobookPlayerPage> {
                 onPressed: () {},
                 icon: Icon(Icons.forward_30),
               ),
-              Container(height: 48,
-              width: 48,),
+              Container(
+                height: 48,
+                width: 48,
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.file_upload_outlined,
+                ),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.podcasts,
+                ),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.more_horiz,
+                ),
+              )
             ],
           )
         ],
