@@ -219,7 +219,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                         onTap: () {
                           Navigator.of(context).push(
                             PageRouteBuilder(pageBuilder: (context, animation, secondaryAnimation) {
-                              return AudiobookPlayerPage();
+                              return const AudiobookPlayerPage();
                             }, transitionsBuilder: (context, animation, secondaryAnimation, child) {
                               const begin = Offset(0, 1);
                               const end = Offset.zero;
