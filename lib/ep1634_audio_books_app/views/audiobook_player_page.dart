@@ -52,20 +52,36 @@ class _AudiobookPlayerPageState extends State<AudiobookPlayerPage> {
               ),
             ),
           ),
-          Text("Flutter Developer Story"),
+          Text(
+            "Flutter Developer Story",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 24,
+            ),
+          ),
+          SizedBox(
+            height: 16,
+          ),
           Text("Dreamwalker"),
+          SizedBox(
+            height: 16,
+          ),
           Slider(
             value: 0.4,
             onChanged: (d) {},
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text("00:00"),
-              Text("22:22"),
-            ],
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("00:00"),
+                Text("22:22"),
+              ],
+            ),
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               IconButton(
                 onPressed: () {},
@@ -87,6 +103,8 @@ class _AudiobookPlayerPageState extends State<AudiobookPlayerPage> {
                 onPressed: () {},
                 icon: Icon(Icons.forward_30),
               ),
+              Container(height: 48,
+              width: 48,),
             ],
           )
         ],
