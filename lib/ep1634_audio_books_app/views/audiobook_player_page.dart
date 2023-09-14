@@ -64,6 +64,30 @@ class _AudiobookPlayerPageState extends State<AudiobookPlayerPage> {
               Text("00:00"),
               Text("22:22"),
             ],
+          ),
+          Row(
+            children: [
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.bookmark_border),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.replay_30),
+              ),
+              CircleAvatar(
+                radius: 32,
+                backgroundColor: Colors.black,
+                foregroundColor: Colors.white,
+                child: Icon(
+                  Icons.play_arrow,
+                ),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.forward_30),
+              ),
+            ],
           )
         ],
       ),
