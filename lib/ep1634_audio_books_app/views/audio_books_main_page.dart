@@ -152,12 +152,12 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                             itemBuilder: (context, index) {
                               return ListTile(
                                 leading: IconButton(
-                                  icon: Icon(Icons.chat_outlined),
+                                  icon: const Icon(Icons.chat_outlined),
                                   onPressed: () {},
                                 ),
-                                title: Text("Flutter Flutter"),
-                                subtitle: Text("12 notes 22 Sep 2023"),
-                                trailing: Icon(Icons.arrow_forward_ios),
+                                title: const Text("Flutter Flutter"),
+                                subtitle: const Text("12 notes 22 Sep 2023"),
+                                trailing: const Icon(Icons.arrow_forward_ios),
                                 onTap: () {
                                   showModalBottomSheet(
                                     context: context,
@@ -172,21 +172,21 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                             child: Row(
                                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                               children: [
-                                                Text("Flutter Flutter"),
+                                                const Text("Flutter Flutter"),
                                                 TextButton(
                                                   onPressed: () {},
-                                                  child: Text("Save"),
+                                                  child: const Text("Save"),
                                                 ),
                                               ],
                                             ),
                                           ),
-                                          Divider(
+                                          const Divider(
                                             height: 8,
                                             color: Colors.grey,
                                           ),
-                                          Expanded(
+                                          const Expanded(
                                             child: Padding(
-                                              padding: const EdgeInsets.all(24.0),
+                                              padding: EdgeInsets.all(24.0),
                                               child: TextField(
                                                 decoration: InputDecoration(
                                                   border: InputBorder.none,
@@ -203,7 +203,7 @@ class _AudioBooksMainPageState extends State<AudioBooksMainPage> {
                                 },
                               );
                             },
-                            separatorBuilder: (context, index) => Divider(
+                            separatorBuilder: (context, index) => const Divider(
                               color: Colors.grey,
                             ),
                           ),
