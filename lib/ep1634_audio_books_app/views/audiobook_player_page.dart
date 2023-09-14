@@ -12,6 +12,9 @@ class _AudiobookPlayerPageState extends State<AudiobookPlayerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        elevation: 0,
         leading: IconButton(
           icon: Icon(
             Icons.keyboard_arrow_down,
@@ -33,6 +36,35 @@ class _AudiobookPlayerPageState extends State<AudiobookPlayerPage> {
               Icons.phone_android,
             ),
           ),
+        ],
+      ),
+      backgroundColor: Colors.white,
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: PhysicalModel(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(8),
+              elevation: 8,
+              child: Container(
+                height: 340,
+              ),
+            ),
+          ),
+          Text("Flutter Developer Story"),
+          Text("Dreamwalker"),
+          Slider(
+            value: 0.4,
+            onChanged: (d) {},
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text("00:00"),
+              Text("22:22"),
+            ],
+          )
         ],
       ),
     );
