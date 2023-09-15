@@ -8,6 +8,7 @@ class PodcastMainPage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
@@ -34,7 +35,6 @@ class PodcastMainPage extends StatelessWidget {
               color: Colors.black,
               margin: EdgeInsets.all(16),
             ),
-
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8),
               child: Text("Recently Played"),
@@ -53,31 +53,44 @@ class PodcastMainPage extends StatelessWidget {
                 ),
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Trending Podcast",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Trending Podcast",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    "View All",
-                  ),
-                )
-              ],
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "View All",
+                    ),
+                  )
+                ],
+              ),
             ),
             SizedBox(
               height: 42,
               child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 10,
                 itemBuilder: (context, index) {
                   return Container();
                 },
               ),
             ),
+            GridView.builder(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+              ),
+              itemBuilder: (context, index) {
+                return Container();
+              },
+            )
           ],
         ),
       ),
