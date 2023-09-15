@@ -306,34 +306,37 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.black,
-        unselectedItemColor: Colors.grey,
-        onTap: (idx) {
-          setState(() {
-            menuIndex = idx;
-          });
-        },
-        currentIndex: menuIndex,
-        type: BottomNavigationBarType.fixed,
-        items: [
-          const BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Home",
-          ),
-          const BottomNavigationBarItem(
-            icon: Icon(Icons.explore_outlined),
-            label: "Explore",
-          ),
-          const BottomNavigationBarItem(
-            icon: Icon(Icons.cell_tower),
-            label: "Live",
-          ),
-          const BottomNavigationBarItem(
-            icon: Icon(Icons.person_outline),
-            label: "Profile",
-          )
-        ],
+      bottomNavigationBar: SizedBox(
+        height: 78,
+        child: BottomNavigationBar(
+          selectedItemColor: Colors.black,
+          unselectedItemColor: Colors.grey,
+          onTap: (idx) {
+            setState(() {
+              menuIndex = idx;
+            });
+          },
+          currentIndex: menuIndex,
+          type: BottomNavigationBarType.fixed,
+          items: [
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: "Home",
+            ),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.explore_outlined),
+              label: "Explore",
+            ),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.cell_tower),
+              label: "Live",
+            ),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.person_outline),
+              label: "Profile",
+            )
+          ],
+        ),
       ),
     );
   }
