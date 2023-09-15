@@ -61,7 +61,15 @@ class PodcastMainPage extends StatelessWidget {
                   ),
                 )
               ],
-            )
+            ),
+            SizedBox(
+              height: 42,
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Container();
+                },
+              ),
+            ),
           ],
         ),
       ),
