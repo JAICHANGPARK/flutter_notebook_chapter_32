@@ -171,7 +171,13 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                       ),
                                       Row(
                                         children: [
-                                          Icon(Icons.access_time_rounded),
+                                          Icon(
+                                            Icons.access_time_rounded,
+                                            size: 16,
+                                          ),
+                                          SizedBox(
+                                            width: 4,
+                                          ),
                                           Text("4 min remaining"),
                                         ],
                                       )
