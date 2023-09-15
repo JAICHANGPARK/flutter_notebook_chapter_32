@@ -6,7 +6,27 @@ class PodcastMainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                CircleAvatar(),
+                Expanded(
+                    child: Column(
+                  children: [
+                    Text("Dreamwalker"),
+                    Text("Explore trending podcast"),
+                  ],
+                ))
+              ],
+            )
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
