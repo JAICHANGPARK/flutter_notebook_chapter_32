@@ -264,14 +264,27 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
-                      height: 42,
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: 10,
-                        itemBuilder: (context, index) {
-                          return Container();
-                        },
+                    Padding(
+                      padding: const EdgeInsets.only(left: 12),
+                      child: SizedBox(
+                        height: 42,
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: trendingMenus.length,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              padding: EdgeInsets.symmetric(horizontal: 12),
+                              margin: EdgeInsets.only(right: 12),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(32),
+                                border: Border.all(),
+                              ),
+                              child: Center(
+                                child: Text(trendingMenus[index]),
+                              ),
+                            );
+                          },
+                        ),
                       ),
                     ),
                     SizedBox(
