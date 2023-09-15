@@ -287,16 +287,25 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 420,
-                      child: GridView.builder(
-                        shrinkWrap: true,
-                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
+                    Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: SizedBox(
+                        height: 420,
+                        child: GridView.builder(
+                          shrinkWrap: true,
+                          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            mainAxisSpacing: 12,
+                            crossAxisSpacing: 12
+                          ),
+                          itemBuilder: (context, index) {
+                            return Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey
+                              ),
+                            );
+                          },
                         ),
-                        itemBuilder: (context, index) {
-                          return Container();
-                        },
                       ),
                     )
                   ],
