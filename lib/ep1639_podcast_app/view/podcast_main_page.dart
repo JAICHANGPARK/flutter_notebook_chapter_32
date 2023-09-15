@@ -28,11 +28,25 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  CircleAvatar(),
+                  CircleAvatar(
+                    radius: 24,
+                  ),
+                  SizedBox(
+                    width: 8,
+                  ),
                   Expanded(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Dreamwalker"),
+                        Text(
+                          "Dreamwalker",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Text("Explore trending podcast"),
                       ],
                     ),
@@ -47,11 +61,31 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      height: 180,
+                      height: 200,
+                      width: double.infinity,
                       color: Colors.black,
-                      margin: EdgeInsets.all(16),
+                      margin: EdgeInsets.all(8),
+                      child: Column(
+                        children: [
+                          Text(
+                            "AWAKENING\nYOUR\nCREATIVE\nMIND",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24,
+                              color: Colors.white,
+                            ),
+                          ),
+                          Text("Dreamwalker • 8 Episode",
+                            style: TextStyle(
+
+                              fontSize: 14,
+                              color: Colors.grey,
+                            ),)
+                        ],
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 8),
