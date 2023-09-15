@@ -9,22 +9,25 @@ class PodcastMainPage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Expanded(
-                  child: Column(
-                    children: [
-                      Text("Dreamwalker"),
-                      Text("Explore trending podcast"),
-                    ],
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Text("Dreamwalker"),
+                        Text("Explore trending podcast"),
+                      ],
+                    ),
                   ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(Icons.notifications_none),
-                ),
-              ],
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.notifications_none),
+                  ),
+                ],
+              ),
             ),
             Container(
               height: 180,
