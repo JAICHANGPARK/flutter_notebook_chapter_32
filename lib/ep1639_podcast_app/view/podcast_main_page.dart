@@ -9,9 +9,16 @@ class PodcastMainPage extends StatefulWidget {
 
 class _PodcastMainPageState extends State<PodcastMainPage> {
   int menuIndex = 0;
+  List<String> trendingMenus = [
+    "All",
+    "Art&Design",
+    "Politics",
+    "Geography",
+    "Geography",
+  ];
+
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -37,69 +44,77 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 ],
               ),
             ),
-            Container(
-              height: 180,
-              color: Colors.black,
-              margin: EdgeInsets.all(16),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8),
-              child: Text("Recently Played"),
-            ),
-            Column(
-              children: [
-                Container(
-                  height: 96,
-                  color: Colors.blue,
-                  margin: EdgeInsets.only(bottom: 8),
-                ),
-                Container(
-                  height: 96,
-                  color: Colors.blue,
-                  margin: EdgeInsets.only(bottom: 8),
-                ),
-              ],
-            ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Trending Podcast",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(
+                      height: 180,
+                      color: Colors.black,
+                      margin: EdgeInsets.all(16),
                     ),
-                  ),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      "View All",
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8),
+                      child: Text("Recently Played"),
                     ),
-                  )
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 42,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: 10,
-                itemBuilder: (context, index) {
-                  return Container();
-                },
-              ),
-            ),
-            SizedBox(
-              height: 420,
-              child: GridView.builder(
-                shrinkWrap: true,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
+                    Column(
+                      children: [
+                        Container(
+                          height: 96,
+                          color: Colors.blue,
+                          margin: EdgeInsets.only(bottom: 8),
+                        ),
+                        Container(
+                          height: 96,
+                          color: Colors.blue,
+                          margin: EdgeInsets.only(bottom: 8),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Trending Podcast",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              "View All",
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 42,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 10,
+                        itemBuilder: (context, index) {
+                          return Container();
+                        },
+                      ),
+                    ),
+                    SizedBox(
+                      height: 420,
+                      child: GridView.builder(
+                        shrinkWrap: true,
+                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                        ),
+                        itemBuilder: (context, index) {
+                          return Container();
+                        },
+                      ),
+                    )
+                  ],
                 ),
-                itemBuilder: (context, index) {
-                  return Container();
-                },
               ),
             )
           ],
@@ -108,7 +123,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
-        onTap: (idx){
+        onTap: (idx) {
           setState(() {
             menuIndex = idx;
           });
