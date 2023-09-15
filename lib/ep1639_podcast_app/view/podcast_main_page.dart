@@ -128,7 +128,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 12,
                     ),
                     const Padding(
@@ -156,10 +156,10 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                     borderRadius: BorderRadius.circular(4),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 16,
                                 ),
-                                Expanded(
+                                const Expanded(
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -186,7 +186,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                     ],
                                   ),
                                 ),
-                                IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz))
+                                IconButton(onPressed: () {}, icon: const Icon(Icons.more_horiz))
                               ],
                             ),
                           ),
@@ -203,10 +203,10 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                     borderRadius: BorderRadius.circular(4),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 16,
                                 ),
-                                Expanded(
+                                const Expanded(
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -233,7 +233,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                     ],
                                   ),
                                 ),
-                                IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz))
+                                IconButton(onPressed: () {}, icon: const Icon(Icons.more_horiz))
                               ],
                             ),
                           ),
