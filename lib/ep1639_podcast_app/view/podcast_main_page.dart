@@ -90,14 +90,17 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                 },
               ),
             ),
-            GridView.builder(
-              shrinkWrap: true,
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
+            SizedBox(
+              height: 420,
+              child: GridView.builder(
+                shrinkWrap: true,
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                ),
+                itemBuilder: (context, index) {
+                  return Container();
+                },
               ),
-              itemBuilder: (context, index) {
-                return Container();
-              },
             )
           ],
         ),
