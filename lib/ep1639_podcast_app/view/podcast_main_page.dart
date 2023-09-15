@@ -66,7 +66,6 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                     Container(
                       height: 200,
                       width: double.infinity,
-
                       margin: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
                           color: Colors.black,
@@ -86,18 +85,20 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       child: Stack(
                         children: [
                           Positioned.fill(
-                              child: Container(
-                            decoration: BoxDecoration(
+                            child: Container(
+                              decoration: BoxDecoration(
                                 gradient: LinearGradient(
-                              colors: [
-                                Colors.black,
-                                Colors.black.withOpacity(0.8),
-                                Colors.black.withOpacity(0.5),
-                                Colors.black.withOpacity(0.2),
-                                Colors.black.withOpacity(0.1)
-                              ],
-                            )),
-                          )),
+                                  colors: [
+                                    Colors.black,
+                                    Colors.black.withOpacity(0.8),
+                                    Colors.black.withOpacity(0.5),
+                                    Colors.black.withOpacity(0.2),
+                                    Colors.black.withOpacity(0.1)
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
                           const Padding(
                             padding: EdgeInsets.all(16.0),
                             child: Column(
@@ -127,27 +128,56 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 12,),
+                    SizedBox(
+                      height: 12,
+                    ),
                     const Padding(
                       padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
-                      child: Text("Recently Played", style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16
-                      ),),
+                      child: Text(
+                        "Recently Played",
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                      ),
                     ),
-                    Column(
-                      children: [
-                        Container(
-                          height: 96,
-                          color: Colors.blue,
-                          margin: const EdgeInsets.only(bottom: 8),
-                        ),
-                        Container(
-                          height: 96,
-                          color: Colors.blue,
-                          margin: const EdgeInsets.only(bottom: 8),
-                        ),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 96,
+                            color: Colors.blue,
+                            margin: const EdgeInsets.only(bottom: 8),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 96,
+                                  width: 96,
+                                  decoration:
+                                      BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
+                                ),
+                                Expanded(
+                                  child: Column(
+                                    children: [
+                                      Text("Flutter Development"),
+                                      Row(
+                                        children: [
+                                          Icon(Icons.access_time_rounded),
+                                          Text("4 min remaining"),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 96,
+                            color: Colors.blue,
+                            margin: const EdgeInsets.only(bottom: 8),
+                          ),
+                        ],
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(16.0),
