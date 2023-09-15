@@ -74,6 +74,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                               image:
                                   NetworkImage("https://cdn.pixabay.com/photo/2019/06/01/21/01/radio-4245029_1280.jpg"),
                               fit: BoxFit.cover),
+                          borderRadius: BorderRadius.circular(8),
                           gradient: LinearGradient(
                             colors: [
                               Colors.black,
