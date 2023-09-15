@@ -45,7 +45,23 @@ class PodcastMainPage extends StatelessWidget {
                 ),
               ],
             ),
-            
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Trending Podcast",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    "View All",
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
