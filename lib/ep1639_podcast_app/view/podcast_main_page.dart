@@ -139,7 +139,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(12.0),
+                      padding: const EdgeInsets.fromLTRB(12,0,12,0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -165,7 +165,13 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Text("Flutter Development"),
+                                      Text(
+                                        "Flutter Development",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16
+                                        ),
+                                      ),
                                       SizedBox(
                                         height: 6,
                                       ),
