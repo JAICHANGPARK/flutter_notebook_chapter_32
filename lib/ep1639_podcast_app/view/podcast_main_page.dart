@@ -139,14 +139,13 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(12,0,12,0),
+                      padding: const EdgeInsets.fromLTRB(12, 0, 12, 0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
                             height: 84,
-                            color: Colors.blue,
-                            margin: const EdgeInsets.only(bottom: 8),
+                            margin: const EdgeInsets.only(bottom: 16),
                             child: Row(
                               children: [
                                 Container(
@@ -167,10 +166,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                     children: [
                                       Text(
                                         "Flutter Development",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 16
-                                        ),
+                                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                       ),
                                       SizedBox(
                                         height: 6,
@@ -195,9 +191,51 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                             ),
                           ),
                           Container(
-                            height: 96,
-                            color: Colors.blue,
-                            margin: const EdgeInsets.only(bottom: 8),
+                            height: 84,
+                            margin: const EdgeInsets.only(bottom: 0),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 96,
+                                  width: 84,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 16,
+                                ),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        "Flutter Development",
+                                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                      ),
+                                      SizedBox(
+                                        height: 6,
+                                      ),
+                                      Row(
+                                        children: [
+                                          Icon(
+                                            Icons.access_time_rounded,
+                                            size: 16,
+                                          ),
+                                          SizedBox(
+                                            width: 4,
+                                          ),
+                                          Text("4 min remaining"),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz))
+                              ],
+                            ),
                           ),
                         ],
                       ),
