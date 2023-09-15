@@ -141,23 +141,34 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                     Padding(
                       padding: const EdgeInsets.all(12.0),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            height: 96,
+                            height: 84,
                             color: Colors.blue,
                             margin: const EdgeInsets.only(bottom: 8),
                             child: Row(
                               children: [
                                 Container(
                                   height: 96,
-                                  width: 96,
-                                  decoration:
-                                      BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
+                                  width: 84,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 16,
                                 ),
                                 Expanded(
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Text("Flutter Development"),
+                                      SizedBox(
+                                        height: 6,
+                                      ),
                                       Row(
                                         children: [
                                           Icon(Icons.access_time_rounded),
@@ -167,7 +178,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                                     ],
                                   ),
                                 ),
-                                IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz))
+                                IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz))
                               ],
                             ),
                           ),
