@@ -66,9 +66,17 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                     Container(
                       height: 200,
                       width: double.infinity,
-                      color: Colors.black,
+
                       padding: EdgeInsets.all(16),
                       margin: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        image: DecorationImage(
+                          image: NetworkImage("https://cdn.pixabay.com/photo/2019/06/01/21/01/radio-4245029_1280.jpg"),
+                          fit: BoxFit.cover
+                        ),
+
+                      ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -80,7 +88,9 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                               color: Colors.white,
                             ),
                           ),
-                          SizedBox(height: 16,),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Text(
                             "Dreamwalker • 8 Episode",
                             style: TextStyle(
