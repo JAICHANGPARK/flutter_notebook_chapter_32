@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 
-class PodcastMainPage extends StatelessWidget {
+class PodcastMainPage extends StatefulWidget {
   const PodcastMainPage({super.key});
 
   @override
+  State<PodcastMainPage> createState() => _PodcastMainPageState();
+}
+
+class _PodcastMainPageState extends State<PodcastMainPage> {
+  int menuIndex = 0;
+  @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -84,6 +91,7 @@ class PodcastMainPage extends StatelessWidget {
               ),
             ),
             GridView.builder(
+              shrinkWrap: true,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
               ),
@@ -97,6 +105,11 @@ class PodcastMainPage extends StatelessWidget {
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
+        onTap: (idx){
+          setState(() {
+            menuIndex = idx;
+          });
+        },
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
