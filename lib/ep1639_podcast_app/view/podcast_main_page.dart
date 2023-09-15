@@ -66,38 +66,48 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                     Container(
                       height: 200,
                       width: double.infinity,
-
                       padding: EdgeInsets.all(16),
                       margin: EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        color: Colors.black,
-                        image: DecorationImage(
-                          image: NetworkImage("https://cdn.pixabay.com/photo/2019/06/01/21/01/radio-4245029_1280.jpg"),
-                          fit: BoxFit.cover
-                        ),
-
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                          color: Colors.black,
+                          image: DecorationImage(
+                              image:
+                                  NetworkImage("https://cdn.pixabay.com/photo/2019/06/01/21/01/radio-4245029_1280.jpg"),
+                              fit: BoxFit.cover),
+                          gradient: LinearGradient(
+                            colors: [
+                              Colors.black,
+                              Colors.black.withOpacity(0.5),
+                              Colors.black.withOpacity(0.2),
+                              Colors.black.withOpacity(0.1)
+                            ],
+                          )),
+                      child: Stack(
                         children: [
-                          Text(
-                            "AWAKENING\nYOUR\nCREATIVE\nMIND",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24,
-                              color: Colors.white,
-                            ),
+                          Positioned.fill(child: Container()),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "AWAKENING\nYOUR\nCREATIVE\nMIND",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 16,
+                              ),
+                              Text(
+                                "Dreamwalker • 8 Episode",
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.grey,
+                                ),
+                              )
+                            ],
                           ),
-                          SizedBox(
-                            height: 16,
-                          ),
-                          Text(
-                            "Dreamwalker • 8 Episode",
-                            style: TextStyle(
-                              fontSize: 14,
-                              color: Colors.grey,
-                            ),
-                          )
                         ],
                       ),
                     ),
