@@ -13,14 +13,39 @@ class PodcastMainPage extends StatelessWidget {
               children: [
                 CircleAvatar(),
                 Expanded(
-                    child: Column(
-                  children: [
-                    Text("Dreamwalker"),
-                    Text("Explore trending podcast"),
-                  ],
-                ))
+                  child: Column(
+                    children: [
+                      Text("Dreamwalker"),
+                      Text("Explore trending podcast"),
+                    ],
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.notifications_none),
+                ),
               ],
-            )
+            ),
+            Container(
+              height: 180,
+              color: Colors.black,
+            ),
+            Text("Recently Played"),
+            Column(
+              children: [
+                Container(
+                  height: 96,
+                  color: Colors.blue,
+                  margin: EdgeInsets.only(bottom: 8),
+                ),
+                Container(
+                  height: 96,
+                  color: Colors.blue,
+                  margin: EdgeInsets.only(bottom: 8),
+                ),
+              ],
+            ),
+            
           ],
         ),
       ),
