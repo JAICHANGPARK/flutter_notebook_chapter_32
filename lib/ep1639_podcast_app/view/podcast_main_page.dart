@@ -314,6 +314,8 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
             menuIndex = idx;
           });
         },
+        currentIndex: menuIndex,
+        type: BottomNavigationBarType.fixed,
         items: [
           const BottomNavigationBarItem(
             icon: Icon(Icons.home),
