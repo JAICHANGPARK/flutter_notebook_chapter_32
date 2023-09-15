@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'view/podcast_main_page.dart';
+
 void main() {
   runApp(PodcastApp());
 }
@@ -9,6 +11,8 @@ class PodcastApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: PodcastMainPage(),
+    );
   }
 }
