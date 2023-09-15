@@ -28,13 +28,13 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 24,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -53,7 +53,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.notifications_none),
+                    icon: const Icon(Icons.notifications_none),
                   ),
                 ],
               ),
@@ -67,10 +67,10 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       height: 200,
                       width: double.infinity,
 
-                      margin: EdgeInsets.all(8),
+                      margin: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
                           color: Colors.black,
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image:
                                   NetworkImage("https://cdn.pixabay.com/photo/2019/06/01/21/01/radio-4245029_1280.jpg"),
                               fit: BoxFit.cover),
@@ -97,8 +97,8 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                               ],
                             )),
                           )),
-                          Padding(
-                            padding: const EdgeInsets.all(16.0),
+                          const Padding(
+                            padding: EdgeInsets.all(16.0),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -126,21 +126,25 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                         ],
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 8),
-                      child: Text("Recently Played"),
+                    SizedBox(height: 12,),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+                      child: Text("Recently Played", style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16
+                      ),),
                     ),
                     Column(
                       children: [
                         Container(
                           height: 96,
                           color: Colors.blue,
-                          margin: EdgeInsets.only(bottom: 8),
+                          margin: const EdgeInsets.only(bottom: 8),
                         ),
                         Container(
                           height: 96,
                           color: Colors.blue,
-                          margin: EdgeInsets.only(bottom: 8),
+                          margin: const EdgeInsets.only(bottom: 8),
                         ),
                       ],
                     ),
@@ -149,7 +153,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "Trending Podcast",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -157,7 +161,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: Text(
+                            child: const Text(
                               "View All",
                             ),
                           )
@@ -202,19 +206,19 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
           });
         },
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: "Home",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.explore_outlined),
             label: "Explore",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.cell_tower),
             label: "Live",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
             label: "Profile",
           )
