@@ -32,8 +32,13 @@ class PodcastMainPage extends StatelessWidget {
             Container(
               height: 180,
               color: Colors.black,
+              margin: EdgeInsets.all(16),
             ),
-            Text("Recently Played"),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: Text("Recently Played"),
+            ),
             Column(
               children: [
                 Container(
