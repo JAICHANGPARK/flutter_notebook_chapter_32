@@ -25,7 +25,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(12.0),
               child: Row(
                 children: [
                   const CircleAvatar(
@@ -67,7 +67,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       height: 200,
                       width: double.infinity,
 
-                      margin: const EdgeInsets.all(8),
+                      margin: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
                           color: Colors.black,
                           image: const DecorationImage(
