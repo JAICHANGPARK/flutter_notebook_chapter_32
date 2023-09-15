@@ -67,8 +67,10 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       height: 200,
                       width: double.infinity,
                       color: Colors.black,
+                      padding: EdgeInsets.all(16),
                       margin: EdgeInsets.all(8),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             "AWAKENING\nYOUR\nCREATIVE\nMIND",
@@ -78,12 +80,14 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                               color: Colors.white,
                             ),
                           ),
-                          Text("Dreamwalker • 8 Episode",
+                          SizedBox(height: 16,),
+                          Text(
+                            "Dreamwalker • 8 Episode",
                             style: TextStyle(
-
                               fontSize: 14,
                               color: Colors.grey,
-                            ),)
+                            ),
+                          )
                         ],
                       ),
                     ),
