@@ -135,7 +135,10 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                       padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
                       child: Text(
                         "Recently Played",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
                       ),
                     ),
                     Padding(
@@ -249,6 +252,7 @@ class _PodcastMainPageState extends State<PodcastMainPage> {
                             "Trending Podcast",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              fontSize: 16,
                             ),
                           ),
                           TextButton(
