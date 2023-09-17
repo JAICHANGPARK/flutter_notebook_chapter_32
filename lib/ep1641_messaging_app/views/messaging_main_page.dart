@@ -36,9 +36,16 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                       ),
                       borderRadius: BorderRadius.circular(48),
                     ),
+                    padding: EdgeInsets.symmetric(horizontal: 12),
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
+                        hintText: "Search",
+                        suffixIcon: Icon(Icons.search),
+                        suffixIconConstraints: BoxConstraints(
+                          maxHeight: 24,
+                          maxWidth: 24,
+                        ),
                       ),
                     ),
                   ),
