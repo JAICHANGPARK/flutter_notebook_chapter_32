@@ -11,7 +11,7 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Colors.grey[200],
       body: Column(
         children: [
           Container(
@@ -45,7 +45,12 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                 ),
                 CircleAvatar(
                   backgroundColor: Colors.deepOrange,
+                  foregroundColor: Colors.white,
                   radius: 24,
+                  child: IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.add),
+                  ),
                 )
               ],
             ),
