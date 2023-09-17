@@ -68,6 +68,15 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
           Expanded(
             child: Container(
               color: Colors.white,
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Text("PINNED"),
+                    ListView.separated(
+                        itemBuilder: (context, index) {}, separatorBuilder:(context,_)=> Divider(), itemCount: 3)
+                  ],
+                ),
+              ),
             ),
           ),
         ],
