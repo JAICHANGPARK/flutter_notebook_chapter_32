@@ -33,6 +33,7 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                       border: Border.all(
                         color: Colors.grey[200]!,
                       ),
+                      borderRadius: BorderRadius.circular(48)
                     ),
                     margin: EdgeInsets.symmetric(horizontal: 16),
                     child: TextField(),
