@@ -16,11 +16,11 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
         children: [
           Container(
             height: 150,
-            padding: EdgeInsets.only(top: 48, left: 24, right: 24),
+            padding: const EdgeInsets.only(top: 48, left: 24, right: 24),
             color: Colors.white,
             child: Row(
               children: [
-                Text(
+                const Text(
                   "Chat",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -29,15 +29,15 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                 ),
                 Expanded(
                   child: Container(
-                    margin: EdgeInsets.symmetric(horizontal: 12),
+                    margin: const EdgeInsets.symmetric(horizontal: 12),
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.grey[200]!,
                       ),
                       borderRadius: BorderRadius.circular(48),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 12),
-                    child: TextField(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    child: const TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: "Search",
@@ -56,24 +56,40 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                   radius: 24,
                   child: IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.add),
+                    icon: const Icon(Icons.add),
                   ),
                 )
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Expanded(
             child: Container(
               color: Colors.white,
+              padding: const EdgeInsets.fromLTRB(20, 24, 20, 0),
               child: SingleChildScrollView(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("PINNED"),
+                    const Text("PINNED"),
                     ListView.separated(
-                        itemBuilder: (context, index) {}, separatorBuilder:(context,_)=> Divider(), itemCount: 3)
+                      shrinkWrap: true,
+                      padding: EdgeInsets.only(top: 16),
+                      itemCount: 3,
+                      itemBuilder: (context, index) {
+                        return Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 24,
+                            )
+                          ],
+                        );
+                      },
+                      separatorBuilder: (context, _) => const Divider(),
+
+                    )
                   ],
                 ),
               ),
