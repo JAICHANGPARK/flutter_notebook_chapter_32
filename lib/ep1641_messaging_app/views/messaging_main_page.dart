@@ -29,14 +29,18 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                 ),
                 Expanded(
                   child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 16),
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.grey[200]!,
                       ),
-                      borderRadius: BorderRadius.circular(48)
+                      borderRadius: BorderRadius.circular(48),
                     ),
-                    margin: EdgeInsets.symmetric(horizontal: 16),
-                    child: TextField(),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                      ),
+                    ),
                   ),
                 ),
                 CircleAvatar(
