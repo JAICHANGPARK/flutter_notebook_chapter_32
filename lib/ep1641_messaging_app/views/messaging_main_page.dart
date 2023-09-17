@@ -16,7 +16,7 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
         children: [
           Container(
             height: 150,
-            padding: EdgeInsets.only(top: 48, left: 16, right: 16),
+            padding: EdgeInsets.only(top: 48, left: 24, right: 24),
             color: Colors.white,
             child: Row(
               children: [
@@ -24,12 +24,12 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                   "Chat",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 18,
+                    fontSize: 20,
                   ),
                 ),
                 Expanded(
                   child: Container(
-                    margin: EdgeInsets.symmetric(horizontal: 16),
+                    margin: EdgeInsets.symmetric(horizontal: 12),
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.grey[200]!,
