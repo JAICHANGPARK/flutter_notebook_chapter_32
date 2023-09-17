@@ -76,7 +76,7 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                     const Text("PINNED"),
                     ListView.separated(
                       shrinkWrap: true,
-                      padding: EdgeInsets.only(top: 16),
+                      padding: EdgeInsets.only(top: 16, bottom: 16),
                       itemCount: 3,
                       itemBuilder: (context, index) {
                         return Row(
@@ -88,8 +88,11 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                         );
                       },
                       separatorBuilder: (context, _) => const Divider(),
-
-                    )
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    const Text("ALL"),
                   ],
                 ),
               ),
