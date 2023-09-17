@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  
+  runApp(MessagingApp());
 }
 
 class MessagingApp extends StatelessWidget {
