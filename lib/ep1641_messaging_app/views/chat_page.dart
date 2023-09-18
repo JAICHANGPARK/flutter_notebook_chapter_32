@@ -31,11 +31,21 @@ class _ChatPageState extends State<ChatPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text("Dream Walker"),
-                        SizedBox(height: 8,),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Text("Online"),
                       ],
                     ),
                   ),
+                ),
+                OutlinedButton(
+                  onPressed: () {},
+                  child: Text("Profile"),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text("Call"),
                 )
               ],
             ),
