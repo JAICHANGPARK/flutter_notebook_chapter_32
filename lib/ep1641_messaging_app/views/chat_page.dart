@@ -93,16 +93,24 @@ class _ChatPageState extends State<ChatPage> {
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: TextField(),
+                    padding: EdgeInsets.symmetric(horizontal: 8),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        icon: Icon(Icons.attach_file),
+                        border: InputBorder.none,
+                        hintText: "Write messages..."
+                      ),
+                    ),
                   ),
                 ),
                 SizedBox(
                   width: 8,
                 ),
-                Container( decoration: BoxDecoration(
-                  color: Colors.grey[200],
-                  borderRadius: BorderRadius.circular(8),
-                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[200],
+                    borderRadius: BorderRadius.circular(8),
+                  ),
                   child: IconButton(
                     icon: Icon(Icons.mic),
                     onPressed: () {},
@@ -111,10 +119,11 @@ class _ChatPageState extends State<ChatPage> {
                 SizedBox(
                   width: 8,
                 ),
-                Container( decoration: BoxDecoration(
-                  color: Colors.deepOrange,
-                  borderRadius: BorderRadius.circular(8),
-                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.deepOrange,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
                   child: IconButton(
                     icon: Icon(Icons.send),
                     onPressed: () {},
