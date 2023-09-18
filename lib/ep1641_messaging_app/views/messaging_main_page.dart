@@ -76,11 +76,11 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                     const Text("PINNED"),
                     ListView.separated(
                       shrinkWrap: true,
-                      physics: NeverScrollableScrollPhysics(),
-                      padding: EdgeInsets.only(top: 16, bottom: 16),
+                      physics: const NeverScrollableScrollPhysics(),
+                      padding: const EdgeInsets.only(top: 16, bottom: 16),
                       itemCount: 3,
                       itemBuilder: (context, index) {
-                        return Row(
+                        return const Row(
                           children: [
                             CircleAvatar(
                               radius: 24,
@@ -90,17 +90,17 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                       },
                       separatorBuilder: (context, _) => const Divider(),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                     ),
                     const Text("ALL"),
                     ListView.separated(
                       shrinkWrap: true,
-                      physics: NeverScrollableScrollPhysics(),
-                      padding: EdgeInsets.only(top: 16, bottom: 16),
+                      physics: const NeverScrollableScrollPhysics(),
+                      padding: const EdgeInsets.only(top: 16, bottom: 16),
                       itemCount: 20,
                       itemBuilder: (context, index) {
-                        return Row(
+                        return const Row(
                           children: [
                             CircleAvatar(
                               radius: 24,
