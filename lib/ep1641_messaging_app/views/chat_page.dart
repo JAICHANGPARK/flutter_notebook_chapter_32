@@ -25,12 +25,18 @@ class _ChatPageState extends State<ChatPage> {
                 ),
                 Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text("Dream Walker"),
+                        Text(
+                          "Dream Walker",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
                         SizedBox(
                           height: 8,
                         ),
@@ -42,14 +48,67 @@ class _ChatPageState extends State<ChatPage> {
                 OutlinedButton(
                   onPressed: () {},
                   child: Text("Profile"),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: Colors.black,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 8,
                 ),
                 ElevatedButton(
                   onPressed: () {},
                   child: Text("Call"),
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                    backgroundColor: Colors.black,
+                  ),
                 )
               ],
             ),
           ),
+          SizedBox(
+            height: 12,
+          ),
+          Expanded(
+            child: Container(
+              color: Colors.white,
+            ),
+          ),
+          SizedBox(
+            height: 12,
+          ),
+          Container(
+            color: Colors.white,
+            padding: EdgeInsets.symmetric(horizontal: 16,vertical: 24),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    child: TextField(),
+                  ),
+                ),
+                SizedBox(width: 8,),
+                Container(
+                  child: IconButton(
+                    icon: Icon(Icons.mic),
+                    onPressed: () {},
+                  ),
+                ),
+                SizedBox(width: 8,),
+                Container(
+                  child: IconButton(
+                    icon: Icon(Icons.send),
+                    onPressed: () {},
+                  ),
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
