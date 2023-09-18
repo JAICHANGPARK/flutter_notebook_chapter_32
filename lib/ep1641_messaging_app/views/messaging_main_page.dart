@@ -88,7 +88,10 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                             Expanded(
                               child: Column(
                                 children: [
-                                  Text("")
+                                  Text(
+                                    "Dreamwalker",
+                                  ),
+                                  Text("Hava a good day, Dream"),
                                 ],
                               ),
                             ),
