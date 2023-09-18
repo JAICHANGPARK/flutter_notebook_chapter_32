@@ -88,18 +88,23 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                             Expanded(
                               child: Padding(
                                 padding: EdgeInsets.symmetric(horizontal: 8),
-
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
                                       "Dreamwalker",
                                       style: TextStyle(
-                                        fontWeight: FontWeight.bold
+                                        fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    SizedBox(height: 8,),
-                                    Text("Hava a good day, Dream"),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "Hava a good day, Dream",
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
                                   ],
                                 ),
                               ),
@@ -108,9 +113,17 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 Text("10:27 AM"),
+                                SizedBox(
+                                  height: 8,
+                                ),
                                 CircleAvatar(
                                   radius: 8,
-                                  child: Text("1"),
+                                  backgroundColor: Colors.deepOrange,
+                                  foregroundColor: Colors.white,
+                                  child: Text(
+                                    "1",
+                                    style: TextStyle(fontSize: 12, color: Colors.white),
+                                  ),
                                 )
                               ],
                             )
