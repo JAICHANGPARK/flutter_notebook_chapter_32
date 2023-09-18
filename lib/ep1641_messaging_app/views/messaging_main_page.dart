@@ -86,16 +86,26 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                               radius: 24,
                             ),
                             Expanded(
-                              child: Column(
-                                children: [
-                                  Text(
-                                    "Dreamwalker",
-                                  ),
-                                  Text("Hava a good day, Dream"),
-                                ],
+                              child: Padding(
+                                padding: EdgeInsets.symmetric(horizontal: 8),
+
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Dreamwalker",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                    ),
+                                    SizedBox(height: 8,),
+                                    Text("Hava a good day, Dream"),
+                                  ],
+                                ),
                               ),
                             ),
                             Column(
+                              crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 Text("10:27 AM"),
                                 CircleAvatar(
