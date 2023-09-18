@@ -24,11 +24,17 @@ class _ChatPageState extends State<ChatPage> {
                   radius: 24,
                 ),
                 Expanded(
-                  child: Column(
-                    children: [
-                      Text("Dream Walker"),
-                      Text("Online"),
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text("Dream Walker"),
+                        SizedBox(height: 8,),
+                        Text("Online"),
+                      ],
+                    ),
                   ),
                 )
               ],
