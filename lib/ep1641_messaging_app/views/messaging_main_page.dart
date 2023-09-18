@@ -84,6 +84,22 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                           children: [
                             CircleAvatar(
                               radius: 24,
+                            ),
+                            Expanded(
+                              child: Column(
+                                children: [
+                                  Text("")
+                                ],
+                              ),
+                            ),
+                            Column(
+                              children: [
+                                Text("10:27 AM"),
+                                CircleAvatar(
+                                  radius: 8,
+                                  child: Text("1"),
+                                )
+                              ],
                             )
                           ],
                         );
