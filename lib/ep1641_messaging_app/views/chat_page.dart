@@ -84,26 +84,41 @@ class _ChatPageState extends State<ChatPage> {
           ),
           Container(
             color: Colors.white,
-            padding: EdgeInsets.symmetric(horizontal: 16,vertical: 24),
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
             child: Row(
               children: [
                 Expanded(
                   child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                     child: TextField(),
                   ),
                 ),
-                SizedBox(width: 8,),
-                Container(
+                SizedBox(
+                  width: 8,
+                ),
+                Container( decoration: BoxDecoration(
+                  color: Colors.grey[200],
+                  borderRadius: BorderRadius.circular(8),
+                ),
                   child: IconButton(
                     icon: Icon(Icons.mic),
                     onPressed: () {},
                   ),
                 ),
-                SizedBox(width: 8,),
-                Container(
+                SizedBox(
+                  width: 8,
+                ),
+                Container( decoration: BoxDecoration(
+                  color: Colors.deepOrange,
+                  borderRadius: BorderRadius.circular(8),
+                ),
                   child: IconButton(
                     icon: Icon(Icons.send),
                     onPressed: () {},
+                    color: Colors.white,
                   ),
                 ),
               ],
