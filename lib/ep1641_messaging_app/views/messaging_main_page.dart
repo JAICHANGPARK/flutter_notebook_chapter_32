@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_32/ep1641_messaging_app/views/chat_page.dart';
 
 class MessagingMainPage extends StatefulWidget {
   const MessagingMainPage({super.key});
@@ -80,6 +81,80 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                       padding: const EdgeInsets.only(top: 16, bottom: 16),
                       itemCount: 3,
                       itemBuilder: (context, index) {
+                        return GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => const ChatPage(),
+                              ),
+                            );
+                          },
+                          child: const Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 24,
+                              ),
+                              Expanded(
+                                child: Padding(
+                                  padding: EdgeInsets.symmetric(horizontal: 8),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Dreamwalker",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text(
+                                        "Hava a good day, Dream",
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  Text("10:27 AM"),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  CircleAvatar(
+                                    radius: 8,
+                                    backgroundColor: Colors.deepOrange,
+                                    foregroundColor: Colors.white,
+                                    child: Text(
+                                      "1",
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        );
+                      },
+                      separatorBuilder: (context, _) => const Divider(),
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    const Text("ALL"),
+                    ListView.separated(
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                      padding: const EdgeInsets.only(top: 16, bottom: 16),
+                      itemCount: 20,
+                      itemBuilder: (context, index) {
                         return const Row(
                           children: [
                             CircleAvatar(
@@ -122,30 +197,13 @@ class _MessagingMainPageState extends State<MessagingMainPage> {
                                   foregroundColor: Colors.white,
                                   child: Text(
                                     "1",
-                                    style: TextStyle(fontSize: 12, color: Colors.white),
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 )
                               ],
-                            )
-                          ],
-                        );
-                      },
-                      separatorBuilder: (context, _) => const Divider(),
-                    ),
-                    const SizedBox(
-                      height: 16,
-                    ),
-                    const Text("ALL"),
-                    ListView.separated(
-                      shrinkWrap: true,
-                      physics: const NeverScrollableScrollPhysics(),
-                      padding: const EdgeInsets.only(top: 16, bottom: 16),
-                      itemCount: 20,
-                      itemBuilder: (context, index) {
-                        return const Row(
-                          children: [
-                            CircleAvatar(
-                              radius: 24,
                             )
                           ],
                         );
