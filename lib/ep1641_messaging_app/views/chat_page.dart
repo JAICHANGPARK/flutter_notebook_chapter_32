@@ -79,21 +79,29 @@ class _ChatPageState extends State<ChatPage> {
               color: Colors.white,
               width: double.infinity,
               child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.symmetric(vertical: 24),
-                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(24),
-                        border: Border.all(
-                          color: Colors.grey[400]!,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Column(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.symmetric(vertical: 24),
+                        padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(24),
+                          border: Border.all(
+                            color: Colors.grey[400]!,
+                          ),
                         ),
+                        child: Text("10 June, 2022"),
                       ),
-                      child: Text("10 June, 2022"),
-                    )
-                  ],
+                      Row(
+                        children: [
+                          CircleAvatar(),
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
