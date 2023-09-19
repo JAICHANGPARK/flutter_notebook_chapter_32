@@ -145,9 +145,27 @@ class _ChatPageState extends State<ChatPage> {
                               borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(24),
                                 bottomLeft: Radius.circular(24),
-                              )
+                                topRight: Radius.circular(24),
+                              ),
+                            ),
+                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                            child: Text(
+                              "Looks cool, can you find more options?",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
                             ),
                           ),
+                          SizedBox(height: 8,),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              Text("5:12 PM"),
+                              Icon(
+                                Icons.done_all,
+                              )
+                            ],
+                          )
                         ],
                       )
                     ],
