@@ -136,37 +136,46 @@ class _ChatPageState extends State<ChatPage> {
                           ],
                         ),
                       ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              color: Colors.deepOrange,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(24),
-                                bottomLeft: Radius.circular(24),
-                                topRight: Radius.circular(24),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.deepOrange,
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(24),
+                                  bottomLeft: Radius.circular(24),
+                                  topRight: Radius.circular(24),
+                                ),
+                              ),
+                              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                              child: Text(
+                                "Looks cool, can you find more options?",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                            child: Text(
-                              "Looks cool, can you find more options?",
-                              style: TextStyle(
-                                color: Colors.white,
-                              ),
+                            SizedBox(
+                              height: 8,
                             ),
-                          ),
-                          SizedBox(height: 8,),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              Text("5:12 PM"),
-                              Icon(
-                                Icons.done_all,
-                              )
-                            ],
-                          )
-                        ],
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text("5:12 PM"),
+                                SizedBox(
+                                  width: 8,
+                                ),
+                                Icon(
+                                  Icons.done_all,
+                                  size: 16,
+                                )
+                              ],
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),
