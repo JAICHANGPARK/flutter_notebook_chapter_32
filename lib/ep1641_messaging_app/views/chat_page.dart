@@ -98,13 +98,19 @@ class _ChatPageState extends State<ChatPage> {
                       Row(
                         children: [
                           CircleAvatar(),
+                          SizedBox(width: 12,),
                           Column(
                             children: [
                               Container(
+                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 16),
                                 decoration: BoxDecoration(
-                                  color: Colors.grey[300],
-                                  
-                                ),
+                                    color: Colors.grey[200],
+                                    borderRadius: BorderRadius.only(
+                                      topRight: Radius.circular(32),
+                                      bottomRight: Radius.circular(32),
+                                      topLeft: Radius.circular(24),
+                                    )),
+                                child: Text("How about these pictures?"),
                               )
                             ],
                           )
