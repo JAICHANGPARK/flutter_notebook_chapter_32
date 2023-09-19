@@ -98,21 +98,35 @@ class _ChatPageState extends State<ChatPage> {
                       Row(
                         children: [
                           CircleAvatar(),
-                          SizedBox(width: 12,),
-                          Column(
-                            children: [
-                              Container(
-                                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 16),
-                                decoration: BoxDecoration(
+                          SizedBox(
+                            width: 12,
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 16),
+                                  decoration: BoxDecoration(
                                     color: Colors.grey[200],
                                     borderRadius: BorderRadius.only(
                                       topRight: Radius.circular(32),
                                       bottomRight: Radius.circular(32),
                                       topLeft: Radius.circular(24),
-                                    ),),
-                                child: Text("How about these pictures?"),
-                              )
-                            ],
+                                    ),
+                                  ),
+                                  child: Text("How about these pictures?"),
+                                ),
+                                Container(
+                                  height: 160,
+                                 
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                                Text("5:12 PM")
+                              ],
+                            ),
                           )
                         ],
                       )
