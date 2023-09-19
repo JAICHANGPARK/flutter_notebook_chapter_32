@@ -77,12 +77,19 @@ class _ChatPageState extends State<ChatPage> {
           Expanded(
             child: Container(
               color: Colors.white,
+              width: double.infinity,
               child: SingleChildScrollView(
                 child: Column(
                   children: [
                     Container(
+                      margin: EdgeInsets.symmetric(vertical: 24),
+                      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                       decoration: BoxDecoration(
                         color: Colors.white,
+                        borderRadius: BorderRadius.circular(24),
+                        border: Border.all(
+                          color: Colors.grey[400]!,
+                        ),
                       ),
                       child: Text("10 June, 2022"),
                     )
@@ -108,10 +115,7 @@ class _ChatPageState extends State<ChatPage> {
                     padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: const TextField(
                       decoration: InputDecoration(
-                        icon: Icon(Icons.attach_file),
-                        border: InputBorder.none,
-                        hintText: "Write messages..."
-                      ),
+                          icon: Icon(Icons.attach_file), border: InputBorder.none, hintText: "Write messages..."),
                     ),
                   ),
                 ),
