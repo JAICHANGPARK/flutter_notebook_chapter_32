@@ -95,45 +95,48 @@ class _ChatPageState extends State<ChatPage> {
                         ),
                         child: Text("10 June, 2022"),
                       ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 24),
-                            child: CircleAvatar(),
-                          ),
-                          SizedBox(
-                            width: 12,
-                          ),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 16),
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey[200],
-                                    borderRadius: BorderRadius.only(
-                                      topRight: Radius.circular(32),
-                                      bottomRight: Radius.circular(32),
-                                      topLeft: Radius.circular(24),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 24),
+                              child: CircleAvatar(),
+                            ),
+                            SizedBox(
+                              width: 12,
+                            ),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 16),
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey[200],
+                                      borderRadius: BorderRadius.only(
+                                        topRight: Radius.circular(32),
+                                        bottomRight: Radius.circular(32),
+                                        topLeft: Radius.circular(24),
+                                      ),
+                                    ),
+                                    child: Text("How about these pictures?"),
+                                  ),
+                                  Container(
+                                    height: 280,
+                                    margin: EdgeInsets.symmetric(vertical: 12),
+                                    decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.circular(7)
                                     ),
                                   ),
-                                  child: Text("How about these pictures?"),
-                                ),
-                                Container(
-                                  height: 280,
-                                  margin: EdgeInsets.symmetric(vertical: 12),
-                                  decoration: BoxDecoration(
-                                    color: Colors.blue,
-                                    borderRadius: BorderRadius.circular(7)
-                                  ),
-                                ),
-                                Text("5:12 PM")
-                              ],
-                            ),
-                          )
-                        ],
+                                  Text("5:12 PM")
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),
