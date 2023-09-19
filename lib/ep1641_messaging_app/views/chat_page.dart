@@ -20,12 +20,12 @@ class _ChatPageState extends State<ChatPage> {
             color: Colors.white,
             child: Row(
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 24,
                 ),
-                Expanded(
+                const Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    padding: EdgeInsets.symmetric(horizontal: 12),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -47,7 +47,7 @@ class _ChatPageState extends State<ChatPage> {
                 ),
                 OutlinedButton(
                   onPressed: () {},
-                  child: Text("Profile"),
+                  child: const Text("Profile"),
                   style: OutlinedButton.styleFrom(
                     foregroundColor: Colors.black,
                     shape: RoundedRectangleBorder(
@@ -55,12 +55,12 @@ class _ChatPageState extends State<ChatPage> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text("Call"),
+                  child: const Text("Call"),
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(24),
@@ -71,7 +71,7 @@ class _ChatPageState extends State<ChatPage> {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
           Expanded(
@@ -79,12 +79,12 @@ class _ChatPageState extends State<ChatPage> {
               color: Colors.white,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 12,
           ),
           Container(
             color: Colors.white,
-            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
             child: Row(
               children: [
                 Expanded(
@@ -93,8 +93,8 @@ class _ChatPageState extends State<ChatPage> {
                       color: Colors.grey[200],
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 8),
-                    child: TextField(
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    child: const TextField(
                       decoration: InputDecoration(
                         icon: Icon(Icons.attach_file),
                         border: InputBorder.none,
@@ -103,7 +103,7 @@ class _ChatPageState extends State<ChatPage> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 Container(
@@ -112,11 +112,11 @@ class _ChatPageState extends State<ChatPage> {
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: IconButton(
-                    icon: Icon(Icons.mic),
+                    icon: const Icon(Icons.mic),
                     onPressed: () {},
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 Container(
@@ -125,7 +125,7 @@ class _ChatPageState extends State<ChatPage> {
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: IconButton(
-                    icon: Icon(Icons.send),
+                    icon: const Icon(Icons.send),
                     onPressed: () {},
                     color: Colors.white,
                   ),
