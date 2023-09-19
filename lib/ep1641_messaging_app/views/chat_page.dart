@@ -118,10 +118,11 @@ class _ChatPageState extends State<ChatPage> {
                                   child: Text("How about these pictures?"),
                                 ),
                                 Container(
-                                  height: 160,
-                                 
+                                  height: 280,
+                                  margin: EdgeInsets.symmetric(vertical: 12),
                                   decoration: BoxDecoration(
                                     color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(7)
                                   ),
                                 ),
                                 Text("5:12 PM")
