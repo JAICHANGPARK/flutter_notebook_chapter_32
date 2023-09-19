@@ -96,8 +96,12 @@ class _ChatPageState extends State<ChatPage> {
                         child: Text("10 June, 2022"),
                       ),
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                          CircleAvatar(),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 24),
+                            child: CircleAvatar(),
+                          ),
                           SizedBox(
                             width: 12,
                           ),
