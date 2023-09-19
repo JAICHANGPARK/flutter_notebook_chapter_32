@@ -109,7 +109,7 @@ class _ChatPageState extends State<ChatPage> {
                                       topRight: Radius.circular(32),
                                       bottomRight: Radius.circular(32),
                                       topLeft: Radius.circular(24),
-                                    )),
+                                    ),),
                                 child: Text("How about these pictures?"),
                               )
                             ],
