@@ -98,6 +98,16 @@ class _ChatPageState extends State<ChatPage> {
                       Row(
                         children: [
                           CircleAvatar(),
+                          Column(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[300],
+                                  
+                                ),
+                              )
+                            ],
+                          )
                         ],
                       )
                     ],
