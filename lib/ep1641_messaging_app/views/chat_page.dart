@@ -126,10 +126,8 @@ class _ChatPageState extends State<ChatPage> {
                                   Container(
                                     height: 280,
                                     margin: EdgeInsets.symmetric(vertical: 12),
-                                    decoration: BoxDecoration(
-                                      color: Colors.blue,
-                                      borderRadius: BorderRadius.circular(7)
-                                    ),
+                                    decoration:
+                                        BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(7)),
                                   ),
                                   Text("5:12 PM")
                                 ],
@@ -137,6 +135,20 @@ class _ChatPageState extends State<ChatPage> {
                             )
                           ],
                         ),
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.deepOrange,
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(24),
+                                bottomLeft: Radius.circular(24),
+                              )
+                            ),
+                          ),
+                        ],
                       )
                     ],
                   ),
