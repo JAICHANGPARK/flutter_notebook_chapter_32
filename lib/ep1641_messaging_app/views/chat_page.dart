@@ -77,6 +77,18 @@ class _ChatPageState extends State<ChatPage> {
           Expanded(
             child: Container(
               color: Colors.white,
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                      ),
+                      child: Text("10 June, 2022"),
+                    )
+                  ],
+                ),
+              ),
             ),
           ),
           const SizedBox(
