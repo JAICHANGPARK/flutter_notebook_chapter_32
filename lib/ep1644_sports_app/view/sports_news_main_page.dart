@@ -12,12 +12,17 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [
-
-        ],
+        children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: [],
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.sports,
+            ),
+            label: "Today",
+          )
+        ],
       ),
     );
   }
