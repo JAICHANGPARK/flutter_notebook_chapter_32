@@ -14,43 +14,47 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
       body: Column(
         children: [],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.black,
-        unselectedItemColor: Colors.grey,
-        onTap: (idx){},
-        type: BottomNavigationBarType.fixed,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.sports,
+      bottomNavigationBar: SizedBox(
+        height: 82,
+        child: BottomNavigationBar(
+
+          selectedItemColor: Colors.black,
+          unselectedItemColor: Colors.grey,
+          onTap: (idx){},
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.sports,
+              ),
+              label: "Today",
             ),
-            label: "Today",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.explore_outlined,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.explore_outlined,
+              ),
+              label: "Discover",
             ),
-            label: "Discover",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.calendar_month,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.calendar_month,
+              ),
+              label: "Schedule",
             ),
-            label: "Schedule",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.bookmark_border,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.bookmark_border,
+              ),
+              label: "Save",
             ),
-            label: "Save",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.account_circle_outlined,
-            ),
-            label: "Profile",
-          )
-        ],
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.account_circle_outlined,
+              ),
+              label: "Profile",
+            )
+          ],
+        ),
       ),
     );
   }
