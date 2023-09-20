@@ -8,6 +8,7 @@ class SportsNewsMainPage extends StatefulWidget {
 }
 
 class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
+  int menuIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +21,12 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
 
           selectedItemColor: Colors.black,
           unselectedItemColor: Colors.grey,
-          onTap: (idx){},
+          currentIndex: menuIndex,
+          onTap: (idx){
+            setState(() {
+              menuIndex = idx;
+            });
+          },
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
