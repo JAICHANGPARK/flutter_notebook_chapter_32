@@ -15,6 +15,10 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
         children: [],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey,
+        onTap: (idx){},
+        type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
