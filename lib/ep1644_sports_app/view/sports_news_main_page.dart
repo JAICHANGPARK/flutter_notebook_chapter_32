@@ -9,6 +9,7 @@ class SportsNewsMainPage extends StatefulWidget {
 
 class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
   int menuIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,25 +17,43 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
       body: Column(
         children: [
           Container(
-            height: 120,
+
             color: Colors.white,
-            padding: EdgeInsets.only(left: 16, right: 16, top: 42),
+            padding: EdgeInsets.only(left: 16, right: 16, top: 64, bottom: 16),
             child: Row(
               children: [
                 CircleAvatar(),
-                Text("SPORTS", style: TextStyle(),),
+                SizedBox(
+                  width: 8,
+                ),
+                Text(
+                  "SPORTS",
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                ),
                 Spacer(),
                 Container(
-                  decoration: BoxDecoration(
-                    color: Colors.grey[200],
-                    borderRadius: BorderRadius.circular(4),
-                    border: Border.all(color: Colors.grey,)
-                  ),
-                  child: IconButton(
-                    icon: Icon(Icons.search),
-                    onPressed: (){},
-                  )
-                )
+                    decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(4),
+                        border: Border.all(
+                          color: Colors.grey,
+                        )),
+                    child: IconButton(
+                      icon: Icon(Icons.search),
+                      onPressed: () {},
+                    )),
+                SizedBox(width: 8,),
+                Container(
+                    decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(4),
+                        border: Border.all(
+                          color: Colors.grey,
+                        )),
+                    child: IconButton(
+                      icon: Icon(Icons.notifications),
+                      onPressed: () {},
+                    ))
               ],
             ),
           )
@@ -43,11 +62,10 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
       bottomNavigationBar: SizedBox(
         height: 82,
         child: BottomNavigationBar(
-
           selectedItemColor: Colors.black,
           unselectedItemColor: Colors.grey,
           currentIndex: menuIndex,
-          onTap: (idx){
+          onTap: (idx) {
             setState(() {
               menuIndex = idx;
             });
