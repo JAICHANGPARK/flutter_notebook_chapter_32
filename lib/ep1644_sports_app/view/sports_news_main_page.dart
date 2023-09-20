@@ -12,8 +12,33 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[200],
       body: Column(
-        children: [],
+        children: [
+          Container(
+            height: 120,
+            color: Colors.white,
+            padding: EdgeInsets.only(left: 16, right: 16, top: 42),
+            child: Row(
+              children: [
+                CircleAvatar(),
+                Text("SPORTS", style: TextStyle(),),
+                Spacer(),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[200],
+                    borderRadius: BorderRadius.circular(4),
+                    border: Border.all(color: Colors.grey,)
+                  ),
+                  child: IconButton(
+                    icon: Icon(Icons.search),
+                    onPressed: (){},
+                  )
+                )
+              ],
+            ),
+          )
+        ],
       ),
       bottomNavigationBar: SizedBox(
         height: 82,
