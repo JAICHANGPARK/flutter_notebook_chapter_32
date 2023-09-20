@@ -21,6 +21,30 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
               Icons.sports,
             ),
             label: "Today",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.explore_outlined,
+            ),
+            label: "Discover",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.calendar_month,
+            ),
+            label: "Schedule",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.bookmark_border,
+            ),
+            label: "Save",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.account_circle_outlined,
+            ),
+            label: "Profile",
           )
         ],
       ),
