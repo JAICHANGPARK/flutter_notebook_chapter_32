@@ -127,6 +127,7 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("FT"),
+                              SizedBox(height: 8,),
                               Row(
                                 children: [
                                   Text("13"),
