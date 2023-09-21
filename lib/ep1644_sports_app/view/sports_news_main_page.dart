@@ -75,7 +75,7 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
               child: Column(
                 children: [
                   SizedBox(
-                    height: 48,
+                    height: 42,
                     child: ListView.builder(
                       itemBuilder: (context, index) {
                         return Container(
@@ -90,7 +90,14 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                               color: Colors.grey,
                             ),
                           ),
-                          child: Text("Football"),
+                          child: Center(
+                            child: Text(
+                              "Football",
+                              style: TextStyle(
+                                color: index == 0 ? Colors.white : Colors.black,
+                              ),
+                            ),
+                          ),
                         );
                       },
                       scrollDirection: Axis.horizontal,
