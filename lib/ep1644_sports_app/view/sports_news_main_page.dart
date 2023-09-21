@@ -108,7 +108,7 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                   ),
                   Container(
                     height: 120,
-                    margin: EdgeInsets.only(left: 16 , top: 16, bottom: 16),
+                    margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
                     color: Colors.blue,
                     child: ListView.builder(
                       itemBuilder: (context, index) {
@@ -117,6 +117,26 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                           decoration: BoxDecoration(
                             color: Colors.white,
                             border: Border.all(),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("FT"),
+                              Row(
+                                children: [
+                                  Text("13"),
+                                  Icon(
+                                    Icons.arrow_drop_down_outlined,
+                                    color: Colors.red,
+                                  ),
+                                  CircleAvatar(
+                                    radius: 14,
+                                  ),
+                                  Text("MUN"),
+                                  Text("1"),
+                                ],
+                              )
+                            ],
                           ),
                         );
                       },
