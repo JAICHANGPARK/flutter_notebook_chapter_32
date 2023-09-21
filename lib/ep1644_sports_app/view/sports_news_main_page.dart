@@ -179,9 +179,11 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
             ],
           ),
           Expanded(
-            child: SingleChildScrollView(
-              child: Column(
-                children: [],
+            child: Container(
+              color: Colors.white,
+              child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) {},
               ),
             ),
           )
