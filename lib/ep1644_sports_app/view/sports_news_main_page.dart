@@ -118,6 +118,7 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                             color: Colors.white,
                             border: Border.all(),
                           ),
+                          padding: EdgeInsets.all(8),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -135,7 +136,23 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                                   Text("MUN"),
                                   Text("1"),
                                 ],
-                              )
+                              ),
+                              Divider(),
+                              Row(
+                                children: [
+                                  Text("13"),
+                                  Icon(
+                                    Icons.arrow_drop_up_outlined,
+                                    color: Colors.green,
+                                  ),
+                                  CircleAvatar(
+                                    radius: 14,
+                                  ),
+                                  Text("MUN"),
+                                  Text("1"),
+                                ],
+                              ),
+
                             ],
                           ),
                         );
