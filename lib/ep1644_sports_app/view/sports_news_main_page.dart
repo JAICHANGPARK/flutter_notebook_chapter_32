@@ -70,115 +70,118 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
               ],
             ),
           ),
+          Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 16, left: 16),
+                child: SizedBox(
+                  height: 42,
+                  child: ListView.builder(
+                    itemBuilder: (context, index) {
+                      return Container(
+                        margin: EdgeInsets.only(right: 8),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 12,
+                        ),
+                        decoration: BoxDecoration(
+                          color: index == 0 ? Colors.black : Colors.white,
+                          borderRadius: BorderRadius.circular(32),
+                          border: Border.all(
+                            color: Colors.grey,
+                          ),
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Football",
+                            style: TextStyle(
+                              color: index == 0 ? Colors.white : Colors.black,
+                            ),
+                          ),
+                        ),
+                      );
+                    },
+                    scrollDirection: Axis.horizontal,
+                  ),
+                ),
+              ),
+              Container(
+                height: 120,
+                margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: 160,
+                      margin: EdgeInsets.only(right: 16),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(
+                            color: Colors.grey[200]!,
+                          ),
+                          borderRadius: BorderRadius.circular(4)),
+                      padding: EdgeInsets.all(8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("FT"),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Row(
+                            children: [
+                              Text("13"),
+                              Icon(
+                                Icons.arrow_drop_down_outlined,
+                                color: Colors.red,
+                              ),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              CircleAvatar(
+                                radius: 14,
+                              ),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              Text("MUN"),
+                              Spacer(),
+                              Text("1"),
+                            ],
+                          ),
+                          Divider(),
+                          Row(
+                            children: [
+                              Text("13"),
+                              Icon(
+                                Icons.arrow_drop_up_outlined,
+                                color: Colors.green,
+                              ),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              CircleAvatar(
+                                radius: 14,
+                              ),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              Text("BRI"),
+                              Spacer(),
+                              Text("1"),
+                            ],
+                          ),
+                        ],
+                      ),
+                    );
+                  },
+                  scrollDirection: Axis.horizontal,
+                ),
+              )
+            ],
+          ),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 16, left: 16),
-                    child: SizedBox(
-                      height: 42,
-                      child: ListView.builder(
-                        itemBuilder: (context, index) {
-                          return Container(
-                            margin: EdgeInsets.only(right: 8),
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 12,
-                            ),
-                            decoration: BoxDecoration(
-                              color: index == 0 ? Colors.black : Colors.white,
-                              borderRadius: BorderRadius.circular(32),
-                              border: Border.all(
-                                color: Colors.grey,
-                              ),
-                            ),
-                            child: Center(
-                              child: Text(
-                                "Football",
-                                style: TextStyle(
-                                  color: index == 0 ? Colors.white : Colors.black,
-                                ),
-                              ),
-                            ),
-                          );
-                        },
-                        scrollDirection: Axis.horizontal,
-                      ),
-                    ),
-                  ),
-                  Container(
-                    height: 120,
-                    margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
-                    child: ListView.builder(
-                      itemBuilder: (context, index) {
-                        return Container(
-                          width: 160,
-                          margin: EdgeInsets.only(right: 16),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              border: Border.all(
-                                color: Colors.grey[200]!,
-                              ),
-                              borderRadius: BorderRadius.circular(4)),
-                          padding: EdgeInsets.all(8),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("FT"),
-                              SizedBox(
-                                height: 8,
-                              ),
-                              Row(
-                                children: [
-                                  Text("13"),
-                                  Icon(
-                                    Icons.arrow_drop_down_outlined,
-                                    color: Colors.red,
-                                  ),
-                                  SizedBox(
-                                    width: 4,
-                                  ),
-                                  CircleAvatar(
-                                    radius: 14,
-                                  ),
-                                  SizedBox(
-                                    width: 4,
-                                  ),
-                                  Text("MUN"),
-                                  Spacer(),
-                                  Text("1"),
-                                ],
-                              ),
-                              Divider(),
-                              Row(
-                                children: [
-                                  Text("13"),
-                                  Icon(
-                                    Icons.arrow_drop_up_outlined,
-                                    color: Colors.green,
-                                  ),
-                                  SizedBox(
-                                    width: 4,
-                                  ),
-                                  CircleAvatar(
-                                    radius: 14,
-                                  ),
-                                  SizedBox(
-                                    width: 4,
-                                  ),
-                                  Text("BRI"),
-                                  Spacer(),
-                                  Text("1"),
-                                ],
-                              ),
-                            ],
-                          ),
-                        );
-                      },
-                      scrollDirection: Axis.horizontal,
-                    ),
-                  )
-                ],
+                children: [],
               ),
             ),
           )
