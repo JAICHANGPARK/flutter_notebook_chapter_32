@@ -18,7 +18,7 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
         children: [
           Container(
             color: Colors.white,
-            padding: EdgeInsets.only(
+            padding: const EdgeInsets.only(
               left: 16,
               right: 16,
               top: 64,
@@ -26,43 +26,47 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
             ),
             child: Row(
               children: [
-                CircleAvatar(),
-                SizedBox(
+                const CircleAvatar(),
+                const SizedBox(
                   width: 8,
                 ),
-                Text(
+                const Text(
                   "SPORTS",
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 Container(
-                    decoration: BoxDecoration(
-                        color: Colors.grey[200],
-                        borderRadius: BorderRadius.circular(4),
-                        border: Border.all(
-                          color: Colors.grey,
-                        )),
-                    child: IconButton(
-                      icon: Icon(Icons.search),
-                      onPressed: () {},
-                    )),
-                SizedBox(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[100],
+                    borderRadius: BorderRadius.circular(6),
+                    border: Border.all(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  child: IconButton(
+                    icon: const Icon(Icons.search),
+                    onPressed: () {},
+                  ),
+                ),
+                const SizedBox(
                   width: 8,
                 ),
                 Container(
-                    decoration: BoxDecoration(
-                        color: Colors.grey[200],
-                        borderRadius: BorderRadius.circular(4),
-                        border: Border.all(
-                          color: Colors.grey,
-                        )),
-                    child: IconButton(
-                      icon: Icon(Icons.notifications),
-                      onPressed: () {},
-                    ))
+                  decoration: BoxDecoration(
+                    color: Colors.grey[100],
+                    borderRadius: BorderRadius.circular(6),
+                    border: Border.all(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  child: IconButton(
+                    icon: const Icon(Icons.notifications),
+                    onPressed: () {},
+                  ),
+                )
               ],
             ),
           )
@@ -81,31 +85,31 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
           },
           type: BottomNavigationBarType.fixed,
           items: [
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.sports,
               ),
               label: "Today",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.explore_outlined,
               ),
               label: "Discover",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.calendar_month,
               ),
               label: "Schedule",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.bookmark_border,
               ),
               label: "Save",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.account_circle_outlined,
               ),
