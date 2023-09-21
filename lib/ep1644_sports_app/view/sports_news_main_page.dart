@@ -73,7 +73,23 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
           Expanded(
             child: SingleChildScrollView(
               child: Column(
-                children: [],
+                children: [
+                  SizedBox(
+                    height: 48,
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            border: Border.all(),
+                          ),
+                          child: Text("Football"),
+                        );
+                      },
+                      scrollDirection: Axis.horizontal,
+                    ),
+                  )
+                ],
               ),
             ),
           )
