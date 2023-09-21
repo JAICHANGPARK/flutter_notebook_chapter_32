@@ -17,9 +17,13 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
       body: Column(
         children: [
           Container(
-
             color: Colors.white,
-            padding: EdgeInsets.only(left: 16, right: 16, top: 64, bottom: 16),
+            padding: EdgeInsets.only(
+              left: 16,
+              right: 16,
+              top: 64,
+              bottom: 16,
+            ),
             child: Row(
               children: [
                 CircleAvatar(),
@@ -28,7 +32,10 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                 ),
                 Text(
                   "SPORTS",
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 Spacer(),
                 Container(
@@ -42,7 +49,9 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                       icon: Icon(Icons.search),
                       onPressed: () {},
                     )),
-                SizedBox(width: 8,),
+                SizedBox(
+                  width: 8,
+                ),
                 Container(
                     decoration: BoxDecoration(
                         color: Colors.grey[200],
