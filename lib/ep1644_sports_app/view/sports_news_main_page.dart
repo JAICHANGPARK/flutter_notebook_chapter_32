@@ -69,6 +69,13 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                 )
               ],
             ),
+          ),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [],
+              ),
+            ),
           )
         ],
       ),
