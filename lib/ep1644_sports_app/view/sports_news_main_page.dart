@@ -74,33 +74,36 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  SizedBox(
-                    height: 42,
-                    child: ListView.builder(
-                      itemBuilder: (context, index) {
-                        return Container(
-                          margin: EdgeInsets.only(right: 8),
-                          padding: EdgeInsets.symmetric(
-                            horizontal: 12,
-                          ),
-                          decoration: BoxDecoration(
-                            color: index == 0 ? Colors.black : Colors.white,
-                            borderRadius: BorderRadius.circular(32),
-                            border: Border.all(
-                              color: Colors.grey,
+                  Padding(
+                    padding: const EdgeInsets.only(top: 16, left: 16),
+                    child: SizedBox(
+                      height: 42,
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Container(
+                            margin: EdgeInsets.only(right: 8),
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 12,
                             ),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Football",
-                              style: TextStyle(
-                                color: index == 0 ? Colors.white : Colors.black,
+                            decoration: BoxDecoration(
+                              color: index == 0 ? Colors.black : Colors.white,
+                              borderRadius: BorderRadius.circular(32),
+                              border: Border.all(
+                                color: Colors.grey,
                               ),
                             ),
-                          ),
-                        );
-                      },
-                      scrollDirection: Axis.horizontal,
+                            child: Center(
+                              child: Text(
+                                "Football",
+                                style: TextStyle(
+                                  color: index == 0 ? Colors.white : Colors.black,
+                                ),
+                              ),
+                            ),
+                          );
+                        },
+                        scrollDirection: Axis.horizontal,
+                      ),
                     ),
                   )
                 ],
