@@ -113,10 +113,14 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                     child: ListView.builder(
                       itemBuilder: (context, index) {
                         return Container(
+                          width: 160,
                           margin: EdgeInsets.only(right: 16),
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            border: Border.all(),
+                            border: Border.all(
+                              color: Colors.grey[200]!,
+                            ),
+                            borderRadius: BorderRadius.circular(4)
                           ),
                           padding: EdgeInsets.all(8),
                           child: Column(
@@ -130,10 +134,13 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                                     Icons.arrow_drop_down_outlined,
                                     color: Colors.red,
                                   ),
+                                  SizedBox(width: 4,),
                                   CircleAvatar(
                                     radius: 14,
                                   ),
+                                  SizedBox(width: 4,),
                                   Text("MUN"),
+                                  Spacer(),
                                   Text("1"),
                                 ],
                               ),
@@ -145,14 +152,16 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                                     Icons.arrow_drop_up_outlined,
                                     color: Colors.green,
                                   ),
+                                  SizedBox(width: 4,),
                                   CircleAvatar(
                                     radius: 14,
                                   ),
-                                  Text("MUN"),
+                                  SizedBox(width: 4,),
+                                  Text("BRI"),
+                                  Spacer(),
                                   Text("1"),
                                 ],
                               ),
-
                             ],
                           ),
                         );
