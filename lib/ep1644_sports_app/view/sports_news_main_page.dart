@@ -105,6 +105,23 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                         scrollDirection: Axis.horizontal,
                       ),
                     ),
+                  ),
+                  Container(
+                    height: 120,
+                    margin: EdgeInsets.only(left: 16 , top: 16, bottom: 16),
+                    color: Colors.blue,
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(
+                          margin: EdgeInsets.only(right: 16),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(),
+                          ),
+                        );
+                      },
+                      scrollDirection: Axis.horizontal,
+                    ),
                   )
                 ],
               ),
