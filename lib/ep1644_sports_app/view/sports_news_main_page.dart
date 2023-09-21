@@ -79,9 +79,16 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                     child: ListView.builder(
                       itemBuilder: (context, index) {
                         return Container(
+                          margin: EdgeInsets.only(right: 8),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 12,
+                          ),
                           decoration: BoxDecoration(
-                            color: Colors.black,
-                            border: Border.all(),
+                            color: index == 0 ? Colors.black : Colors.white,
+                            borderRadius: BorderRadius.circular(32),
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
                           ),
                           child: Text("Football"),
                         );
