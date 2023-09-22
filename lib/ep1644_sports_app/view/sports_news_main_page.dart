@@ -121,7 +121,7 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                       padding: EdgeInsets.all(8),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const [
                           Text("FT"),
                           SizedBox(
                             height: 8,
@@ -183,7 +183,23 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
               color: Colors.white,
               child: ListView.builder(
                 itemCount: 10,
-                itemBuilder: (context, index) {},
+                itemBuilder: (context, index) {
+                  return Column(
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            height: 28,
+                            width: 28,
+                            color: Colors.blue,
+                          ),
+                          Text("Skysport"),
+                          Spacer()
+                        ],
+                      )
+                    ],
+                  );
+                },
               ),
             ),
           )
@@ -201,32 +217,32 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
             });
           },
           type: BottomNavigationBarType.fixed,
-          items: [
-            const BottomNavigationBarItem(
+          items: const [
+            BottomNavigationBarItem(
               icon: Icon(
                 Icons.sports,
               ),
               label: "Today",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(
                 Icons.explore_outlined,
               ),
               label: "Discover",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(
                 Icons.calendar_month,
               ),
               label: "Schedule",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(
                 Icons.bookmark_border,
               ),
               label: "Save",
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(
                 Icons.account_circle_outlined,
               ),
