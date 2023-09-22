@@ -186,7 +186,7 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                 itemCount: 10,
                 itemBuilder: (context, index) {
                   return Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Column(
                       children: [
                         Row(
@@ -204,6 +204,7 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                           ],
                         ),
                         Container(
+                          margin: EdgeInsets.symmetric(vertical: 16),
                           decoration: BoxDecoration(color: Colors.blue),
                           height: 240,
                         ),
