@@ -188,6 +188,7 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                   return Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
@@ -196,7 +197,9 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                               width: 32,
                               color: Colors.blue,
                             ),
-                            SizedBox(width: 8,),
+                            SizedBox(
+                              width: 8,
+                            ),
                             Text("Skysport"),
                             Spacer(),
                             Text("7m Ago"),
@@ -208,7 +211,14 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                           decoration: BoxDecoration(color: Colors.blue),
                           height: 240,
                         ),
-                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, "),
+                        Text(
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        SizedBox(height: 8,),
                         Text(
                           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                           maxLines: 2,
