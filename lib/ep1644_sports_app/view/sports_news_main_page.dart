@@ -195,10 +195,9 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                             Container(
                               height: 32,
                               width: 32,
-
                               decoration: BoxDecoration(
-                                  color: Colors.blue,
-                                borderRadius: BorderRadius.circular(4)
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.circular(4),
                               ),
                             ),
                             SizedBox(
@@ -224,9 +223,12 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                           ],
                         ),
                         Container(
-                          margin: EdgeInsets.symmetric(vertical: 16),
-                          decoration: BoxDecoration(color: Colors.blue),
                           height: 240,
+                          margin: EdgeInsets.symmetric(vertical: 16),
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
                         ),
                         Text(
                           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
