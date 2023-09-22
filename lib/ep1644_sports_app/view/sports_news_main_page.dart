@@ -79,8 +79,8 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                   child: ListView.builder(
                     itemBuilder: (context, index) {
                       return Container(
-                        margin: EdgeInsets.only(right: 8),
-                        padding: EdgeInsets.symmetric(
+                        margin: const EdgeInsets.only(right: 8),
+                        padding: const EdgeInsets.symmetric(
                           horizontal: 12,
                         ),
                         decoration: BoxDecoration(
@@ -106,22 +106,22 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
               ),
               Container(
                 height: 120,
-                margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
+                margin: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
                 child: ListView.builder(
                   itemBuilder: (context, index) {
                     return Container(
                       width: 160,
-                      margin: EdgeInsets.only(right: 16),
+                      margin: const EdgeInsets.only(right: 16),
                       decoration: BoxDecoration(
                           color: Colors.white,
                           border: Border.all(
                             color: Colors.grey[200]!,
                           ),
                           borderRadius: BorderRadius.circular(4)),
-                      padding: EdgeInsets.all(8),
-                      child: Column(
+                      padding: const EdgeInsets.all(8),
+                      child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
+                        children: [
                           Text("FT"),
                           SizedBox(
                             height: 8,
@@ -184,7 +184,7 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
               child: ListView.separated(
                 padding: EdgeInsets.zero,
                 itemCount: 10,
-                separatorBuilder: (context, _) => Divider(
+                separatorBuilder: (context, _) => const Divider(
                   color: Colors.grey,
                 ),
                 itemBuilder: (context, index) {
@@ -203,47 +203,47 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                                 borderRadius: BorderRadius.circular(4),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 8,
                             ),
-                            Text(
+                            const Text(
                               "Skysport",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                            Spacer(),
-                            Text(
+                            const Spacer(),
+                            const Text(
                               "7m Ago",
                               style: TextStyle(
                                 color: Colors.grey,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 8,
                             ),
-                            Icon(Icons.more_horiz),
+                            const Icon(Icons.more_horiz),
                           ],
                         ),
                         Container(
-                          height: 240,
-                          margin: EdgeInsets.symmetric(vertical: 16),
+                          height: 220,
+                          margin: const EdgeInsets.symmetric(vertical: 16),
                           decoration: BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(4),
                           ),
                         ),
-                        Text(
+                        const Text(
                           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
-                        Text(
+                        const Text(
                           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
