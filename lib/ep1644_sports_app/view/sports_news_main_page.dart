@@ -195,7 +195,11 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                             Container(
                               height: 32,
                               width: 32,
-                              color: Colors.blue,
+
+                              decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                borderRadius: BorderRadius.circular(4)
+                              ),
                             ),
                             SizedBox(
                               width: 8,
