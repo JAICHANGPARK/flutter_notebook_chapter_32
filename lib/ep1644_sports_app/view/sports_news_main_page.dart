@@ -181,9 +181,12 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
           Expanded(
             child: Container(
               color: Colors.white,
-              child: ListView.builder(
+              child: ListView.separated(
                 padding: EdgeInsets.zero,
                 itemCount: 10,
+                separatorBuilder: (context, _) => Divider(
+                  color: Colors.grey,
+                ),
                 itemBuilder: (context, index) {
                   return Padding(
                     padding: const EdgeInsets.all(16.0),
