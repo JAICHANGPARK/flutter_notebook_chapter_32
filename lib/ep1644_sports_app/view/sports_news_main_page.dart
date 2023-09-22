@@ -182,22 +182,34 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
             child: Container(
               color: Colors.white,
               child: ListView.builder(
+                padding: EdgeInsets.zero,
                 itemCount: 10,
                 itemBuilder: (context, index) {
-                  return Column(
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            height: 28,
-                            width: 28,
-                            color: Colors.blue,
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              height: 28,
+                              width: 28,
+                              color: Colors.blue,
+                            ),
+                            Text("Skysport"),
+                            Spacer(),
+                            Text("7m Ago"),
+                            Icon(Icons.more_horiz),
+                          ],
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.blue
                           ),
-                          Text("Skysport"),
-                          Spacer()
-                        ],
-                      )
-                    ],
+                          height: 240,
+                        ),
+                      ],
+                    ),
                   );
                 },
               ),
