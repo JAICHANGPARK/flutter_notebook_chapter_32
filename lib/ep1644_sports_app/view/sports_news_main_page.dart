@@ -434,11 +434,14 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                     Row(
                       children: [
                         CircleAvatar(),
+                        SizedBox(width: 16,),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("UEFA Champion League"),
+                              Text("UEFA Champion League",style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),),
                               Text("Subtitle, Subtitle, Subtitle, ")
                             ],
                           ),
