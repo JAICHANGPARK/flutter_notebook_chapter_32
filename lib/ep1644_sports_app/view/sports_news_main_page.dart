@@ -424,18 +424,25 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
               ),
               Expanded(
                   child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                 ),
-                child: Column(
+                padding: EdgeInsets.all(16),
+                child: const Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
                         CircleAvatar(),
                         Expanded(
-                            child: Column(
-                          children: [],
-                        ))
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("UEFA Champion League"),
+                              Text("Subtitle, Subtitle, Subtitle, ")
+                            ],
+                          ),
+                        )
                       ],
                     )
                   ],
