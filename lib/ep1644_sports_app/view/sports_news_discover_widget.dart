@@ -225,7 +225,7 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Text("Group A Flutter Staduim"),
+                            const Text("Group A Flutter Stadium"),
                             const SizedBox(
                               height: 8,
                             ),
