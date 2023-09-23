@@ -337,7 +337,7 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                                 "Football",
                                 style: TextStyle(
                                   color:
-                                  index == 0 ? Colors.white : Colors.black,
+                                      index == 0 ? Colors.white : Colors.black,
                                 ),
                               ),
                             ),
@@ -350,7 +350,7 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                   Container(
                     height: 120,
                     margin:
-                    const EdgeInsets.only(left: 16, top: 16, bottom: 16),
+                        const EdgeInsets.only(left: 16, top: 16, bottom: 16),
                     child: ListView.builder(
                       itemBuilder: (context, index) {
                         return Container(
@@ -422,6 +422,25 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                   )
                 ],
               ),
+              Expanded(
+                  child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        CircleAvatar(),
+                        Expanded(
+                            child: Column(
+                          children: [],
+                        ))
+                      ],
+                    )
+                  ],
+                ),
+              ))
             ],
           )
         ],
