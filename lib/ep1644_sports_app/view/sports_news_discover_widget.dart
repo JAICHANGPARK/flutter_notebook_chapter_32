@@ -239,17 +239,21 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                                         child: Column(
                                       children: [
                                         Expanded(
+                                          child: Padding(
+                                            padding: const EdgeInsets.symmetric(horizontal: 8),
                                             child: Row(
-                                          children: [
-                                            CircleAvatar(
-                                              radius: 16,
+                                              children: [
+                                                CircleAvatar(
+                                                  radius: 16,
+                                                ),
+                                                SizedBox(
+                                                  width: 8,
+                                                ),
+                                                Text("Flutter"),
+                                              ],
                                             ),
-                                            SizedBox(
-                                              width: 8,
-                                            ),
-                                            Text("Flutter"),
-                                          ],
-                                        )),
+                                          ),
+                                        ),
                                         Divider(),
                                         Expanded(
                                             child: Row(
