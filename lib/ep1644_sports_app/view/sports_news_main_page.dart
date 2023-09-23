@@ -466,9 +466,12 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                       ),
                       Expanded(
                         child: ListView.builder(
+                          padding: EdgeInsets.zero,
                           itemCount: 10,
                           itemBuilder: (context, index) {
                             return Container(
+                              height: 140,
+                              margin: EdgeInsets.only(bottom: 16),
                               decoration: BoxDecoration(
                                 color: Colors.grey[200],
                                 borderRadius: BorderRadius.circular(12),
