@@ -197,6 +197,7 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                         border: Border.all(
                           color: Colors.grey[200]!,
                         ),
+                        borderRadius: BorderRadius.circular(8)
                       ),
                       child: IconButton(
                         icon: const Icon(Icons.calendar_month),
