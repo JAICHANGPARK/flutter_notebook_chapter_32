@@ -225,6 +225,7 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Group A Flutter Staduim"),
+                            SizedBox(height: 8,),
                             Expanded(
                               child: Container(
                                 decoration: BoxDecoration(
@@ -232,13 +233,20 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                                 ),
                                 child: Row(
                                   children: [
-                                    Expanded(child: Column()),
+                                    Expanded(child: Column(
+                                      children: [
+                                        Expanded(child: Row(children: [
+                                          CircleAvatar(),
+                                          Text("Flutter"),
+                                        ],)),
+                                        Divider(),
+                                        Expanded(child: Row(children: [],)),
+                                      ],
+                                    )),
                                     VerticalDivider(),
                                     Column(
                                       children: [
-                                        Expanded(child: Row(children: [],)),
-                                        Divider(),
-                                        Expanded(child: Row(children: [],)),
+
                                       ],
                                     )
                                   ],
