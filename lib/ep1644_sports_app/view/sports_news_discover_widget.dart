@@ -215,7 +215,7 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                     itemCount: 10,
                     itemBuilder: (context, index) {
                       return Container(
-                        height: 140,
+                        height: 148,
                         margin: const EdgeInsets.only(bottom: 16),
                         decoration: BoxDecoration(
                           color: Colors.grey[200],
