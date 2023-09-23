@@ -220,27 +220,28 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        padding: EdgeInsets.all(12),
+                        padding: const EdgeInsets.all(12),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Group A Flutter Staduim"),
-                            SizedBox(
+                            const Text("Group A Flutter Staduim"),
+                            const SizedBox(
                               height: 8,
                             ),
                             Expanded(
                               child: Container(
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Colors.white,
                                 ),
-                                child: Row(
+                                padding: EdgeInsets.symmetric(vertical: 8),
+                                child: const Row(
                                   children: [
                                     Expanded(
                                         child: Column(
                                       children: [
                                         Expanded(
                                           child: Padding(
-                                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                                            padding: EdgeInsets.symmetric(horizontal: 8),
                                             child: Row(
                                               children: [
                                                 CircleAvatar(
@@ -256,9 +257,21 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                                         ),
                                         Divider(),
                                         Expanded(
+                                          child: Padding(
+                                            padding: EdgeInsets.symmetric(horizontal: 8),
                                             child: Row(
-                                          children: [],
-                                        )),
+                                              children: [
+                                                CircleAvatar(
+                                                  radius: 16,
+                                                ),
+                                                SizedBox(
+                                                  width: 8,
+                                                ),
+                                                Text("Flutter"),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
                                       ],
                                     )),
                                     VerticalDivider(),
