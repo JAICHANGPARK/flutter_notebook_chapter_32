@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_32/ep1644_sports_app/view/sports_news_today_widget.dart';
 
 class SportsNewsMainPage extends StatefulWidget {
   const SportsNewsMainPage({super.key});
@@ -17,7 +18,7 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
       body: IndexedStack(
         index: menuIndex,
         children: [
-
+          SportsNewsTodayWidget(),
           Column(
             children: [
               Container(
