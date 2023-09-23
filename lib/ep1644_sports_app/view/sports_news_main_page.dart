@@ -278,12 +278,13 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.grey[100],
+                          borderRadius: BorderRadius.circular(8),
                           border: Border.all(
-                            color: Colors.grey[200]!,
+                            color: Colors.grey,
                           ),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 16),
-                        child: TextField(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: const TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
                             icon: Icon(Icons.search),
