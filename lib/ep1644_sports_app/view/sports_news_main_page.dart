@@ -423,34 +423,58 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                 ],
               ),
               Expanded(
-                  child: Container(
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                ),
-                padding: EdgeInsets.all(16),
-                child: const Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        CircleAvatar(),
-                        SizedBox(width: 16,),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("UEFA Champion League",style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),),
-                              Text("Subtitle, Subtitle, Subtitle, ")
-                            ],
+                child: Container(
+                  decoration: const BoxDecoration(
+                    color: Colors.white,
+                  ),
+                  padding: EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          CircleAvatar(),
+                          SizedBox(
+                            width: 16,
                           ),
-                        )
-                      ],
-                    )
-                  ],
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "UEFA Champion League",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text("Subtitle, Subtitle, Subtitle, ")
+                              ],
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                            ),
+                            child: IconButton(
+                              icon: Icon(Icons.calendar_month),
+                              onPressed: () {},
+                            ),
+                          )
+                        ],
+                      ),
+                      Expanded(
+                        child: ListView.builder(
+                          itemBuilder: (context, index) {
+                            return Container();
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ))
+              )
             ],
           )
         ],
