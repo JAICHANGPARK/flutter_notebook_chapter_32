@@ -220,31 +220,30 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        padding: EdgeInsets.all(12),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              children: [
-                                Text("Group A Flutter Staduim"),
-                                Expanded(
-                                  child: Container(
-
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                    ),
-                                    child: Row(
-                                      children: [
-                                        Expanded(child: Column()),
-                                        VerticalDivider(),
-                                        Column(
-                                          children: [
-
-                                          ],
-                                        )
-                                      ],
-                                    ),
-                                  ),
+                            Text("Group A Flutter Staduim"),
+                            Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
                                 ),
-                              ],
+                                child: Row(
+                                  children: [
+                                    Expanded(child: Column()),
+                                    VerticalDivider(),
+                                    Column(
+                                      children: [
+                                        Expanded(child: Row(children: [],)),
+                                        Divider(),
+                                        Expanded(child: Row(children: [],)),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
                             )
                           ],
                         ),
