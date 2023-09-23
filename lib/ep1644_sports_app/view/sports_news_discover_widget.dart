@@ -225,7 +225,9 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text("Group A Flutter Staduim"),
-                            SizedBox(height: 8,),
+                            SizedBox(
+                              height: 8,
+                            ),
                             Expanded(
                               child: Container(
                                 decoration: BoxDecoration(
@@ -233,21 +235,31 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                                 ),
                                 child: Row(
                                   children: [
-                                    Expanded(child: Column(
+                                    Expanded(
+                                        child: Column(
                                       children: [
-                                        Expanded(child: Row(children: [
-                                          CircleAvatar(),
-                                          Text("Flutter"),
-                                        ],)),
+                                        Expanded(
+                                            child: Row(
+                                          children: [
+                                            CircleAvatar(
+                                              radius: 16,
+                                            ),
+                                            SizedBox(
+                                              width: 8,
+                                            ),
+                                            Text("Flutter"),
+                                          ],
+                                        )),
                                         Divider(),
-                                        Expanded(child: Row(children: [],)),
+                                        Expanded(
+                                            child: Row(
+                                          children: [],
+                                        )),
                                       ],
                                     )),
                                     VerticalDivider(),
                                     Column(
-                                      children: [
-
-                                      ],
+                                      children: [],
                                     )
                                   ],
                                 ),
