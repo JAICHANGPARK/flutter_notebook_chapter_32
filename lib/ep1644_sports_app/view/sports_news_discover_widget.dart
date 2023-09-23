@@ -197,13 +197,13 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                         border: Border.all(
                           color: Colors.grey[200]!,
                         ),
-                        borderRadius: BorderRadius.circular(8)
+                        borderRadius: BorderRadius.circular(8),
                       ),
                       child: IconButton(
                         icon: const Icon(Icons.calendar_month),
                         onPressed: () {},
                       ),
-                    )
+                    ),
                   ],
                 ),
                 const SizedBox(
@@ -234,10 +234,10 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                                 decoration: const BoxDecoration(
                                   color: Colors.white,
                                 ),
-                                padding: EdgeInsets.symmetric(vertical: 8),
-                                child: const Row(
+                                padding: const EdgeInsets.symmetric(vertical: 8),
+                                child:  Row(
                                   children: [
-                                    Expanded(
+                                    const Expanded(
                                         child: Column(
                                       children: [
                                         Expanded(
@@ -275,9 +275,16 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                                         ),
                                       ],
                                     )),
-                                    VerticalDivider(),
+                                    const VerticalDivider(),
                                     Column(
-                                      children: [],
+                                      children: [
+                                        const Text("05.00"),
+                                        const Text("GMT+9"),
+                                        TextButton(
+                                          onPressed: () {},
+                                          child: const Text("See Details"),
+                                        )
+                                      ],
                                     )
                                   ],
                                 ),
