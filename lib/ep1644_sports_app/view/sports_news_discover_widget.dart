@@ -5,7 +5,7 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return Column(
       children: [
         Container(
           color: Colors.white,
@@ -79,8 +79,7 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                         child: Text(
                           "Football",
                           style: TextStyle(
-                            color:
-                            index == 0 ? Colors.white : Colors.black,
+                            color: index == 0 ? Colors.white : Colors.black,
                           ),
                         ),
                       ),
@@ -92,8 +91,7 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
             ),
             Container(
               height: 120,
-              margin:
-              const EdgeInsets.only(left: 16, top: 16, bottom: 16),
+              margin: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
@@ -170,17 +168,17 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
             decoration: const BoxDecoration(
               color: Colors.white,
             ),
-            padding: EdgeInsets.all(16),
+            padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: [
-                    CircleAvatar(),
-                    SizedBox(
+                    const CircleAvatar(),
+                    const SizedBox(
                       width: 16,
                     ),
-                    Expanded(
+                    const Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -201,13 +199,15 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                         ),
                       ),
                       child: IconButton(
-                        icon: Icon(Icons.calendar_month),
+                        icon: const Icon(Icons.calendar_month),
                         onPressed: () {},
                       ),
                     )
                   ],
                 ),
-                SizedBox(height: 16,),
+                const SizedBox(
+                  height: 16,
+                ),
                 Expanded(
                   child: ListView.builder(
                     padding: EdgeInsets.zero,
@@ -215,10 +215,38 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                     itemBuilder: (context, index) {
                       return Container(
                         height: 140,
-                        margin: EdgeInsets.only(bottom: 16),
+                        margin: const EdgeInsets.only(bottom: 16),
                         decoration: BoxDecoration(
                           color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text("Group A Flutter Staduim"),
+                                Expanded(
+                                  child: Container(
+
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        Expanded(child: Column()),
+                                        VerticalDivider(),
+                                        Column(
+                                          children: [
+
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
                         ),
                       );
                     },
