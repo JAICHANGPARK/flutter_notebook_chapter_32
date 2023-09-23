@@ -464,6 +464,7 @@ class _SportsNewsMainPageState extends State<SportsNewsMainPage> {
                           )
                         ],
                       ),
+                      SizedBox(height: 16,),
                       Expanded(
                         child: ListView.builder(
                           padding: EdgeInsets.zero,
