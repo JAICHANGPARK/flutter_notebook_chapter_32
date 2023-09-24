@@ -231,8 +231,9 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                             ),
                             Expanded(
                               child: Container(
-                                decoration: const BoxDecoration(
+                                decoration:  BoxDecoration(
                                   color: Colors.white,
+                                  borderRadius: BorderRadius.circular(8)
                                 ),
                                 padding: const EdgeInsets.symmetric(vertical: 8),
                                 child: Row(
