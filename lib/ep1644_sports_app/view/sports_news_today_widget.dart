@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SportsNewsTodayWidget extends StatefulWidget {
   const SportsNewsTodayWidget({super.key});
 
@@ -11,7 +10,7 @@ class SportsNewsTodayWidget extends StatefulWidget {
 class _SportsNewsTodayWidgetState extends State<SportsNewsTodayWidget> {
   @override
   Widget build(BuildContext context) {
-    return    Column(
+    return Column(
       children: [
         Container(
           color: Colors.white,
@@ -91,8 +90,7 @@ class _SportsNewsTodayWidgetState extends State<SportsNewsTodayWidget> {
                         child: Text(
                           "Football",
                           style: TextStyle(
-                            color:
-                            index == 0 ? Colors.white : Colors.black,
+                            color: index == 0 ? Colors.white : Colors.black,
                           ),
                         ),
                       ),
@@ -104,8 +102,7 @@ class _SportsNewsTodayWidgetState extends State<SportsNewsTodayWidget> {
             ),
             Container(
               height: 120,
-              margin:
-              const EdgeInsets.only(left: 16, top: 16, bottom: 16),
+              margin: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
               child: ListView.builder(
                 itemBuilder: (context, index) {
                   return Container(
