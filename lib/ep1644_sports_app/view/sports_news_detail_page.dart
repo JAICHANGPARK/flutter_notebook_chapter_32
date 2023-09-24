@@ -62,7 +62,25 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
                     Row(
                       children: [
                         CircleAvatar(),
-                        Expanded(child: Column()),
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Text("Dream Walker"),
+                              Text("@Dreamwalker"),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.grey,
+                            )
+                          ),
+                          padding: EdgeInsets.all(8),
+                          child: Icon(Icons.phone,
+                          size: 16,),
+                        )
                       ],
                     ),
                     Divider(
