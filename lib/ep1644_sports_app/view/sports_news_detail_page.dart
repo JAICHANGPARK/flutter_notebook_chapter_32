@@ -100,7 +100,9 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
                               size: 16,
                             ),
                           ),
-                          SizedBox(width: 8,),
+                          SizedBox(
+                            width: 8,
+                          ),
                           Container(
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
@@ -114,7 +116,9 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
                               size: 16,
                             ),
                           ),
-                          SizedBox(width: 8,),
+                          SizedBox(
+                            width: 8,
+                          ),
                           Container(
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
@@ -128,7 +132,9 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
                               size: 16,
                             ),
                           ),
-                          SizedBox(width: 8,),
+                          SizedBox(
+                            width: 8,
+                          ),
                           Container(
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
@@ -149,8 +155,17 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
                       color: Colors.grey,
                     ),
                     Text("Tuesday 19 September 2023 13:36 UK"),
-
-
+                    Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                      ),
+                    ),
+                    Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            "\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            "\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
                   ],
                 ),
               ),
