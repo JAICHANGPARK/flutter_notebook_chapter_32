@@ -19,6 +19,6 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
           ],
         ),
       ),
-    )
+    );
   }
 }
