@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_32/ep1644_sports_app/view/sports_news_detail_page.dart';
 
 class SportsNewsTodayWidget extends StatefulWidget {
   const SportsNewsTodayWidget({super.key});
@@ -184,67 +185,76 @@ class _SportsNewsTodayWidgetState extends State<SportsNewsTodayWidget> {
                 color: Colors.grey,
               ),
               itemBuilder: (context, index) {
-                return Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            height: 32,
-                            width: 32,
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                              borderRadius: BorderRadius.circular(4),
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 8,
-                          ),
-                          const Text(
-                            "Skysport",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const Spacer(),
-                          const Text(
-                            "7m Ago",
-                            style: TextStyle(
-                              color: Colors.grey,
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 8,
-                          ),
-                          const Icon(Icons.more_horiz),
-                        ],
+                return GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const SportsNewsDetailPage(),
                       ),
-                      Container(
-                        height: 220,
-                        margin: const EdgeInsets.symmetric(vertical: 16),
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(4),
+                    );
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              height: 32,
+                              width: 32,
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 8,
+                            ),
+                            const Text(
+                              "Skysport",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            const Spacer(),
+                            const Text(
+                              "7m Ago",
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 8,
+                            ),
+                            const Icon(Icons.more_horiz),
+                          ],
                         ),
-                      ),
-                      const Text(
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
+                        Container(
+                          height: 220,
+                          margin: const EdgeInsets.symmetric(vertical: 16),
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
                         ),
-                      ),
-                      const SizedBox(
-                        height: 8,
-                      ),
-                      const Text(
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                      )
-                    ],
+                        const Text(
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 8,
+                        ),
+                        const Text(
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        )
+                      ],
+                    ),
                   ),
                 );
               },
