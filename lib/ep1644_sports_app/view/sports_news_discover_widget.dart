@@ -231,10 +231,7 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                             ),
                             Expanded(
                               child: Container(
-                                decoration:  BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(8)
-                                ),
+                                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
                                 padding: const EdgeInsets.symmetric(vertical: 8),
                                 child: Row(
                                   children: [
@@ -252,7 +249,12 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                                                 SizedBox(
                                                   width: 8,
                                                 ),
-                                                Text("Flutter"),
+                                                Text(
+                                                  "Flutter A",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
                                               ],
                                             ),
                                           ),
@@ -269,7 +271,12 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                                                 SizedBox(
                                                   width: 8,
                                                 ),
-                                                Text("Flutter"),
+                                                Text(
+                                                  "Flutter B",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
                                               ],
                                             ),
                                           ),
@@ -289,7 +296,6 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
-
                                           Padding(
                                             padding: const EdgeInsets.symmetric(vertical: 8),
                                             child: const Text(
@@ -299,9 +305,10 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                                               ),
                                             ),
                                           ),
-                                          const Text("See Details", style: TextStyle(
-                                            color: Colors.green
-                                          ),),
+                                          const Text(
+                                            "See Details",
+                                            style: TextStyle(color: Colors.green),
+                                          ),
                                         ],
                                       ),
                                     )
