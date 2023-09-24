@@ -288,10 +288,14 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
-                                          const Text(
-                                            "GMT+9",
-                                            style: TextStyle(
-                                              color: Colors.grey,
+
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(vertical: 8),
+                                            child: const Text(
+                                              "GMT+9",
+                                              style: TextStyle(
+                                                color: Colors.grey,
+                                              ),
                                             ),
                                           ),
                                           const Text("See Details", style: TextStyle(
