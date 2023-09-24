@@ -17,13 +17,15 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
             Row(
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
                   icon: Icon(Icons.arrow_back),
                 ),
                 // SizedBox(width: 16,)
                 Container(
-                  height: 36,
-                  width: 36,
+                  height: 32,
+                  width: 32,
                   decoration: BoxDecoration(
                     color: Colors.indigo,
                     borderRadius: BorderRadius.circular(4),
