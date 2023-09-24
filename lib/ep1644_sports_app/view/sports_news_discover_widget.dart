@@ -235,7 +235,7 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                                   color: Colors.white,
                                 ),
                                 padding: const EdgeInsets.symmetric(vertical: 8),
-                                child:  Row(
+                                child: Row(
                                   children: [
                                     const Expanded(
                                         child: Column(
@@ -276,15 +276,29 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                                       ],
                                     )),
                                     const VerticalDivider(),
-                                    Column(
-                                      children: [
-                                        const Text("05.00"),
-                                        const Text("GMT+9"),
-                                        TextButton(
-                                          onPressed: () {},
-                                          child: const Text("See Details"),
-                                        )
-                                      ],
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          const Text(
+                                            "05.00",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          const Text(
+                                            "GMT+9",
+                                            style: TextStyle(
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                          const Text("See Details", style: TextStyle(
+                                            color: Colors.green
+                                          ),),
+                                        ],
+                                      ),
                                     )
                                   ],
                                 ),
