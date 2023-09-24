@@ -231,11 +231,14 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                             ),
                             Expanded(
                               child: Container(
-                                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
                                 padding: const EdgeInsets.symmetric(vertical: 8),
-                                child: Row(
+                                child: const Row(
                                   children: [
-                                    const Expanded(
+                                    Expanded(
                                         child: Column(
                                       children: [
                                         Expanded(
@@ -283,29 +286,29 @@ class SportsNewsDiscoverWidget extends StatelessWidget {
                                         ),
                                       ],
                                     )),
-                                    const VerticalDivider(),
+                                    VerticalDivider(),
                                     Padding(
-                                      padding: const EdgeInsets.all(8.0),
+                                      padding: EdgeInsets.all(8.0),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
-                                          const Text(
+                                          Text(
                                             "05.00",
                                             style: TextStyle(
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.symmetric(vertical: 8),
-                                            child: const Text(
+                                            padding: EdgeInsets.symmetric(vertical: 8),
+                                            child: Text(
                                               "GMT+9",
                                               style: TextStyle(
                                                 color: Colors.grey,
                                               ),
                                             ),
                                           ),
-                                          const Text(
+                                          Text(
                                             "See Details",
                                             style: TextStyle(color: Colors.green),
                                           ),
