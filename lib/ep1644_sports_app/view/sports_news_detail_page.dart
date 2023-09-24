@@ -20,7 +20,7 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  icon: Icon(Icons.arrow_back),
+                  icon: const Icon(Icons.arrow_back),
                 ),
                 // SizedBox(width: 16,)
                 Container(
@@ -31,21 +31,21 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 4,
                 ),
-                Text("Skysport"),
+                const Text("Skysport"),
 
-                Spacer(),
+                const Spacer(),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.more_horiz,
                   ),
                 ),
               ],
             ),
-            Divider(
+            const Divider(
               color: Colors.grey,
             ),
             Expanded(
@@ -55,35 +55,45 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
                   children: [
                     Container(
                       height: 260,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.indigo,
                       ),
                     ),
                     Row(
                       children: [
-                        CircleAvatar(),
-                        Expanded(
+                        const CircleAvatar(),
+                        SizedBox(width: 8,),
+                        const Expanded(
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Dream Walker"),
+                              Text(
+                                "Dream Walker",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+
+                                ),
+                              ),
+                              SizedBox(height: 4,),
                               Text("@Dreamwalker"),
                             ],
                           ),
                         ),
                         Container(
                           decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            border: Border.all(
-                              color: Colors.grey,
-                            )
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.grey,
+                              )),
+                          padding: const EdgeInsets.all(8),
+                          child: const Icon(
+                            Icons.phone,
+                            size: 16,
                           ),
-                          padding: EdgeInsets.all(8),
-                          child: Icon(Icons.phone,
-                          size: 16,),
                         )
                       ],
                     ),
-                    Divider(
+                    const Divider(
                       color: Colors.grey,
                     ),
                   ],
