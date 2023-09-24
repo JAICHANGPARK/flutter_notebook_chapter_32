@@ -49,8 +49,27 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
               color: Colors.grey,
             ),
             Expanded(
-              child: ListView(
-                children: [],
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+                child: ListView(
+                  children: [
+                    Container(
+                      height: 260,
+                      decoration: BoxDecoration(
+                        color: Colors.indigo,
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        CircleAvatar(),
+                        Expanded(child: Column()),
+                      ],
+                    ),
+                    Divider(
+                      color: Colors.grey,
+                    ),
+                  ],
+                ),
               ),
             )
           ],
