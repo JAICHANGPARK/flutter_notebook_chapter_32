@@ -14,36 +14,39 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                IconButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                  icon: const Icon(Icons.arrow_back),
-                ),
-                // SizedBox(width: 16,)
-                Container(
-                  height: 32,
-                  width: 32,
-                  decoration: BoxDecoration(
-                    color: Colors.indigo,
-                    borderRadius: BorderRadius.circular(4),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: Row(
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    icon: const Icon(Icons.arrow_back),
                   ),
-                ),
-                const SizedBox(
-                  width: 4,
-                ),
-                const Text("Skysport"),
+                  // SizedBox(width: 16,)
+                  Container(
+                    height: 32,
+                    width: 32,
+                    decoration: BoxDecoration(
+                      color: Colors.indigo,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 4,
+                  ),
+                  const Text("Skysport"),
 
-                const Spacer(),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.more_horiz,
+                  const Spacer(),
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.more_horiz,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
             const Divider(
               color: Colors.grey,
@@ -145,6 +148,9 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
                     const Divider(
                       color: Colors.grey,
                     ),
+                    Text("Tuesday 19 September 2023 13:36 UK"),
+
+
                   ],
                 ),
               ),
