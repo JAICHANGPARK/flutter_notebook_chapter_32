@@ -31,7 +31,9 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
-                SizedBox(width: 4,),
+                SizedBox(
+                  width: 4,
+                ),
                 Text("Skysport"),
 
                 Spacer(),
@@ -43,6 +45,14 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
                 ),
               ],
             ),
+            Divider(
+              color: Colors.grey,
+            ),
+            Expanded(
+              child: ListView(
+                children: [],
+              ),
+            )
           ],
         ),
       ),
