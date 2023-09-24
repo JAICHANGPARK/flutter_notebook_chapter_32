@@ -59,7 +59,6 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
                         color: Colors.indigo,
                       ),
                     ),
-
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       child: Row(
@@ -87,13 +86,56 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
                           ),
                           Container(
                             decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(
-                                  color: Colors.grey,
-                                )),
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
+                            ),
                             padding: const EdgeInsets.all(8),
                             child: const Icon(
                               Icons.phone,
+                              size: 16,
+                            ),
+                          ),
+                          SizedBox(width: 8,),
+                          Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
+                            ),
+                            padding: const EdgeInsets.all(8),
+                            child: const Icon(
+                              Icons.phone,
+                              size: 16,
+                            ),
+                          ),
+                          SizedBox(width: 8,),
+                          Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
+                            ),
+                            padding: const EdgeInsets.all(8),
+                            child: const Icon(
+                              Icons.phone,
+                              size: 16,
+                            ),
+                          ),
+                          SizedBox(width: 8,),
+                          Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
+                            ),
+                            padding: const EdgeInsets.all(8),
+                            child: const Icon(
+                              Icons.mail_outline,
                               size: 16,
                             ),
                           )
