@@ -59,39 +59,46 @@ class _SportsNewsDetailPageState extends State<SportsNewsDetailPage> {
                         color: Colors.indigo,
                       ),
                     ),
-                    Row(
-                      children: [
-                        const CircleAvatar(),
-                        SizedBox(width: 8,),
-                        const Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "Dream Walker",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
 
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: Row(
+                        children: [
+                          const CircleAvatar(),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          const Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Dream Walker",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
-                              ),
-                              SizedBox(height: 4,),
-                              Text("@Dreamwalker"),
-                            ],
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text("@Dreamwalker"),
+                              ],
+                            ),
                           ),
-                        ),
-                        Container(
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                color: Colors.grey,
-                              )),
-                          padding: const EdgeInsets.all(8),
-                          child: const Icon(
-                            Icons.phone,
-                            size: 16,
-                          ),
-                        )
-                      ],
+                          Container(
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  color: Colors.grey,
+                                )),
+                            padding: const EdgeInsets.all(8),
+                            child: const Icon(
+                              Icons.phone,
+                              size: 16,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     const Divider(
                       color: Colors.grey,
